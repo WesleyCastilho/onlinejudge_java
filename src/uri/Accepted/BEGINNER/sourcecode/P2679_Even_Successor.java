@@ -7,7 +7,7 @@
 @Runtime: 0.068s
 @Submission: 9/22/17, 2:16:40 PM
  */
-package  URI.Accepted.BEGINNER.sourcecode;
+package  uri.Accepted.BEGINNER.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.IOException;

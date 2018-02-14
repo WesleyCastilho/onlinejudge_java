@@ -7,7 +7,7 @@
  * @Status: Accepted 30/10/2015 - 12:19:25 Runtime:0.088s
  * @Solution:counting carry
  */
-package  URI.Accepted.MATHEMATICS.sourcecode;
+package  uri.Accepted.MATHEMATICS.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

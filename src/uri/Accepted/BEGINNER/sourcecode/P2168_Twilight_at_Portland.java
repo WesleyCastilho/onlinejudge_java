@@ -10,7 +10,7 @@
  * @Solution: sum of 4 block >= 2 = S ,sum of 4 block < 2 = U 
  * @Note:
  */
-package  URI.Accepted.BEGINNER.sourcecode;
+package  uri.Accepted.BEGINNER.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

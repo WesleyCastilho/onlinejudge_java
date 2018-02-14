@@ -10,7 +10,7 @@
  * @Solution: Find GCD (Euclid's algorithm)
  * @Note:
  */
-package  URI.Accepted.MATHEMATICS.sourcecode;
+package  uri.Accepted.MATHEMATICS.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

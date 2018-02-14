@@ -10,7 +10,7 @@
  * @Solution: customize A* Algorithm for find shortest path and simulation
  * @Note:
  */
-package URI.Trying.TLE;
+package uri.Trying.TLE;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

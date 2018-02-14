@@ -1,4 +1,4 @@
-package URI.Trying.WA; /**
+package uri.Trying.WA; /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
  * @Problem: 1109 Cheating on the Contest

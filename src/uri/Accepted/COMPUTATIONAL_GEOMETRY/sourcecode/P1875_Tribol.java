@@ -1,4 +1,4 @@
-package  URI.Accepted.COMPUTATIONAL_GEOMETRY.sourcecode;
+package  uri.Accepted.COMPUTATIONAL_GEOMETRY.sourcecode;
 
 /**
  *

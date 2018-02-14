@@ -7,7 +7,7 @@
  * @Status: Accepted 23/11/2015 - 05:07:24 Runtime:0.104s
  * @Solution: LinkedList and sorting  - sorted by the descending order of weight. If two or more have the same weight they should be sorted in ascending order by age and height, if the tie still remains, order by name
  */
-package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

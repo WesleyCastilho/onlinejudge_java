@@ -10,7 +10,7 @@
  * @Solution: search maximum subArray (Kadane's algorithm)
  * @Note:
  */
-package  URI.Accepted.PARADIGMS.sourcecode;
+package  uri.Accepted.PARADIGMS.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

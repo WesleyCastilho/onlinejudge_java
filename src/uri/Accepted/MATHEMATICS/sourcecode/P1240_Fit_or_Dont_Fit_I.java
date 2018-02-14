@@ -1,4 +1,4 @@
-package  URI.Accepted.MATHEMATICS.sourcecode;
+package  uri.Accepted.MATHEMATICS.sourcecode;
 
 /**
  *

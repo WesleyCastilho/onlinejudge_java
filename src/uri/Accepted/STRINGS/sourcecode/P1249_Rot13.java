@@ -7,7 +7,7 @@
  * @Status: Accepted 13/10/2015 - 09:46:40 Runtime:0.232s
  * @Solution:
  */
-package  URI.Accepted.STRINGS.sourcecode;
+package  uri.Accepted.STRINGS.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.IOException;

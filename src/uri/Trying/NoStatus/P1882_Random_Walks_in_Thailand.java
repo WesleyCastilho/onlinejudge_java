@@ -11,7 +11,7 @@
  * @Note: 
  */
 
-package URI.Trying.NOSTATUS;
+package uri.Trying.NOSTATUS;
 
 
 public class P1882_Random_Walks_in_Thailand {

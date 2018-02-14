@@ -7,7 +7,7 @@
  * @Status: Accepted 27/11/2015 - 05:56:13 Runtime:0.116s 
  * @Solution: Binary Tree & InOrder Traversal
  */
-package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

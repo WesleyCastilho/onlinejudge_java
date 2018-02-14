@@ -7,7 +7,7 @@
  * @Status: Accepted 28/09/2015 - 16:11:17 Runtime:0.100s
  * @Solution:
  */
-package  URI.Accepted.STRINGS.sourcecode;
+package  uri.Accepted.STRINGS.sourcecode;
 
 import java.util.Scanner;
 

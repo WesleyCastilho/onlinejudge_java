@@ -6,7 +6,7 @@
  * @Status: Accepted 20/10/2015 - 10:03:49 Runtime:0.036s
  * @Solution:
  */
-package  URI.Accepted.AD_HOC.sourcecode;
+package  uri.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.IOException;

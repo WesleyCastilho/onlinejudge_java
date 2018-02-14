@@ -1,4 +1,4 @@
-package URI;
+package uri;
 
 import java.io.BufferedReader;
 import java.io.IOException;

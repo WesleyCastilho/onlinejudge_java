@@ -1,4 +1,4 @@
-package  URI.Accepted.PARADIGMS.sourcecode;
+package  uri.Accepted.PARADIGMS.sourcecode;
 
 /**
  *

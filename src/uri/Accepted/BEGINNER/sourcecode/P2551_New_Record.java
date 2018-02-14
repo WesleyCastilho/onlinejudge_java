@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package  URI.Accepted.BEGINNER.sourcecode;
+package  uri.Accepted.BEGINNER.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

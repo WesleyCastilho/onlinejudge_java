@@ -7,7 +7,7 @@
  * @Status: Accepted 23/11/2015 - 10:16:24 Runtime:0.116s
  * @Solution: Converse Code to Character
  */
-package  URI.Accepted.AD_HOC.sourcecode;
+package  uri.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

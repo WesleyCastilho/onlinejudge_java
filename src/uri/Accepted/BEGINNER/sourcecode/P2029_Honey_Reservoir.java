@@ -10,7 +10,7 @@
  * @Solution: หาพื้นที่และความสูงทรงกระบอก (area = (Math.pow((d / 2), 2)) * 3.14), height = v / area;
  * @Note:
  */
-package  URI.Accepted.BEGINNER.sourcecode;
+package  uri.Accepted.BEGINNER.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

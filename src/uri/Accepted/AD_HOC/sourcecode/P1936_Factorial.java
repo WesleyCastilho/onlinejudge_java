@@ -8,7 +8,7 @@
  * @Solution: Greedy
  * @Note: maxInput =  10^5 Max Subset of Factorial = 8!
  */
-package  URI.Accepted.AD_HOC.sourcecode;
+package  uri.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

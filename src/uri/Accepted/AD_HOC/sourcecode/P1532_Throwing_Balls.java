@@ -7,7 +7,7 @@
  * @Status: Accepted 15/01/2016 - 14:34:08  Runtime:0.036s
  * @Solution: Simulation throw a ball at an integer speed less than or equal to V
  */
-package  URI.Accepted.AD_HOC.sourcecode;
+package  uri.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
