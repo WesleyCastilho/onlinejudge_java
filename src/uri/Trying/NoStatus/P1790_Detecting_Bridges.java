@@ -10,7 +10,7 @@
  * @Solution: Tarjan's Bridge-finding algorithm using DFS traversal 
  * @Note:
  */
-package URI.Trying.NOSTATUS;
+package uri.Trying.NOSTATUS;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

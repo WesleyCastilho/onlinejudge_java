@@ -7,7 +7,7 @@
  * @Status: Accepted 17/01/2016 - 15:30:26 Runtime:0.044s
  * @Solution: find biggest possible square size
  */
-package  URI.Accepted.AD_HOC.sourcecode;
+package  uri.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

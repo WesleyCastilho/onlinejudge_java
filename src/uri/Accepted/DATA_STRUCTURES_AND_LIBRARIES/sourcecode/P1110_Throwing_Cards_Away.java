@@ -7,7 +7,7 @@
  * @Status: Accepted 22/11/2015 - 09:33:52 Runtime:0.260s
  * @Solution: Queue Structure ,Dequeue Enqueue
  */
-package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

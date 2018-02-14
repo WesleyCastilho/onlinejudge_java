@@ -7,7 +7,7 @@
  * @Status: Accepted 03/01/2016 - 12:30:53 Runtime:0.212s
  * @Solution: Counting  1 in vertical line (Length >= C)
  */
-package  URI.Accepted.AD_HOC.sourcecode;
+package  uri.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

@@ -10,7 +10,7 @@
  * @Solution:
  * @Note:
  */
-package  URI.Accepted.BEGINNER.sourcecode;
+package  uri.Accepted.BEGINNER.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

@@ -9,7 +9,7 @@
  * @Runtime: 0.288s
  * @Solution: Greedy + sort
  */
-package  URI.Accepted.AD_HOC.sourcecode;
+package  uri.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

@@ -7,7 +7,7 @@
  * @Status: Accepted 2/1/16, 10:21:54 PM Runtime:0.656s
  * @Solution: Queue and memory Executed task
  */
-package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.IOException;

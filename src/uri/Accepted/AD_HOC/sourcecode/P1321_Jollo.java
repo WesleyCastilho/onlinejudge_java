@@ -11,7 +11,7 @@
  * @Solution: sort and permutation compare
  * @Note:
  */
-package  URI.Accepted.AD_HOC.sourcecode;
+package  uri.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

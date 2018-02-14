@@ -7,7 +7,7 @@
  * @Status: Accepted 01/12/2015 - 12:45:01 Runtime:0.068s
  * @Solution: BrainFuck Programming
  */
-package  URI.Accepted.STRINGS.sourcecode;
+package  uri.Accepted.STRINGS.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

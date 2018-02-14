@@ -10,7 +10,7 @@
  * @Solution: sort and binary search
  * @Note:
  */
-package URI.Trying.WA;
+package uri.Trying.WA;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

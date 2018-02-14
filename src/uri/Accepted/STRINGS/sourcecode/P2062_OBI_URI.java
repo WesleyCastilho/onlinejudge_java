@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package  URI.Accepted.STRINGS.sourcecode;
+package  uri.Accepted.STRINGS.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -32,7 +32,7 @@ public class P2062_OBI_URI {
                 if (s.charAt(0) == 'O' && s.charAt(1) == 'B') {
                     s = "OBI";
                 } else if (s.charAt(0) == 'U' && s.charAt(1) == 'R') {
-                    s = "URI";
+                    s = "uri";
                 }
             }
             if (printed) {

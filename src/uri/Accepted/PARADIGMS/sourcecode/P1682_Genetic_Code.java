@@ -10,7 +10,7 @@
  * @Solution:
  * @Note:
  */
-package  URI.Accepted.PARADIGMS.sourcecode;
+package  uri.Accepted.PARADIGMS.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

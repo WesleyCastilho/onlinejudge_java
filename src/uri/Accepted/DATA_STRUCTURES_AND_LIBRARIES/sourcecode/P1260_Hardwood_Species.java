@@ -6,7 +6,7 @@
  * @Status: Accepted 22/10/2015 - 19:52:19 Runtime:0.724s
  * @Solution: Counting and Calculate Average
  */
-package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -10,7 +10,7 @@
  * @Solution:permulation tree
  * @Note:
  */
-package URI.Trying.TLE;
+package uri.Trying.TLE;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

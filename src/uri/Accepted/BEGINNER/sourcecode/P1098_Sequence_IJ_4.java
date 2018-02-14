@@ -1,4 +1,4 @@
-package  URI.Accepted.BEGINNER.sourcecode;
+package  uri.Accepted.BEGINNER.sourcecode;
 
 import java.text.DecimalFormat;
 

@@ -10,7 +10,7 @@
  * @Solution: mdc Euclid algorithm
  * @Note:
  */
-package  URI.Accepted.MATHEMATICS.sourcecode;
+package  uri.Accepted.MATHEMATICS.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
