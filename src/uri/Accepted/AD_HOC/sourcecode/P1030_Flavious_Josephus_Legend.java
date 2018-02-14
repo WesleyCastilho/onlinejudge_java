@@ -8,7 +8,7 @@
  * @Status: Accepted 28/11/2015 - 07:56:12 Runtime:0.044s
  * @Solution: josephus Algorithm
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

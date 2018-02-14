@@ -1,4 +1,4 @@
-package  uri.Accepted.MATHEMATICS.sourcecode;
+package  URI.Accepted.MATHEMATICS.sourcecode;
 
 /**
  * @author Teerapat Phokhonwong

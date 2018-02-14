@@ -11,7 +11,7 @@
  * @Solution: bubbleSort + Check percentage
  * @Note:
  */
-package  uri.Accepted.MATHEMATICS.sourcecode;
+package  URI.Accepted.MATHEMATICS.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.IOException;

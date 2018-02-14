@@ -11,7 +11,7 @@
     he is level with the second last opponent or
     he is level with the last two opponents.
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

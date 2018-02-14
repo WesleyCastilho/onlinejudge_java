@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package uri.Trying.TLE;
+package URI.Trying.TLE;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -10,7 +10,7 @@
  * @Solution:
  * @Note:
  */
-package  uri.Accepted.GRAPH.sourcecode;
+package  URI.Accepted.GRAPH.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

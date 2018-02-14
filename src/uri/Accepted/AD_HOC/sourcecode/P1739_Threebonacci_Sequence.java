@@ -10,7 +10,7 @@
  * @Solution: create fibonacci number and find 3 in number 
  * @Note:
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

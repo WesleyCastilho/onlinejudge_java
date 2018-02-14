@@ -6,7 +6,7 @@
  * @Status: Accepted 18/10/2015 - 10:24:31 Runtime:0.072s
  * @Solution: Mapping and Counting Value Structure by TreeMap *** TreeMap Sort by Key
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

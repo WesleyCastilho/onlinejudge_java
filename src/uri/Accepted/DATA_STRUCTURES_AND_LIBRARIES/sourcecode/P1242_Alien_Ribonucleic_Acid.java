@@ -7,7 +7,7 @@
  * @Status: Accepted 23/11/2015 - 11:47:57 Runtime:0.052s
  * @Solution: stack mapping C pairs with F, F pairs with C, S pairs with B, B pairs with S
  */
-package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

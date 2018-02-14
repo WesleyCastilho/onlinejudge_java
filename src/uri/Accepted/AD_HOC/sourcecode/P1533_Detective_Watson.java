@@ -7,7 +7,7 @@
  * @Status: Accepted 24/11/2015 - 06:26:27 Runtime:0.060s
  * @Solution:finding max rank = 2
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

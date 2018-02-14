@@ -10,7 +10,7 @@
  * @Solution: n^2 + (n-1)^2 + (n-2)^2 ... 1^2 หรือ n(n+1)(2n+1)/6
  * @Note: หาจำนวนสี่เหลี่ยมจตุรัส n * n
  */
-package  uri.Accepted.MATHEMATICS.sourcecode;
+package  URI.Accepted.MATHEMATICS.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

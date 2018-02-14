@@ -10,7 +10,7 @@
  * @Solution:
  * @Note:
  */
-package  uri.Accepted.COMPUTATIONAL_GEOMETRY.sourcecode;
+package  URI.Accepted.COMPUTATIONAL_GEOMETRY.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

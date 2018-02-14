@@ -7,7 +7,7 @@
  * @Status: Accepted 28/11/2015 - 07:34:49 Runtime:0.136s
  * @Solution: Bean game Simulation
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

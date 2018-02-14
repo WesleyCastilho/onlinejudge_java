@@ -6,7 +6,7 @@
  * @Status: Accepted 23/10/2015 - 07:53:30 Runtime:0.056s
  * @Solution:
  */
-package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.util.HashMap;
 import java.util.Map;

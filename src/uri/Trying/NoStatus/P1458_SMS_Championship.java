@@ -10,7 +10,7 @@
  * @Solution:
  * @Note:คำนวนการกด message ใช้เวลาน้อยที่สุด
  */
-package uri.Trying.NOSTATUS;
+package URI.Trying.NOSTATUS;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

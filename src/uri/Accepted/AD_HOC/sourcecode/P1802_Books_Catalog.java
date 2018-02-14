@@ -7,7 +7,7 @@
  * @Status: Accepted 16/01/2016 - 14:13:25 Runtime:0.092s
  * @Solution: sort by value and of k set and sum
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.OutputStream;
 import java.io.BufferedOutputStream;

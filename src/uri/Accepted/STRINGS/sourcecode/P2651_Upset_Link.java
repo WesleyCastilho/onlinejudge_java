@@ -1,4 +1,4 @@
-package  uri.Accepted.STRINGS.sourcecode;
+package  URI.Accepted.STRINGS.sourcecode;
 
 /**
  * Created by teerapat on 1/30/2018.

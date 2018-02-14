@@ -7,7 +7,7 @@
  * @Status: Accepted 03/12/2015 - 09:19:18 Runtime:0.032s
  * @Solution: Infix to postfix and postfix parser
  */
-package  uri.Accepted.STRINGS.sourcecode;
+package  URI.Accepted.STRINGS.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

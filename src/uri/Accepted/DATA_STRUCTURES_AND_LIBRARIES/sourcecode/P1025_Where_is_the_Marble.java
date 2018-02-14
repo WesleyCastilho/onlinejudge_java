@@ -7,7 +7,7 @@
  * @Status: Accepted 27/11/2015 - 03:40:33 Runtime:0.180s
  * @Solution: Quick sort & binary search
  */
-package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

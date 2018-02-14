@@ -1,4 +1,4 @@
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 import java.util.Locale;
 import java.util.Scanner;
