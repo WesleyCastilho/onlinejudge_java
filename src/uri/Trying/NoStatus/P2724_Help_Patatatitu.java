@@ -1,4 +1,4 @@
-package uri.Trying.NOSTATUS;
+package URI.Trying.NOSTATUS;
 
 /**
  * Created by teerapat on 1/6/2018.

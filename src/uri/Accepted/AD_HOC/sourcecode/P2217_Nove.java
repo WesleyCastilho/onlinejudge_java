@@ -11,7 +11,7 @@
  * @Solution: 9^number the last digit = [1 or 9]
  * @Note:
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -11,7 +11,7 @@
  * @Note: 
  */
 
-package uri.Trying.NOSTATUS;
+package URI.Trying.NOSTATUS;
 
 
 public class P1568_sum_to_Reach_N {

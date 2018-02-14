@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package uri.Trying.WA;
+package URI.Trying.WA;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

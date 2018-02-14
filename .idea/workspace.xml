@@ -111,10 +111,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uri" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -442,15 +438,15 @@
       <updated>1518614736762</updated>
       <workItem from="1518614740520" duration="1877000" />
       <workItem from="1518617210082" duration="850000" />
-      <workItem from="1518621938728" duration="1839000" />
+      <workItem from="1518621938728" duration="2566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4566000" />
+    <option name="totallyTimeSpent" value="5293000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -541,7 +537,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/uri/Accepted/AD_HOC/sourcecode/P1087_Queen.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/AD_HOC/sourcecode/P1087_Queen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -549,7 +545,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/Accepted/AD_HOC/sourcecode/P1087_Queen.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/AD_HOC/sourcecode/P1087_Queen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -557,28 +553,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/Trying/WA/P1569_Snakes_and_Ladders.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
           <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/GetRepository_URIOJ.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/GetRepository_URIOJ.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07580825" vertical-offset="0" max-vertical-offset="969">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/Trying/WA/P1109_Cheating_on_the_Contest.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1109_Cheating_on_the_Contest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/Trying/WA/P1912_Help_Seu_Madruga.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1912_Help_Seu_Madruga.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.642857" vertical-offset="0" max-vertical-offset="1411">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -586,28 +583,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/Accepted/AD_HOC/sourcecode/P1026_To_Carry_or_not_to_Carry_V2.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/AD_HOC/sourcecode/P1026_To_Carry_or_not_to_Carry_V2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/Accepted/AD_HOC/sourcecode/P1030_Flavious_Josephus_Legend.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/AD_HOC/sourcecode/P1030_Flavious_Josephus_Legend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1516165" vertical-offset="0" max-vertical-offset="897">
           <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/Accepted/AD_HOC/sourcecode/P1023_Drought.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/AD_HOC/sourcecode/P1023_Drought.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22742476" vertical-offset="0" max-vertical-offset="935">
           <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/Accepted/AD_HOC/sourcecode/P1026_To_Carry_or_not_to_Carry_V1.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/AD_HOC/sourcecode/P1026_To_Carry_or_not_to_Carry_V1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36008918" vertical-offset="0" max-vertical-offset="1598">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
@@ -615,7 +612,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uri/Accepted/AD_HOC/sourcecode/P1087_Queen.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/AD_HOC/sourcecode/P1087_Queen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22742476" vertical-offset="221" max-vertical-offset="1700">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />

@@ -1,4 +1,4 @@
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 //URI Online Judge | 1072 Interval 2 https://www.urionlinejudge.com.br/judge/en/problems/view/1072
 //Accepted 13/08/2015 - 12:53:35 Runtime:0.076s
-import java.util.Scanner;
+
 
 public class P1072_Interval2 {
 

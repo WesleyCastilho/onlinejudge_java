@@ -1,4 +1,4 @@
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 //URI Online Judge | 1174 Array Selection I https://www.urionlinejudge.com.br/judge/en/problems/view/1174
 //Accepted 11/08/2015 - 17:25:33 Runtime:0.060s
-import java.util.Scanner;
+
 
 public class P1174_Array_Selection_I {
 

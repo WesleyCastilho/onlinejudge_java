@@ -7,7 +7,7 @@
  * @Status: Accepted 26/12/2015 - 17:43:48 Runtime:0.068s
  * @Solution:  when a team wins a game, it gets 3 points if the game ends in a draw, both teams get 1 point, and the loser no points.
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

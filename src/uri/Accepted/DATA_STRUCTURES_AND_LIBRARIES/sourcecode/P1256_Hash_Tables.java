@@ -7,7 +7,7 @@
  * @Status: Accepted 22/11/2015 - 12:00:07 Runtime:0.200s
  * @Solution:
  */
-package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

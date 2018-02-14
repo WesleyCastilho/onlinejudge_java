@@ -1,4 +1,4 @@
-package  uri.Accepted.GRAPH.sourcecode;
+package  URI.Accepted.GRAPH.sourcecode;
 
 /**
  *

@@ -10,7 +10,7 @@
  * @Solution: Doubly linked list
  * @Note:
  */
-package uri.Trying.NOSTATUS;
+package URI.Trying.NOSTATUS;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

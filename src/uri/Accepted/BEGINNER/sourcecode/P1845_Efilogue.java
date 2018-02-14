@@ -1,4 +1,4 @@
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 //URI Online Fudge | 1845 Efilogue https://www.urionlinejudge.com.br/judge/en/problems/view/1845
 //Aceepted 1/31/17, 3:11:12 PM Runtime:0.184s 

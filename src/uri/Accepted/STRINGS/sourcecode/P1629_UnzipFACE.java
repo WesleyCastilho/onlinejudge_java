@@ -11,7 +11,7 @@
  * @Solution: counting one and zero digit -> find checksum
  * @Note:
  */
-package  uri.Accepted.STRINGS.sourcecode;
+package  URI.Accepted.STRINGS.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

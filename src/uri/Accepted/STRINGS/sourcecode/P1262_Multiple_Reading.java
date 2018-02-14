@@ -7,7 +7,7 @@
  * @Status: Accepted 02/12/2015 - 16:56:14 Runtime:0.072s
  * @Solution: W = clock +1 , RW = clock +2 ,p = 3 RRR = Clock +1
  */
-package  uri.Accepted.STRINGS.sourcecode;
+package  URI.Accepted.STRINGS.sourcecode;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

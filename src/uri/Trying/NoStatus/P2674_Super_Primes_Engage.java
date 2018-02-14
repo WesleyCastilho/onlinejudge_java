@@ -1,4 +1,4 @@
-package uri.Trying.NOSTATUS;
+package URI.Trying.NOSTATUS;
 
 import java.io.*;
 

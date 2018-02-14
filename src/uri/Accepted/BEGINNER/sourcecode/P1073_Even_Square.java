@@ -1,4 +1,4 @@
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 //URI Online Judge | 1073 Even Square https://www.urionlinejudge.com.br/judge/en/problems/view/1073
 //Accepted 10/08/2015 - 13:37:09 Runtime:0.056s
-import java.util.Scanner;
+
 
 public class P1073_Even_Square {
 

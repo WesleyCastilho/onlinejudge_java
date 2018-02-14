@@ -1,4 +1,4 @@
-package  uri.Accepted.STRINGS.sourcecode;
+package  URI.Accepted.STRINGS.sourcecode;
 
 /**
  * @author Teerapat Phokhonwong

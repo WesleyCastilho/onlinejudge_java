@@ -12,7 +12,7 @@
  * @Note: 
  */
 
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

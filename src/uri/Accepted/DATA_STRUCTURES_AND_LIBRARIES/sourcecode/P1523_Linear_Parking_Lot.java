@@ -7,7 +7,7 @@
  * @Status: Accepted 24/12/2015 - 11:01:37 Runtime:0.144s
  * @Solution: PriorityQueue + Stack
  */
-package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

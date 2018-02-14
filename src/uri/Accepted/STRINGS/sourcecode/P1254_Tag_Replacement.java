@@ -7,7 +7,7 @@
  * @Status: Accepted 01/12/2015 - 15:51:31 Runtime:0.148s
  * @Solution: searching and replace String
  */
-package  uri.Accepted.STRINGS.sourcecode;
+package  URI.Accepted.STRINGS.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

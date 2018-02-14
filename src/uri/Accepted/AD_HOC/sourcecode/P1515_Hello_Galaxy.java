@@ -7,7 +7,7 @@
  * @Status: Accepted 27/12/2015 - 17:58:32 Runtime:0.068s
  * @Solution: find out who was the first civilization to send a Hello Galaxy message
  */
-package  uri.Accepted.AD_HOC.sourcecode;
+package  URI.Accepted.AD_HOC.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

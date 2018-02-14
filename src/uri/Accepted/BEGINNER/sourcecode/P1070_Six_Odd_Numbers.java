@@ -1,4 +1,4 @@
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 //URI Online Judge | 1070 Six Odd Numbers https://www.urionlinejudge.com.br/judge/en/problems/view/1070
 //Accepted 10/08/2015 - 07:58:02 Runtime:0.048s
-import java.util.Scanner;
+
 
 public class P1070_Six_Odd_Numbers {
 

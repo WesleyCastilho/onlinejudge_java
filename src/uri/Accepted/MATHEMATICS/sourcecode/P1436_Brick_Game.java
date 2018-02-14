@@ -6,7 +6,7 @@
  * @Status: Accepted 18/10/2015 - 07:56:43 Runtime:0.040s
  * @Solution: median of numberList
  */
-package  uri.Accepted.MATHEMATICS.sourcecode;
+package  URI.Accepted.MATHEMATICS.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -7,7 +7,7 @@
  * @Status: Accepted 21/11/2015 - 15:55:47 Runtime:0.236s
  * @Solution: linklist sorting
  */
-package  uri.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

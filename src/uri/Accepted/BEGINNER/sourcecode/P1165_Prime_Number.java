@@ -1,4 +1,4 @@
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 //URI Online Judge | 1165 Prime Number https://www.urionlinejudge.com.br/judge/en/problems/view/1165
 //Accepted 12/08/2015 - 00:58:20 Runtime:0.064s
-import java.util.Scanner;
+
 
 public class P1165_Prime_Number {
 

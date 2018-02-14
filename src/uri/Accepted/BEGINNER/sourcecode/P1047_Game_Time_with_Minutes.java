@@ -1,4 +1,4 @@
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 /**
  *
@@ -9,7 +9,6 @@ package  uri.Accepted.BEGINNER.sourcecode;
 import java.util.Scanner;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Scanner;
 
 public class P1047_Game_Time_with_Minutes {
 

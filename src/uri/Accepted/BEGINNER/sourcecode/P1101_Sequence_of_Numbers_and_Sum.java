@@ -1,4 +1,4 @@
-package  uri.Accepted.BEGINNER.sourcecode;
+package  URI.Accepted.BEGINNER.sourcecode;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 //URI Online Judge | 1101 Sequence of Numbers and Sum https://www.urionlinejudge.com.br/judge/en/problems/view/1101
 //Accepted 11/08/2015 - 15:27:53 Runtime:0.040s
-import java.util.Scanner;
+
 
 public class P1101_Sequence_of_Numbers_and_Sum {
 
