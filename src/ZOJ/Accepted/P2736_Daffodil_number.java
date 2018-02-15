@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 /**
  *
@@ -7,7 +7,7 @@ package accepted;
 //ZOJ 2736 Daffodil number http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1736
 //Accepted 2012-07-05 20:06:26 Run Time(ms) = 90 Run Memory(KB) = 844
 import java.util.Scanner;
-public class P2736_DaffodilNumber {
+public class P2736_Daffodil_number {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 /**
  *
@@ -7,7 +7,7 @@ package accepted;
 //ZOJ 1295 Reverse Text http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=295
 //Accepted 2013-07-23 01:32:36 Run Time(ms) = 30 Run Memory(KB) = 422
 import java.util.Scanner;
-public class P1295_ReverseText {
+public class P1295_Reverse_Text {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

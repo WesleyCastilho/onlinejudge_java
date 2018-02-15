@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 /**
  *
@@ -7,7 +7,7 @@ package accepted;
 //ZOJ 2970 Faster, Higher, Stronger http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1969
 //Accepted 2015-06-08 03:30:14 Run Time(ms) = 146 Run Memory(KB) = 6831
 import java.util.Scanner;
-public class P2970_FasterHigherStronger {
+public class P2970_Faster_Higher_Stronger {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int round = sc.nextInt();

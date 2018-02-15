@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 /**
  *
@@ -9,7 +9,7 @@ package accepted;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
-public class P1048_FinancialManagement {
+public class P1048_Financial_Management {
     public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	DecimalFormat df = new DecimalFormat("0.##");

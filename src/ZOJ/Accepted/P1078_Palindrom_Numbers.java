@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 
 /**
@@ -8,7 +8,7 @@ package accepted;
 //ZOJ 1078 Palindrom Numbers http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=78
 //Accepted 2015-06-04 02:36:25 Run Time(ms) = 17 Run Memory(KB) = 660
 import java.util.Scanner;
-public class P1078_PalindromNumbers {
+public class P1078_Palindrom_Numbers {
 
     public static void main(String[] agrs) {  
         Scanner s = new Scanner(System.in);  

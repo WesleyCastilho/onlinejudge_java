@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 
 /**
@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class P1002_FireNet {
+public class P1002_Fire_Net {
 
     static final char WAll = 'X';
     static final char SPACE = '.';

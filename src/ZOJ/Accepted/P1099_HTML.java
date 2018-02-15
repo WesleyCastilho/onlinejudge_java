@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 /**
  *

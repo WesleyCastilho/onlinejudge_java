@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 /**
  *
@@ -8,7 +8,7 @@ package accepted;
 //Accepted 2015-05-23 05:38:05 Run Time(ms) = 16 Run Memory(KB) = 660
 import java.util.Scanner;
 
-public class P1056_TheWormTurns {
+public class P1056_The_Worm_Turns {
 
 
     public static void main(String[] args) {

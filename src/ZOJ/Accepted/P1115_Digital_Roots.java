@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 /**
  *
@@ -7,7 +7,7 @@ package accepted;
 //ZOJ 1115 Digital Roots http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=115
 //Accepted 2012-06-27 20:31:21 Run Time(ms) = 30 Run Memory(KB) = 211
 import java.util.Scanner;
-public class P1115_DigitalRoots {
+public class P1115_Digital_Roots {
     static String SumDigit(String a){
         int SumDigit = 0;
 	for (int i = 0; i < a.length(); i++) {

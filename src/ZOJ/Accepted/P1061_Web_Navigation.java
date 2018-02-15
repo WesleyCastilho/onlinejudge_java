@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 /**
  *
@@ -8,7 +8,7 @@ package accepted;
 //Accepted 2015-06-06 05:43:01 Run Time(ms)= 85 Run Memory(KB) = 1323
 import java.util.ArrayList;
 import java.util.Scanner;
-public class P1061_WebNavigation {
+public class P1061_Web_Navigation {
     
     static ArrayList<String> backwardHistory = new ArrayList<String>();
     static ArrayList<String> forwardHistory = new ArrayList<String>();

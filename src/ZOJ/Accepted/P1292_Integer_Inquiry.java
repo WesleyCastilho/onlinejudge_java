@@ -1,4 +1,4 @@
-package accepted;
+package ZOJ.Accepted;
 
 /**
  *
@@ -9,7 +9,7 @@ package accepted;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class P1292_IntegerInquiry {
+public class P1292_Integer_Inquiry {
     
     public static void main(String [] argn){
 	Scanner sc = new Scanner(System.in);
