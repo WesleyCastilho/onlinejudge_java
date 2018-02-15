@@ -2,96 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d079c2a0-9e0d-47d3-830f-572a2e74375b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1085_The_Club_Ballroom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1119_The_Dole_Queue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P1284_Cellphone_Typing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1327_Drop_Out.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1405_The_Halting_Problem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P1458_SMS_Championship.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/MATHEMATICS/P1643_Convert_Kilometers_to_Miles.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/PARADIGMS/P1878_Contests_in_Sequence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1882_Random_Walks_in_Thailand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1934_Puzzle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P2012_Height_Map.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/WA/P2090_I_Went_to_Market_And_Bought.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P2564_Swap_It_or_Not.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/BEGINNER/P2636_3_RSA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P2671_Decoding_the_Text.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/BEGINNER/P2674_Super_Primes_Engage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/BEGINNER/P2684_Help_Professor_Webscript.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Accepted/BEGINNER/sourcecode/P2717_Elf_Time.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/BEGINNER/P2724_Help_Patatatitu.java" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1085_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1105_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1109_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1136_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1211_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1222_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1243_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1246_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1364_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1414_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1514_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1559_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1629_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1632_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1639_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1676_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1739_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1802_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1814_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1882_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1883_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1912_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\1934_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\2153_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\2157_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\2178_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\2203_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\2502_intput.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\2650_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\CallTestCase.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\P1912_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Input\P2254_input.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Output\1211_output.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Output\1739_output.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\Output\2254_output.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1085_The_Club_Ballroom.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1119_The_Dole_Queue.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1284_Cellphone_Typing.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1327_Drop_Out.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1405_The_Halting_Problem.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1458_SMS_Championship.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1643_Convert_Kilometers_to_Miles.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1790_Detecting_Bridges.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1878_Contests_in_Sequence.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1882_Random_Walks_in_Thailand.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1934_Puzzle.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2012_Height_Map.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2090_I_Went_to_Market_And_Bought.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2564_Swap_It_or_Not.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2626_JB6_Team.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2636_3_RSA.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2671_Decoding_the_Text.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2674_Super_Primes_Engage.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2684_Help_Professor_Webscript.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2717_Elf_Time.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2724_Help_Patatatitu.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1032_Josephs_Cousin.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1032_Josephs_Cousin.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1400_Counting_Game.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/MATHEMATICS/P1400_Counting_Game.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1425_Gift.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1425_Gift.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1472_Triangles.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1472_Triangles.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1568_sum_to_Reach_N.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1568_sum_to_Reach_N.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1610_Dudu_Service_Maker.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/GRAPH/P1610_Dudu_Service_Maker.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1673_Run_Length_Encoding.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1673_Run_Length_Encoding.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1676_Assistance_Required.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1676_Assistance_Required.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1729_Average_is_not_Fast_Enough.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/MATHEMATICS/P1729_Average_is_not_Fast_Enough.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1885_Thai_Lotery.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1885_Thai_Lotery.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P1935_Spiral.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1935_Spiral.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2064_Prant_and_the_Indecision.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P2064_Prant_and_the_Indecision.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2336_ABC.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P2336_ABC.java" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\P2718_Christmas_Lights.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/BEGINNER/P2718_Christmas_Lights.java" />
     </list>
     <ignored path="onlinejuge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,14 +29,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="P2336_ABC.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P2336_ABC.java">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2320819" vertical-offset="0" max-vertical-offset="586">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.33693695" vertical-offset="0" max-vertical-offset="555">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="note.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/URI/note.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,6 +93,7 @@
         <option value="$PROJECT_DIR$/src/ZOJ/Accepted/P3782_Ternary_Calculation.java" />
         <option value="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P2336_ABC.java" />
         <option value="$PROJECT_DIR$/src/URI/Accepted/BEGINNER/sourcecode/P2717_Elf_Time.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -204,8 +131,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,22 +162,8 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejuge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejudge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URI" />
+              <option name="myItemId" value="ZOJ" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,17 +180,29 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="URI" />
+              <option name="myItemId" value="onlinejuge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlinejudge" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Trying" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,6 +223,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -614,16 +538,17 @@
       <workItem from="1518617210082" duration="850000" />
       <workItem from="1518621938728" duration="4289000" />
       <workItem from="1518631548779" duration="717000" />
-      <workItem from="1518667264805" duration="3395000" />
+      <workItem from="1518667264805" duration="3646000" />
+      <workItem from="1518671371247" duration="734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11128000" />
+    <option name="totallyTimeSpent" value="12113000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -637,7 +562,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34493193" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" x="724" y="71" width="468" height="898" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34493193" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" x="724" y="71" width="468" height="898" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -713,6 +638,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/URI/note.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
@@ -798,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ZOJ/note.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UVA/note.txt.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
@@ -851,15 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07678883" vertical-offset="58" max-vertical-offset="969">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/URI/note.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029010238" vertical-offset="0" max-vertical-offset="586">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20307167" vertical-offset="0" max-vertical-offset="884">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17406143" vertical-offset="0" max-vertical-offset="586">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,7 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
           <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1904">
           <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
           <caret line="0" column="20" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
           <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11604095" vertical-offset="0" max-vertical-offset="2210">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20307167" vertical-offset="0" max-vertical-offset="748">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
           <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,7 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.63822526" vertical-offset="0" max-vertical-offset="1411">
           <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20767888" vertical-offset="0" max-vertical-offset="1377">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1450512" vertical-offset="0" max-vertical-offset="1122">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2320819" vertical-offset="0" max-vertical-offset="782">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5802048" vertical-offset="0" max-vertical-offset="586">
           <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,18 +930,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14485165" vertical-offset="2" max-vertical-offset="612">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P2336_ABC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2320819" vertical-offset="0" max-vertical-offset="586">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.3771331" vertical-offset="0" max-vertical-offset="586">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ZOJ/note.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/note.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33693695" vertical-offset="0" max-vertical-offset="555">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
       </provider>
     </entry>
   </component>
