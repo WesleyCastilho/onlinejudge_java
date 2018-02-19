@@ -7,7 +7,7 @@
  * @Status: Accepted 21/11/2015 - 15:55:47 Runtime:0.236s
  * @Solution: linklist sorting
  */
-package  URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
+package URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -16,6 +16,44 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class P1251_Tell_me_the_Frequencies {
+
+    static class Node {
+
+        private int frequencies = 1;
+        private int asciiCode;
+        private char name;
+        private Node next = null;
+
+        public Node(char name) {
+            this.name = name;
+            asciiCode = (int) name;
+        }
+
+        void setNext(Node next) {
+            this.next = next;
+        }
+
+        Node getNext() {
+            return this.next;
+        }
+
+        char getName() {
+            return name;
+        }
+
+        int toAsciiCode() {
+            return asciiCode;
+        }
+
+        void addFreequencie() {
+            frequencies++;
+        }
+
+        int frequencies() {
+            return frequencies;
+        }
+
+    }
 
     static Node head = null, current = null, previous = null;
 
@@ -102,40 +140,4 @@ public class P1251_Tell_me_the_Frequencies {
 
 }
 
-class Node {
 
-    private int frequencies = 1;
-    private int asciiCode;
-    private char name;
-    private Node next = null;
-
-    public Node(char name) {
-        this.name = name;
-        asciiCode = (int) name;
-    }
-
-    void setNext(Node next) {
-        this.next = next;
-    }
-
-    Node getNext() {
-        return this.next;
-    }
-
-    char getName() {
-        return name;
-    }
-
-    int toAsciiCode() {
-        return asciiCode;
-    }
-
-    void addFreequencie() {
-        frequencies++;
-    }
-
-    int frequencies() {
-        return frequencies;
-    }
-
-}
