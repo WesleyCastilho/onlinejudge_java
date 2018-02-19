@@ -30,28 +30,60 @@ public class P1673_Run_Length_Encoding {
         while ((input = br.readLine()) != null) {
             char[] c = input.toCharArray();
             int length = c.length;
-            int lastCount = 0;
             char last = c[0];
             int count = 1;
-            String output = "";
             int i = 1;
+            String out = "";
             for (; i < length; i++) {
                 if (last == c[i]) {
                     count++;
                 } else {
-                   
-                    output += (count + "" + c[i - 1]);
-                    
-                    last = c[i];
-                    lastCount = count;
+                    out += getLastOutput(count, last, out);
                     count = 1;
                 }
+                last = c[i];
             }
-            output += (count + "" + c[i - 1]);
-            bw.append(output + "\n");
+            if (count > 0) {
+                out += getLastOutput(count, last, out);
+            }
+            bw.append(out + "\n");
             bw.flush();
         }
         bw.flush();
     }
+
+    static String getLastOutput(int count, char lastLetter, String lastOutput) {
+        if (lastLetter == '1') {
+            if (count == 1) {
+                return (lastOutput.charAt(lastOutput.length() - 1) == 1 ? "1" : "") + lastLetter + "1";// count == 1
+            }
+            String outputPattern = "";
+            while (count >= 9) {
+                outputPattern += "9" + lastLetter;
+                count -= 9;
+            }
+            outputPattern += count + "" + lastLetter;
+            return outputPattern;
+        }
+
+
+        if (count > 1) {
+            if (count >= 9) {
+                String outputPattern = "";
+                while (count >= 9) {
+                    outputPattern += "9" + lastLetter;
+                    count -= 9;
+                }
+                if (count > 0) {
+                    outputPattern += count + "" + lastLetter;
+                }
+                return outputPattern;
+            }
+            return count + "" + lastLetter;
+        }
+
+        return (lastOutput.charAt(lastOutput.length() - 1) == 1 ? "1" : "") + lastLetter + "1";// count == 1
+    }
+
 
 }

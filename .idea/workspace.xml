@@ -2,7 +2,169 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d079c2a0-9e0d-47d3-830f-572a2e74375b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1032_Josephs_Cousin.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1085_The_Club_Ballroom.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1119_The_Dole_Queue$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1119_The_Dole_Queue.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1284_Cellphone_Typing.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1327_Drop_Out.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1400_Counting_Game.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1405_The_Halting_Problem.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1425_Gift.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1458_SMS_Championship$Phone.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1458_SMS_Championship.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1472_Triangles.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1568_sum_to_Reach_N.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1610_Dudu_Service_Maker.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1643_Convert_Kilometers_to_Miles.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1673_Run_Length_Encoding.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1676_Assistance_Required.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1729_Average_is_not_Fast_Enough.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1790_Detecting_Bridges$Graph.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1790_Detecting_Bridges.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1878_Contests_in_Sequence.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1882_Random_Walks_in_Thailand.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1885_Thai_Lotery$Dice.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1885_Thai_Lotery.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1934_Puzzle.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P1935_Spiral.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2012_Height_Map.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2064_Prant_and_the_Indecision.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2090_I_Went_to_Market_And_Bought.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2336_ABC.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2564_Swap_It_or_Not.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2626_JB6_Team.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2674_Super_Primes_Engage.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2684_Help_Professor_Webscript.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2717_Elf_Time.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2718_Christmas_Lights.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\Trying\NOSTATUS\P2724_Help_Patatatitu.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\TLE\P1500_Horrible_Queries$FenwickTree.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\TLE\P1500_Horrible_Queries.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\TLE\P1556_Removing_Letters.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\TLE\P1883_Escape_From_Ayutthaya$1.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\TLE\P1883_Escape_From_Ayutthaya$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\TLE\P1883_Escape_From_Ayutthaya$Point.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\TLE\P1883_Escape_From_Ayutthaya.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\TLE\P2500_William_Xorando$Binary.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\TLE\P2500_William_Xorando.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1085_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1105_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1109_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1136_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1211_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1222_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1243_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1246_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1364_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1414_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1514_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1559_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1629_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1632_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1639_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1676_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1739_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1802_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1814_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1882_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1883_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1912_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\1934_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\2153_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\2157_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\2178_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\2203_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\2502_intput.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\2650_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\CallTestCase.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\P1912_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Input\P2254_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1085_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1105_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1109_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1136_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1211_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1222_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1243_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1246_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1364_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1414_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1514_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1559_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1629_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1632_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1639_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1676_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1739_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1802_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1814_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1882_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1883_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1912_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\1934_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\2153_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\2157_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\2178_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\2203_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\2502_intput.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\2650_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\CallTestCase.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\P1912_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Input\P2254_input.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Output\1211_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Output\1739_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\NOSTATUS\Output\2254_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Output\1211_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Output\1739_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\Output\2254_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1032_Josephs_Cousin.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1085_The_Club_Ballroom.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1119_The_Dole_Queue$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1119_The_Dole_Queue.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1284_Cellphone_Typing.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1327_Drop_Out.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1400_Counting_Game.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1405_The_Halting_Problem.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1425_Gift.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1458_SMS_Championship$Phone.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1458_SMS_Championship.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1472_Triangles.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1568_sum_to_Reach_N.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1610_Dudu_Service_Maker.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1643_Convert_Kilometers_to_Miles.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1673_Run_Length_Encoding.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1676_Assistance_Required.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1729_Average_is_not_Fast_Enough.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1790_Detecting_Bridges$Graph.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1790_Detecting_Bridges.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1878_Contests_in_Sequence.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1882_Random_Walks_in_Thailand.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1885_Thai_Lotery$Dice.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1885_Thai_Lotery.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1934_Puzzle.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P1935_Spiral.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2012_Height_Map.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2064_Prant_and_the_Indecision.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2090_I_Went_to_Market_And_Bought.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2336_ABC.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2564_Swap_It_or_Not.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2626_JB6_Team.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2674_Super_Primes_Engage.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2684_Help_Professor_Webscript.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2717_Elf_Time.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2718_Christmas_Lights.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\Trying\sourcecode\P2724_Help_Patatatitu.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\WA\P1109_Cheating_on_the_Contest$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\WA\P1109_Cheating_on_the_Contest.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\WA\P1569_Snakes_and_Ladders.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\WA\P1912_Help_Seu_Madruga$1.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\WA\P1912_Help_Seu_Madruga.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\WA\P2254_Japanese_Daisy_Game.class" afterPath="" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\uri\in\2724_in.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1673_Run_Length_Encoding.java" afterPath="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1673_Run_Length_Encoding.java" />
+      <change type="MODIFICATION" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\note.txt" afterPath="$PROJECT_DIR$/out/production/onlinejuge/URI/note.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="onlinejuge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,28 +190,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="P1673_Run_Length_Encoding.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1673_Run_Length_Encoding.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33693695" vertical-offset="0" max-vertical-offset="555">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="note.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/URI/note.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-              <folding />
+            <state vertical-scroll-proportion="0.24573378" vertical-offset="859" max-vertical-offset="1615">
+              <caret line="59" column="32" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="32" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,6 +242,7 @@
         <option value="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P2336_ABC.java" />
         <option value="$PROJECT_DIR$/src/URI/Accepted/BEGINNER/sourcecode/P2717_Elf_Time.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1673_Run_Length_Encoding.java" />
       </list>
     </option>
   </component>
@@ -161,10 +311,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ZOJ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -177,6 +323,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -197,11 +347,71 @@
               <option name="myItemId" value="URI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trying" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlinejuge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlinejudge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trying" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NOSTATUS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlinejuge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlinejudge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trying" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NOSTATUS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DATA_STRUCTURES_AND_LIBRARIES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,11 +425,11 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="preferences.customizations" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -233,7 +443,7 @@
       <recent name="D:\ideaProjects\onlinejudge\src\COJ" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GetRepository_URIOJ">
+  <component name="RunManager" selected="Application.P1673_Run_Length_Encoding">
     <configuration default="false" name="GetRepository_URIOJ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -242,6 +452,28 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="src.uri.GetRepository_URIOJ" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="onlinejuge" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="P1673_Run_Length_Encoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES.P1673_Run_Length_Encoding" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -447,6 +679,19 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -513,13 +758,15 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Application.GetRepository_URIOJ" />
+      <item index="2" class="java.lang.String" itemvalue="Application.P1673_Run_Length_Encoding" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.GetRepository_URIOJ" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.P1673_Run_Length_Encoding" />
+        <item index="1" class="java.lang.String" itemvalue="Application.GetRepository_URIOJ" />
       </list>
     </recent_temporary>
   </component>
@@ -538,18 +785,20 @@
       <workItem from="1518621938728" duration="4289000" />
       <workItem from="1518631548779" duration="717000" />
       <workItem from="1518667264805" duration="3646000" />
-      <workItem from="1518671371247" duration="870000" />
+      <workItem from="1518671371247" duration="1943000" />
+      <workItem from="1518751542745" duration="9749000" />
+      <workItem from="1519010816472" duration="879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12249000" />
+    <option name="totallyTimeSpent" value="23950000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -558,24 +807,24 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34493193" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" x="724" y="71" width="468" height="898" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34493193" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" x="724" y="71" width="468" height="898" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -629,7 +878,9 @@
     </GetOptions>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -637,17 +888,47 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1673_Run_Length_Encoding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
       </provider>
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/note.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
     </entry>
@@ -655,7 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,30 +1223,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/URI/note.txt">
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/GRAPH/P1790_Detecting_Bridges.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="1666">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33693695" vertical-offset="0" max-vertical-offset="555">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="-5.1" vertical-offset="0" max-vertical-offset="289">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
       </provider>
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/note.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02905983" vertical-offset="0" max-vertical-offset="585">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/DATA_STRUCTURES_AND_LIBRARIES/P1673_Run_Length_Encoding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24573378" vertical-offset="859" max-vertical-offset="1615">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
@@ -1009,7 +1304,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
