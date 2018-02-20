@@ -1,12 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1048 Financial Management
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=48
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2013-07-22 19:32:31
+ * @Runtime: 30 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1048 Financial Management http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=48
-//Accepted 2013-07-22 19:32:31 Run Time(ms) = 30 Run Memory(KB) = 422
-
 import java.text.DecimalFormat;
 import java.util.Scanner;
 public class P1048_Financial_Management {

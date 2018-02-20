@@ -1,10 +1,17 @@
-package th.in.devboom.coj.accepted;
+package COJ.Accepted;
+
 
 /**
- * Created by Teerapat-BSD on 1/29/2018.
- * Judgment : Accepted
- * Time : 250
- * Date : 2018-01-29 04:12:34
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: COJ
+ * @Problem: 1023 - Financial Management
+ * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1023
+ * @Timelimit: 6000 MS
+ * @Status: Accepted
+ * @Submission: 2018-01-29 04:12:34
+ * @Runtime: 250
+ * @Solution:
+ * @Note:
  */
 
 import java.io.BufferedReader;

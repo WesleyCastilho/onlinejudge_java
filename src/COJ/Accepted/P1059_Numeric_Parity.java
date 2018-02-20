@@ -1,11 +1,17 @@
-package th.in.devboom.coj.accepted;
+package COJ.Accepted;
 
 
 /**
- * Created by Teerapat-BSD on 2/2/2018.
- * Date : 2018-02-02 03:20:27
- * Judgment : Accepted
- * Time : 184
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: COJ
+ * @Problem: 1059 - Numeric Parity
+ * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1059
+ * @Timelimit: 6000 MS
+ * @Status: Accepted
+ * @Submission: 2018-02-02 03:20:27
+ * @Runtime: 184
+ * @Solution:
+ * @Note:
  */
 import java.io.IOException;
 import java.io.BufferedReader;

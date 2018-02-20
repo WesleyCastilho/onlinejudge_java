@@ -1,10 +1,16 @@
-package th.in.devboom.coj.accepted;
+package COJ.Accepted;
 
 /**
- * Created by Teerapat-BSD on 1/31/2018.
- * Judgment : Accepted
- * Time : 254
- * Date : 2018-01-31 00:29:28
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: COJ
+ * @Problem: 1003 - General Election
+ * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1003
+ * @Timelimit: 6000 MS
+ * @Status: Accepted
+ * @Submission: 2018-02-19 14:59:52
+ * @Runtime: 7
+ * @Solution:
+ * @Note:
  */
 
 import java.io.BufferedReader;

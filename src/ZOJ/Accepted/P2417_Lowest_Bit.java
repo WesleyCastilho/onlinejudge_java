@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 2417 Lowest Bit
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1417
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2012-07-11 19:57:04
+ * @Runtime: 30 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 2417 Lowest Bit http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1417
-//Accepted 2012-07-11 19:57:04 Run Time(ms) = 30 Run Memory(KB) = 422
 import java.util.Scanner;
 public class P2417_Lowest_Bit {
     public static void main(String[] args) {

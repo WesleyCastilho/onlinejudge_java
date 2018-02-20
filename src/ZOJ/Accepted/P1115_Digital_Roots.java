@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1115 Digital Roots
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=115
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2012-06-27 20:31:21
+ * @Runtime: 30 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1115 Digital Roots http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=115
-//Accepted 2012-06-27 20:31:21 Run Time(ms) = 30 Run Memory(KB) = 211
 import java.util.Scanner;
 public class P1115_Digital_Roots {
     static String SumDigit(String a){

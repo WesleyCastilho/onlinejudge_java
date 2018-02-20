@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1056 The Worm Turns
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=1056
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2015-05-23 05:38:05
+ * @Runtime: 16 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1056 The Worm Turns  http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=1056
-//Accepted 2015-05-23 05:38:05 Run Time(ms) = 16 Run Memory(KB) = 660
 import java.util.Scanner;
 
 public class P1056_The_Worm_Turns {

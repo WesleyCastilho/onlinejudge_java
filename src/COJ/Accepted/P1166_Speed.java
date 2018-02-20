@@ -1,10 +1,17 @@
-package th.in.devboom.coj.accepted;
+package COJ.Accepted;
+
 
 /**
- * Created by Teerapat-BSD on 2/5/2018.
- * Date :  	2018-02-04 23:16:42
- * Judgment : Accepted
- * Time : 194
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: COJ
+ * @Problem: 1166 - Speed
+ * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1166
+ * @Timelimit: 6000 MS
+ * @Status: Accepted
+ * @Submission: 2018-02-04 23:16:42
+ * @Runtime: 194
+ * @Solution:
+ * @Note:
  */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

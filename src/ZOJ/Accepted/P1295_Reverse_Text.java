@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1295 Reverse Text
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=295
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2013-07-23 01:32:36
+ * @Runtime: 30 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1295 Reverse Text http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=295
-//Accepted 2013-07-23 01:32:36 Run Time(ms) = 30 Run Memory(KB) = 422
 import java.util.Scanner;
 public class P1295_Reverse_Text {
 

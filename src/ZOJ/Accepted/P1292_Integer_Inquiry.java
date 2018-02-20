@@ -6,6 +6,18 @@ package ZOJ.Accepted;
  */
 //ZOJ 1292 Integer Inquiry http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=292
 //Accepted 2012-07-04 20:46:35 Run Time(ms) = 150 Run Memory(KB) = 633
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1292 Integer Inquiry
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=292
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2012-07-04 20:46:35
+ * @Runtime: 150 ms
+ * @Solution:
+ * @Note:
+ */
 import java.math.BigInteger;
 import java.util.Scanner;
 

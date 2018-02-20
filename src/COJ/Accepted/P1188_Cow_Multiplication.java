@@ -1,11 +1,17 @@
-package th.in.devboom.coj.accepted;
+package COJ.Accepted;
 
 
 /**
- * Created by Teerapat-BSD on 2/2/2018.
- * Date : 2018-02-02 04:39:07
- * Judgment : Accepted
- * Time : 2251
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: COJ
+ * @Problem: 1188 - Cow Multiplication
+ * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1188
+ * @Timelimit: 60000 MS
+ * @Status: Accepted
+ * @Submission: 2015-09-28 07:08:42
+ * @Runtime: 2251
+ * @Solution:
+ * @Note:
  */
 import java.io.BufferedReader;
 import java.io.IOException;
