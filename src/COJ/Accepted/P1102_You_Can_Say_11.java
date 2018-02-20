@@ -1,12 +1,17 @@
-package th.in.devboom.coj.accepted;
+package COJ.Accepted;
 
 /**
- * Created by Teerapat-BSD on 1/29/2018.
- * Judgment : Accepted
- * Time : 322
- * Date : 2018-01-29 05:26:47
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: COJ
+ * @Problem: 1102 - You Can Say 11
+ * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1102
+ * @Timelimit: 6000 MS
+ * @Status: Accepted
+ * @Submission: 2018-01-29 05:26:47
+ * @Runtime: 322
+ * @Solution:
+ * @Note:
  */
-
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -1,12 +1,18 @@
-package th.in.devboom.coj.accepted;
+package COJ.Accepted;
 
 /**
- * Created by Teerapat-BSD on 1/29/2018.
- * link : http://coj.uci.cu/24h/problem.xhtml?pid=1318
- * Time : 2043
- * Judgment : Accepted
- * Date : 2018-01-31 00:09:20
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: COJ
+ * @Problem: 1318 - Abc
+ * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1318
+ * @Timelimit: 60000 MS
+ * @Status: Accepted
+ * @Submission: 2018-01-31 00:09:20
+ * @Runtime: 2043
+ * @Solution:
+ * @Note:
  */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

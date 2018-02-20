@@ -1,4 +1,5 @@
 package COJ.Accepted;
+
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: COJ
@@ -11,7 +12,6 @@ package COJ.Accepted;
  * @Solution:
  * @Note:
  */
-
 import java.util.Scanner;
 
 public class P1000_AplusB_Problem {

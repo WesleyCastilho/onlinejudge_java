@@ -1,3 +1,4 @@
+package URI.Trying.NOSTATUS.STRING;
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
@@ -10,7 +11,6 @@
  * @Solution:
  * @Note:คำนวนการกด message ใช้เวลาน้อยที่สุด
  */
-package URI.Trying.NOSTATUS.STRING;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -1,9 +1,16 @@
-package th.in.devboom.coj.WA;
+package COJ.Trying.WA;
 
 /**
- * Created by Teerapat-BSD on 2/5/2018.
- * WA
- * http://coj.uci.cu/24h/problem.xhtml?pid=1028
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: COJ
+ * @Problem: 1028 - All in All
+ * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1028
+ * @Timelimit:
+ * @Status:
+ * @Submission:
+ * @Runtime:
+ * @Solution:
+ * @Note:
  */
 
 import java.io.BufferedReader;
