@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1061 Web Navigation
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=61
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2015-06-06 05:43:01
+ * @Runtime: 85 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1061 Web Navigation http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=61
-//Accepted 2015-06-06 05:43:01 Run Time(ms)= 85 Run Memory(KB) = 1323
 import java.util.ArrayList;
 import java.util.Scanner;
 public class P1061_Web_Navigation {

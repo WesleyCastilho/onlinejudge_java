@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 3782 Ternary Calculation
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=5269
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2015-06-07 04:15:37
+ * @Runtime: 136 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 3782 Ternary Calculation http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=5269
-//Accepted 2015-06-07 04:15:37 Run Time(ms) = 136 Run Memory(KB) = 3747
 import java.util.Scanner;
 public class P3782_Ternary_Calculation {
     

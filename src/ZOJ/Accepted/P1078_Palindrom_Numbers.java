@@ -1,12 +1,17 @@
 package ZOJ.Accepted;
 
-
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1078 Palindrom Numbers
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=78
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2015-06-04 02:36:25
+ * @Runtime: 17 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1078 Palindrom Numbers http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=78
-//Accepted 2015-06-04 02:36:25 Run Time(ms) = 17 Run Memory(KB) = 660
 import java.util.Scanner;
 public class P1078_Palindrom_Numbers {
 

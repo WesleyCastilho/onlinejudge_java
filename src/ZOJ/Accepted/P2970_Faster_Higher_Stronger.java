@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 2970 Faster, Higher, Stronger
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1969
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2015-06-08 03:30:14
+ * @Runtime: 146 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 2970 Faster, Higher, Stronger http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1969
-//Accepted 2015-06-08 03:30:14 Run Time(ms) = 146 Run Memory(KB) = 6831
 import java.util.Scanner;
 public class P2970_Faster_Higher_Stronger {
     public static void main(String[] args) {

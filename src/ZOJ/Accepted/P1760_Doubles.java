@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1760 Doubles
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=760
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2012-07-05 21:53:43
+ * @Runtime: 40 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1760 Doubles http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=760
-//Accepted 2012-07-05 21:53:43  Run Time(ms) = 40 Run Memory(KB) = 422
 import java.util.ArrayList;
 import java.util.Scanner;
 public class P1760_Doubles {

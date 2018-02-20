@@ -2,12 +2,17 @@ package ZOJ.Accepted;
 
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1002 - Fire Net
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=2
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2015-10-21 19:57:36
+ * @Runtime: 29 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1002 Fire Net http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=2
-//Accepted 2015-10-21 19:57:36 Run Time(ms):29 Run Memory(KB):660
-//Algo: DFS
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;

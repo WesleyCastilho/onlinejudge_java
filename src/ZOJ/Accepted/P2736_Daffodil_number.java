@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 2736 Daffodil number
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1736
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2012-07-05 20:06:26
+ * @Runtime: 90 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 2736 Daffodil number http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1736
-//Accepted 2012-07-05 20:06:26 Run Time(ms) = 90 Run Memory(KB) = 844
 import java.util.Scanner;
 public class P2736_Daffodil_number {
     

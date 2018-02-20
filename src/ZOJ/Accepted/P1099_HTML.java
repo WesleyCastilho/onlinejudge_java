@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1099 HTML
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=99
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2015-06-05 23:21:42
+ * @Runtime: 36 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1099 HTML http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=99
-//Accepted 2015-06-05 23:21:42 Run Time(ms) = 36 Run Memory(KB)= 881
 import java.util.Scanner;
 public class P1099_HTML { 
     public static void main(String[] args) {

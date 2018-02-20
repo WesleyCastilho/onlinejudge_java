@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1001 - A + B Problem
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2014-07-22 23:07:45
+ * @Runtime: 14 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1001 A + B Problem http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1
-//2013-03-16 18:43:13 	Accepted  Run Time(ms) = 0 Run Memory(KB) = 211
 import java.util.Scanner;
 public class P1001_AB_Problem {
 

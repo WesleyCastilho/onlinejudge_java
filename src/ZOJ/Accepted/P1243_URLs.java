@@ -1,11 +1,17 @@
 package ZOJ.Accepted;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Problem: 1243 URLs
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1
+ * @Timelimit: 2 Seconds
+ * @Status: Accepted
+ * @Submission: 2015-06-03 01:56:41
+ * @Runtime: 24 ms
+ * @Solution:
+ * @Note:
  */
-//ZOJ 1243 P1243_URLs http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=243
-//2015-06-03 01:56:41 	Accepted  Run Time(ms) = 24 Run Memory(KB) = 881
 import java.util.Scanner;
 public class P1243_URLs {
 
