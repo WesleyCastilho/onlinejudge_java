@@ -13,84 +13,66 @@
  */
 package URI.Trying.WA;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.util.*;
 
 public class P1569_Snakes_and_Ladders {
 
     public static void main(String[] args) throws IOException {
         InputStreamReader ir = new InputStreamReader(System.in);
-        OutputStreamWriter ow = new OutputStreamWriter(System.out);
         BufferedReader br = new BufferedReader(ir);
-        BufferedWriter bw = new BufferedWriter(ow);
-        HashMap<Integer, Integer> snake_ladder;
-        LinkedList<Integer> moveList;
+        OutputStream out = new BufferedOutputStream(System.out);
         int[] playersIndex;
         int t = Integer.parseInt(br.readLine());
         while (t-- > 0) {
             String[] st = br.readLine().split(" ");
-            int players = Integer.parseInt(st[0]);
+            int players = Integer.parseInt(st[0]) + 1;
             int total_snake_ladder = Integer.parseInt(st[1]);
             int dice = Integer.parseInt(st[2]);
-            playersIndex = new int[players + 1];
+            playersIndex = new int[players];
             Arrays.fill(playersIndex, 1);
-            snake_ladder = new HashMap();
+            int[] snake_ladder = new int[1000];
             while (total_snake_ladder-- > 0) {
                 st = br.readLine().split(" ");
                 int start = Integer.parseInt(st[0]);
                 int end = Integer.parseInt(st[1]);
-                if(start < 100 && end < 100) {
-                    snake_ladder.put(start, end);
-                    snake_ladder.put(end, start);
-                }
+                snake_ladder[start] = end;
             }
 
-            boolean end = false;
             int p = 1;
-            int x;
-            for (int i = 0; i < dice; ++i, ++p) {
-                x = Integer.parseInt(br.readLine());
+            boolean gameOver = false;
 
-                if (end) continue;
-                if (p > players) p = 1;
+            int roll;
+            for (int i = 0; i < dice; ++i) {
+                roll = Integer.parseInt(br.readLine());
+                if (!gameOver) {
 
-                while (true) {
-                    playersIndex[p] += x;
-                    playersIndex[p] = min(playersIndex[p], 100);
 
+                    playersIndex[p] += roll;
+                    if (playersIndex[p] > 100) {
+                        playersIndex[p] = 100;
+                    }
+                    if (snake_ladder[playersIndex[p]] != 0) {
+                        playersIndex[p] = snake_ladder[playersIndex[p]];
+                    }
                     if (playersIndex[p] == 100) {
-                        end = true;
-                        break;
+                        gameOver = true;
                     }
-
-                    Integer tail = snake_ladder.get(playersIndex[p]);
-                    if (tail != null) {
-                        playersIndex[p] = tail;
+                    p++;
+                    p %= players;
+                    if (p == 0) {
+                        p = 1;
                     }
-
-                    if (playersIndex[p] == 100) {
-                        end = true;
-                        break;
-                    }
-
-                    if (snake_ladder.get(playersIndex[p]) == null) break;
                 }
+
             }
 
-            for (int i = 1; i <= players; i++) {
-                bw.append("Position of player " + i + " is " + playersIndex[i] + ".\n");
+            for (int i = 1; i < players; i++) {
+                out.write(("Position of player " + i + " is " + playersIndex[i] + ".\n").getBytes());
             }
         }
-
-        bw.flush();
+        out.flush();
     }
 
-    static int min(int p, int min) {
-        return p > 100 ? 100 : p;
-    }
 
 }

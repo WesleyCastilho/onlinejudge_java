@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d079c2a0-9e0d-47d3-830f-572a2e74375b" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/onlinejuge/URI/Trying/NOSTATUS/BEGINNER/P2718_Christmas_Lights.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/onlinejuge/URI/Trying/NOSTATUS/STRING/P1458_SMS_Championship$Phone.class" afterPath="$PROJECT_DIR$/out/production/onlinejuge/URI/Trying/NOSTATUS/STRING/P1458_SMS_Championship$Phone.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/COJ/Accepted/P1003_General_Election.java" afterPath="$PROJECT_DIR$/src/COJ/Accepted/P1003_General_Election.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/onlinejuge/URI/Trying/NOSTATUS/STRING/P1458_SMS_Championship.class" afterPath="$PROJECT_DIR$/out/production/onlinejuge/URI/Trying/NOSTATUS/STRING/P1458_SMS_Championship.class" />
+=======
+    <list default="true" id="3b7d75ba-5042-4d5e-abff-298c16265546" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java" afterPath="$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
     </list>
     <ignored path="onlinejuge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,21 +37,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="P1327_Drop_Out.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/AD_HOC/P1327_Drop_Out.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="969">
               <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding />
+=======
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="15547" max-vertical-offset="16422">
+              <caret line="931" column="21" selection-start-line="931" selection-start-column="21" selection-end-line="931" selection-end-column="21" />
+              <folding>
+                <marker date="1519151480531" expanded="true" signature="46809:46872" placeholder="..." />
+                <marker date="1519151480531" expanded="true" signature="46809:46857" placeholder="..." />
+                <marker date="1519151480531" expanded="true" signature="46809:46844" placeholder="..." />
+                <marker date="1519151480531" expanded="true" signature="46809:46826" placeholder="..." />
+              </folding>
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="P1883_Escape_From_Ayutthaya.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/URI/Trying/TLE/P1883_Escape_From_Ayutthaya.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="3111">
               <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+=======
+      <file leaf-file-name="P2314_Indenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/URI/Accepted/STRINGS/sourcecode/P2314_Indenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+              <caret line="28" column="81" selection-start-line="27" selection-start-column="7" selection-end-line="28" selection-end-column="81" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
               <folding />
             </state>
           </provider>
@@ -55,13 +82,20 @@
       <file leaf-file-name="P1569_Snakes_and_Ladders.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.5068259" vertical-offset="706" max-vertical-offset="1734">
               <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+=======
+            <state vertical-scroll-proportion="0.7091319" vertical-offset="255" max-vertical-offset="1224">
+              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
+<<<<<<< HEAD
                 <element signature="e#2948#2949#0" expanded="true" />
                 <element signature="e#2988#2989#0" expanded="true" />
+=======
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
               </folding>
             </state>
           </provider>
@@ -70,8 +104,13 @@
       <file leaf-file-name="P1569_input.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_input.txt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3723">
               <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="2631" max-vertical-offset="3723">
+              <caret line="162" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
               <folding />
             </state>
           </provider>
@@ -80,8 +119,13 @@
       <file leaf-file-name="P1569_input_v2.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_input_v2.txt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1411">
               <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
               <folding />
             </state>
           </provider>
@@ -90,8 +134,13 @@
       <file leaf-file-name="P1569_input-v3.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_input-v3.txt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1241">
               <caret line="21" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+              <caret line="23" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
               <folding />
             </state>
           </provider>
@@ -100,12 +149,12 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/uri/Accepted/AD_HOC/sourcecode/P1087_Queen.java" />
         <option value="$PROJECT_DIR$/src/uri/Accepted/GRAPH/sourcecode/P1200_BST_Operations_I.java" />
         <option value="$PROJECT_DIR$/src/URI/Accepted/GRAPH/sourcecode/P1200_BST_Operations_I.java" />
@@ -156,6 +205,9 @@
         <option value="$PROJECT_DIR$/src/URI/Trying/WA/P1569_input_v2.txt" />
         <option value="$PROJECT_DIR$/src/URI/Trying/WA/P1569_input-v3.txt" />
         <option value="$PROJECT_DIR$/src/URI/Trying/WA/P1569_input.txt" />
+=======
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
         <option value="$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java" />
       </list>
     </option>
@@ -164,12 +216,12 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-7" />
+    <option name="y" value="1" />
+    <option name="width" value="1932" />
+    <option name="height" value="1046" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -194,6 +246,10 @@
       <sortByType />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,6 +325,31 @@
               <option name="myItemId" value="WA" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlinejuge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlinejudge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trying" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -343,6 +424,23 @@
               <option name="myItemId" value="Trying" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="STRINGS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sourcecode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlinejuge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
             <PATH_ELEMENT>
               <option name="myItemId" value="NOSTATUS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -362,11 +460,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="COJ" />
+=======
+              <option name="myItemId" value="STRINGS" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -387,15 +489,21 @@
               <option name="myItemId" value="COJ" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
             <PATH_ELEMENT>
               <option name="myItemId" value="Trying" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -406,9 +514,10 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
+<<<<<<< HEAD
     <property name="options.lastSelected" value="fileTemplates" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -444,41 +553,30 @@
       <method />
     </configuration>
     <configuration default="false" name="P1673_Run_Length_Encoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+=======
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProjects\onlinejudge\src\URI" />
+      <recent name="D:\ideaProjects\onlinejudge\src\ZOJ" />
+      <recent name="D:\ideaProjects\onlinejudge\src\UVA" />
+      <recent name="D:\ideaProjects\onlinejudge\src\TOPCODER" />
+      <recent name="D:\ideaProjects\onlinejudge\src\COJ" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\IdeaProjects\onlinejudge\src\URI\Accepted\DATA_STRUCTURES_AND_LIBRARIES\input" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.P1569_Snakes_and_Ladders">
+    <configuration default="false" name="P1569_Snakes_and_Ladders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES.*" />
+          <option name="PATTERN" value="URI.Trying.WA.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="URI.Accepted.DATA_STRUCTURES_AND_LIBRARIES.sourcecode.P1673_Run_Length_Encoding" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="onlinejuge" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="P1085_The_Club_Ballroom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="URI.Trying.NOSTATUS.AD_HOC.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="URI.Trying.NOSTATUS.AD_HOC.P1085_The_Club_Ballroom" />
+      <option name="MAIN_CLASS_NAME" value="URI.Trying.WA.P1569_Snakes_and_Ladders" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -663,11 +761,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
@@ -705,6 +798,19 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -738,19 +844,6 @@
       <option name="screenWidth" value="0" />
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="moduleName" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
       <method />
     </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
@@ -804,6 +897,7 @@
       <envs />
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -834,6 +928,14 @@
         <item index="2" class="java.lang.String" itemvalue="Application.P1673_Run_Length_Encoding" />
         <item index="3" class="java.lang.String" itemvalue="Application.P1085_The_Club_Ballroom" />
         <item index="4" class="java.lang.String" itemvalue="Application.GetRepository_URIOJ" />
+=======
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.P1569_Snakes_and_Ladders" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.P1569_Snakes_and_Ladders" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
       </list>
     </recent_temporary>
   </component>
@@ -843,9 +945,10 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d079c2a0-9e0d-47d3-830f-572a2e74375b" name="Default" comment="" />
-      <created>1518614736762</created>
+      <changelist id="3b7d75ba-5042-4d5e-abff-298c16265546" name="Default" comment="" />
+      <created>1519133159304</created>
       <option name="number" value="Default" />
+<<<<<<< HEAD
       <updated>1518614736762</updated>
       <workItem from="1518614740520" duration="1877000" />
       <workItem from="1518617210082" duration="850000" />
@@ -858,16 +961,25 @@
       <workItem from="1519011977510" duration="23305000" />
       <workItem from="1519096689265" duration="23536000" />
       <workItem from="1519182689487" duration="2000" />
+=======
+      <updated>1519133159304</updated>
+      <workItem from="1519133163765" duration="11137000" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="70793000" />
+=======
+    <option name="totallyTimeSpent" value="11137000" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
-    <editor active="false" />
+    <frame x="-7" y="1" width="1932" height="1046" extended-state="1" />
+    <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -895,6 +1007,35 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49493814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -978,7 +1119,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
       <option name="time" value="5" />
+=======
+      <option name="time" value="1" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -987,6 +1132,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/URI/Accepted/DATA_STRUCTURES_AND_LIBRARIES/input/P1673_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34871796" vertical-offset="0" max-vertical-offset="585">
@@ -1346,11 +1492,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5068259" vertical-offset="706" max-vertical-offset="1734">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22610">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1519151480531" expanded="true" signature="46809:46872" placeholder="..." />
+            <marker date="1519151480531" expanded="true" signature="46809:46857" placeholder="..." />
+            <marker date="1519151480531" expanded="true" signature="46809:46844" placeholder="..." />
+            <marker date="1519151480531" expanded="true" signature="46809:46826" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15547" max-vertical-offset="16422">
+          <caret line="931" column="21" selection-start-line="931" selection-start-column="21" selection-end-line="931" selection-end-column="21" />
+          <folding>
+            <marker date="1519151480531" expanded="true" signature="46809:46872" placeholder="..." />
+            <marker date="1519151480531" expanded="true" signature="46809:46857" placeholder="..." />
+            <marker date="1519151480531" expanded="true" signature="46809:46844" placeholder="..." />
+            <marker date="1519151480531" expanded="true" signature="46809:46826" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/STRINGS/sourcecode/P2314_Indenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+          <caret line="28" column="81" selection-start-line="27" selection-start-column="7" selection-end-line="28" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_input-v3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="23" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_input_v2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2631" max-vertical-offset="3723">
+          <caret line="162" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7091319" vertical-offset="255" max-vertical-offset="1224">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
+          <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
             <element signature="e#2948#2949#0" expanded="true" />
             <element signature="e#2988#2989#0" expanded="true" />
+=======
+>>>>>>> 09e0776e16631386eecdc40935a9fa9af7063d62
           </folding>
         </state>
       </provider>
