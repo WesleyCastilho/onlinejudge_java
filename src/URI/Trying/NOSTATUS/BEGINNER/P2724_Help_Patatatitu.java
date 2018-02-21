@@ -1,9 +1,19 @@
 package URI.Trying.NOSTATUS.BEGINNER;
 
 /**
- * Created by teerapat on 1/6/2018.
- * https://www.urionlinejudge.com.br/judge/en/problems/view/2724
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI Online Judge
+ * @Categories: Ad-Hoc
+ * @Problem: 2724 - Help Patatatitu
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2724
+ * @Timelimit: 1 sec
+ * @Status:
+ * @Submission:
+ * @Runtime:
+ * @Solution:
+ * @Note:
  */
+
 import java.io.*;
 import java.util.LinkedList;
 

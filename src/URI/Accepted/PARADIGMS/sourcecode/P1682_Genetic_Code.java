@@ -2,6 +2,7 @@
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
  * @Problem: 1682 Genetic Code
+ * @Categories: PARADIGMS
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1682
  * @Timelimit: 3 sec
  * @Status: Accepted

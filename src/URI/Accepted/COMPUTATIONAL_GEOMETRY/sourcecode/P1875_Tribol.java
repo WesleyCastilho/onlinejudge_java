@@ -1,11 +1,18 @@
 package  URI.Accepted.COMPUTATIONAL_GEOMETRY.sourcecode;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI Online Judge
+ * @Problem: 1875 - Tribol
+ * @Categories: COMPUTATIONAL GEOMETRY
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1875
+ * @Timelimit: 1 sec
+ * @Status: Accepted
+ * @Submission: 02/10/2015 - 10:47:22
+ * @Runtime: 0.068s
+ * @Solution:
+ * @Note:
  */
-//URI Online Judge | 1875 Tribol https://www.urionlinejudge.com.br/judge/en/problems/view/1875
-//Accepted 02/10/2015 - 10:47:22 Runtime:0.068s
 import java.util.Scanner;
 
 public class P1875_Tribol {

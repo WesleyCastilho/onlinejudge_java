@@ -2,6 +2,7 @@
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
  * @Problem: 1310 Profit
+ * @Categories: PARADIGMS
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1310
  * @Timelimit: 1 sec
  * @Status: Accepted
