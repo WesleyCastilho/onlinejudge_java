@@ -5,7 +5,7 @@
  * @Problem: 1569 - Snakes and Ladders
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1569
  * @Timelimit: 1 sec
- * @Status: WA 100%
+ * @Status: WA 10%
  * @Submission:
  * @Runtime:
  * @Solution:
