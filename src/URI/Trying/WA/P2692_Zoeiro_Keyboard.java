@@ -9,7 +9,7 @@ package URI.Trying.WA;
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2692
  * @Timelimit: 1 sec
  * @LANGUAGE:
- * @Status: java  WA10% , this algorithm accepted by c language
+ * @Status: java Presentation error , this algorithm accepted by c language
  * @Submission:
  * @Runtime:
  * @Solution:
