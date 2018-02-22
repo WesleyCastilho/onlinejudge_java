@@ -1,17 +1,17 @@
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
- * @Categories:
- * @Problem:
- * @Link:
+ * @Categories: BEGINNER
+ * @Problem: 2708 - Tourists in the Huacachina Park
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2708
  * @Timelimit: 1 sec
- * @Status:
- * @Submission:
- * @Runtime:
+ * @Status: Accepted
+ * @Submission: 2/23/18, 1:34:51 AM
+ * @Runtime: 0.056s
  * @Solution:
  * @Note:
  */
-package URI.Trying.NOSTATUS.BEGINNER;
+package URI.Accepted.BEGINNER.sourcecode;
 
 
 import java.util.Scanner;
