@@ -3,7 +3,7 @@ package URI.Trying.NOSTATUS.BEGINNER;
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
- * @Categories: Ad-Hoc
+ * @Categories: Beginner
  * @Problem: 2724 - Help Patatatitu
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2724
  * @Timelimit: 1 sec
