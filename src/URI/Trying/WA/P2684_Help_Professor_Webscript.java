@@ -11,7 +11,7 @@
  * @Solution:
  * @Note: Regular Expression
  */
-package URI.Trying.NOSTATUS.BEGINNER;
+package URI.Trying.WA;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.STRING;
+package URI.Trying.WA;
 
 
 /**
@@ -8,12 +8,14 @@ package URI.Trying.NOSTATUS.STRING;
  * @Problem: 2692 - Zoeiro Keyboard
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2692
  * @Timelimit: 1 sec
- * @Status: Presentation error  , WA10%
+ * @LANGUAGE:
+ * @Status: java  WA10% , this algorithm accepted by c language
  * @Submission:
  * @Runtime:
  * @Solution:
  * @Note:
  */
+
 import java.io.*;
 
 public class P2692_Zoeiro_Keyboard {

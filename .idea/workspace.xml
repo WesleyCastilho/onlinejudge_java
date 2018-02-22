@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d079c2a0-9e0d-47d3-830f-572a2e74375b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Accepted/BEGINNER/sourcecode/P2724_Help_Patatatitu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Accepted/BEGINNER/input/P2724_input.txt" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\BEGINNER\P2724_Help_Patatatitu.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/onlinejuge/URI/Trying/NOSTATUS/STRING/P2692_Zoeiro_Keyboard.class" afterPath="$PROJECT_DIR$/out/production/onlinejuge/URI/Trying/NOSTATUS/STRING/P2692_Zoeiro_Keyboard.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/URI/Trying/WA/P2684_Help_Professor_Webscript.java" />
+      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\BEGINNER\P2684_Help_Professor_Webscript.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java" afterPath="$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\Trying\NOSTATUS\STRING\P2692_Zoeiro_Keyboard.java" afterPath="$PROJECT_DIR$/src/URI/Trying/WA/P2692_Zoeiro_Keyboard.java" />
     </list>
     <ignored path="onlinejuge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,18 +31,7 @@
     <favorites_list name="onlinejuge" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="P2692_Zoeiro_Keyboard.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P2692_Zoeiro_Keyboard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58311343" vertical-offset="255" max-vertical-offset="1037">
-              <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -51,7 +40,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/COJ/Accepted/P1051_Div3.java" />
         <option value="$PROJECT_DIR$/src/COJ/Accepted/P1059_Numeric_Parity.java" />
         <option value="$PROJECT_DIR$/src/COJ/Accepted/P1102_You_Can_Say_11.java" />
         <option value="$PROJECT_DIR$/src/COJ/Accepted/P1166_Speed.java" />
@@ -79,7 +67,6 @@
         <option value="$PROJECT_DIR$/src/URI/Trying/WA/P1569_input-v3.txt" />
         <option value="$PROJECT_DIR$/src/URI/Trying/WA/P1569_input.txt" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java" />
         <option value="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/BEGINNER/P2684_Help_Professor_Webscript.java" />
         <option value="$PROJECT_DIR$/src/URI/Accepted/COMPUTATIONAL_GEOMETRY/input/P1039_input.txt" />
         <option value="$PROJECT_DIR$/src/URI/Accepted/COMPUTATIONAL_GEOMETRY/output/P1039_output.txt" />
@@ -102,6 +89,8 @@
         <option value="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P2692_Zoeiro_Keyboard.java" />
         <option value="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/BEGINNER/P2724_input.txt" />
         <option value="$PROJECT_DIR$/src/URI/Trying/NOSTATUS/BEGINNER/P2724_Help_Patatatitu.java" />
+        <option value="$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java" />
+        <option value="$PROJECT_DIR$/src/URI/Trying/WA/P2692_Zoeiro_Keyboard.java" />
       </list>
     </option>
   </component>
@@ -210,30 +199,8 @@
               <option name="myItemId" value="Trying" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejuge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejudge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trying" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NOSTATUS" />
+              <option name="myItemId" value="WA" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -258,12 +225,30 @@
               <option name="myItemId" value="Trying" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NOSTATUS" />
+              <option name="myItemId" value="onlinejuge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onlinejudge" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BEGINNER" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trying" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NOSTATUS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -311,7 +296,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BEGINNER" />
+              <option name="myItemId" value="AD_HOC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -341,37 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BEGINNER" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejuge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejudge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Accepted" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BEGINNER" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="input" />
+              <option name="myItemId" value="AD_HOC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -539,18 +494,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\IdeaProjects\onlinejudge\src\URI\Accepted\AD_HOC\sourcecode" />
       <recent name="D:\ideaProjects\onlinejudge\src\URI" />
       <recent name="D:\ideaProjects\onlinejudge\src\ZOJ" />
       <recent name="D:\ideaProjects\onlinejudge\src\UVA" />
       <recent name="D:\ideaProjects\onlinejudge\src\TOPCODER" />
-      <recent name="D:\ideaProjects\onlinejudge\src\COJ" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\IdeaProjects\onlinejudge\src\URI\Accepted\BEGINNER\input" />
       <recent name="H:\IdeaProjects\onlinejudge\src\URI\Accepted\DATA_STRUCTURES_AND_LIBRARIES\input" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.P2724_Help_Patatatitu">
+  <component name="RunManager" selected="Application.P1569_Snakes_and_Ladders">
     <configuration default="false" name="P1458_SMS_Championship" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -608,7 +563,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="URI.Trying.NOSTATUS.BEGINNER.P2684_Help_Professor_Webscript" />
+      <option name="MAIN_CLASS_NAME" value="URI.Trying.WA.P2684_Help_Professor_Webscript" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -630,7 +585,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="URI.Trying.NOSTATUS.STRING.P2692_Zoeiro_Keyboard" />
+      <option name="MAIN_CLASS_NAME" value="URI.Trying.WA.P2692_Zoeiro_Keyboard" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -947,10 +902,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.P2724_Help_Patatatitu" />
-        <item index="1" class="java.lang.String" itemvalue="Application.P2692_Zoeiro_Keyboard" />
-        <item index="2" class="java.lang.String" itemvalue="Application.P2684_Help_Professor_Webscript" />
-        <item index="3" class="java.lang.String" itemvalue="Application.P1569_Snakes_and_Ladders" />
+        <item index="0" class="java.lang.String" itemvalue="Application.P1569_Snakes_and_Ladders" />
+        <item index="1" class="java.lang.String" itemvalue="Application.P2724_Help_Patatatitu" />
+        <item index="2" class="java.lang.String" itemvalue="Application.P2692_Zoeiro_Keyboard" />
+        <item index="3" class="java.lang.String" itemvalue="Application.P2684_Help_Professor_Webscript" />
         <item index="4" class="java.lang.String" itemvalue="Application.P1458_SMS_Championship" />
       </list>
     </recent_temporary>
@@ -976,15 +931,15 @@
       <workItem from="1519011977510" duration="23305000" />
       <workItem from="1519096689265" duration="23536000" />
       <workItem from="1519182689487" duration="17241000" />
-      <workItem from="1519269649863" duration="2803000" />
+      <workItem from="1519269649863" duration="10982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90835000" />
+    <option name="totallyTimeSpent" value="99014000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -998,10 +953,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31316188" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" x="724" y="71" width="468" height="898" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31316188" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" x="724" y="71" width="468" height="898" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1106,13 +1061,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ZOJ/Accepted/P1099_HTML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02972028" vertical-offset="0" max-vertical-offset="986">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ZOJ/Accepted/P1115_Digital_Roots.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20804195" vertical-offset="0" max-vertical-offset="748">
@@ -1243,13 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.547203" vertical-offset="16567" max-vertical-offset="22661">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3723">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1400,20 +1341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/BEGINNER/P2684_Help_Professor_Webscript.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1785">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P2336_ABC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31965813" vertical-offset="0" max-vertical-offset="585">
@@ -1425,6 +1352,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6096939" vertical-offset="390" max-vertical-offset="782">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1462,10 +1390,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/URI/Trying/NOSTATUS/STRING/P2692_Zoeiro_Keyboard.java">
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P2684_Help_Professor_Webscript.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58311343" vertical-offset="255" max-vertical-offset="1037">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.50524473" vertical-offset="0" max-vertical-offset="1717">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3723">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P2692_Zoeiro_Keyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20804195" vertical-offset="0" max-vertical-offset="1071">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URI/Trying/WA/P1569_Snakes_and_Ladders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20804195" vertical-offset="0" max-vertical-offset="1411">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
