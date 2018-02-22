@@ -1,10 +1,19 @@
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI Online Judge
+ * @Problem:
+ * @Link:
+ * @Timelimit:
+ * @Status:
+ * @Submission:
+ * @Runtime:
+ * @Solution:
+ * @Note:
+ */
 package URI.Trying.NOSTATUS.BEGINNER;
 
 import java.io.*;
 
-/**
- * Created by teerapat on 2/7/2018.
- */
 public class P2674_Super_Primes_Engage {
 
 

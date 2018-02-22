@@ -1,7 +1,3 @@
-package URI.Trying.NOSTATUS.STRING;
-
-import java.io.*;
-
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
@@ -15,6 +11,10 @@ import java.io.*;
  * @Solution:
  * @Note: wanted, followed by the word Chirrin        and to drive away something, he had to say what he did not want, followed by the word Chirrion.
  */
+package URI.Trying.NOSTATUS.STRING;
+
+import java.io.*;
+
 public class P2583_Chirrin_Chirrion {
 
     public static void main(String[] args) throws IOException {
