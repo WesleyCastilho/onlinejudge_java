@@ -1,7 +1,8 @@
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
- * @Problem: 1039 Fire Flowers
+ * @Problem: 1039 - Fire Flowers
+ * @Categories: COMPUTATIONAL GEOMETRY
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1039
  * @Timelimit: 1 sec
  * @Status: Accepted
@@ -10,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package  URI.Accepted.COMPUTATIONAL_GEOMETRY.sourcecode;
+package URI.Accepted.COMPUTATIONAL_GEOMETRY.sourcecode;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

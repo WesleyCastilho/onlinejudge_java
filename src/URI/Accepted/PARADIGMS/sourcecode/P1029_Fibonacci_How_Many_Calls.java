@@ -1,11 +1,18 @@
 package  URI.Accepted.PARADIGMS.sourcecode;
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI Online Judge
+ * @Categories: PARADIGMS
+ * @Problem: 1029 - Fibonacci, How Many Calls?
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1029
+ * @Timelimit: 1 sec
+ * @Status: Accepted
+ * @Submission: 27/09/2015 - 05:57:06
+ * @Runtime: 0.152s
+ * @Solution:
+ * @Note:
  */
-//URI Online Judge | 1029 Fibonacci, How Many Calls? https://www.urionlinejudge.com.br/judge/en/problems/view/1029
-//Accepted 27/09/2015 - 05:57:06 Runtime:0.152s
 import java.util.Scanner;
 
 public class P1029_Fibonacci_How_Many_Calls {

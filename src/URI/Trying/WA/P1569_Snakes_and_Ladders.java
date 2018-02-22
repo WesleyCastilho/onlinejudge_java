@@ -5,7 +5,7 @@
  * @Problem: 1569 - Snakes and Ladders
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1569
  * @Timelimit: 1 sec
- * @Status: WA 100%
+ * @Status: java WA 10% , this algorithm Accepted by c language
  * @Submission:
  * @Runtime:
  * @Solution:

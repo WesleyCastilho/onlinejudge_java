@@ -2,6 +2,7 @@
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
  * @Problem: 2027 Noel Bet
+ * @Categories: PARADIGMS
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2027
  * @Timelimit: 1 sec
  * @Status: Accepted
