@@ -1,7 +1,3 @@
-package URI.Trying.NOSTATUS.BEGINNER;
-
-import java.io.*;
-
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
@@ -14,6 +10,10 @@ import java.io.*;
  * @Solution:
  * @Note:
  */
+package URI.Trying.NOSTATUS.BEGINNER;
+
+import java.io.*;
+
 public class P2649_Visual_Python_plusplus {
 
     static int n;
