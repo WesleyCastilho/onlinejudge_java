@@ -4,8 +4,8 @@ package URI.Trying.TLE;
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
  * @Categories: BEGINNER
- * @Problem:
- * @Link:
+ * @Problem: 2720 - Large Presents
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2720
  * @Timelimit: 1 sec
  * @Status:
  * @Submission:
@@ -15,57 +15,12 @@ package URI.Trying.TLE;
  */
 
 import java.io.*;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class P2720_Large_Presents {
 
     static int n, k, i, h, w, l, m;
-    static Set<Gift> memory = new HashSet<>();
-    private static Gift[] gifts;
-
-    private static class Gift {
-        int id;
-        int size;
-
-        public Gift(int id, int height, int width, int length) {
-            this.id = id;
-            this.size = ((height * 2) + (width * 2)) + length;
-        }
-
-    }
-
-    private static void receive(Gift gift) {
-        if (memory.contains(gift)) return;
-        for (int z = 0; z < k; z++) {
-            if (gifts[z] == null) {
-                gifts[z] = gift;
-                break;
-            } else if (gifts[z].size < gift.size) {
-                Gift last = gifts[z];
-                gifts[z] = gift;
-                for (int x = z + 1; x < k; x++) {
-                    Gift tmp = gifts[x];
-                    gifts[x] = last;
-                    last = tmp;
-                }
-                if (z + 1 < k) {
-                    memory.add(last);
-                }
-            } else if (gifts[z].size == gift.size && gifts[z].id > gift.id) {
-                Gift last = gifts[z];
-                gifts[z] = gift;
-                for (int x = z + 1; x < k; x++) {
-                    Gift tmp = gifts[x];
-                    gifts[x] = last;
-                    last = tmp;
-                }
-                if (z + 1 < k) {
-                    memory.add(last);
-                }
-            }
-        }
-    }
+    static HashMap<Integer, Integer> giftList;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -77,29 +32,52 @@ public class P2720_Large_Presents {
             st = br.readLine().split(" ");
             n = Integer.parseInt(st[0]);
             k = Integer.parseInt(st[1]);
-            gifts = new Gift[k];
+            giftList = new HashMap<>();
             for (m = 0; m < n; m++) {
                 st = br.readLine().split(" ");
                 i = Integer.parseInt(st[0]);
                 h = Integer.parseInt(st[1]);
                 w = Integer.parseInt(st[2]);
                 l = Integer.parseInt(st[3]);
-                receive(new Gift(i, h, w, l));
+                int size = ((h * 2) + (w * 2)) + l;
+                giftList.put(i, size);
             }
+
             boolean printed = false;
-            for (m = 0; m < k; m++) {
+            int count = 0;
+            for (Map.Entry<Integer, Integer> entry : entriesSortedByValues(giftList)) {
                 if (!printed) {
                     printed = true;
                 } else {
                     bw.append(" ");
                 }
-                bw.append(gifts[m].id + "");
+                Integer id = entry.getKey();
+                bw.append(id + "");
+                if (++count == k) {
+                    break;
+                }
             }
 
             bw.append("\n");
-            memory.clear();
         }
         bw.flush();
+    }
+
+    static <K,V extends Comparable<? super V>> SortedSet<Map.Entry<K,V>> entriesSortedByValues(Map<K,V> map) {
+        SortedSet<Map.Entry<K,V>> sortedEntries = new TreeSet<Map.Entry<K,V>>(
+                new Comparator<Map.Entry<K,V>>() {
+                    @Override public int compare(Map.Entry<K,V> e1, Map.Entry<K,V> e2) {
+                        int res = e2.getValue().compareTo(e1.getValue());
+                        if (e1.getKey().equals(e2.getKey())) {
+                            return res; // Code will now handle equality properly
+                        } else {
+                            return res != 0 ? res : 1; // While still adding all entries
+                        }
+                    }
+                }
+        );
+        sortedEntries.addAll(map.entrySet());
+        return sortedEntries;
     }
 
 }
