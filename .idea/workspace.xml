@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d079c2a0-9e0d-47d3-830f-572a2e74375b" name="Default" comment="">
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\GetRepository_URIOJ.class" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\UVA\note.txt.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\AIZU\note.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\COJ\Trying\WA\P1028_All_in_All.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\COJ\note.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\TOPCODER\note.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\note.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\UVA\note.txt.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\ZOJ\note.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\AIZU\note.txt" afterPath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\AIZU\note.txt" />
-      <change type="MODIFICATION" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\COJ\note.txt" afterPath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\COJ\note.txt" />
-      <change type="MODIFICATION" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\TOPCODER\note.txt" afterPath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\TOPCODER\note.txt" />
-      <change type="MODIFICATION" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\note.txt" afterPath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\URI\note.txt" />
-      <change type="MODIFICATION" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\ZOJ\note.txt" afterPath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\ZOJ\note.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/onlinejuge/GetCountingProblem.class" afterPath="$PROJECT_DIR$/out/production/onlinejuge/GetCountingProblem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GetCountingProblem.java" afterPath="$PROJECT_DIR$/src/GetCountingProblem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="H:\IdeaProjects\onlinejudge\src\URI\GetRepository_URIOJ.java" afterPath="$PROJECT_DIR$/src/GetRepository_URIOJ.java" />
     </list>
     <ignored path="onlinejuge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,12 +33,31 @@
       <file leaf-file-name="GetCountingProblem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GetCountingProblem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2839">
+              <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getWebsite#0;class#GetCountingProblem#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MAP.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MAP.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35883906" vertical-offset="0" max-vertical-offset="14569">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onlinejuge.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlinejuge.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/AIZU/MAP.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -76,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MAP.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MAP.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/URI/MAP.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10459184" vertical-offset="12930" max-vertical-offset="13515">
-              <caret line="763" column="74" selection-start-line="763" selection-start-column="74" selection-end-line="763" selection-end-column="74" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13515">
+              <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -100,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/UVA/MAP.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -150,7 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ZOJ/Accepted/P1243_URLs.java" />
         <option value="$PROJECT_DIR$/src/ZOJ/Accepted/P1292_Integer_Inquiry.java" />
         <option value="$PROJECT_DIR$/src/ZOJ/Accepted/P1295_Reverse_Text.java" />
         <option value="$PROJECT_DIR$/src/ZOJ/Accepted/P1760_Doubles.java" />
@@ -199,8 +204,9 @@
         <option value="$PROJECT_DIR$/src/AIZU/note.txt" />
         <option value="$PROJECT_DIR$/src/Utils/GetCountingProblem.java" />
         <option value="$PROJECT_DIR$/src/AIZU/MAP.txt" />
-        <option value="$PROJECT_DIR$/src/GetCountingProblem.java" />
         <option value="$PROJECT_DIR$/src/URI/MAP.txt" />
+        <option value="$PROJECT_DIR$/src/MAP.txt" />
+        <option value="$PROJECT_DIR$/src/GetCountingProblem.java" />
       </list>
     </option>
   </component>
@@ -403,78 +409,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejuge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejudge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ZOJ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejuge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejudge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UVA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejuge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejudge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="URI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejuge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinejudge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AIZU" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -948,12 +882,12 @@
       <workItem from="1520309311417" duration="8015000" />
       <workItem from="1520330901054" duration="3291000" />
       <workItem from="1520393920582" duration="1367000" />
-      <workItem from="1520396107038" duration="14021000" />
+      <workItem from="1520396107038" duration="16001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128950000" />
+    <option name="totallyTimeSpent" value="130930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -976,6 +910,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31316188" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" x="724" y="71" width="468" height="898" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -985,7 +920,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1078,20 +1012,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/COMPUTATIONAL_GEOMETRY/sourcecode/P1039_Fire_Flowers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="884">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/URI/Accepted/PARADIGMS/input/P1310_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37777779" vertical-offset="0" max-vertical-offset="585">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/URI/Accepted/PARADIGMS/output/P1310_output.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.02905983" vertical-offset="0" max-vertical-offset="585">
@@ -1409,21 +1329,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GetCountingProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getWebsite#0;class#GetCountingProblem#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UVA/MAP.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1436,10 +1345,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/onlinejuge.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AIZU/MAP.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1454,8 +1371,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/URI/MAP.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10459184" vertical-offset="12930" max-vertical-offset="13515">
-          <caret line="763" column="74" selection-start-line="763" selection-start-column="74" selection-end-line="763" selection-end-column="74" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13515">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GetCountingProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2839">
+          <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MAP.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35883906" vertical-offset="0" max-vertical-offset="14569">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding />
         </state>
       </provider>

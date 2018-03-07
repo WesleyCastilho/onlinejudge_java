@@ -1,0 +1,851 @@
+src -|
+     |-> AIZU -|
+     |         |-> Accepted -|
+     |         |             |-- ITP1_1_A_Hello_World.java
+     |      |
+     |         |-- MAP.txt
+     |         |-- NOTE.txt
+     |         |-> Trying
+     |      |
+     |-> COJ -|
+     |        |-> Accepted -|
+     |        |             |-> input -|
+     |        |             |          |-- P1023_input.txt
+     |     |             |
+     |        |             |-- P1000_AplusB_Problem.java
+     |        |             |-- P1003_General_Election.java
+     |        |             |-- P1023_Financial_Management.java
+     |        |             |-- P1049_Sum.java
+     |        |             |-- P1051_Div3.java
+     |        |             |-- P1059_Numeric_Parity.java
+     |        |             |-- P1102_You_Can_Say_11.java
+     |        |             |-- P1166_Speed.java
+     |        |             |-- P1188_Cow_Multiplication.java
+     |        |             |-- P1293_Powers_of_Two.java
+     |        |             |-- P1306_DIV4.java
+     |        |             |-- P1318_abc.java
+     |        |             |-- P2185_AB.java
+     |     |
+     |        |-- MAP.txt
+     |        |-- NOTE.txt
+     |        |-> Trying
+     |     |
+     |-> URI -|
+     |        |-> Accepted -|
+     |        |             |-> AD_HOC -|
+     |        |             |           |-> input -|
+     |        |             |           |          |-- 1619_input.txt
+     |        |             |           |          |-- 1710_input.txt
+     |        |             |           |          |-- 1715_input.txt
+     |        |             |           |          |-- 2138_input.txt
+     |        |             |           |          |-- 2171_output.txt
+     |        |             |           |          |-- 2179_input.txt
+     |        |             |           |          |-- 2248_input.txt
+     |        |             |           |          |-- 2252_input.txt
+     |        |             |           |          |-- 2478_input.txt
+     |        |             |           |          |-- P1271_input.txt
+     |        |             |           |          |-- P1321_input.txt
+     |        |             |           |          |-- P1495_input.txt
+     |        |             |           |          |-- P1876_input.txt
+     |        |             |           |          |-- P1890_input.txt
+     |        |             |           |          |-- P2005_input.txt
+     |        |             |           |          |-- P2219_input.txt
+     |        |             |           |          |-- P2515_input.txt
+     |        |             |           |          |-- P2530_input.txt
+     |     |             |           |
+     |        |             |           |-> output -|
+     |        |             |           |           |-- 1619_output.txt
+     |        |             |           |           |-- 1710_output.txt
+     |        |             |           |           |-- 2138_output.txt
+     |        |             |           |           |-- 2171_input.txt
+     |        |             |           |           |-- 2179_output.txt
+     |        |             |           |           |-- 2252_output.txt
+     |        |             |           |           |-- P1271_output.txt
+     |        |             |           |           |-- P1321_output.txt
+     |        |             |           |           |-- P1495_output.txt
+     |        |             |           |           |-- P1876_output.txt
+     |        |             |           |           |-- P1890_output.txt
+     |        |             |           |           |-- P2005_output.txt
+     |        |             |           |           |-- P2219_output.txt
+     |        |             |           |           |-- P2515_output.txt
+     |        |             |           |           |-- P2530_output.txt
+     |     |             |           |
+     |        |             |           |-> sourcecode -|
+     |        |             |           |               |-- P1023_Drought.java
+     |        |             |           |               |-- P1026_To_Carry_or_not_to_Carry_V1.java
+     |        |             |           |               |-- P1026_To_Carry_or_not_to_Carry_V2.java
+     |        |             |           |               |-- P1030_Flavious_Josephus_Legend.java
+     |        |             |           |               |-- P1087_Queen.java
+     |        |             |           |               |-- P1089_Musical_Loop.java
+     |        |             |           |               |-- P1091_Division_of_Nlogonia.java
+     |        |             |           |               |-- P1103_Alarm_Clock.java
+     |        |             |           |               |-- P1104_Exchanging_Cards.java
+     |        |             |           |               |-- P1105_Sub_prime.java
+     |        |             |           |               |-- P1107_Laser_Sculpture.java
+     |        |             |           |               |-- P1121_Sticker_Collector_Robot.java
+     |        |             |           |               |-- P1125_Formula_1.java
+     |        |             |           |               |-- P1129_Optical_Reader.java
+     |        |             |           |               |-- P1136_Bingo.java
+     |        |             |           |               |-- P1140_Flowers_Flourish_from_France.java
+     |        |             |           |               |-- P1147_Knight_Scape.java
+     |        |             |           |               |-- P1171_Number_Frequence.java
+     |        |             |           |               |-- P1192_Paula_Mathematic_Game.java
+     |        |             |           |               |-- P1196_WERTYU.java
+     |        |             |           |               |-- P1216_Getline_One.java
+     |        |             |           |               |-- P1217_Getline_Two_Fruits.java
+     |        |             |           |               |-- P1218_Getline_Three_Shoes.java
+     |        |             |           |               |-- P1225_Perfect_Choir.java
+     |        |             |           |               |-- P1228_Start_Grid.java
+     |        |             |           |               |-- P1245_Lost_Boots.java
+     |        |             |           |               |-- P1246_Parking_Lot.java
+     |        |             |           |               |-- P1250_KiloMan.java
+     |        |             |           |               |-- P1266_Tornado.java
+     |        |             |           |               |-- P1267_Pascal_Library.java
+     |        |             |           |               |-- P1271_Where_Are_My_Genes.java
+     |        |             |           |               |-- P1285_Different_Digits.java
+     |        |             |           |               |-- P1300_Hours_and_Minutes.java
+     |        |             |           |               |-- P1309_Monetary_Formatting.java
+     |        |             |           |               |-- P1318_Fake_Tickets.java
+     |        |             |           |               |-- P1321_Jollo.java
+     |        |             |           |               |-- P1329_Head_or_Tail.java
+     |        |             |           |               |-- P1342_Dice.java
+     |        |             |           |               |-- P1366_Sticks_Game.java
+     |        |             |           |               |-- P1379_Mean_Median_Problem.java
+     |        |             |           |               |-- P1383_Sudoku.java
+     |        |             |           |               |-- P1387_Og.java
+     |        |             |           |               |-- P1397_Game_of_The_Greatest.java
+     |        |             |           |               |-- P1410_He_is_Offside.java
+     |        |             |           |               |-- P1414_World_Cup.java
+     |        |             |           |               |-- P1419_Bakugan.java
+     |        |             |           |               |-- P1426_Add_Bricks_in_The_Wall.java
+     |        |             |           |               |-- P1428_Searching_for_Nessy.java
+     |        |             |           |               |-- P1437_Turn_Left.java
+     |        |             |           |               |-- P1441_Hailstone_Sequences.java
+     |        |             |           |               |-- P1467_Zero_or_One.java
+     |        |             |           |               |-- P1471_Dangerous_Dive.java
+     |        |             |           |               |-- P1486_Biochemical_Digital_Circuit.java
+     |        |             |           |               |-- P1495_Football.java
+     |        |             |           |               |-- P1514_Contest.java
+     |        |             |           |               |-- P1515_Hello_Galaxy.java
+     |        |             |           |               |-- P1532_Throwing_Balls.java
+     |        |             |           |               |-- P1533_Detective_Watson.java
+     |        |             |           |               |-- P1536_Libertadores.java
+     |        |             |           |               |-- P1540_Energy_Planning.java
+     |        |             |           |               |-- P1542_Reading_Books.java
+     |        |             |           |               |-- P1546_Feedback.java
+     |        |             |           |               |-- P1547_Guess_What.java
+     |        |             |           |               |-- P1553_Frequent_Asked_Questions.java
+     |        |             |           |               |-- P1558_Sum_of_Two_Squares.java
+     |        |             |           |               |-- P1559_2048.java
+     |        |             |           |               |-- P1561_Binary_Watch.java
+     |        |             |           |               |-- P1573_Chocolate_Factory.java
+     |        |             |           |               |-- P1574_Robot_Instructions.java
+     |        |             |           |               |-- P1578_Matrix_of_Squares.java
+     |        |             |           |               |-- P1583_Contamination.java
+     |        |             |           |               |-- P1585_Making_Kites.java
+     |        |             |           |               |-- P1588_Help_the_Federation.java
+     |        |             |           |               |-- P1591_Grandma_Day.java
+     |        |             |           |               |-- P1593_Binary_Function.java
+     |        |             |           |               |-- P1609_Counting_Sheep.java
+     |        |             |           |               |-- P1612_Little_Ant.java
+     |        |             |           |               |-- P1615_Insatisfaction_on_Elections.java
+     |        |             |           |               |-- P1618_Colision.java
+     |        |             |           |               |-- P1619_Date_Difference.java
+     |        |             |           |               |-- P1639_Generate_Random_Numbers.java
+     |        |             |           |               |-- P1652_Deli_Deli.java
+     |        |             |           |               |-- P1680_Edge.java
+     |        |             |           |               |-- P1708_Lab.java
+     |        |             |           |               |-- P1710_Confederation.java
+     |        |             |           |               |-- P1715_Handball.java
+     |        |             |           |               |-- P1728_Hard_to_Believe_But_True.java
+     |        |             |           |               |-- P1739_Threebonacci_Sequence.java
+     |        |             |           |               |-- P1741_Reversed_Johns_Notation.java
+     |        |             |           |               |-- P1743_Automated_Checking_Machine.java
+     |        |             |           |               |-- P1755_The_Change.java
+     |        |             |           |               |-- P1758_Bonus_Grade_Points.java
+     |        |             |           |               |-- P1765_Christmas_Trapeziums.java
+     |        |             |           |               |-- P1769_SSN_1.java
+     |        |             |           |               |-- P1772_Bit_Shuffling.java
+     |        |             |           |               |-- P1779_Estimating_the_Mean.java
+     |        |             |           |               |-- P1786_SSN_2.java
+     |        |             |           |               |-- P1787_URI.java
+     |        |             |           |               |-- P1793_Escalator.java
+     |        |             |           |               |-- P1794_Laundry.java
+     |        |             |           |               |-- P1796_Brazilian_Economy.java
+     |        |             |           |               |-- P1800_Where_Are_My_Keys.java
+     |        |             |           |               |-- P1802_Books_Catalog.java
+     |        |             |           |               |-- P1808_The_Return_of_The_King.java
+     |        |             |           |               |-- P1832_EBCDIC.java
+     |        |             |           |               |-- P1836_Pokemon.java
+     |        |             |           |               |-- P1849_Dracarys.java
+     |        |             |           |               |-- P1867_The_Greater_One_digit_Number.java
+     |        |             |           |               |-- P1870_Fans_and_Balloons.java
+     |        |             |           |               |-- P1876_Rabiola.java
+     |        |             |           |               |-- P1877_Sansas_Snow_Castle.java
+     |        |             |           |               |-- P1890_Putting_Plates_on_the_Tuk_tuks.java
+     |        |             |           |               |-- P1893_Moon_Phases.java
+     |        |             |           |               |-- P1895_Game_of_Limit.java
+     |        |             |           |               |-- P1901_Butterflies.java
+     |        |             |           |               |-- P1936_Factorial.java
+     |        |             |           |               |-- P1940_Strategy_Game.java
+     |        |             |           |               |-- P1943_Top_N.java
+     |        |             |           |               |-- P1945_Simulator.java
+     |        |             |           |               |-- P1953_Robert_and_Rampant_Room.java
+     |        |             |           |               |-- P1957_Converting_to_Hexadecimal.java
+     |        |             |           |               |-- P1959_Regular_Simple_Polygons.java
+     |        |             |           |               |-- P1980_Shuffling.java
+     |        |             |           |               |-- P1987_Divisibility_by_3.java
+     |        |             |           |               |-- P1998_Awari2.java
+     |        |             |           |               |-- P2003_Sunday_Morning.java
+     |        |             |           |               |-- P2004_Enisvaldos_Hunger.java
+     |        |             |           |               |-- P2005_Upset_Fracil.java
+     |        |             |           |               |-- P2016_D_as_in_Daedalus.java
+     |        |             |           |               |-- P2058_Triangles_and_Regular_Polygons.java
+     |        |             |           |               |-- P2129_Factorial.java
+     |        |             |           |               |-- P2134_Who_Will_Fail.java
+     |        |             |           |               |-- P2138_Most_Frequent_Digit.java
+     |        |             |           |               |-- P2144_Bodybuilder.java
+     |        |             |           |               |-- P2171_Sharing_with_Fink.java
+     |        |             |           |               |-- P2175_What_is_the_Fastest.java
+     |        |             |           |               |-- P2178_Blue_Lagoon.java
+     |        |             |           |               |-- P2179_Batuke.java
+     |        |             |           |               |-- P2217_Nove.java
+     |        |             |           |               |-- P2219_Passing_By_The_PokeStops.java
+     |        |             |           |               |-- P2248_Internship.java
+     |        |             |           |               |-- P2252_Discovering_Password.java
+     |        |             |           |               |-- P2312_Medal_Table.java
+     |        |             |           |               |-- P2315_Easy_Difference_Between_Dates.java
+     |        |             |           |               |-- P2355_Brazil_and_Germany.java
+     |        |             |           |               |-- P2365_Brazilian_Soccer_Big_Bet.java
+     |        |             |           |               |-- P2374_Pneu.java
+     |        |             |           |               |-- P2454_Fliper.java
+     |        |             |           |               |-- P2478_Hit_the_Gift.java
+     |        |             |           |               |-- P2479_Sorting_Santas_List_of_Children.java
+     |        |             |           |               |-- P2508_Fortune_Teller.java
+     |        |             |           |               |-- P2515_Cracker.java
+     |        |             |           |               |-- P2530_Cheating.java
+     |        |             |           |               |-- P2548_3D_Virtual_Museum.java
+     |        |             |           |               |-- P2650_Building_Walls.java
+     |     |             |           |
+     |     |             |
+     |        |             |-> BEGINNER -|
+     |        |             |             |-> input -|
+     |        |             |             |          |-- 2292_input.txt
+     |        |             |             |          |-- P2663_in.txt
+     |        |             |             |          |-- P2724_input.txt
+     |     |             |             |
+     |        |             |             |-> output -|
+     |        |             |             |           |-- 2292_output.txt
+     |     |             |             |
+     |        |             |             |-> sourcecode -|
+     |        |             |             |               |-- P1001_ExtremelyBasic.java
+     |        |             |             |               |-- P1002_Area_of_a_Circle.java
+     |        |             |             |               |-- P1003_SimpleSum.java
+     |        |             |             |               |-- P1004_SimpleProduct.java
+     |        |             |             |               |-- P1005_Average1.java
+     |        |             |             |               |-- P1006_Average2.java
+     |        |             |             |               |-- P1007_Difference.java
+     |        |             |             |               |-- P1008_Salary.java
+     |        |             |             |               |-- P1009_SalaryWithBonus.java
+     |        |             |             |               |-- P1010_SimpleCalculate.java
+     |        |             |             |               |-- P1011_Sphere.java
+     |        |             |             |               |-- P1012_Area.java
+     |        |             |             |               |-- P1013_TheGreatest.java
+     |        |             |             |               |-- P1014_Consumption.java
+     |        |             |             |               |-- P1015_DistanceBetweenTwoPoints.java
+     |        |             |             |               |-- P1016_Distance.java
+     |        |             |             |               |-- P1017_FuelSpent.java
+     |        |             |             |               |-- P1018_Banknotes.java
+     |        |             |             |               |-- P1019_TimeConversion.java
+     |        |             |             |               |-- P1020_AgeInDays.java
+     |        |             |             |               |-- P1021_BanknotesandCoins.java
+     |        |             |             |               |-- P1035_SelectionTest1.java
+     |        |             |             |               |-- P1036_BhaskarasFormula.java
+     |        |             |             |               |-- P1037_Interval.java
+     |        |             |             |               |-- P1038_Snack.java
+     |        |             |             |               |-- P1040_Average3.java
+     |        |             |             |               |-- P1041_Coordinates_of_a_Point.java
+     |        |             |             |               |-- P1042_SimpleSort.java
+     |        |             |             |               |-- P1043_Triangle.java
+     |        |             |             |               |-- P1044_Multiples.java
+     |        |             |             |               |-- P1045_Triangle_Types.java
+     |        |             |             |               |-- P1046_Game_Time.java
+     |        |             |             |               |-- P1047_Game_Time_with_Minutes.java
+     |        |             |             |               |-- P1048_SalaryIncrease.java
+     |        |             |             |               |-- P1049_Animal.java
+     |        |             |             |               |-- P1050_DDD.java
+     |        |             |             |               |-- P1051_Taxes.java
+     |        |             |             |               |-- P1052_Month.java
+     |        |             |             |               |-- P1059_Even_Numbers.java
+     |        |             |             |               |-- P1060_Positive_Numbers.java
+     |        |             |             |               |-- P1061_Event_Time.java
+     |        |             |             |               |-- P1064_Positives_and_Average.java
+     |        |             |             |               |-- P1065_Even_Between_five_Numbers.java
+     |        |             |             |               |-- P1066_Even_Odd_Positive_and_Negative.java
+     |        |             |             |               |-- P1067_Odd_Numbers.java
+     |        |             |             |               |-- P1070_Six_Odd_Numbers.java
+     |        |             |             |               |-- P1071_Sum_of_Consecutive_Odd_Numbers_I.java
+     |        |             |             |               |-- P1072_Interval2.java
+     |        |             |             |               |-- P1073_Even_Square.java
+     |        |             |             |               |-- P1074_Even_or_Odd.java
+     |        |             |             |               |-- P1075_Remaining2.java
+     |        |             |             |               |-- P1078_Multiplication_Table.java
+     |        |             |             |               |-- P1079_Weighted_Averages.java
+     |        |             |             |               |-- P1080_Highest_and_Position.java
+     |        |             |             |               |-- P1094_Experiments.java
+     |        |             |             |               |-- P1095_Sequence_IJ_1.java
+     |        |             |             |               |-- P1096_Sequence_IJ_2.java
+     |        |             |             |               |-- P1097_Sequenc_IJ_3.java
+     |        |             |             |               |-- P1098_Sequence_IJ_4.java
+     |        |             |             |               |-- P1099_Sum_of_Consecutive_Odd_Numbers_II.java
+     |        |             |             |               |-- P1101_Sequence_of_Numbers_and_Sum.java
+     |        |             |             |               |-- P1113_Ascending_and_Descending.java
+     |        |             |             |               |-- P1114_Fixed_Password.java
+     |        |             |             |               |-- P1115_Quadrant.java
+     |        |             |             |               |-- P1116_Dividing_X_by_Y.java
+     |        |             |             |               |-- P1117_Score_Validation.java
+     |        |             |             |               |-- P1118_Several_Scores_with_Validation.java
+     |        |             |             |               |-- P1131_Grenais.java
+     |        |             |             |               |-- P1132_Multiples_of_13.java
+     |        |             |             |               |-- P1133_Rest_of_a_Division.java
+     |        |             |             |               |-- P1134_Type_of_Fuel.java
+     |        |             |             |               |-- P1142_PUM.java
+     |        |             |             |               |-- P1143_Squared_and_Cubic.java
+     |        |             |             |               |-- P1144_Logical_Sequence.java
+     |        |             |             |               |-- P1145_Logical_Sequence_2.java
+     |        |             |             |               |-- P1146_Growing_Sequences.java
+     |        |             |             |               |-- P1149_Summing_Consecutive_Integers.java
+     |        |             |             |               |-- P1150_Exceeding_Z.java
+     |        |             |             |               |-- P1151_Easy_Fibonacci.java
+     |        |             |             |               |-- P1153_Simple_Factorial.java
+     |        |             |             |               |-- P1154_Ages.java
+     |        |             |             |               |-- P1155_S_Sequence.java
+     |        |             |             |               |-- P1156_S_Sequence_II.java
+     |        |             |             |               |-- P1157_Divisors_I.java
+     |        |             |             |               |-- P1158_Sum_of_Consecutive_Odd_Numbers_III.java
+     |        |             |             |               |-- P1159_Sum_of_Consecutive_Even_Numbers.java
+     |        |             |             |               |-- P1160_Population_Increase.java
+     |        |             |             |               |-- P1164_Perfect_Number.java
+     |        |             |             |               |-- P1165_Prime_Number.java
+     |        |             |             |               |-- P1172_Array_Replacement_I.java
+     |        |             |             |               |-- P1173_Array_fill_I.java
+     |        |             |             |               |-- P1174_Array_Selection_I.java
+     |        |             |             |               |-- P1175_Array_change_I.java
+     |        |             |             |               |-- P1176_Fibonacci_Array.java
+     |        |             |             |               |-- P1177_Array_Fill_II.java
+     |        |             |             |               |-- P1178_Array_Fill_III.java
+     |        |             |             |               |-- P1179_Array_Fill_IV.java
+     |        |             |             |               |-- P1180_Lowest_Number_and_Position.java
+     |        |             |             |               |-- P1181_Line_in_Array.java
+     |        |             |             |               |-- P1182_Column_in_Array.java
+     |        |             |             |               |-- P1183_Above_the_Main_Diagonal.java
+     |        |             |             |               |-- P1184_Below_the_Main_Diagonal.java
+     |        |             |             |               |-- P1185_Above_the_Secundary_Diagonal.java
+     |        |             |             |               |-- P1186_Below_the_Secundary_Diagonal.java
+     |        |             |             |               |-- P1187_Superior_Area.java
+     |        |             |             |               |-- P1188_Inferior_Area.java
+     |        |             |             |               |-- P1189_Left_Area.java
+     |        |             |             |               |-- P1190_Right_Area.java
+     |        |             |             |               |-- P1435_Square_Matrix_I.java
+     |        |             |             |               |-- P1478_Square_Matrix_II.java
+     |        |             |             |               |-- P1534_Array_123.java
+     |        |             |             |               |-- P1541_Building_Houses.java
+     |        |             |             |               |-- P1557_SquareMatrixIII_style1.java
+     |        |             |             |               |-- P1557_SquareMatrixIII_style2.java
+     |        |             |             |               |-- P1564_BrazilWorldCup.java
+     |        |             |             |               |-- P1589_BobConduit.java
+     |        |             |             |               |-- P1759_HoHoHo.java
+     |        |             |             |               |-- P1789_TheRaceOfSlugs_style1.java
+     |        |             |             |               |-- P1789_TheRaceOfSlugs_style2.java
+     |        |             |             |               |-- P1827_Square_Array_IV.java
+     |        |             |             |               |-- P1828_Bazinga.java
+     |        |             |             |               |-- P1837_Preface.java
+     |        |             |             |               |-- P1845_Efilogue.java
+     |        |             |             |               |-- P1847_Welcome_to_the_Winter.java
+     |        |             |             |               |-- P1848_Counting_Crow.java
+     |        |             |             |               |-- P1855_Maeters_Map.java
+     |        |             |             |               |-- P1858_Theons_Answer.java
+     |        |             |             |               |-- P1864_Our_Days_Are_Never_Coming_Back.java
+     |        |             |             |               |-- P1865_Mjolnir.java
+     |        |             |             |               |-- P1866_Bill.java
+     |        |             |             |               |-- P1914_Whose_Turn_Is_It.java
+     |        |             |             |               |-- P1921_Guilherme_and_His_Kites.java
+     |        |             |             |               |-- P1924_Vitoria_and_Her_Indecision.java
+     |        |             |             |               |-- P1929_Triangle.java
+     |        |             |             |               |-- P1930_Electrical_Outlet.java
+     |        |             |             |               |-- P1933_Tri_du.java
+     |        |             |             |               |-- P1958_Scientific_Notation.java
+     |        |             |             |               |-- P1960_Roman_Numerals_for_Page_Numbers.java
+     |        |             |             |               |-- P1961_Jumping_Frog.java
+     |        |             |             |               |-- P1962_A_Long_Long_Time_Ago.java
+     |        |             |             |               |-- P1963_The_Motion_Picture.java
+     |        |             |             |               |-- P1973_Star_Trek.java
+     |        |             |             |               |-- P1983_The_Chosen.java
+     |        |             |             |               |-- P1984_The_Pronalancia_Puzzle.java
+     |        |             |             |               |-- P1985_MacPRONALTS.java
+     |        |             |             |               |-- P2006_Identifying_Tea.java
+     |        |             |             |               |-- P2028_Sequence_of_Sequence.java
+     |        |             |             |               |-- P2029_Honey_Reservoir.java
+     |        |             |             |               |-- P2031_Rock_Paper_Airstrike.java
+     |        |             |             |               |-- P2057_Time_Zone.java
+     |        |             |             |               |-- P2059_Odd_Even_or_Cheating.java
+     |        |             |             |               |-- P2060_Binos_Challenge.java
+     |        |             |             |               |-- P2061_Closing_Tabs.java
+     |        |             |             |               |-- P2139_Pedrinhos_Christmas.java
+     |        |             |             |               |-- P2140_Two_Bills.java
+     |        |             |             |               |-- P2143_The_Return_of_Radar.java
+     |        |             |             |               |-- P2146_Password.java
+     |        |             |             |               |-- P2147_Galopeira.java
+     |        |             |             |               |-- P2152_Pepe_I_Already_Took_the_Candle.java
+     |        |             |             |               |-- P2159_Approximate_Number_of_Primes.java
+     |        |             |             |               |-- P2160_Name_at_Form.java
+     |        |             |             |               |-- P2161_Square_Root_of_10.java
+     |        |             |             |               |-- P2162_Peaks_and_Valleys.java
+     |        |             |             |               |-- P2163_The_Force_Awakens.java
+     |        |             |             |               |-- P2164_Fast_Fibonacci.java
+     |        |             |             |               |-- P2165_Twitting.java
+     |        |             |             |               |-- P2166_Square_Root_of_2.java
+     |        |             |             |               |-- P2167_Engine_Failure.java
+     |        |             |             |               |-- P2168_Twilight_at_Portland.java
+     |        |             |             |               |-- P2172_Event.java
+     |        |             |             |               |-- P2176_Parity.java
+     |        |             |             |               |-- P2203_Crowstorm.java
+     |        |             |             |               |-- P2221_Pomekons_Battle.java
+     |        |             |             |               |-- P2222_Playing_with_Sets.java
+     |        |             |             |               |-- P2232_Pascals_Triangle.java
+     |        |             |             |               |-- P2234_Hot_Dogs.java
+     |        |             |             |               |-- P2235_Walking_in_Time.java
+     |        |             |             |               |-- P2242_Huaauhahhuahau.java
+     |        |             |             |               |-- P2292_LED_Panel.java
+     |        |             |             |               |-- P2310_Volleyball.java
+     |        |             |             |               |-- P2311_Diving.java
+     |        |             |             |               |-- P2313_Which_Triangle.java
+     |        |             |             |               |-- P2334_Little_Ducks.java
+     |        |             |             |               |-- P2338_Morse.java
+     |        |             |             |               |-- P2483_Merry_Christmaaas.java
+     |        |             |             |               |-- P2486_C_Mais_ou_Menos.java
+     |        |             |             |               |-- P2493_Jogo_do_Operador.java
+     |        |             |             |               |-- P2502_Deciphering_the_Encrypted_Card.java
+     |        |             |             |               |-- P2510_Batmain.java
+     |        |             |             |               |-- P2520_The_Last_Analogimon.java
+     |        |             |             |               |-- P2523_Wills_Message.java
+     |        |             |             |               |-- P2533_Internship.java
+     |        |             |             |               |-- P2534_General_Exam.java
+     |        |             |             |               |-- P2540_Leaders_Impeachment.java
+     |        |             |             |               |-- P2542_Iu_Di_Oh.java
+     |        |             |             |               |-- P2543_UFPR_Gaming.java
+     |        |             |             |               |-- P2544_Kage_Bunshin_no_Jutsu.java
+     |        |             |             |               |-- P2547_Roller_Coaster.java
+     |        |             |             |               |-- P2551_New_Record.java
+     |        |             |             |               |-- P2552_CheeseBreadSweeper.java
+     |        |             |             |               |-- P2554_Pizza_Before_BH.java
+     |        |             |             |               |-- P2581_I_am_Toorg.java
+     |        |             |             |               |-- P2582_System_of_a_Download.java
+     |        |             |             |               |-- P2626_JB6_Team.java
+     |        |             |             |               |-- P2630_Greyscale.java
+     |        |             |             |               |-- P2631_Making_Pairs.java
+     |        |             |             |               |-- P2633_Barbecue_at_Yuris.java
+     |        |             |             |               |-- P2646_Secret_Chamber_at_Mount_Rushmore.java
+     |        |             |             |               |-- P2653_Dijkstra.java
+     |        |             |             |               |-- P2663_Fase.java
+     |        |             |             |               |-- P2670_Maquina_de_Cafe.java
+     |        |             |             |               |-- P2679_Even_Successor.java
+     |        |             |             |               |-- P2682_Fault_Detector.java
+     |        |             |             |               |-- P2685_The_Change.java
+     |        |             |             |               |-- P2690_New_Password_RA.java
+     |        |             |             |               |-- P2702_Hard_Choice.java
+     |        |             |             |               |-- P2708_Tourists_in_the_Huacachina_Park.java
+     |        |             |             |               |-- P2712_Vehicular_Restriction.java
+     |        |             |             |               |-- P2717_Elf_Time.java
+     |        |             |             |               |-- P2718_Christmas_Lights.java
+     |        |             |             |               |-- P2721_Indecision_of_Reindeers.java
+     |        |             |             |               |-- P2724_Help_Patatatitu.java
+     |     |             |             |
+     |     |             |
+     |        |             |-> COMPUTATIONAL_GEOMETRY -|
+     |        |             |                           |-> input -|
+     |        |             |                           |          |-- P1039_input.txt
+     |        |             |                           |          |-- P1875_input.txt
+     |     |             |                           |
+     |        |             |                           |-> output -|
+     |        |             |                           |           |-- P1039_output.txt
+     |        |             |                           |           |-- P1875_output.txt
+     |     |             |                           |
+     |        |             |                           |-> sourcecode -|
+     |        |             |                           |               |-- P1039_Fire_Flowers.java
+     |        |             |                           |               |-- P1875_Tribol.java
+     |     |             |                           |
+     |     |             |
+     |        |             |-> DATA_STRUCTURES_AND_LIBRARIES -|
+     |        |             |                                  |-> input -|
+     |        |             |                                  |          |-- 2482_input.txt
+     |        |             |                                  |          |-- P1057_input.txt
+     |        |             |                                  |          |-- P1252_input.txt
+     |        |             |                                  |          |-- P1340_input.txt
+     |        |             |                                  |          |-- P1451_input_1.txt
+     |        |             |                                  |          |-- P1451_input_2.txt
+     |        |             |                                  |          |-- P1451_input_3.txt
+     |        |             |                                  |          |-- P1451_input_4.txt
+     |        |             |                                  |          |-- P1673_input.txt
+     |        |             |                                  |          |-- P1704_input.txt
+     |        |             |                                  |          |-- P1861_input.txt
+     |        |             |                                  |          |-- P2496_input.txt
+     |     |             |                                  |
+     |        |             |                                  |-> output -|
+     |        |             |                                  |           |-- P1252_output.txt
+     |        |             |                                  |           |-- P1340_output.txt
+     |        |             |                                  |           |-- P1451_output_1.txt
+     |        |             |                                  |           |-- P1451_output_2.txt
+     |        |             |                                  |           |-- P1451_output_3.txt
+     |        |             |                                  |           |-- P1451_output_4.txt
+     |        |             |                                  |           |-- P1861_output.txt
+     |     |             |                                  |
+     |        |             |                                  |-> sourcecode -|
+     |        |             |                                  |               |-- P1022_TDA_Rational.java
+     |        |             |                                  |               |-- P1025_Where_is_the_Marble.java
+     |        |             |                                  |               |-- P1062_Rails.java
+     |        |             |                                  |               |-- P1063_Rails_Again_Tracing_Movements.java
+     |        |             |                                  |               |-- P1068_Parenthesis_Balance_I.java
+     |        |             |                                  |               |-- P1069_Diamonds_and_Sand.java
+     |        |             |                                  |               |-- P1077_Infix_to_Posfix.java
+     |        |             |                                  |               |-- P1083_LEXSIM_Sintatic_and_Lexical_Avaliator.java
+     |        |             |                                  |               |-- P1088_Bubbles_and_Buckets.java
+     |        |             |                                  |               |-- P1110_Throwing_Cards_Away.java
+     |        |             |                                  |               |-- P1162_Train_Swapping.java
+     |        |             |                                  |               |-- P1211_Economic_Phonebook.java
+     |        |             |                                  |               |-- P1215_Andys_First_Dictionary.java
+     |        |             |                                  |               |-- P1236_Compressing_Null_and_White.java
+     |        |             |                                  |               |-- P1242_Alien_Ribonucleic_Acid.java
+     |        |             |                                  |               |-- P1244_Sort_by_Length.java
+     |        |             |                                  |               |-- P1251_Tell_me_the_Frequencies.java
+     |        |             |                                  |               |-- P1252_Sort_Sort_And_Sort.java
+     |        |             |                                  |               |-- P1256_Hash_Tables.java
+     |        |             |                                  |               |-- P1258_T_Shirts.java
+     |        |             |                                  |               |-- P1259_Even_and_Odd.java
+     |        |             |                                  |               |-- P1260_Hardwood_Species.java
+     |        |             |                                  |               |-- P1261_Hay_Points.java
+     |        |             |                                  |               |-- P1281_Going_to_the_Market.java
+     |        |             |                                  |               |-- P1303_Spurs_Rocks.java
+     |        |             |                                  |               |-- P1340_I_Can_Guess_the_Data_Structure.java
+     |        |             |                                  |               |-- P1401_Generating_Fast_Sorted_Permutation.java
+     |        |             |                                  |               |-- P1424_Easy_Problem_from_Rujia_Liu_V1.java
+     |        |             |                                  |               |-- P1424_Easy_Problem_from_Rujia_Liu_V2.java
+     |        |             |                                  |               |-- P1430_Jingle_Composing.java
+     |        |             |                                  |               |-- P1451_Broken_Keyboard.java
+     |        |             |                                  |               |-- P1507_Subsequences.java
+     |        |             |                                  |               |-- P1520_Screws_and_Nuts.java
+     |        |             |                                  |               |-- P1523_Linear_Parking_Lot.java
+     |        |             |                                  |               |-- P1548_Canteen_Queue.java
+     |        |             |                                  |               |-- P1566_Height.java
+     |        |             |                                  |               |-- P1594_Greedy.java
+     |        |             |                                  |               |-- P1673_Run_Length_Encoding.java
+     |        |             |                                  |               |-- P1704_Arranging_Tasks.java
+     |        |             |                                  |               |-- P1763_Santa_Translator.java
+     |        |             |                                  |               |-- P1766_The_Dark_Elf.java
+     |        |             |                                  |               |-- P1861_Hall_of_Murderers.java
+     |        |             |                                  |               |-- P1874_Pushing_Blocks.java
+     |        |             |                                  |               |-- P1897_Smart_Game.java
+     |        |             |                                  |               |-- P1911_Help_Girafales.java
+     |        |             |                                  |               |-- P1944_FACE_2015_FREE_GIFT.java
+     |        |             |                                  |               |-- P2020_Elves_and_Their_Codes.java
+     |        |             |                                  |               |-- P2022_Christmas_Gifts.java
+     |        |             |                                  |               |-- P2136_Friends_of_Habay.java
+     |        |             |                                  |               |-- P2482_Noels_Labels.java
+     |        |             |                                  |               |-- P2496_The_Only_Chance.java
+     |     |             |                                  |
+     |     |             |
+     |        |             |-> GRAPH -|
+     |        |             |          |-> Input -|
+     |        |             |          |          |-- 1201_input.txt
+     |        |             |          |          |-- P2485_input.txt
+     |     |             |          |
+     |        |             |          |-> output -|
+     |        |             |          |           |-- P2485_output.txt
+     |     |             |          |
+     |        |             |          |-> sourcecode -|
+     |        |             |          |               |-- P1100_Knight_Moves.java
+     |        |             |          |               |-- P1195_Binary_Search_Tree.java
+     |        |             |          |               |-- P1200_BST_Operations_I.java
+     |        |             |          |               |-- P1201_BST_Operations_II.java
+     |        |             |          |               |-- P1466_Level_Order_Tree_Traversal.java
+     |        |             |          |               |-- P2485_Bicho_da_Goiaba.java
+     |     |             |          |
+     |     |             |
+     |        |             |-> MATHEMATICS -|
+     |        |             |                |-> input -|
+     |        |             |                |          |-- P2033_input.txt
+     |        |             |                |          |-- P2149_input.txt
+     |        |             |                |          |-- P2218_input.txt
+     |        |             |                |          |-- P2494_input.txt
+     |        |             |                |          |-- P2497_input.txt
+     |     |             |                |
+     |        |             |                |-> output -|
+     |        |             |                |           |-- P2149_output.txt
+     |        |             |                |           |-- P2218_output.txt
+     |        |             |                |           |-- P2494_output.txt
+     |     |             |                |
+     |        |             |                |-> sourcecode -|
+     |        |             |                |               |-- P1028_Collectable_Cards.java
+     |        |             |                |               |-- P1161_Factorial_Sum.java
+     |        |             |                |               |-- P1169_Grains_in_a_Chess_Board.java
+     |        |             |                |               |-- P1170_Blobs.java
+     |        |             |                |               |-- P1193_Base_Conversion.java
+     |        |             |                |               |-- P1197_Back_to_High_School_Physics.java
+     |        |             |                |               |-- P1198_Hashmat_the_Brave_Warrior.java
+     |        |             |                |               |-- P1199_Simple_Base_Conversion.java
+     |        |             |                |               |-- P1212_Primary_Arithmetic.java
+     |        |             |                |               |-- P1214_Above_Average.java
+     |        |             |                |               |-- P1221_Fast_Prime_Number.java
+     |        |             |                |               |-- P1240_Fit_or_Dont_Fit_I.java
+     |        |             |                |               |-- P1247_Coast_Guard.java
+     |        |             |                |               |-- P1279_Leap_Year_or_Not_Leap_Year_and.java
+     |        |             |                |               |-- P1304_Average_Speed.java
+     |        |             |                |               |-- P1323_Feynman.java
+     |        |             |                |               |-- P1393_Hexagonal_Tiles.java
+     |        |             |                |               |-- P1429_Factorial_Again.java
+     |        |             |                |               |-- P1436_Brick_Game.java
+     |        |             |                |               |-- P1457_Oracle_of_Alexandria.java
+     |        |             |                |               |-- P1555_Functions.java
+     |        |             |                |               |-- P1582_The_Pythagorean_Theorem.java
+     |        |             |                |               |-- P1620_Delaunay_Triangulation.java
+     |        |             |                |               |-- P1760_Koch_Snowflake.java
+     |        |             |                |               |-- P1761_Christmas_Decorations.java
+     |        |             |                |               |-- P1795_Trinomial_Triangle.java
+     |        |             |                |               |-- P1805_Natural_Sum.java
+     |        |             |                |               |-- P1869_Base_32.java
+     |        |             |                |               |-- P2033_Interest_on_Loan.java
+     |        |             |                |               |-- P2084_Elections.java
+     |        |             |                |               |-- P2149_The_Uncle_Phill_Bonatis_Sequence.java
+     |        |             |                |               |-- P2170_Taxes_of_Project.java
+     |        |             |                |               |-- P2218_The_Fearful_Evil_Son.java
+     |        |             |                |               |-- P2494_Pens.java
+     |        |             |                |               |-- P2497_Counting_Cycles.java
+     |        |             |                |               |-- P2516_Running.java
+     |     |             |                |
+     |     |             |
+     |        |             |-> PARADIGMS -|
+     |        |             |              |-> input -|
+     |        |             |              |          |-- P1029_input.txt
+     |        |             |              |          |-- P1310_input.txt
+     |        |             |              |          |-- P1682_input.txt
+     |        |             |              |          |-- P2027_input.txt
+     |     |             |              |
+     |        |             |              |-> output -|
+     |        |             |              |           |-- P1029_output.txt
+     |        |             |              |           |-- P1310_output.txt
+     |        |             |              |           |-- P1682_output.txt
+     |        |             |              |           |-- P2027_output.txt
+     |     |             |              |
+     |        |             |              |-> sourcecode -|
+     |        |             |              |               |-- P1029_Fibonacci_How_Many_Calls.java
+     |        |             |              |               |-- P1310_Profit.java
+     |        |             |              |               |-- P1682_Genetic_Code.java
+     |        |             |              |               |-- P2027_Noel_Bet.java
+     |     |             |              |
+     |     |             |
+     |        |             |-> STRINGS -|
+     |        |             |            |-> input -|
+     |        |             |            |          |-- 1629_input.txt
+     |        |             |            |          |-- 2108_input.txt
+     |        |             |            |          |-- 2150_input.txt
+     |        |             |            |          |-- 2356_input.txt
+     |        |             |            |          |-- 2484_input.txt
+     |        |             |            |          |-- 2722_input.txt
+     |        |             |            |          |-- P2314_input_1.txt
+     |        |             |            |          |-- P2314_input_2.txt
+     |        |             |            |          |-- P2314_input_3.txt
+     |        |             |            |          |-- P2314_input_4.txt
+     |        |             |            |          |-- P2314_input_5.txt
+     |     |             |            |
+     |        |             |            |-> output -|
+     |        |             |            |           |-- 1629_output.txt
+     |        |             |            |           |-- 2108_output.txt
+     |        |             |            |           |-- 2150_output.txt
+     |        |             |            |           |-- 2356_output.txt
+     |     |             |            |
+     |        |             |            |-> sourcecode -|
+     |        |             |            |               |-- P1024_Encryption.java
+     |        |             |            |               |-- P1120_Contract_Revision.java
+     |        |             |            |               |-- P1168_LED.java
+     |        |             |            |               |-- P1222_Short_Story_Competition.java
+     |        |             |            |               |-- P1234_Dancing_Sentence.java
+     |        |             |            |               |-- P1235_Inside_Out.java
+     |        |             |            |               |-- P1237_Compare_Substring.java
+     |        |             |            |               |-- P1238_Combiner.java
+     |        |             |            |               |-- P1239_Bloggo_Shortcuts.java
+     |        |             |            |               |-- P1241_Fit_or_Dont_Fit_II.java
+     |        |             |            |               |-- P1243_How_Easy.java
+     |        |             |            |               |-- P1248_Diet_Plan.java
+     |        |             |            |               |-- P1249_Rot13.java
+     |        |             |            |               |-- P1253_Caesar_Cipher.java
+     |        |             |            |               |-- P1254_Tag_Replacement.java
+     |        |             |            |               |-- P1255_Letter_Frequency.java
+     |        |             |            |               |-- P1257_Array_Hash.java
+     |        |             |            |               |-- P1262_Multiple_Reading.java
+     |        |             |            |               |-- P1263_Alliteration.java
+     |        |             |            |               |-- P1272_Hidden_Message.java
+     |        |             |            |               |-- P1273_Justifier.java
+     |        |             |            |               |-- P1276_Letter_Range.java
+     |        |             |            |               |-- P1277_Short_Attendance.java
+     |        |             |            |               |-- P1278_Justifier_II.java
+     |        |             |            |               |-- P1287_Friendly_Int_Parser.java
+     |        |             |            |               |-- P1305_Cut_Off_Rounder.java
+     |        |             |            |               |-- P1332_One_Two_Three.java
+     |        |             |            |               |-- P1364_Emoticons.java
+     |        |             |            |               |-- P1367_Help.java
+     |        |             |            |               |-- P1448_Chinese_Whispers.java
+     |        |             |            |               |-- P1456_Brainfuck.java
+     |        |             |            |               |-- P1516_Image.java
+     |        |             |            |               |-- P1551_Complete_Sentence.java
+     |        |             |            |               |-- P1556_Removing_Letters.java
+     |        |             |            |               |-- P1581_International_Chat.java
+     |        |             |            |               |-- P1586_Tug_of_War.java
+     |        |             |            |               |-- P1607_Advancing_Letters.java
+     |        |             |            |               |-- P1629_UnzipFACE.java
+     |        |             |            |               |-- P1632_Variations.java
+     |        |             |            |               |-- P1667_HTML.java
+     |        |             |            |               |-- P1726_Friends.java
+     |        |             |            |               |-- P1768_Christmas_Tree_v1.java
+     |        |             |            |               |-- P1768_Christmas_Tree_v2.java
+     |        |             |            |               |-- P1781_Guga_and_the_String.java
+     |        |             |            |               |-- P1803_Matring.java
+     |        |             |            |               |-- P1868_Square_Spiral.java
+     |        |             |            |               |-- P1871_Zero_means_Zero.java
+     |        |             |            |               |-- P1873_Rock_paper_scissors_lizard_Spock.java
+     |        |             |            |               |-- P1898_Kickback_Sum.java
+     |        |             |            |               |-- P2023_The_Last_Good_Kid.java
+     |        |             |            |               |-- P2025_Joulupukki.java
+     |        |             |            |               |-- P2049_Numbers_of_Ahmoc.java
+     |        |             |            |               |-- P2062_OBI_URI.java
+     |        |             |            |               |-- P2087_Good_And_Bad_Sets.java
+     |        |             |            |               |-- P2108_Counting_Characters.java
+     |        |             |            |               |-- P2137_The_Library_of_Mr_Severino.java
+     |        |             |            |               |-- P2150_Alien_Vowels.java
+     |        |             |            |               |-- P2153_Sanduicheiche.java
+     |        |             |            |               |-- P2157_Mirror_Sequence.java
+     |        |             |            |               |-- P2174_Pomekon_Collection.java
+     |        |             |            |               |-- P2253_Passwords_Validator.java
+     |        |             |            |               |-- P2314_Indenter.java
+     |        |             |            |               |-- P2356_Bacteria_I.java
+     |        |             |            |               |-- P2484_Abracadabra.java
+     |        |             |            |               |-- P2549_Usernames.java
+     |        |             |            |               |-- P2557_R_L_J.java
+     |        |             |            |               |-- P2591_HameKameKa.java
+     |        |             |            |               |-- P2651_Upset_Link.java
+     |        |             |            |               |-- P2678_Voice_Dialing.java
+     |        |             |            |               |-- P2691_The_Mathematician.java
+     |        |             |            |               |-- P2694_Problem_with_the_Calculator.java
+     |        |             |            |               |-- P2714_My_Temporary_Password.java
+     |        |             |            |               |-- P2722_Evergreen_Trick.java
+     |     |             |            |
+     |     |             |
+     |     |
+     |        |-- MAP.txt
+     |        |-- NOTE.txt
+     |        |-> Trying -|
+     |        |           |-> NOSTATUS -|
+     |        |           |             |-> AD_HOC -|
+     |        |           |             |           |-- P1032_Josephs_Cousin.java
+     |        |           |             |           |-- P1085_The_Club_Ballroom.java
+     |        |           |             |           |-- P1327_Drop_Out.java
+     |        |           |             |           |-- P1472_Triangles.java
+     |        |           |             |           |-- P1568_sum_to_Reach_N.java
+     |        |           |             |           |-- P1676_Assistance_Required.java
+     |        |           |             |           |-- P1882_Random_Walks_in_Thailand.java
+     |        |           |             |           |-- P1885_Thai_Lotery.java
+     |        |           |             |           |-- P1934_Puzzle.java
+     |        |           |             |           |-- P1935_Spiral.java
+     |        |           |             |           |-- P2012_Height_Map.java
+     |        |           |             |           |-- P2021_Christmas_Lights.java
+     |        |           |             |           |-- P2564_Swap_It_or_Not.java
+     |     |           |             |
+     |        |           |             |-> BEGINNER -|
+     |        |           |             |             |-- P2636_3_RSA.java
+     |        |           |             |             |-- P2649_Visual_Python_plusplus.java
+     |        |           |             |             |-- P2674_Super_Primes_Engage.java
+     |        |           |             |             |-- P2689_Game_of_the_Miao.java
+     |        |           |             |             |-- P2699_Enigma.java
+     |        |           |             |             |-- P2703_Imperial_Roads.java
+     |     |           |             |
+     |        |           |             |-> CONPUTATIONAL_GEOMETRY
+     |     |           |             |
+     |        |           |             |-> DATA_STRUCTURES_AND_LIBRARIES -|
+     |        |           |             |                                  |-- P1119_The_Dole_Queue.java
+     |        |           |             |                                  |-- P1405_The_Halting_Problem.java
+     |        |           |             |                                  |-- P1425_Gift.java
+     |        |           |             |                                  |-- P2064_Prant_and_the_Indecision.java
+     |        |           |             |                                  |-- P2671_Decoding_the_Text.java
+     |     |           |             |
+     |        |           |             |-> GRAPH -|
+     |        |           |             |          |-- P1610_Dudu_Service_Maker.java
+     |        |           |             |          |-- P1790_Detecting_Bridges.java
+     |        |           |             |          |-- P1790_input.txt
+     |     |           |             |
+     |        |           |             |-> MATHEMATICS -|
+     |        |           |             |                |-- P1400_Counting_Game.java
+     |        |           |             |                |-- P1643_Convert_Kilometers_to_Miles.java
+     |        |           |             |                |-- P1729_Average_is_not_Fast_Enough.java
+     |     |           |             |
+     |        |           |             |-> PARADIGMS -|
+     |        |           |             |              |-- P1878_Contests_in_Sequence.java
+     |     |           |             |
+     |        |           |             |-> STRING -|
+     |        |           |             |           |-- P1284_Cellphone_Typing.java
+     |        |           |             |           |-- P1458_SMS_Championship.java
+     |        |           |             |           |-- P2336_ABC.java
+     |        |           |             |           |-- P2583_Chirrin_Chirrion.java
+     |        |           |             |           |-- P2587_Jetiqui.java
+     |     |           |             |
+     |     |           |
+     |        |           |-> TLE -|
+     |        |           |        |-- P1500_Horrible_Queries.java
+     |        |           |        |-- P1883_Escape_From_Ayutthaya.java
+     |        |           |        |-- P2500_William_Xorando.java
+     |        |           |        |-- P2710_Game_of_Array.java
+     |        |           |        |-- P2720_Large_Presents.java
+     |        |           |        |-- P2720_Large_Presents_V1.java
+     |     |           |
+     |        |           |-> WA -|
+     |        |           |       |-- P1109_Cheating_on_the_Contest.java
+     |        |           |       |-- P1569_input-v3.txt
+     |        |           |       |-- P1569_input.txt
+     |        |           |       |-- P1569_input_v2.txt
+     |        |           |       |-- P1569_Snakes_and_Ladders.java
+     |        |           |       |-- P1912_Help_Seu_Madruga.java
+     |        |           |       |-- P2090_I_Went_to_Market_And_Bought.java
+     |        |           |       |-- P2254_Japanese_Daisy_Game.java
+     |        |           |       |-- P2632_Magic_and_Sword.java
+     |        |           |       |-- P2684_Help_Professor_Webscript.java
+     |        |           |       |-- P2692_Zoeiro_Keyboard.java
+     |     |           |
+     |     |
+     |-> UVA -|
+     |        |-> Accepted
+     |     |
+     |        |-- MAP.txt
+     |        |-- NOTE.txt
+     |        |-> Trying
+     |     |
+     |-> ZOJ -|
+     |        |-> Accepted -|
+     |        |             |-- P1001_AB_Problem.java
+     |        |             |-- P1002_Fire_Net.java
+     |        |             |-- P1048_Financial_Management.java
+     |        |             |-- P1056_The_Worm_Turns.java
+     |        |             |-- P1061_Web_Navigation.java
+     |        |             |-- P1078_Palindrom_Numbers.java
+     |        |             |-- P1099_HTML.java
+     |        |             |-- P1115_Digital_Roots.java
+     |        |             |-- P1243_URLs.java
+     |        |             |-- P1292_Integer_Inquiry.java
+     |        |             |-- P1295_Reverse_Text.java
+     |        |             |-- P1760_Doubles.java
+     |        |             |-- P2417_Lowest_Bit.java
+     |        |             |-- P2736_Daffodil_number.java
+     |        |             |-- P2970_Faster_Higher_Stronger.java
+     |        |             |-- P3782_Ternary_Calculation.java
+     |     |
+     |        |-- MAP.txt
+     |        |-- NOTE.txt
+     |        |-> Trying
+     |     |
