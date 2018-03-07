@@ -30,14 +30,13 @@ public class GetCountingProblem {
 
     static final String LINK_ZOJ = "http://acm.zju.edu.cn/onlinejudge/";
     static final String PROFILE_ZOJ = "";
+    static int zoj_totalFile = 0;
 
     static final String LINK_SPOJ = "http://acm.zju.edu.cn/onlinejudge/";
     static final String PROFILE_SPOJ = "";
 
     static final String LINK_DEV_SKILL = "https://www.devskill.com/Home";
     static final String PROFILE_DEV_SKILL = "";
-
-    static int zoj_totalFile = 0;
 
     static int totalJavaFile = 0;
     static int totalAcceptedFile = 0;
