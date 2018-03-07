@@ -1,8 +1,0 @@
-AIZU -|
-      |-> Accepted -|
-      |             |-- ITP1_1_A_Hello_World.java
-      |
-      |-- MAP.txt
-      |-- NOTE.txt
-      |-> Trying
-      |
