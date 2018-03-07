@@ -1,9 +1,9 @@
 /**
  * @author Teerapat Phokhonwong
- * @Onlinejudge:
- * @Categories:
- * @Problem:
- * @Link:
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: DATA STRUCTURES AND LIBRARIES
+ * @Problem: 2064 - Prant and the Indecision
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2064
  * @Timelimit: 1 sec
  * @Status:
  * @Submission:
