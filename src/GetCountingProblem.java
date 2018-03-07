@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.LinkedList;
 
 /**
  * Created by Teerapat-BSD on 3/7/2018.
@@ -49,7 +48,7 @@ public class GetCountingProblem {
     public static void main(String[] a) throws IOException {
 
         File root = new File(ROOT_DIRECTORY);
-        bw_MapAll = new BufferedWriter(new FileWriter(ROOT_DIRECTORY+"/" + MAP_FILE));
+        bw_MapAll = new BufferedWriter(new FileWriter(MAP_FILE));
         bw_MapAll.append("src -|\n");
         // get all the files from a directory
         File[] fList = root.listFiles();
