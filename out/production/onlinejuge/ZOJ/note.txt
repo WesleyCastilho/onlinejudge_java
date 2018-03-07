@@ -1,2 +1,2 @@
-website: http://acm.zju.edu.cn/onlinejudge/
-profile: http://acm.zju.edu.cn/onlinejudge/showUserStatus.do?userId=94755
+Website: http://acm.zju.edu.cn/onlinejudge/
+Profile: 

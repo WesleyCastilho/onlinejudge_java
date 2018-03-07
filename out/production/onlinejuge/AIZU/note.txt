@@ -1,3 +1,2 @@
-website: http://judge.u-aizu.ac.jp/
-profile: http://judge.u-aizu.ac.jp/onlinejudge/user.jsp?id=teerapat_#0
-User: teerapat_
+Website: http://judge.u-aizu.ac.jp/onlinejudge/
+Profile: 
