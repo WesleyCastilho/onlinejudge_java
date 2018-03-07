@@ -20,39 +20,39 @@ import java.util.LinkedList;
 
 public class P2587_Jetiqui {
     public static void main(String[] a) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        File file_in = new File("src/URI/Trying/NOSTATUS/STRING/input.txt");
+        File file_out = new File("src/URI/Trying/NOSTATUS/STRING/output.txt");
+        BufferedReader br = new BufferedReader(new FileReader(file_in));
+        BufferedWriter bw = new BufferedWriter(new FileWriter(file_out));
         int n = Integer.parseInt(br.readLine());
-        loop:
         while (n-- > 0) {
-            String w1 = br.readLine();
-            String w2 = br.readLine();
-            char[] incom = br.readLine().toCharArray();
-            LinkedList<Integer> starIndex = new LinkedList<Integer>();
-            LinkedList<Integer> equeIndex = new LinkedList<Integer>();
-            int index = 0;
-            for (char c : incom) {
-                if (c == '_') {
-                    starIndex.add(index);
+            char[] c1 = br.readLine().toCharArray();
+            char[] c2 = br.readLine().toCharArray();
+            char[] c3 = br.readLine().toCharArray();
+            int size = c1.length;
+            boolean chk = true;
+            loop:
+            for (int i = 0; i < size; i++) {
+                if (c3[i] == '_') {
+                    if (c1[i] == c2[i]) {
+                        chk = false;
+                        break loop;
+                    }
                 } else {
-                    equeIndex.add(index);
-                }
-                index++;
-            }
-            for (int i : starIndex) {
-                if (w1.charAt(i) == w2.charAt(i)) {
-                    bw.append("N\n");
-                    continue loop;
+                    if(c1[i] != c3[i] && c3[i] != c2[i]){
+                        chk = false;
+                        break loop;
+                    }
                 }
             }
-            for (int i : equeIndex) {
-                if (w1.charAt(i) != w2.charAt(i)) {
-                    bw.append("N\n");
-                    continue loop;
-                }
-            }
-            bw.append("Y\n");
+            bw.append(chk ? "Y\n" : "N\n");
+
         }
+
         bw.flush();
+
     }
+
+
 }
+
