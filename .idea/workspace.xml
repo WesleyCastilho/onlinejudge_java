@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d079c2a0-9e0d-47d3-830f-572a2e74375b" name="Default" comment="">
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\out\production\onlinejuge\MAP.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\IdeaProjects\onlinejudge\src\MAP.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/onlinejuge/GetCountingProblem.class" afterPath="$PROJECT_DIR$/out/production/onlinejuge/GetCountingProblem.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GetCountingProblem.java" afterPath="$PROJECT_DIR$/src/GetCountingProblem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MAP.txt" afterPath="$PROJECT_DIR$/MAP.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="onlinejuge.iws" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="GetCountingProblem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GetCountingProblem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="2822">
-              <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1797" max-vertical-offset="3298">
+              <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -45,8 +44,8 @@
       <file leaf-file-name="MAP.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MAP.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7308707" vertical-offset="14190" max-vertical-offset="14569">
-              <caret line="851" column="0" selection-start-line="851" selection-start-column="0" selection-end-line="851" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.1734694" vertical-offset="0" max-vertical-offset="14620">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -154,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ZOJ/Accepted/P1292_Integer_Inquiry.java" />
         <option value="$PROJECT_DIR$/src/ZOJ/Accepted/P1295_Reverse_Text.java" />
         <option value="$PROJECT_DIR$/src/ZOJ/Accepted/P1760_Doubles.java" />
         <option value="$PROJECT_DIR$/src/ZOJ/Accepted/P2417_Lowest_Bit.java" />
@@ -204,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/AIZU/MAP.txt" />
         <option value="$PROJECT_DIR$/src/URI/MAP.txt" />
         <option value="$PROJECT_DIR$/src/MAP.txt" />
+        <option value="$PROJECT_DIR$/MAP.txt" />
         <option value="$PROJECT_DIR$/src/GetCountingProblem.java" />
       </list>
     </option>
@@ -564,7 +563,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="onlinejuge" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -881,15 +886,15 @@
       <workItem from="1520309311417" duration="8015000" />
       <workItem from="1520330901054" duration="3291000" />
       <workItem from="1520393920582" duration="1367000" />
-      <workItem from="1520396107038" duration="16276000" />
+      <workItem from="1520396107038" duration="19400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131205000" />
+    <option name="totallyTimeSpent" value="134329000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -906,7 +911,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31316188" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" x="724" y="71" width="468" height="898" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31316188" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" x="724" y="71" width="468" height="898" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1318,14 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/onlinejuge.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AIZU/MAP.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
@@ -1374,18 +1371,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/onlinejuge.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GetCountingProblem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="2822">
-          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1797" max-vertical-offset="3298">
+          <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MAP.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7308707" vertical-offset="14190" max-vertical-offset="14569">
-          <caret line="851" column="0" selection-start-line="851" selection-start-column="0" selection-end-line="851" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.1734694" vertical-offset="0" max-vertical-offset="14620">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>

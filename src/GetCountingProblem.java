@@ -40,6 +40,7 @@ public class GetCountingProblem {
     static int zoj_totalFile = 0;
 
     static int totalJavaFile = 0;
+    static int totalAcceptedFile = 0;
     static BufferedWriter bw_MapAll;
     static BufferedWriter bw_Map;
     static BufferedWriter bw_Note;
@@ -49,9 +50,13 @@ public class GetCountingProblem {
 
         File root = new File(ROOT_DIRECTORY);
         bw_MapAll = new BufferedWriter(new FileWriter(MAP_FILE));
+        bw_MapAll.append(new String(new char[100]) + "\n");
+        bw_MapAll.newLine();
+        bw_MapAll.newLine();
         bw_MapAll.append("src -|\n");
         // get all the files from a directory
         File[] fList = root.listFiles();
+
         for (File file : fList) {
             if (file.isDirectory()) {
                 String directoryName = file.getName();
@@ -65,52 +70,69 @@ public class GetCountingProblem {
                 bw_Note.append("Profile: " + pair[1] + "\n");
 
                 bw_Map.append(directoryName + " -|\n");
-                bw_MapAll.append("     |-> "+directoryName + " -|\n");
+                bw_MapAll.append("     |-> " + directoryName + " -|\n");
                 File Dir = new File(ojDir);
                 File[] fileList = Dir.listFiles();
                 levelSpeceSize = new int[11];
                 levelSpeceSize[1] = directoryName.length();
-                BuildMap(1, ojDir, fileList, ojMapFile);
+                BuildMap(1, ojDir, fileList, false);
             }
             bw_Map.flush();
             bw_Note.flush();
             bw_MapAll.flush();
+
+//            String HeadText = "Total SourceCode File: " + totalJavaFile;
+            String HeadText = "Total SourceCode File: " + totalJavaFile + ", Accepted File: " + totalAcceptedFile;
+            RandomAccessFile f = new RandomAccessFile(new File("./" + MAP_FILE), "rw");
+            f.seek(0); // to the beginning
+            f.write(HeadText.getBytes());
+            f.close();
         }
     }
 
 
-    static void BuildMap(int level, String ojDir, File[] files, String ojMapFile) throws IOException {
+    static void BuildMap(int level, String ojDir, File[] files, boolean isAccepted) throws IOException {
+        boolean ac = isAccepted;
         for (int i = 0; i < files.length; i++) {
             bw_MapAll.append("     |");
-            for(int k = 1; k <= level; k++){
-                for (int j = 0; j < levelSpeceSize[k]+(k > 1 ? 5: 2); j++) {
+            for (int k = 1; k <= level; k++) {
+                for (int j = 0; j < levelSpeceSize[k] + (k > 1 ? 5 : 2); j++) {
                     bw_Map.append(" ");
                     bw_MapAll.append(" ");
                 }
-                for (int j = 0; j < (k > 1 ? 0: 3); j++) {
+                for (int j = 0; j < (k > 1 ? 0 : 3); j++) {
                     bw_MapAll.append(" ");
                 }
                 bw_Map.append("|");
                 bw_MapAll.append("|");
             }
-
             if (files[i].isDirectory()) {
+
+                if (files[i].getName().equals("Accepted")
+                        || files[i].getParentFile().getName().equals("Accepted")
+                        || files[i].getParentFile().getParentFile().getName().equals("Accepted")
+                        ) {
+                    ac = true;
+                } else {
+                    ac = false;
+                }
+
                 String nowDir = ojDir + "/" + files[i].getName();
                 File Dir = new File(nowDir);
                 File[] fileList = Dir.listFiles();
-                bw_Map.append("-> " + files[i].getName() + (fileList.length > 0 ? " -|":"" )+"\n");
-                bw_MapAll.append("-> " + files[i].getName() + (fileList.length > 0 ? " -|":"" )+"\n");
+                bw_Map.append("-> " + files[i].getName() + (fileList.length > 0 ? " -|" : "") + "\n");
+                bw_MapAll.append("-> " + files[i].getName() + (fileList.length > 0 ? " -|" : "") + "\n");
                 if (fileList.length > 0) {
                     levelSpeceSize[level + 1] = files[i].getName().length();
-                    BuildMap(level + 1, nowDir, fileList, ojMapFile);
+                    BuildMap(level + 1, nowDir, fileList, ac);
                 }
                 bw_MapAll.append("     |");
-                for(int k = 1; k <= level; k++){
-                    for (int j = 0; j < levelSpeceSize[k]+(k > 1 ? 5: 2); j++) {
+                for (int k = 1; k <= level; k++) {
+                    for (int j = 0; j < levelSpeceSize[k] + (k > 1 ? 5 : 2); j++) {
                         bw_Map.append(" ");
                         bw_MapAll.append(" ");
                     }
-                    for (int j = 0; j < (k > 1 ? 0: 3); j++) {
+                    for (int j = 0; j < (k > 1 ? 0 : 3); j++) {
                         bw_MapAll.append(" ");
                     }
                     bw_Map.append("|");
@@ -119,6 +141,12 @@ public class GetCountingProblem {
                 bw_Map.newLine();
                 bw_MapAll.newLine();
             } else {
+                if (files[i].getName().endsWith(".java")) {
+                    totalJavaFile++;
+                    if (isAccepted) {
+                        totalAcceptedFile++;
+                    }
+                }
                 bw_Map.append("-- " + files[i].getName() + "\n");
                 bw_MapAll.append("-- " + files[i].getName() + "\n");
             }
