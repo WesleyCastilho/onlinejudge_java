@@ -5,7 +5,7 @@ package URI.Trying.NOSTATUS.AD_HOC;
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
  * @Categories: STRING
- * @Problem: 
+ * @Problem:
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2021
  * @Timelimit: 1 sec
  * @Status: Accepted
