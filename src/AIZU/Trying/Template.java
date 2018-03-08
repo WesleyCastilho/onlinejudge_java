@@ -1,4 +1,4 @@
-package AIZU.Trying.ALDS1;
+package AIZU.Trying;
 
 /**
  * @author Teerapat Phokhonwong
@@ -17,9 +17,9 @@ package AIZU.Trying.ALDS1;
 
 import java.io.*;
 
-public class ALDS1_3_A_Stack {
+public class Template {
 
-    public static void main(String a[]) throws IOException {
+    public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     }

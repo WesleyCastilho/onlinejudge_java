@@ -3,6 +3,7 @@ AIZU -|
       |             |-> ITP1 -|
       |             |         |-- ITP1_1_A_Hello_World.java
       |             |         |-- ITP1_1_B_X_Cubic.java
+      |             |         |-- ITP1_1_C_Rectangle.java
       |             |
       |
       |-- MAP.txt
@@ -12,7 +13,7 @@ AIZU -|
       |           |          |-- ALDS1_3_A_Stack.java
       |           |
       |           |-> ITP1 -|
-      |           |         |-- ITP1_1_C_Rectangle.java
+      |           |         |-- ITP1_1_D_Watch.java
+      |           |         |-- Template.java
       |           |
-      |           |-- Template.java
       |
