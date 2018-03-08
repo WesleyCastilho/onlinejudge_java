@@ -39,8 +39,8 @@ public class P2720_Large_Presents {
                 h = Integer.parseInt(st[1]);
                 w = Integer.parseInt(st[2]);
                 l = Integer.parseInt(st[3]);
-                int size = ((h * 2) + (w * 2)) + l;
-                giftList.put(i, size);
+                int size = h + w * l;
+                giftList.put(size, i);
             }
 
             boolean printed = false;
@@ -51,11 +51,13 @@ public class P2720_Large_Presents {
                 } else {
                     bw.append(" ");
                 }
-                Integer id = entry.getKey();
+                Integer id = entry.getValue();
                 bw.append(id + "");
-                if (++count == k) {
+                count++;
+                if (count == k) {
                     break;
                 }
+
             }
 
             bw.append("\n");
@@ -63,11 +65,12 @@ public class P2720_Large_Presents {
         bw.flush();
     }
 
-    static <K,V extends Comparable<? super V>> SortedSet<Map.Entry<K,V>> entriesSortedByValues(Map<K,V> map) {
-        SortedSet<Map.Entry<K,V>> sortedEntries = new TreeSet<Map.Entry<K,V>>(
-                new Comparator<Map.Entry<K,V>>() {
-                    @Override public int compare(Map.Entry<K,V> e1, Map.Entry<K,V> e2) {
-                        int res = e2.getValue().compareTo(e1.getValue());
+    static <K, V extends Comparable<? super V>> SortedSet<Map.Entry<K, V>> entriesSortedByValues(Map<K, V> map) {
+        SortedSet<Map.Entry<K, V>> sortedEntries = new TreeSet<Map.Entry<K, V>>(
+                new Comparator<Map.Entry<K, V>>() {
+                    @Override
+                    public int compare(Map.Entry<K, V> e1, Map.Entry<K, V> e2) {
+                        int res = e1.getValue().compareTo(e2.getValue());
                         if (e1.getKey().equals(e2.getKey())) {
                             return res; // Code will now handle equality properly
                         } else {
