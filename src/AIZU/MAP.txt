@@ -13,6 +13,8 @@ AIZU -|
       |             |         |-- ITP1_2_C_Sorting_Three_Numbers.java
       |             |         |-- ITP1_3_A_Print_Many_Hello_World.java
       |             |         |-- ITP1_3_B_Print_Test_Cases.java
+      |             |         |-- ITP1_5_C_Print_a_Chessboard.java
+      |             |         |-- ITP1_6_A_Reversing_Numbers.java
       |             |
       |
       |-- MAP.txt
@@ -27,4 +29,11 @@ AIZU -|
       |           |         |
       |           |
       |           |-- Template.java
+      |
+      |-> WA -|
+      |       |-> ITP1 -|
+      |       |         |-> input
+      |       |         |
+      |       |         |-- ITP1_3_C_Swapping_Two_Numbers.java
+      |       |
       |
