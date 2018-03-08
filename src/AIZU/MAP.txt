@@ -1,19 +1,30 @@
 AIZU -|
       |-> Accepted -|
+      |             |-> ALDS1 -|
+      |             |          |-- ALDS1_3_A_Stack.java
+      |             |
       |             |-> ITP1 -|
       |             |         |-- ITP1_1_A_Hello_World.java
       |             |         |-- ITP1_1_B_X_Cubic.java
       |             |         |-- ITP1_1_C_Rectangle.java
+      |             |         |-- ITP1_1_D_Watch.java
+      |             |         |-- ITP1_2_A_Small_Large_or_Equal.java
+      |             |         |-- ITP1_2_B_Range.java
+      |             |         |-- ITP1_2_C_Sorting_Three_Numbers.java
+      |             |         |-- ITP1_3_A_Print_Many_Hello_World.java
+      |             |         |-- ITP1_3_B_Print_Test_Cases.java
       |             |
       |
       |-- MAP.txt
       |-- NOTE.txt
       |-> Trying -|
       |           |-> ALDS1 -|
-      |           |          |-- ALDS1_3_A_Stack.java
+      |           |          |-> input
+      |           |          |
       |           |
       |           |-> ITP1 -|
-      |           |         |-- ITP1_1_D_Watch.java
-      |           |         |-- Template.java
+      |           |         |-> input
+      |           |         |
       |           |
+      |           |-- Template.java
       |

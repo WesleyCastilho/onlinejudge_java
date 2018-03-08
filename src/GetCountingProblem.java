@@ -3,13 +3,14 @@ import java.io.*;
 /**
  * Created by Teerapat-BSD on 3/7/2018.
  */
+
 public class GetCountingProblem {
     static final String ROOT_DIRECTORY = "src";
     static final String NOTE_FILE = "NOTE.txt";
     static final String MAP_FILE = "MAP.txt";
 
     static final String LINK_AIZU = "http://judge.u-aizu.ac.jp/onlinejudge/";
-    static final String PROFILE_AIZU = "";
+    static final String PROFILE_AIZU = "http://judge.u-aizu.ac.jp/onlinejudge/user.jsp?id=teerapat_";
     static int aizu_totalFile = 0;
 
     static final String LINK_COJ = "http://coj.uci.cu/index.xhtml";
