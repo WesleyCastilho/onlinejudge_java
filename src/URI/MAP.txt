@@ -758,6 +758,8 @@ URI -|
      |           |             |              |-- P1878_Contests_in_Sequence.java
      |           |             |
      |           |             |-> STRING -|
+     |           |             |           |-- input.txt
+     |           |             |           |-- output.txt
      |           |             |           |-- P1284_Cellphone_Typing.java
      |           |             |           |-- P1458_SMS_Championship.java
      |           |             |           |-- P2336_ABC.java
@@ -770,6 +772,7 @@ URI -|
      |           |        |-- P1883_Escape_From_Ayutthaya.java
      |           |        |-- P2500_William_Xorando.java
      |           |        |-- P2710_Game_of_Array.java
+     |           |        |-- P2720_input.txt
      |           |        |-- P2720_Large_Presents.java
      |           |        |-- P2720_Large_Presents_V1.java
      |           |
