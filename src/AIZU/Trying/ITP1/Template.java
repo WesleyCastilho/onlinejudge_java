@@ -17,12 +17,11 @@ package AIZU.Trying.ITP1;
 
 import java.io.*;
 
-public class ITP1_1_C_Rectangle {
+public class Template {
 
-    public static void main(String a[]) throws IOException {
+    public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        String[] st = br.readLine().split(" ");
     }
 
 
