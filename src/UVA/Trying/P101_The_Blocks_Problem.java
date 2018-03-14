@@ -11,7 +11,7 @@ package UVA.Trying;
  * @Submission:
  * @Runtime:
  * @Solution: LinkedList
- * @Note:
+ * @Note: (onto = แทรกกลาง)  (over = วางต่อหลัง)
  */
 
 import java.io.*;
@@ -19,32 +19,16 @@ import java.io.*;
 public class P101_The_Blocks_Problem {
 
     static class StackSlot {
-        int slot;
+        int slotId;
         Block firstBlock = null;
         Block lastBlock = null;
 
-        public StackSlot(int slot, Block block) {
-            this.slot = slot;
+        public StackSlot(int slotId, Block block) {
+            this.slotId = slotId;
             this.firstBlock = block;
             this.lastBlock = block;
         }
 
-
-//        public void moveOver(Block blockA, Block blockB) {
-//
-//        }
-//
-//        public void moveOnto(Block blockA, Block blockB) {
-//
-//        }
-//
-//        public void pileOnto(StackSlot b) {
-//
-//        }
-//
-//        public void pileOver(StackSlot b) {
-//
-//        }
     }
 
     static class Block {
@@ -79,29 +63,26 @@ public class P101_The_Blocks_Problem {
         }
         String input;
         while (!(input = br.readLine()).equals("quit")) {
-            System.out.println(input);
-
+//            System.out.println(input);
 
             String[] command = input.split(" ");
             int a = Integer.parseInt(command[1]);
             int b = Integer.parseInt(command[3]);
             Block blockA = block[a];
             Block blockB = block[b];
-            StackSlot slotA = slot[blockA.slot];
-            StackSlot slotB = slot[blockB.slot];
-            Block tmpB_upper = blockB.upper;
-            Block tmpA_under = blockA.under;
+            StackSlot slotA, slotB;
 
-//            System.out.println("command: " + command[0]);
-//            System.out.println("a = " + blockA.id);
-//            System.out.println("b = " + blockB.id);
-//            System.out.println("type: " + command[2] + "\n");
 
             switch (command[0]) {
                 case "move":
+                    slotA = slot[blockA.slot];
+                    slotB = slot[blockB.slot];
+                    setSlot(blockA, slotB.slotId);
+                    Block tmpA_under = blockA.under;
                     switch (command[2]) {
                         case "onto": //move A Onto B  (slot: ...B <-> A)
-                            slotB.lastBlock.upper = blockA;
+                            if (slotB.lastBlock != null)
+                                slotB.lastBlock.upper = blockA;
                             blockA.under = slotB.lastBlock;
                             slotB.lastBlock = slotA.lastBlock;
                             slotA.lastBlock = tmpA_under;
@@ -128,42 +109,53 @@ public class P101_The_Blocks_Problem {
                     }
                     break;
                 case "pile":
+                    slotA = slot[blockA.slot];
+                    slotB = slot[b];
+                    setSlot(blockA, slotB.slotId);
+                    Block tmpB_upper = blockB.upper;
+                    Block tmpA_lastBlock = slotA.lastBlock;
+
+                    if (blockA != slotA.firstBlock) {
+                        slotA.lastBlock = blockA.under;
+                        if(slotA.lastBlock != null)
+                        slotA.lastBlock.upper = null;
+                    } else {
+                        slotA.firstBlock = null;
+                        slotA.lastBlock = null;
+                    }
                     switch (command[2]) {
                         case "onto"://pile A Onto B
-//                            if (slotB.lastBlock != null) {
-//                                slotB.lastBlock.upper = blockA;
-//                                slotB.lastBlock = slotA.lastBlock;
-//                                slotA.lastBlock = tmpA_under;
-//                            }
-//
-//                            if (slotA.lastBlock == null) {
-//                                slotA.firstBlock = null;
-//                            }
+                            if (blockB == slotB.lastBlock) {
+                                blockB.upper = blockA;
+                                blockA.under = blockB;
+                                slotB.lastBlock = slotA.lastBlock;
+                            } else {
+                                blockB.upper = blockA;
+                                blockA.under = blockB;
 
+                                if (tmpA_lastBlock != null)
+                                    tmpA_lastBlock.upper = tmpB_upper;
+                                if (tmpB_upper != null)
+                                    tmpB_upper.under = tmpA_lastBlock;
+                            }
                             break;
                         case "over"://pile A Over B
-                            if (slotB.lastBlock != null) {
-//                                System.out.print("1");
-                                slotB.lastBlock.upper = blockA;
-                                slotB.lastBlock = slotA.lastBlock;
 
-                                if (blockA == slotA.firstBlock) {
-                                    System.out.println("xxxxxxxxxxxxxxxxxxx");
-                                    slotA.firstBlock = null;
-                                    slotA.lastBlock = null;
-                                }
-                            } else {
-//                                System.out.println("2");
+                            if (slotB.firstBlock == null) {
                                 slotB.firstBlock = blockA;
                                 slotB.lastBlock = slotA.lastBlock;
+                            } else {
+                                if (slotB.lastBlock != null) {
+                                    slotB.lastBlock.upper = blockA;
+                                }
+                                blockA.under = slotB.lastBlock;
+                                slotB.lastBlock = slotA.lastBlock;
                             }
-
-
                             break;
                     }
                     break;
             }
-            printResult(n);
+//            printResultStep(n);
         }
 
         for (int i = 0; i < n; i++) {
@@ -178,7 +170,14 @@ public class P101_The_Blocks_Problem {
         bw.flush();
     }
 
-    static void printResult(int n) {
+    static void setSlot(Block block, int newSlot) {
+        while (block != null) {
+            block.slot = newSlot;
+            block = block.upper;
+        }
+    }
+
+    static void printResultStep(int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(i + ":");
             Block block = slot[i].firstBlock;
