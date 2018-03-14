@@ -1,14 +1,14 @@
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
- * @Categories:
+ * @Categories: DATA STRUCTURE AND LIBRARIES
  * @Problem: 1045 - The Halting Problem
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1405
  * @Timelimit: 1 sec
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution:
+ * @Solution: segment tree
  * @Note:
  */
 package URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES;

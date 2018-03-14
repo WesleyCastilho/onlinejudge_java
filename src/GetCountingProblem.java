@@ -3,13 +3,14 @@ import java.io.*;
 /**
  * Created by Teerapat-BSD on 3/7/2018.
  */
+
 public class GetCountingProblem {
     static final String ROOT_DIRECTORY = "src";
     static final String NOTE_FILE = "NOTE.txt";
     static final String MAP_FILE = "MAP.txt";
 
     static final String LINK_AIZU = "http://judge.u-aizu.ac.jp/onlinejudge/";
-    static final String PROFILE_AIZU = "";
+    static final String PROFILE_AIZU = "http://judge.u-aizu.ac.jp/onlinejudge/user.jsp?id=teerapat_";
     static int aizu_totalFile = 0;
 
     static final String LINK_COJ = "http://coj.uci.cu/index.xhtml";
@@ -25,7 +26,7 @@ public class GetCountingProblem {
     static int uri_totalFile = 0;
 
     static final String LINK_UVA = "https://uva.onlinejudge.org/";
-    static final String PROFILE_UVA = "";
+    static final String PROFILE_UVA = "UserName:boombarm | Online Judge ID: 752084";
     static int uva_totalFile = 0;
 
     static final String LINK_ZOJ = "http://acm.zju.edu.cn/onlinejudge/";
@@ -80,7 +81,6 @@ public class GetCountingProblem {
             bw_Note.flush();
             bw_MapAll.flush();
 
-//            String HeadText = "Total SourceCode File: " + totalJavaFile;
             String HeadText = "Total SourceCode File: " + totalJavaFile + ", Accepted File: " + totalAcceptedFile;
             RandomAccessFile f = new RandomAccessFile(new File("./" + MAP_FILE), "rw");
             f.seek(0); // to the beginning
