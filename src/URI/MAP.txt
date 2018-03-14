@@ -738,9 +738,16 @@ URI -|
      |           |             |-> CONPUTATIONAL_GEOMETRY
      |           |             |
      |           |             |-> DATA_STRUCTURES_AND_LIBRARIES -|
+     |           |             |                                  |-> input -|
+     |           |             |                                  |          |-- P1633_input.txt
+     |           |             |                                  |
+     |           |             |                                  |-> output -|
+     |           |             |                                  |           |-- P1633_output.txt
+     |           |             |                                  |
      |           |             |                                  |-- P1119_The_Dole_Queue.java
      |           |             |                                  |-- P1405_The_Halting_Problem.java
      |           |             |                                  |-- P1425_Gift.java
+     |           |             |                                  |-- P1633_SBC.java
      |           |             |                                  |-- P2064_Prant_and_the_Indecision.java
      |           |             |                                  |-- P2671_Decoding_the_Text.java
      |           |             |

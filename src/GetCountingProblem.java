@@ -26,7 +26,7 @@ public class GetCountingProblem {
     static int uri_totalFile = 0;
 
     static final String LINK_UVA = "https://uva.onlinejudge.org/";
-    static final String PROFILE_UVA = "";
+    static final String PROFILE_UVA = "UserName:boombarm | Online Judge ID: 752084";
     static int uva_totalFile = 0;
 
     static final String LINK_ZOJ = "http://acm.zju.edu.cn/onlinejudge/";
@@ -81,7 +81,6 @@ public class GetCountingProblem {
             bw_Note.flush();
             bw_MapAll.flush();
 
-//            String HeadText = "Total SourceCode File: " + totalJavaFile;
             String HeadText = "Total SourceCode File: " + totalJavaFile + ", Accepted File: " + totalAcceptedFile;
             RandomAccessFile f = new RandomAccessFile(new File("./" + MAP_FILE), "rw");
             f.seek(0); // to the beginning
