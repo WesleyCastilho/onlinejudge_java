@@ -1,4 +1,4 @@
-package th.in.devboom.uri.accepted;
+package URI.Accepted.BEGINNER.sourcecode;
 
 
 /**
@@ -70,7 +70,7 @@ public class P2690_New_Password_RA {
                     bw.append("" + ((c - 97) % 10));
                 }
                 count++;
-                if(count == 12){
+                if (count == 12) {
                     break;
                 }
             }

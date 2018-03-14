@@ -1,4 +1,4 @@
-package th.in.devboom.uri.accepted;
+package URI.Accepted.BEGINNER.sourcecode;
 
 /**
  * Created by Teerapat-BSD on 1/11/2018.

@@ -27,6 +27,7 @@ public class P2587_Jetiqui {
         int n = Integer.parseInt(br.readLine());
         while (n-- > 0) {
             char[] c1 = br.readLine().toCharArray();
+
             char[] c2 = br.readLine().toCharArray();
             char[] c3 = br.readLine().toCharArray();
             int size = c1.length;
