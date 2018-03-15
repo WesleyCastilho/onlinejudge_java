@@ -1,4 +1,4 @@
-package AIZU.WA.ITP1;
+package AIZU.Accepted.ITP1;
 
 /**
  * @author Teerapat Phokhonwong
@@ -7,10 +7,10 @@ package AIZU.WA.ITP1;
  * @Problem: ITP1_3_C: Swapping Two Numbers
  * @Link: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_3_C
  * @Timelimit: 1 sec
- * @Status:
- * @Memory:
- * @Submission:
- * @Runtime:
+ * @Status: Accepted
+ * @Memory: 27384 KB
+ * @Submission: 2018-03-15 17:37
+ * @Runtime: 00:08 s
  * @Solution:
  * @Note:
  */
@@ -27,7 +27,7 @@ public class ITP1_3_C_Swapping_Two_Numbers {
             String[] st = input.split(" ");
             int a = Integer.parseInt(st[0]);
             int b = Integer.parseInt(st[1]);
-            bw.append((a < b ? st[1] + " " + st[0] : st[0] + " " + st[1]) + "\n");
+            bw.append((a < b ? st[0] + " " + st[1] : st[1] + " " + st[0]) + "\n");
         }
         bw.flush();
     }
