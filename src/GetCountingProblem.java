@@ -1,7 +1,7 @@
 import java.io.*;
 
 /**
- * Created by Teerapat-BSD on 3/7/2018.
+ * Created by Teerapat_
  */
 
 public class GetCountingProblem {
@@ -9,35 +9,53 @@ public class GetCountingProblem {
     static final String NOTE_FILE = "NOTE.txt";
     static final String MAP_FILE = "MAP.txt";
 
+    static final String AIZU = "AIZU";
     static final String LINK_AIZU = "http://judge.u-aizu.ac.jp/onlinejudge/";
     static final String PROFILE_AIZU = "http://judge.u-aizu.ac.jp/onlinejudge/user.jsp?id=teerapat_";
     static int aizu_totalFile = 0;
+    static int aizu_ac = 0;
 
+    static final String COJ = "COJ";
     static final String LINK_COJ = "http://coj.uci.cu/index.xhtml";
     static final String PROFILE_COJ = "";
     static int coj_totalFile = 0;
+    static int coj_ac = 0;
 
+    static final String TOPCODER = "TOPCODER";
     static final String LINK_TOPCODER = "https://www.topcoder.com/";
     static final String PROFILE_TOPCODER = "";
     static int topcoder_totalFile = 0;
+    static int topcoder_ac = 0;
 
+    static final String URI = "URI";
     static final String LINK_URI = "https://www.urionlinejudge.com.br/judge/en";
     static final String PROFILE_URI = "https://www.urionlinejudge.com.br/judge/en/profile/56315";
     static int uri_totalFile = 0;
+    static int uri_ac = 0;
 
+    static final String UVA = "UVA";
     static final String LINK_UVA = "https://uva.onlinejudge.org/";
     static final String PROFILE_UVA = "UserName:boombarm | Online Judge ID: 752084";
     static int uva_totalFile = 0;
+    static int uva_ac = 0;
 
+    static final String ZOJ = "ZOJ";
     static final String LINK_ZOJ = "http://acm.zju.edu.cn/onlinejudge/";
     static final String PROFILE_ZOJ = "";
     static int zoj_totalFile = 0;
+    static int zoj_ac = 0;
 
+    static final String SPOJ = "SPOJ";
     static final String LINK_SPOJ = "http://acm.zju.edu.cn/onlinejudge/";
     static final String PROFILE_SPOJ = "";
+    static int spoj_totalFile = 0;
+    static int spoj_ac = 0;
 
+    static final String DEV_SKILL = "DEVSKILL";
     static final String LINK_DEV_SKILL = "https://www.devskill.com/Home";
     static final String PROFILE_DEV_SKILL = "";
+    static int devSkill_totalFile = 0;
+    static int devSkill_ac = 0;
 
     static int totalJavaFile = 0;
     static int totalAcceptedFile = 0;
@@ -45,6 +63,7 @@ public class GetCountingProblem {
     static BufferedWriter bw_Map;
     static BufferedWriter bw_Note;
     static int[] levelSpeceSize;
+    static String source;
 
     public static void main(String[] a) throws IOException {
 
@@ -64,10 +83,14 @@ public class GetCountingProblem {
                 String ojMapFile = ojDir + "/" + MAP_FILE;
                 String ojNoteFile = ojDir + "/" + NOTE_FILE;
                 bw_Map = new BufferedWriter(new FileWriter(ojMapFile));
+                bw_Map.append(new String(new char[100]) + "\n");//Set Head space
+                bw_Map.append(new String(new char[100]) + "\n");//Set Head space
+
                 bw_Note = new BufferedWriter(new FileWriter(ojNoteFile));
                 String[] pair = getWebsite(directoryName);
                 bw_Note.append("Website: " + pair[0] + "\n");
                 bw_Note.append("Profile: " + pair[1] + "\n");
+                source = pair[2];
 
                 bw_Map.append(directoryName + " -|\n");
                 bw_MapAll.append("     |-> " + directoryName + " -|\n");
@@ -76,9 +99,19 @@ public class GetCountingProblem {
                 levelSpeceSize = new int[11];
                 levelSpeceSize[1] = directoryName.length();
                 BuildMap(1, ojDir, fileList, false);
+                bw_Map.flush();
+                bw_Note.flush();
+
+//                System.out.println("source :" + source);
+                pair = getWebsite(directoryName);
+                String HeadText = "Total SourceCode File: " + pair[3] + ", Accepted File: " + pair[4];
+                RandomAccessFile f = new RandomAccessFile(new File(ojMapFile), "rw");
+                f.seek(0); // to the beginning
+                f.write(HeadText.getBytes());
+                f.close();
+
             }
-            bw_Map.flush();
-            bw_Note.flush();
+
             bw_MapAll.flush();
 
             String HeadText = "Total SourceCode File: " + totalJavaFile + ", Accepted File: " + totalAcceptedFile;
@@ -87,11 +120,17 @@ public class GetCountingProblem {
             f.write(HeadText.getBytes());
             f.close();
         }
+        System.out.println("Counting Result");
+        System.out.println(AIZU + " totalFile:" + aizu_totalFile + "  ac:" + aizu_ac);
+        System.out.println(COJ + " totalFile:" + coj_totalFile + "  ac:" + coj_ac);
+        System.out.println(URI + " totalFile:" + uri_totalFile + "  ac:" + uri_ac);
+        System.out.println(UVA + " totalFile:" + uva_totalFile + "  ac:" + uva_ac);
+        System.out.println(ZOJ + " totalFile:" + zoj_totalFile + "  ac:" + zoj_ac);
     }
 
 
     static void BuildMap(int level, String ojDir, File[] files, boolean isAccepted) throws IOException {
-        boolean ac = isAccepted;
+        boolean ac;
         for (int i = 0; i < files.length; i++) {
             bw_MapAll.append("     |");
             for (int k = 1; k <= level; k++) {
@@ -142,9 +181,11 @@ public class GetCountingProblem {
             } else {
                 if (files[i].getName().endsWith(".java")) {
                     totalJavaFile++;
+
                     if (isAccepted) {
                         totalAcceptedFile++;
                     }
+                    countingSource(source, isAccepted);//Counting each Source
                 }
                 bw_Map.append("-- " + files[i].getName() + "\n");
                 bw_MapAll.append("-- " + files[i].getName() + "\n");
@@ -154,27 +195,49 @@ public class GetCountingProblem {
     }
 
     private static String[] getWebsite(String directoryName) {
-        String[] pair = new String[2];
+        String[] pair = new String[5];
         switch (directoryName) {
             case "AIZU":
                 pair[0] = LINK_AIZU;
                 pair[1] = PROFILE_AIZU;
+                pair[2] = AIZU;
+                pair[3] = aizu_totalFile + "";
+                pair[4] = aizu_ac + "";
                 break;
             case "COJ":
                 pair[0] = LINK_COJ;
                 pair[1] = PROFILE_COJ;
+                pair[2] = COJ;
+                pair[3] = coj_totalFile + "";
+                pair[4] = coj_ac + "";
                 break;
             case "URI":
                 pair[0] = LINK_URI;
                 pair[1] = PROFILE_URI;
+                pair[2] = URI;
+                pair[3] = uri_totalFile + "";
+                pair[4] = uri_ac + "";
                 break;
             case "UVA":
                 pair[0] = LINK_UVA;
                 pair[1] = PROFILE_UVA;
+                pair[2] = UVA;
+                pair[3] = uva_totalFile + "";
+                pair[4] = uva_ac + "";
                 break;
             case "ZOJ":
                 pair[0] = LINK_ZOJ;
                 pair[1] = PROFILE_ZOJ;
+                pair[2] = ZOJ;
+                pair[3] = zoj_totalFile + "";
+                pair[4] = zoj_ac + "";
+                break;
+            case "DEV_SKILL":
+                pair[0] = LINK_DEV_SKILL;
+                pair[1] = PROFILE_DEV_SKILL;
+                pair[2] = DEV_SKILL;
+                pair[3] = devSkill_totalFile + "";
+                pair[4] = devSkill_ac + "";
                 break;
             default:
                 pair[0] = "";
@@ -183,5 +246,50 @@ public class GetCountingProblem {
         }
         return pair;
     }
+
+    static void countingSource(String source, boolean Accepted) {
+
+        switch (source) {
+            case AIZU:
+                aizu_totalFile++;
+                if (Accepted) {
+                    aizu_ac++;
+                }
+                break;
+            case COJ:
+                coj_totalFile++;
+                if (Accepted) {
+                    coj_ac++;
+                }
+                break;
+            case URI:
+                uri_totalFile++;
+                if (Accepted) {
+                    uri_ac++;
+                }
+                break;
+            case UVA:
+                uva_totalFile++;
+                if (Accepted) {
+                    uva_ac++;
+                }
+                break;
+            case ZOJ:
+                zoj_totalFile++;
+                if (Accepted) {
+                    zoj_ac++;
+                }
+                break;
+            case DEV_SKILL:
+                devSkill_totalFile++;
+                if (Accepted) {
+                    devSkill_ac++;
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
 
 }
