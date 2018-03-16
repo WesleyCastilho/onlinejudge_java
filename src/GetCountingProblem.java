@@ -15,6 +15,12 @@ public class GetCountingProblem {
     static int aizu_totalFile = 0;
     static int aizu_ac = 0;
 
+    static final String CODECHEF = "CODECHEF";
+    static final String LINK_CODECHEF = "https://www.codechef.com/";
+    static final String PROFILE_CODECHEF = "https://www.codechef.com/users/teerapat_";
+    static int codechef_totalFile = 0;
+    static int codechef_ac = 0;
+
     static final String COJ = "COJ";
     static final String LINK_COJ = "http://coj.uci.cu/index.xhtml";
     static final String PROFILE_COJ = "";
@@ -197,42 +203,49 @@ public class GetCountingProblem {
     private static String[] getWebsite(String directoryName) {
         String[] pair = new String[5];
         switch (directoryName) {
-            case "AIZU":
+            case AIZU:
                 pair[0] = LINK_AIZU;
                 pair[1] = PROFILE_AIZU;
                 pair[2] = AIZU;
                 pair[3] = aizu_totalFile + "";
                 pair[4] = aizu_ac + "";
                 break;
-            case "COJ":
+            case COJ:
                 pair[0] = LINK_COJ;
                 pair[1] = PROFILE_COJ;
                 pair[2] = COJ;
                 pair[3] = coj_totalFile + "";
                 pair[4] = coj_ac + "";
                 break;
-            case "URI":
+            case CODECHEF:
+                pair[0] = LINK_CODECHEF;
+                pair[1] = PROFILE_CODECHEF;
+                pair[2] = CODECHEF;
+                pair[3] = codechef_totalFile + "";
+                pair[4] = codechef_ac + "";
+                break;
+            case URI:
                 pair[0] = LINK_URI;
                 pair[1] = PROFILE_URI;
                 pair[2] = URI;
                 pair[3] = uri_totalFile + "";
                 pair[4] = uri_ac + "";
                 break;
-            case "UVA":
+            case UVA:
                 pair[0] = LINK_UVA;
                 pair[1] = PROFILE_UVA;
                 pair[2] = UVA;
                 pair[3] = uva_totalFile + "";
                 pair[4] = uva_ac + "";
                 break;
-            case "ZOJ":
+            case ZOJ:
                 pair[0] = LINK_ZOJ;
                 pair[1] = PROFILE_ZOJ;
                 pair[2] = ZOJ;
                 pair[3] = zoj_totalFile + "";
                 pair[4] = zoj_ac + "";
                 break;
-            case "DEV_SKILL":
+            case DEV_SKILL:
                 pair[0] = LINK_DEV_SKILL;
                 pair[1] = PROFILE_DEV_SKILL;
                 pair[2] = DEV_SKILL;
