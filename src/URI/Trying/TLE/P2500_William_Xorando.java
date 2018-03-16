@@ -3,9 +3,9 @@
  * @Onlinejudge:
  * @Categories:
  * @Problem:
- * @Link:
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2500
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: TLE
  * @Submission:
  * @Runtime:
  * @Solution:
@@ -18,6 +18,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.BitSet;
 import java.util.HashMap;
 
 public class P2500_William_Xorando {
@@ -57,7 +58,6 @@ public class P2500_William_Xorando {
             k = Integer.parseInt(st[2]);
             st = br.readLine().split(" ");
             value = getAllValue(st, n);
-
 
             for (int i = 0; i < k; i++) {//round
                 for (int j = 0; j < n; j++) {//all Value
