@@ -7,12 +7,12 @@ package CODECHEF.Trying;
  * @Problem:
  * @Link:
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: WA
  * @Memory:
  * @Submission:
  * @Runtime:
  * @Solution:
- * @Note:
+ * @Note: AC with Python 3.5
  */
 
 import java.io.BufferedReader;
