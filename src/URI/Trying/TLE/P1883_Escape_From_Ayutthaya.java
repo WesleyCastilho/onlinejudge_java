@@ -1,24 +1,54 @@
 package URI.Trying.TLE;
 
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: AD-HOC
+ * @Problem: 1883 - Escape From Ayutthaya
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1883
+ * @Timelimit: 1 sec
+ * @Status: TLE
+ * @Memory:
+ * @Submission:
+ * @Runtime:
+ * @Solution:
+ * @Note:
+ */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.IOException;
 import java.util.LinkedList;
 
-public class P1883_Escape_From_Ayutthaya {
+class P1883_Escape_From_Ayutthaya {
 
-    BufferedReader br;
-    BufferedWriter bw;
-    int T, N, M;
-    int[][] MAP;
-    Point start, end, fire;
+    static BufferedReader br;
+    static BufferedWriter bw;
+    static int T, N, M;
+    static int[][] MAP;
+    static Point start, end, fire;
 
-    private class Point {
+    //top -> bot - right - left
+    static int[] ny = new int[]{-1, 1, 0, 0};
+    static int[] nx = new int[]{0, 0, -1, 1};
+
+
+    static private class Point {
         int x;
         int y;
+        int time = 0;
 
         public Point(int y, int x) {
             this.x = x;
             this.y = y;
+        }
+
+        public Point(int y, int x, int time) {
+            this.x = x;
+            this.y = y;
+            this.time = time;
         }
 
         public boolean equals(Point p2) {
@@ -27,15 +57,42 @@ public class P1883_Escape_From_Ayutthaya {
 
     }
 
-    int[][] heuristic;
-    int[][] spread;
 
-    public P1883_Escape_From_Ayutthaya() throws IOException {
+    static boolean findHeuristic() {
+        LinkedList<Point> queue = new LinkedList<Point>();
+        queue.add(start);
+        while (!queue.isEmpty()) {
+            Point p = queue.poll();
+            if (p == null) continue;
+            int y = p.y;
+            int x = p.x;
+            MAP[y][x] = 1;
+            int deadTime = (Math.abs(fire.x - x) + Math.abs(fire.y - y));
+            if (deadTime == p.time) {
+                continue;
+            }
+            if (p.equals(end)) {
+                return true;
+            }
+            for (int i = 0; i < 4; i++) {
+                int nY = y + ny[i];
+                int nX = x + nx[i];
+                if (nY > 0 && nY < N && nX > 0 && nX < M) {
+                    if (MAP[nY][nX] == 0) {
+                        Point nextPoint = new Point(nY, nX, p.time + 1);
+                        queue.add(nextPoint);
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) throws IOException {
         br = new BufferedReader(new InputStreamReader(System.in));
         bw = new BufferedWriter(new OutputStreamWriter(System.out));
         T = Integer.parseInt(br.readLine());
         while (T-- > 0) {
-
             String[] st = br.readLine().split(" ");
             N = Integer.parseInt(st[0]);
             M = Integer.parseInt(st[1]);
@@ -45,7 +102,7 @@ public class P1883_Escape_From_Ayutthaya {
                 for (int x = 0; x < M; x++) {
                     switch (c[x]) {
                         case '#':
-                            MAP[y][x] = -1;
+                            MAP[y][x] = 1;
                             break;
                         case 'S':
                             MAP[y][x] = 1;
@@ -55,7 +112,7 @@ public class P1883_Escape_From_Ayutthaya {
                             end = new Point(y, x);
                             break;
                         case 'F':
-                            MAP[y][x] = -1;
+                            MAP[y][x] = 1;
                             fire = new Point(y, x);
                             break;
                         case '.':
@@ -64,114 +121,24 @@ public class P1883_Escape_From_Ayutthaya {
                     }
                 }
             }
-            int gameOver = (Math.abs(fire.x - end.x) + Math.abs(fire.y - end.y));
-            int escaped = (Math.abs(start.x - end.x) + Math.abs(start.y - end.y));
-            if (escaped > gameOver) {
+            if (start == null || end == null) {
                 bw.append("N");
             } else {
-                spread = new int[N][M];
-                heuristic = new int[N][M];
-                boolean chk = buildHeuristic();
-                bw.append(chk ? "Y" : "N");
-//                for (int i = 0; i < N; i++) {
-//                    for (int j = 0; j < M; j++) {
-//                        System.out.print(" " + heuristic[i][j]);
-//                    }
-//                    System.out.println();
-//                }
-//                System.out.println();
-//                for (int i = 0; i < N; i++) {
-//                    for (int j = 0; j < M; j++) {
-//                        System.out.print(" " + spread[i][j]);
-//                    }
-//                    System.out.println();
-//                }
-//                System.out.println();
-
-
-//                bw.append("Y");
-//                boolean escaped = run(gameOver);
-//                boolean escaped = simulation();
-//                bw.append(escaped ? "Y" : "N");
+                int gameOver = Integer.MAX_VALUE;
+                if (fire != null) {
+                    gameOver = (Math.abs(fire.x - end.x) + Math.abs(fire.y - end.y));
+                }
+                int escaped = (Math.abs(start.x - end.x) + Math.abs(start.y - end.y));
+                if (escaped >= gameOver) {
+                    bw.append("N");
+                } else {
+                    boolean chk = findHeuristic();
+                    bw.append(chk ? "Y" : "N");
+                }
             }
             bw.newLine();
             bw.flush();
         }
     }
-
-
-    boolean buildHeuristic() {
-        LinkedList<Point> queue = new LinkedList<Point>();
-        LinkedList<Point> next = new LinkedList<Point>();
-        next.add(start);
-        int cost = 0;
-        while (!next.isEmpty()) {
-            queue.addAll(next);
-            next.clear();
-            while (!queue.isEmpty()) {
-                Point p = queue.poll();
-                int y = p.y;
-                int x = p.x;
-                heuristic[y][x] = cost;
-                spread[y][x] = (Math.abs(fire.x - x) + Math.abs(fire.y - y));
-                if (spread[y][x] == heuristic[y][x]) {
-                    System.out.println("spread");
-                    return false;
-                }
-                if (y > 0
-                        && MAP[y - 1][x] == 0
-                        && heuristic[y - 1][x] == 0) {//TOP
-//                    System.out.println("now");
-                    Point nextP = new Point(y - 1, x);
-                    boolean chk = cost + 1 < (Math.abs(fire.x - nextP.x) + Math.abs(fire.y - nextP.y));
-                    if (nextP.equals(end) && chk) {
-                        System.out.println("end");
-                        return true;
-                    }
-                    next.add(nextP);
-                }
-                if (y < N - 1
-                        && MAP[y + 1][x] == 0
-                        && heuristic[y + 1][x] == 0) {//BOT
-//                    System.out.println("now");
-                    Point nextP = new Point(y + 1, x);
-                    boolean chk = cost + 1 >= (Math.abs(fire.x - nextP.x) + Math.abs(fire.y - nextP.y));
-                    if (nextP.equals(end) && chk) {
-                        System.out.println("end");
-                        return true;
-                    }
-                    next.add(nextP);
-                }
-                if (x > 0
-                        && MAP[y][x - 1] == 0
-                        && heuristic[y][x - 1] == 0) {//LEFT
-//                    System.out.println("now");
-                    Point nextP = new Point(y, x - 1);
-                    boolean chk = cost + 1 >= (Math.abs(fire.x - nextP.x) + Math.abs(fire.y - nextP.y));
-                    if (nextP.equals(end) && chk) {
-                        System.out.println("end");
-                        return true;
-                    }
-                    next.add(nextP);
-                }
-                if (x < M - 1
-                        && MAP[y][x + 1] == 0
-                        && heuristic[y][x + 1] == 0) {//RIGHT
-//                    System.out.println("now");
-                    Point nextP = new Point(y, x + 1);
-                    boolean chk = cost + 1 >= (Math.abs(fire.x - nextP.x) + Math.abs(fire.y - nextP.y));
-                    if (nextP.equals(end) && chk) {
-                        System.out.println("end");
-                        return true;
-                    }
-                    next.add(nextP);
-                }
-            }
-            cost++;
-        }
-        System.out.println("end Loop");
-        return false;
-    }
-
 
 }
