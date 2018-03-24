@@ -24,9 +24,9 @@ import java.util.Comparator;
 public class P1912_Help_Seu_Madruga {
 
     static int n, a;
-    static Integer[] c;
+    static int[] c;
 
-    public static void main(String[] args) throws IOException {
+    public P1912_Help_Seu_Madruga() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         DecimalFormat df = new DecimalFormat("0.0000");
@@ -38,24 +38,26 @@ public class P1912_Help_Seu_Madruga {
             st = br.readLine().split(" ");
             int size = st.length;
             double sum = 0;
-            c = new Integer[n];
+            c = new int[n];
             int i = 0;
             for (String s : st) {
                 sum += c[i] = Integer.parseInt(st[i++]);
             }
-            if (sum == a) {
-                bw.append(":D\n");
-            } else if (sum < a) {
+            if (sum < a) {
                 bw.append("-.-\n");
+            } else if (sum == a) {
+                bw.append(":D\n");
             } else {
-                Arrays.sort(c, new Comparator<Integer>() {
-                    @Override
-                    public int compare(Integer o1, Integer o2) {
-                        return o2.compareTo(o1);
-                    }
-                });
+//                Arrays.sort(c, new Comparator<Integer>() {
+//                    @Override
+//                    public int compare(Integer o1, Integer o2) {
+//                        return o2.compareTo(o1);
+//                    }
+//                });
+
+
                 bw.append(df.format(binarysearch()) + "\n");
-                
+
             }
             bw.flush();
         }
@@ -95,6 +97,34 @@ public class P1912_Help_Seu_Madruga {
 
         }
         return -1;
+    }
+
+    void mergeSort(int[] data, int left, int right) {
+        if (left >= right) return;
+        int mid = (left + right) / 2;
+        mergeSort(data, left, mid);
+        mergeSort(data, mid + 1, right);
+        merge(data, left, mid, right);
+    }
+
+    void merge(int[] data, int left, int mid, int right) {
+        int[] tmp = new int[(mid - left) + (right - mid)];
+        int i = left, j = mid + 1;
+        for (int k = left; k <= right; k++) {
+            if (i > mid) {
+                tmp[k] = data[j++];
+                continue;
+            }
+            if (j > right) {
+                tmp[k] = data[i++];
+                continue;
+            }
+            tmp[k] = (data[i] < data[j]) ? data[i++] : data[j++];
+        }
+        //copy t to data
+        for (int k = left; k <= right; k++) {
+            data[k] = tmp[k];
+        }
     }
 
 }
