@@ -1,8 +1,6 @@
 package URI.Trying.NOSTATUS.STRING;
 
 
-
-
 import java.io.IOException;
 
 public class Main {

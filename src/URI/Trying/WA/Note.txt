@@ -11,3 +11,17 @@
 2 3
 4 4
 0 0
+
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+        new P2728_Grace_Hopper_Grandma_of_Cobol();
+    }
+
+}
