@@ -13,27 +13,28 @@
  */
 package URI.Trying.WA;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.*;
 
 public class P2254_Japanese_Daisy_Game {
 
     public static void main(String[] args) throws IOException {
-        String fileName = "P2254_input.txt";
-//        String fileName = "2254_output.txt";
-        File f = new File("D:\\Java Source Code\\Netbean Workspace\\URI Online Judge\\build\\classes\\Trying\\Input\\" + fileName);
-        FileReader fr = new FileReader(f);
-        BufferedReader br = new BufferedReader(fr);
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String fileName = "P2254_input.txt";
+////        String fileName = "2254_output.txt";
+//        File f = new File("D:\\Java Source Code\\Netbean Workspace\\URI Online Judge\\build\\classes\\Trying\\Input\\" + fileName);
+//        FileReader fr = new FileReader(f);
+//        BufferedReader br = new BufferedReader(fr);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         String input;
         while ((input = br.readLine()) != null) {
             int n = Integer.parseInt(input);
-            bw.append("she loves " + (n % 3 == 0 && n % 6 == 0 ? "not" : "me") + "\n");
+            System.out.println("n="+n);
+            System.out.println("n5="+n%5);
+            System.out.println("n3="+n%3);
+            int a = n % 5;
+            int b = n % 3;
+            bw.append("she loves " + ((a == 0 || b == 0) ? "not" : "me") + "\n");
+            bw.flush();
         }
         bw.flush();
     }
