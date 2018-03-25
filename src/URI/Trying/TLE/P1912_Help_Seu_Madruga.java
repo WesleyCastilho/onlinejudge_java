@@ -7,7 +7,7 @@
  * @Status: TLE
  * @Submission:
  * @Runtime:
- * @Solution: sort and binary search  (this algorithm Solved by python)
+ * @Solution: sort and binary search  (this algorithm Solved by c++)
  * @Note:
  */
 package URI.Trying.TLE;
