@@ -1,4 +1,4 @@
-package th.in.devboom.uri.WA;
+package URI.Trying.WA;
 
 
 /**
@@ -26,36 +26,53 @@ public class P2632_Magic_and_Sword {
     static int W, H, X0, Y0;
     static int CX, CY;
 
-    static class Point {
-        int X, Y;
+    static class Enemy {
+        int x, y;
+        int width, height;
 
-        public Point(int X, int Y) {
-            this.X = X;
-            this.Y = Y;
+        public Enemy(int x, int y, int width, int height) {
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
         }
 
-        int getX() {
-            return this.X;
-        }
-
-        int getY() {
-            return this.Y;
-        }
-
-        public boolean equals(Object obj) {
-            if (obj instanceof Point) {
-                Point p = (Point) obj;
-                return (getX() == p.getX()) && (getY() == p.getY());
+        boolean explosion(Spell spell) {
+            int right = this.x + width;
+            int bot = this.y + height;
+            int spellXL = (spell.x - spell.radius);
+            int spellXR = (spell.x + spell.radius);
+            int spellYT = (spell.y - spell.radius);
+            int spellYB = (spell.y + spell.radius);
+            System.out.println("X=" + x);
+            System.out.println("Y=" + y);
+            System.out.println("right=" + right);
+            System.out.println("bot=" + bot);
+            System.out.println("spellXL=" + spellXL);
+            System.out.println("spellXR=" + spellXR);
+            System.out.println("spellYT=" + spellYT);
+            System.out.println("spellYB=" + spellYB);
+//            if (right > spellXL && right <= spellXR &&)
+            if (spellXL >= this.x && spellXR <= right && spellYT >= this.y && spellYB <= bot) {
+                return true;
             }
-            return super.equals(obj);
+
+
+            return false;
         }
+
 
     }
 
-    static double distance(Point p1, Point p2) {
-        double px = p2.getX() - p1.getX();
-        double py = p2.getY() - p1.getY();
-        return Math.sqrt(px * px + py * py);
+    static class Spell {
+        int x, y;
+        int radius;
+
+        public Spell(int x, int y, int radius) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+        }
     }
 
 
@@ -73,6 +90,8 @@ public class P2632_Magic_and_Sword {
             in = br.readLine().split(" ");
             String element = in[0];
             int level = Integer.parseInt(in[1]);
+            CX = Integer.parseInt(in[2]);
+            CY = Integer.parseInt(in[3]);
             int elementDamange = 0;
             int elementRidius = 0;
             if (element.equals("fire")) {
@@ -88,26 +107,18 @@ public class P2632_Magic_and_Sword {
                 elementDamange = AIR_DAMAGE;
                 elementRidius = AIR_RADIUS[level - 1];
             }
-
-            CX = Integer.parseInt(in[2]);
-            CY = Integer.parseInt(in[3]);
-            boolean canDo = false;
-            Point p1 = new Point(X0, Y0);
-            Point p2 = new Point(CX, CY);
-
-            int d = (int) distance(p1, p2) - elementRidius;
-            if (d <= 0) {
-                canDo = true;
-            } else {
-                int DX = d - W;
-                int DY = d - H;
-                if (DX <= 0 && DY <= 0) {
-                    canDo = true;
-                }
+            if (X0 == CX && Y0 == CY) {
+                bw.append(elementDamange + "\n");
+                continue;
             }
-            bw.append(canDo ? elementDamange + "\n" : "0\n");
+
+            Enemy enemy = new Enemy(X0, Y0, W, H);
+            Spell spell = new Spell(CX, CY, elementRidius);
+            bw.append(enemy.explosion(spell) ? elementDamange + "\n" : "0\n");
         }
         bw.flush();
     }
-
 }
+
+
+
