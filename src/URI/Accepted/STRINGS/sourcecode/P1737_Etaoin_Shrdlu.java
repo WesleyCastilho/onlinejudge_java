@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.STRING;
+package URI.Accepted.STRINGS.sourcecode;
 
 /**
  * @author Teerapat Phokhonwong
