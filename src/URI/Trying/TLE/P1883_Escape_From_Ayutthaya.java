@@ -23,11 +23,12 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 class P1883_Escape_From_Ayutthaya {
-
+    static final int WALL = Integer.MAX_VALUE;
     static BufferedReader br;
     static BufferedWriter bw;
     static int T, N, M;
     static int[][] MAP;
+    static int[][] fireTime;
     static Point start, end, fire;
 
     //top -> bot - right - left
@@ -57,29 +58,48 @@ class P1883_Escape_From_Ayutthaya {
 
     }
 
-
-    static boolean findHeuristic() {
+    static void fireSpread(Point firePoint) {
         LinkedList<Point> queue = new LinkedList<Point>();
-        queue.add(start);
+        queue.add(firePoint);
         while (!queue.isEmpty()) {
-            Point p = queue.poll();
-            if (p == null) continue;
+            Point p = queue.pollFirst();
             int y = p.y;
             int x = p.x;
-            MAP[y][x] = 1;
-            int deadTime = (Math.abs(fire.x - x) + Math.abs(fire.y - y));
-            if (deadTime == p.time) {
-                continue;
+            int time = p.time;
+            fireTime[y][x] = p.time;
+            for (int i = 0; i < 4; i++) {
+                int tmpY = y + ny[i];
+                int tmpX = x + nx[i];
+                if (tmpY >= 0 && tmpY < N
+                        && tmpX >= 0 && tmpX < M
+                        && fireTime[tmpY][tmpX] == 0
+                        && MAP[tmpY][tmpX] != WALL) {
+                    Point point = new Point(tmpY, tmpX, time + 1);
+                    queue.add(point);
+                }
             }
+        }
+    }
+
+    static boolean run(Point startPoint) {
+        LinkedList<Point> queue = new LinkedList<Point>();
+        queue.add(startPoint);
+        while (!queue.isEmpty()) {
+            Point p = queue.poll();
+            int y = p.y;
+            int x = p.x;
+            int time = p.time;
+            MAP[y][x] = 1;
             if (p.equals(end)) {
                 return true;
             }
+            time = time + 1;
             for (int i = 0; i < 4; i++) {
                 int nY = y + ny[i];
                 int nX = x + nx[i];
-                if (nY > 0 && nY < N && nX > 0 && nX < M) {
+                if (nY >= 0 && nY < N && nX >= 0 && nX < M && fireTime[nY][nX] > time) {
                     if (MAP[nY][nX] == 0) {
-                        Point nextPoint = new Point(nY, nX, p.time + 1);
+                        Point nextPoint = new Point(nY, nX, time);
                         queue.add(nextPoint);
                     }
                 }
@@ -97,23 +117,22 @@ class P1883_Escape_From_Ayutthaya {
             N = Integer.parseInt(st[0]);
             M = Integer.parseInt(st[1]);
             MAP = new int[N][M];
+            fireTime = new int[N][M];
             for (int y = 0; y < N; y++) {
                 char[] c = br.readLine().toCharArray();
                 for (int x = 0; x < M; x++) {
                     switch (c[x]) {
                         case '#':
-                            MAP[y][x] = 1;
+                            MAP[y][x] = WALL;
                             break;
                         case 'S':
-                            MAP[y][x] = 1;
-                            start = new Point(y, x);
+                            start = new Point(y, x, 1);
                             break;
                         case 'E':
                             end = new Point(y, x);
                             break;
                         case 'F':
-                            MAP[y][x] = 1;
-                            fire = new Point(y, x);
+                            fire = new Point(y, x, 1);
                             break;
                         case '.':
                             MAP[y][x] = 0;
@@ -121,22 +140,15 @@ class P1883_Escape_From_Ayutthaya {
                     }
                 }
             }
-            if (start == null || end == null) {
-                bw.append("N");
-            } else {
-                int gameOver = Integer.MAX_VALUE;
-                if (fire != null) {
-                    gameOver = (Math.abs(fire.x - end.x) + Math.abs(fire.y - end.y));
-                }
-                int escaped = (Math.abs(start.x - end.x) + Math.abs(start.y - end.y));
-                if (escaped >= gameOver) {
-                    bw.append("N");
-                } else {
-                    boolean chk = findHeuristic();
-                    bw.append(chk ? "Y" : "N");
-                }
-            }
-            bw.newLine();
+            fireSpread(fire);
+//            for (int i = 0; i < N; i++) {
+//                for (int j = 0; j < M; j++) {
+//                    System.out.print(fireTime[i][j]);
+//                }
+//                System.out.println();
+//            }
+//            System.out.println();
+            bw.append(run(start) ? "Y\n" : "N\n");
             bw.flush();
         }
     }
