@@ -5,7 +5,7 @@
  * @Problem: 1569 - Snakes and Ladders
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1569
  * @Timelimit: 1 sec
- * @Status: java WA 10% , this algorithm Accepted by c language
+ * @Status: java WA 30% , this algorithm Accepted by c language
  * @Submission:
  * @Runtime:
  * @Solution:
@@ -37,6 +37,7 @@ public class P1569_Snakes_and_Ladders {
                 int start = Integer.parseInt(st[0]);
                 int end = Integer.parseInt(st[1]);
                 snake_ladder[start] = end;
+                snake_ladder[end] = start;
             }
 
             int p = 1;
@@ -68,7 +69,7 @@ public class P1569_Snakes_and_Ladders {
             }
 
             for (int i = 1; i < players; i++) {
-                out.write(("Position of player " + i + " is " + playersIndex[i] + ".\n").getBytes());
+                out.write(("Position of player " + i + " is " + playersIndex[i] + "\n").getBytes());
             }
         }
         out.flush();
