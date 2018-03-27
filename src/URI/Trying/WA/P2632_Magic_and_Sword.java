@@ -38,7 +38,7 @@ public class P2632_Magic_and_Sword {
         int x, y;
         int width, height;
 
-        public Enemy(int x, int y, int width, int height) {
+        public Enemy(int width, int height, int x, int y) {
             this.x = x;
             this.y = y;
             this.width = width;
@@ -49,21 +49,49 @@ public class P2632_Magic_and_Sword {
 
     static boolean intersects(Spell circle, Enemy rect) {
 
-        double width = rect.width;
-        double height = rect.height;
+        int width = rect.width;
+        int height = rect.height;
+        int xMin = (rect.x - width);
+        int xMax = (rect.x + width);
+        int yMin = (rect.y - height);
+        int yMax = (rect.y + height);
         //a^2 + b^2 = ความยาวเส้นแทยงมุม
 //        double leght = Math.pow(rect.height, 2) * Math.pow(rect.width, 2);
-        boolean c1 = circle.x >= (rect.x - width) && circle.x <= (rect.x + width);
-        boolean c2 = circle.y >= (rect.y - height) && circle.y <= (rect.y + height);
+//        System.out.println("R xMin=" + xMin);
+//        System.out.println("R xMax=" + xMax);
+//        System.out.println("R yMin=" + yMin);
+//        System.out.println("R yMax=" + yMax);
+//        System.out.println("C X=" + circle.x);
+//        System.out.println("C Y=" + circle.y);
+//        System.out.println("C R=" + circle.radius);
+        boolean c1 = circle.x >= xMin && circle.x <= xMax;
+        boolean c2 = circle.y >= yMin && circle.y <= yMax;
         if (c1 && c2) {
             return true;
         }
-//
-//        double dtx = Math.abs(circle.x - (rect.x + width));
-//        double dty = Math.abs(circle.y - (rect.y + height));
-//
-//        if (dtx > circle.radius) return false;
-//        if (dty > circle.radius) return false;
+
+        if (c1) {//อยู่ระหว่าง X
+            System.out.println("XX");
+        }
+
+        if (c2) {//อยู่ระหว่าง Y
+//            System.out.print("YY");
+            if (circle.x < xMin) {
+//                System.out.println("-1");
+                if (circle.x + circle.radius >= xMin) {
+                    return true;
+                }
+            } else if (circle.x > xMax) {
+//                System.out.println("R xMax=" + xMax);
+//                System.out.println("C R=" + circle.radius);
+//                System.out.println("-2");
+                if (circle.x - circle.radius <= xMax) {
+                    return true;
+                }
+            }
+
+        }
+
         return false;
     }
 
@@ -116,7 +144,7 @@ public class P2632_Magic_and_Sword {
                 bw.append(elementDamange + "\n");
                 continue;
             }
-            Enemy enemy = new Enemy(X0, Y0, W, H);
+            Enemy enemy = new Enemy(W, H, X0, Y0);
             Spell spell = new Spell(CX, CY, elementRidius);
 //            intersects
             bw.append(intersects(spell, enemy) ? elementDamange + "\n" : "0\n");
