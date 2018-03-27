@@ -1,10 +1,18 @@
 package URI.Trying.WA;
 
-
 /**
- * Created by Teerapat-BSD on 2/7/2018.
- * https://www.urionlinejudge.com.br/judge/en/problems/view/2632
- * WA 10%
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: STRING
+ * @Problem: 2632 - Magic and Sword
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2632
+ * @Timelimit: 1 sec
+ * @Status:
+ * @Memory:
+ * @Submission:
+ * @Runtime:
+ * @Solution:
+ * @Note: https://yal.cc/rectangle-circle-intersection-test/
  */
 
 import java.io.BufferedReader;
@@ -37,32 +45,28 @@ public class P2632_Magic_and_Sword {
             this.height = height;
         }
 
-        boolean explosion(Spell spell) {
-            int right = this.x + width;
-            int bot = this.y + height;
-            int spellXL = (spell.x - spell.radius);
-            int spellXR = (spell.x + spell.radius);
-            int spellYT = (spell.y - spell.radius);
-            int spellYB = (spell.y + spell.radius);
-            System.out.println("X=" + x);
-            System.out.println("Y=" + y);
-            System.out.println("right=" + right);
-            System.out.println("bot=" + bot);
-            System.out.println("spellXL=" + spellXL);
-            System.out.println("spellXR=" + spellXR);
-            System.out.println("spellYT=" + spellYT);
-            System.out.println("spellYB=" + spellYB);
-//            if (right > spellXL && right <= spellXR &&)
-            if (spellXL >= this.x && spellXR <= right && spellYT >= this.y && spellYB <= bot) {
-                return true;
-            }
-
-
-            return false;
-        }
-
-
     }
+
+    static boolean intersects(Spell circle, Enemy rect) {
+
+        double width = rect.width;
+        double height = rect.height;
+        //a^2 + b^2 = ความยาวเส้นแทยงมุม
+//        double leght = Math.pow(rect.height, 2) * Math.pow(rect.width, 2);
+        boolean c1 = circle.x >= (rect.x - width) && circle.x <= (rect.x + width);
+        boolean c2 = circle.y >= (rect.y - height) && circle.y <= (rect.y + height);
+        if (c1 && c2) {
+            return true;
+        }
+//
+//        double dtx = Math.abs(circle.x - (rect.x + width));
+//        double dty = Math.abs(circle.y - (rect.y + height));
+//
+//        if (dtx > circle.radius) return false;
+//        if (dty > circle.radius) return false;
+        return false;
+    }
+
 
     static class Spell {
         int x, y;
@@ -80,6 +84,7 @@ public class P2632_Magic_and_Sword {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
+        int i = 1;
         while (n-- > 0) {
             String[] in = br.readLine().split(" ");
             W = Integer.parseInt(in[0]);
@@ -111,10 +116,11 @@ public class P2632_Magic_and_Sword {
                 bw.append(elementDamange + "\n");
                 continue;
             }
-
             Enemy enemy = new Enemy(X0, Y0, W, H);
             Spell spell = new Spell(CX, CY, elementRidius);
-            bw.append(enemy.explosion(spell) ? elementDamange + "\n" : "0\n");
+//            intersects
+            bw.append(intersects(spell, enemy) ? elementDamange + "\n" : "0\n");
+//            bw.append(enemy.explosion(spell) ? elementDamange + "\n" : "0\n");
         }
         bw.flush();
     }
