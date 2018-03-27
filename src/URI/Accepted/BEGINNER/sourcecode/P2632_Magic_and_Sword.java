@@ -12,7 +12,7 @@ package URI.Accepted.BEGINNER.sourcecode;
  * @Submission: 3/28/18, 1:06:01 AM
  * @Runtime: 0.052s
  * @Solution: check Distance Between Two Points
- * @Note:
+ * @Note: https://yal.cc/rectangle-circle-intersection-test/
  */
 
 import java.io.BufferedReader;
