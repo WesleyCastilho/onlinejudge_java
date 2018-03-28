@@ -1,17 +1,17 @@
-package URI.Trying.WA;
+package URI.Accepted.BEGINNER.sourcecode;
 
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
- * @Categories: STRING
+ * @Categories: BEGINNER
  * @Problem: 2632 - Magic and Sword
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2632
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: Accepted
  * @Memory:
- * @Submission:
- * @Runtime:
- * @Solution:
+ * @Submission: 3/28/18, 1:06:01 AM
+ * @Runtime: 0.052s
+ * @Solution: check Distance Between Two Points
  * @Note: https://yal.cc/rectangle-circle-intersection-test/
  */
 
@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.IOException;
 
-public class P2632_Magic_and_Sword {
+class P2632_Magic_and_Sword {
 
     static final int[] FIRE_RADIUS = new int[]{20, 30, 50};
     static final int[] WATER_RADIUS = new int[]{10, 25, 40};
@@ -34,42 +34,71 @@ public class P2632_Magic_and_Sword {
     static int W, H, X0, Y0;
     static int CX, CY;
 
-    static class Enemy {
+    class Enemy {
         int x, y;
         int width, height;
+        Point topLeft, topRight, botLeft, botRight;
 
         public Enemy(int width, int height, int x, int y) {
             this.x = x;
             this.y = y;
             this.width = width;
             this.height = height;
+            topLeft = new Point();
+            topLeft.x = x;
+            topLeft.y = y;
+
+            topRight = new Point();
+            topRight.x = x + width;
+            topRight.y = y;
+
+            botLeft = new Point();
+            botLeft.x = x;
+            botLeft.y = y + height;
+
+            botRight = new Point();
+            botRight.x = x + width;
+            botRight.y = y + height;
         }
+
 
     }
 
-    static boolean intersects(Spell circle, Enemy rect) {
+    class Point {
+        int x, y;
+    }
 
-        int width = rect.width;
-        int height = rect.height;
-        int xMin = (rect.x - width);
-        int xMax = (rect.x + width);
-        int yMin = (rect.y - height);
-        int yMax = (rect.y + height);
-        //a^2 + b^2 = ความยาวเส้นแทยงมุม
-//        double leght = Math.pow(rect.height, 2) * Math.pow(rect.width, 2);
-//        System.out.println("R xMin=" + xMin);
-//        System.out.println("R xMax=" + xMax);
-//        System.out.println("R yMin=" + yMin);
-//        System.out.println("R yMax=" + yMax);
-//        System.out.println("C X=" + circle.x);
-//        System.out.println("C Y=" + circle.y);
-//        System.out.println("C R=" + circle.radius);
-        boolean c1 = circle.x >= xMin && circle.x <= xMax;
-        boolean c2 = circle.y >= yMin && circle.y <= yMax;
-        if (c1 && c2) {
+    boolean intersects(Spell circle, Enemy rect) {
+        Point pTopleft = rect.topLeft;
+        Point pTopRight = rect.topRight;
+        Point pBotLeft = rect.botLeft;
+        Point pBotRight = rect.botRight;
+        int left = pTopleft.x;
+        int right = pTopRight.x;
+        int top = pTopleft.y;
+        int bottom = pBotRight.y;
+
+        if (circle.x >= left && circle.x <= right && circle.y >= top && circle.y <= bottom) {
+            return true;
+        } else if (circle.x >= left && circle.x <= right) {
+            if (circle.y < top && Math.sqrt(pow(circle.x, circle.x) + pow(circle.y, top)) <= circle.radius) {
+                return true;
+            } else if (circle.y > bottom && Math.sqrt(pow(circle.x, circle.x) + pow(circle.y, bottom)) <= circle.radius) {
+                return true;
+            }
+        } else if (circle.y >= top && circle.y <= bottom) {
+            if (circle.x < left && Math.sqrt(pow(circle.y, circle.y) + pow(circle.x, left)) <= circle.radius) {
+                return true;
+            } else if (circle.x > right && Math.sqrt(pow(circle.y, circle.y) + pow(circle.x, right)) <= circle.radius) {
+                return true;
+            }
+        }
+
+        if (Math.sqrt(pow(circle.x, pTopleft.x) + pow(circle.y, pTopleft.y)) <= circle.radius) {//Check TOP LEFT
             return true;
         }
 
+<<<<<<< HEAD:src/URI/Trying/WA/P2632_Magic_and_Sword.java
         if (c1) {//อยู่ระหว่าง X
             if (circle.y < yMin) {//น้อยกว่า Y
                 if (circle.y + circle.radius >= yMin) {
@@ -97,13 +126,28 @@ public class P2632_Magic_and_Sword {
                     return true;
                 }
             }
+=======
+        if (Math.sqrt(pow(circle.x, pTopRight.x) + pow(circle.y, pTopRight.y)) <= circle.radius) {//Check TOP RIGHT
+            return true;
+        }
+
+        if (Math.sqrt(pow(circle.x, pBotLeft.x) + pow(circle.y, pBotLeft.y)) <= circle.radius) {//Check BOT LEFT
+            return true;
+        }
+
+        if (Math.sqrt(pow(circle.x, pBotRight.x) + pow(circle.y, pBotRight.y)) <= circle.radius) {//Check BOT RIGHT
+            return true;
+>>>>>>> 84a40e783f707c4991d81ecfd636466cb322a0b0:src/URI/Accepted/BEGINNER/sourcecode/P2632_Magic_and_Sword.java
         }
 
         return false;
     }
 
+    int pow(int a, int b) {
+        return (int) Math.pow(a - b, 2);
+    }
 
-    static class Spell {
+    class Spell {
         int x, y;
         int radius;
 
@@ -114,8 +158,7 @@ public class P2632_Magic_and_Sword {
         }
     }
 
-
-    public static void main(String[] args) throws IOException {
+    public P2632_Magic_and_Sword() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
@@ -153,12 +196,11 @@ public class P2632_Magic_and_Sword {
             }
             Enemy enemy = new Enemy(W, H, X0, Y0);
             Spell spell = new Spell(CX, CY, elementRidius);
-//            intersects
             bw.append(intersects(spell, enemy) ? elementDamange + "\n" : "0\n");
-//            bw.append(enemy.explosion(spell) ? elementDamange + "\n" : "0\n");
         }
         bw.flush();
     }
+
 }
 
 
