@@ -71,17 +71,25 @@ public class P2632_Magic_and_Sword {
         }
 
         if (c1) {//อยู่ระหว่าง X
-            System.out.println("XX");
+            if (circle.y < yMin) {//น้อยกว่า Y
+                if (circle.y + circle.radius >= yMin) {
+                    return true;
+                }
+            } else if (circle.y > yMax) {//มากกว่า Y
+                if (circle.y - circle.radius <= yMax) {
+                    return true;
+                }
+            }
         }
 
         if (c2) {//อยู่ระหว่าง Y
 //            System.out.print("YY");
-            if (circle.x < xMin) {
+            if (circle.x < xMin) {//น้อยกว่า X
 //                System.out.println("-1");
                 if (circle.x + circle.radius >= xMin) {
                     return true;
                 }
-            } else if (circle.x > xMax) {
+            } else if (circle.x > xMax) {//มากกว่า X
 //                System.out.println("R xMax=" + xMax);
 //                System.out.println("C R=" + circle.radius);
 //                System.out.println("-2");
@@ -89,7 +97,6 @@ public class P2632_Magic_and_Sword {
                     return true;
                 }
             }
-
         }
 
         return false;
