@@ -98,35 +98,6 @@ class P2632_Magic_and_Sword {
             return true;
         }
 
-<<<<<<< HEAD:src/URI/Trying/WA/P2632_Magic_and_Sword.java
-        if (c1) {//อยู่ระหว่าง X
-            if (circle.y < yMin) {//น้อยกว่า Y
-                if (circle.y + circle.radius >= yMin) {
-                    return true;
-                }
-            } else if (circle.y > yMax) {//มากกว่า Y
-                if (circle.y - circle.radius <= yMax) {
-                    return true;
-                }
-            }
-        }
-
-        if (c2) {//อยู่ระหว่าง Y
-//            System.out.print("YY");
-            if (circle.x < xMin) {//น้อยกว่า X
-//                System.out.println("-1");
-                if (circle.x + circle.radius >= xMin) {
-                    return true;
-                }
-            } else if (circle.x > xMax) {//มากกว่า X
-//                System.out.println("R xMax=" + xMax);
-//                System.out.println("C R=" + circle.radius);
-//                System.out.println("-2");
-                if (circle.x - circle.radius <= xMax) {
-                    return true;
-                }
-            }
-=======
         if (Math.sqrt(pow(circle.x, pTopRight.x) + pow(circle.y, pTopRight.y)) <= circle.radius) {//Check TOP RIGHT
             return true;
         }
@@ -137,7 +108,6 @@ class P2632_Magic_and_Sword {
 
         if (Math.sqrt(pow(circle.x, pBotRight.x) + pow(circle.y, pBotRight.y)) <= circle.radius) {//Check BOT RIGHT
             return true;
->>>>>>> 84a40e783f707c4991d81ecfd636466cb322a0b0:src/URI/Accepted/BEGINNER/sourcecode/P2632_Magic_and_Sword.java
         }
 
         return false;
@@ -202,6 +172,3 @@ class P2632_Magic_and_Sword {
     }
 
 }
-
-
-
