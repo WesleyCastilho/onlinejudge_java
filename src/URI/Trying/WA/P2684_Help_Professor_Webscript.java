@@ -9,7 +9,7 @@
  * @Submission:
  * @Runtime:
  * @Solution:
- * @Note: Regular Expression
+ * @Note:
  */
 package URI.Trying.WA;
 
@@ -20,9 +20,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.LinkedList;
 
-public class P2684_Help_Professor_Webscript {
+class P2684_Help_Professor_Webscript {
 
-    public static void main(String[] args) throws IOException {
+    public P2684_Help_Professor_Webscript() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         LinkedList<String> stack = new LinkedList<String>();
@@ -38,8 +38,11 @@ public class P2684_Help_Professor_Webscript {
             switch (type) {
                 case 1:
                     count = 0;
+                    loop:
                     for (int i = 0; i < size; i++) {
                         switch (c[i]) {
+                            case '/':
+                                break loop;
                             case '<':
                                 count++;
                                 break;
@@ -52,33 +55,35 @@ public class P2684_Help_Professor_Webscript {
                     break;
                 case 0:
                     boolean successful = true;
-                    count = 0;
                     loop:
                     for (int i = 0; i < size - 2; i++) {
+                        if (c[i] == '>') {
+                            successful = false;
+                            break;
+                        }
                         if (c[i] == '<') {
-                            count++;
                             if (c[i + 1] == '/') {
-                                String s = "<";
+                                String s = "";
                                 boolean error = true;
-                                int j = i + 1;
+                                int j = i;
                                 for (; j < size; j++) {
+                                    if (c[j] != '/') s += c[j];
                                     if (c[j] == '>') {
                                         error = false;
                                         if (stack.isEmpty() || !stack.pollLast().startsWith(s)) {
-//                                        bw.append("error s= " + s + "\n");
                                             successful = false;
                                             break loop;
                                         }
-                                        s = "";
-                                        count--;
+
+                                        break;
                                     }
-                                    s += c[j];
+
                                 }
                                 if (error) {
                                     successful = false;
                                     break loop;
                                 }
-                                i = j - 1;
+                                i = j;
                             } else {
                                 String s = "<";
                                 boolean error = true;
@@ -95,22 +100,16 @@ public class P2684_Help_Professor_Webscript {
                                         if (!getText) {
                                             s += '>';
                                         }
-                                        if (count == 0) {
-                                            successful = false;
-                                            break loop;
-                                        }
-                                        count--;
                                         error = false;
                                         stack.add(s);
-                                        bw.append("add " + s + "\n");
-                                        s = "";
+                                        break;
                                     }
                                 }
                                 if (error) {
                                     successful = false;
                                     break loop;
                                 }
-                                i = j - 1;
+                                i = j;
                             }
                         }
                     }
