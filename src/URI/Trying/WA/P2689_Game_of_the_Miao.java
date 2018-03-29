@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.BEGINNER;
+package URI.Trying.WA;
 
 /**
  * @author Teerapat Phokhonwong
@@ -6,8 +6,8 @@ package URI.Trying.NOSTATUS.BEGINNER;
  * @Problem: 2689 - Game of the Miao
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2689
  * @Timelimit: 1 sec
- * @Status:
- * @Submission:
+ * @Status: WA 40%
+ * @Submission: 3/29/18, 5:06:08 PM
  * @Runtime:
  * @Solution:
  * @Note:
@@ -69,7 +69,6 @@ public class P2689_Game_of_the_Miao {
                 }
             }
 
-//            bw.append("most = " + mostNumber + "\n");
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
                     if (removeData.contains(tmp[i][j])) {
@@ -90,18 +89,6 @@ public class P2689_Game_of_the_Miao {
                 }
             }
 
-
-            //find
-//            for (int i = 0; i < 3; i++) {
-//                bw.append(tmp[i][0] + " " + tmp[i][1] + " " + tmp[i][2] + "\n");
-//            }
-//            bw.append("-----------\n");
-//            for (int i = 0; i < 3; i++) {
-//                bw.append(diff[i][0] + " " + diff[i][1] + " " + diff[i][2] + "\n");
-//            }
-//            bw.append("-----------\n");
-
-
             bw.append("Possiveis maletas: ");
             boolean printed = false;
             for (int i = 0; i < 3; i++) {
@@ -121,7 +108,7 @@ public class P2689_Game_of_the_Miao {
             if (--Q == 0) {
                 break;
             }
-//            bw.append("------------------------------------------------------------------------------\n");
+
         }
         bw.flush();
     }
@@ -129,6 +116,5 @@ public class P2689_Game_of_the_Miao {
     int abs(int a, int b) {
         return Math.abs(a - b);
     }
-
 
 }
