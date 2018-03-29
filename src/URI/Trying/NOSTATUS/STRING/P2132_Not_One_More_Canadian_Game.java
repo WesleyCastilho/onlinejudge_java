@@ -28,22 +28,21 @@ class P2132_Not_One_More_Canadian_Game {
         while ((input = br.readLine()) != null) {
             char[] c = input.toCharArray();
             int size = c.length;
-            int count = 1;
+            int count = 0;
             int repeat = 0;
             for (int i = 0; i < size; i++) {
                 if (repeat < 1) {
                     if (c[i] == 'b') {
                         repeat++;
-                    }
-                    if (repeat == 1) {
-                        count = 2;
+                        count++;
                     }
                 } else {
-                    count += 2;
+                    count++;
+
                 }
             }
             bw.append("Palavra " + (t++) + "\n");
-            bw.append(((int)Math.pow(count, 2) - 1) + "\n");
+            bw.append( (int) Math.pow(2, count)-repeat + "\n");
             bw.newLine();
             bw.flush();
         }
