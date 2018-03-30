@@ -217,6 +217,13 @@ public class GetCountingProblem {
                 pair[3] = coj_totalFile + "";
                 pair[4] = coj_ac + "";
                 break;
+            case SPOJ:
+                pair[0] = LINK_SPOJ;
+                pair[1] = PROFILE_SPOJ;
+                pair[2] = SPOJ;
+                pair[3] = spoj_totalFile + "";
+                pair[4] = spoj_ac + "";
+                break;
             case CODECHEF:
                 pair[0] = LINK_CODECHEF;
                 pair[1] = PROFILE_CODECHEF;
@@ -265,39 +272,35 @@ public class GetCountingProblem {
         switch (source) {
             case AIZU:
                 aizu_totalFile++;
-                if (Accepted) {
-                    aizu_ac++;
-                }
+                if (Accepted) aizu_ac++;
+
                 break;
             case COJ:
                 coj_totalFile++;
-                if (Accepted) {
-                    coj_ac++;
-                }
+                if (Accepted) coj_ac++;
+                break;
+            case SPOJ:
+                spoj_totalFile++;
+                if (Accepted) spoj_ac++;
                 break;
             case URI:
                 uri_totalFile++;
-                if (Accepted) {
-                    uri_ac++;
-                }
+                if (Accepted) uri_ac++;
+
                 break;
             case UVA:
                 uva_totalFile++;
-                if (Accepted) {
-                    uva_ac++;
-                }
+                if (Accepted) uva_ac++;
+
                 break;
             case ZOJ:
                 zoj_totalFile++;
-                if (Accepted) {
-                    zoj_ac++;
-                }
+                if (Accepted) zoj_ac++;
+
                 break;
             case DEV_SKILL:
                 devSkill_totalFile++;
-                if (Accepted) {
-                    devSkill_ac++;
-                }
+                if (Accepted) devSkill_ac++;
                 break;
             default:
                 break;
