@@ -132,6 +132,7 @@ public class GetCountingProblem {
         System.out.println(URI + " totalFile:" + uri_totalFile + "  ac:" + uri_ac);
         System.out.println(UVA + " totalFile:" + uva_totalFile + "  ac:" + uva_ac);
         System.out.println(ZOJ + " totalFile:" + zoj_totalFile + "  ac:" + zoj_ac);
+        System.out.println(SPOJ + " totalFile:" + spoj_totalFile + "  ac:" + spoj_ac);
     }
 
 
