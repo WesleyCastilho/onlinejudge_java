@@ -15,7 +15,7 @@ import java.util.TreeSet;
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution:
+ * @Solution: สร้างรูปแบบจำลอง palindrome ตัวสมบูรณ์ และเปรียบเทียบขนาด
  * @Note:
  */
 public class P2588_Game_of_Palindromes {
