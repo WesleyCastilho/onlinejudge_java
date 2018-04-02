@@ -1,6 +1,23 @@
 package SPOJ.Trying;
-
-import java.io.*;
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: Sphere Online Judge
+ * @Categories: CPTTRN4
+ * @Problem: CPTTRN4 - Character Patterns (Act 4)
+ * @Link: www.spoj.com/problems/CPTTRN4/
+ * @Timelimit: 1 sec
+ * @Status:
+ * @Memory:
+ * @Submission:  
+ * @Runtime:
+ * @Solution:
+ * @Note:
+ */
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class CPTTRN4_Character_Patterns_Act_4 {
 
