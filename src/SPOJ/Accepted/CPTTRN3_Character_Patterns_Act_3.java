@@ -1,4 +1,4 @@
-package SPOJ.Trying;
+package SPOJ.Accepted;
 
 /**
  * @author Teerapat Phokhonwong
@@ -15,11 +15,7 @@ package SPOJ.Trying;
  * @Note:
  */
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 
 public class CPTTRN3_Character_Patterns_Act_3 {
 
