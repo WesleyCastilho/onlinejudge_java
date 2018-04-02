@@ -48,16 +48,17 @@ public class P2588_Game_of_Palindromes {
     }
 
     private void permutations(String str, int l, int r) {
-        if (l == r)
+        if (l == r) {
             list.add(str);
-//            System.out.println(str);
-        else {
-            for (int i = l; i <= r; i++) {
-                str = swap(str, l, i);
-                permutations(str, l + 1, r);
-                str = swap(str, l, i);
-            }
+            return;
         }
+
+        for (int i = l; i <= r; i++) {
+            str = swap(str, l, i);
+            permutations(str, l + 1, r);
+            str = swap(str, l, i);
+        }
+
     }
 
     public String swap(String a, int i, int j) {
@@ -70,22 +71,27 @@ public class P2588_Game_of_Palindromes {
     }
 
     int check(String word, int n) {
-        char[] c = new char[n];
-
-//        System.out.println(word);
-        int total = n - 1;
-        int l = 0, r = n;
-        while (l < r) {
-            if (word.charAt(l) != word.charAt(r)) {
-//                System.out.println("ss");
-                return total;
-//                break;
-            }
-            l++;
-            r--;
-            total--;
+        char[] c = new char[n+1];
+        int i = n;
+        for(int j = 0; j <= n; j++){
+            c[i--] = word.charAt(j);
         }
-        return total;
+//        int total = n - 1;
+//        int l = 0, r = n;
+//        while (l < r) {
+//            if (word.charAt(l) != word.charAt(r)) {
+//                break;
+//            }
+//            c[i--] = word.charAt(l);
+//            l++;
+//            r--;
+//            total--;
+//
+//        }
+        System.out.println("word= "+word);
+        System.out.println("parindome= "+new String(c));
+//        return total;
+        return 9999;
     }
 
 }
