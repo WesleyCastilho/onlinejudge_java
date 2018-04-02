@@ -4,7 +4,6 @@ import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
 import java.util.TreeSet;
 
 /**
@@ -21,31 +20,28 @@ import java.util.TreeSet;
  */
 public class P2588_Game_of_Palindromes {
     TreeSet<String> list = new TreeSet<>();
-    LinkedList<Integer> s = new LinkedList<>();
 
     public P2588_Game_of_Palindromes() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedOutputStream bos = new BufferedOutputStream(System.out);
-
         String input;
         loop:
         while ((input = br.readLine()) != null) {
             int n = input.length();
             permutations(input, 0, n - 1);
+            int minimum = n;
             for (String permuWord : list) {
-                System.out.println(permuWord);
-                if (isPalindrome(permuWord, n - 1)) {
-                    bos.write("0\n".getBytes());
-                    bos.flush();
-                    list.clear();
-                    continue loop;
+                int now = check(permuWord, n - 1);
+//                System.out.println(now);
+                if (now == 0) {
+                    minimum = 0;
+                    break;
+                } else if (minimum > now) {
+                    minimum = now;
                 }
             }
-
-
-            for (String s : list) {
-                System.out.println(s);
-            }
+            bos.write((minimum + "\n").getBytes());
+            bos.flush();
             list.clear();
         }
         bos.flush();
@@ -73,16 +69,23 @@ public class P2588_Game_of_Palindromes {
         return String.valueOf(charArray);
     }
 
-    boolean isPalindrome(String word, int n) {
+    int check(String word, int n) {
+        char[] c = new char[n];
+
+//        System.out.println(word);
+        int total = n - 1;
         int l = 0, r = n;
         while (l < r) {
             if (word.charAt(l) != word.charAt(r)) {
-                return false;
+//                System.out.println("ss");
+                return total;
+//                break;
             }
             l++;
             r--;
+            total--;
         }
-        return true;
+        return total;
     }
 
 }
