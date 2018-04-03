@@ -13,7 +13,6 @@ package SPOJ.Accepted;
  * @Solution:
  * @Note:
  */
-
 import java.io.*;
 
 public class CPTTRN4_Character_Patterns_Act_4 {
