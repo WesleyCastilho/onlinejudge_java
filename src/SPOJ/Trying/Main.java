@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        new EMO_Emoticons();
+        new BUGLIFE_A_Bugs_Life();
     }
 
 }
