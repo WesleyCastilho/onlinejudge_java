@@ -1,4 +1,4 @@
-package SPOJ.Accepted;
+package SPOJ.Accepted.basics;
 
 /**
  * @author Teerapat Phokhonwong

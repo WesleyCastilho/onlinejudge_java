@@ -1,4 +1,4 @@
-package SPOJ.Accepted;
+package SPOJ.Accepted.Classical;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

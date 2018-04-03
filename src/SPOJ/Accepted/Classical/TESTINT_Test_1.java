@@ -1,4 +1,4 @@
-package SPOJ.Accepted;
+package SPOJ.Accepted.Classical;
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: Sphere Online Judge
