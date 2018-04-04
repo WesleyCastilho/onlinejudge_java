@@ -1,6 +1,19 @@
 package URI.Trying.NOSTATUS.GRAPH;
 
-
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: GRAPH
+ * @Problem: 2688 - Choosing a Place
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2688
+ * @Timelimit: 1 sec
+ * @Status:
+ * @Memory:
+ * @Submission:
+ * @Runtime:
+ * @Solution:
+ * @Note:
+ */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -24,7 +37,7 @@ public class P2688_Choosing_a_Place {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
-        int[][] data = new int[13][13];
+        int[][] data = new int[14][14];
         LinkedList<Point> chair = new LinkedList<Point>();
 
         for (int i = 1; i <= 13; i++) {
