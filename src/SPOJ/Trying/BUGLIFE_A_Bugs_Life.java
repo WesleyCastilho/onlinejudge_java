@@ -14,7 +14,6 @@ package SPOJ.Trying;
  * @Solution:
  * @Note:
  */
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
