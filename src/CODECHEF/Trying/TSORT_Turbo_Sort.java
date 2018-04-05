@@ -1,11 +1,5 @@
 package CODECHEF.Trying;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: CODECHEF
@@ -13,13 +7,20 @@ import java.io.OutputStreamWriter;
  * @Problem: TSORT : Turbo Sort
  * @Link: https://www.codechef.com/problems/TSORT
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: TLE
  * @Memory:
  * @Submission:
  * @Runtime:
- * @Solution: Insertion Sort
+ * @Solution:
  * @Note:
  */
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
 public class TSORT_Turbo_Sort {
 
     public TSORT_Turbo_Sort() throws IOException {
@@ -38,19 +39,19 @@ public class TSORT_Turbo_Sort {
                 max = now;
                 data[0] = now;
             } else if (now <= min) {
+                //ltmp -> tmp
                 int k = 1;
-                int tmp = data[k - 1];
-                for (; k <count; k++) {
-                    data[k] = tmp;
-                    tmp = data[k + 1];
+                int tmp, ltmp = data[k - 1];
+                for (; k <= count; k++) {
+                    tmp = data[k];
+                    data[k] = ltmp;
+                    ltmp = tmp;
                 }
                 data[0] = now;
                 min = data[0];
-                print(data, n);
             } else if (now >= max) {
                 data[count] = now;
                 max = data[count];
-                print(data, n);
             } else {
                 int index = 0;
                 for (int j = 1; j < count; j++) {
@@ -76,13 +77,6 @@ public class TSORT_Turbo_Sort {
             if (++i == n) break;
         }
         bw.flush();
-    }
-
-    void print(int[] data, int n) {
-        for (int i = 0; i < n; i++) {
-            System.out.print(" " + data[i]);
-        }
-        System.out.println();
     }
 
 }
