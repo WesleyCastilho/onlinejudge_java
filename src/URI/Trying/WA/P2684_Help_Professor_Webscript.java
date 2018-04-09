@@ -5,7 +5,7 @@
  * @Problem: 2684 - Help Professor Webscript!!
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2684
  * @Timelimit: 1 sec
- * @Status: WA 60%
+ * @Status: WA 50%
  * @Submission:
  * @Runtime:
  * @Solution:
@@ -63,48 +63,44 @@ class P2684_Help_Professor_Webscript {
                         }
                         if (c[i] == '<') {
                             if (c[i + 1] == '/') {
+                                i += 2;
                                 String s = "";
                                 boolean error = true;
                                 int j = i;
                                 for (; j < size; j++) {
-                                    if (c[j] != '/') s += c[j];
                                     if (c[j] == '>') {
                                         error = false;
-                                        if (stack.isEmpty() || !stack.pollLast().startsWith(s)) {
-                                            successful = false;
-                                            break loop;
-                                        }
-
                                         break;
                                     }
-
+                                    s += c[j];
                                 }
-                                if (error) {
+
+                                if (!error && !stack.isEmpty() && s.equals(stack.pollLast())) {
+                                    successful = true;
+                                } else {
                                     successful = false;
                                     break loop;
                                 }
                                 i = j;
                             } else {
-                                String s = "<";
+                                String s = "";
                                 boolean error = true;
-                                boolean getText = true;
+                                boolean stop = false;
                                 int j = i + 1;
                                 for (; j < size; j++) {
-                                    if (c[j] == ' ') {
-                                        getText = false;
-                                    }
-                                    if (getText) {
-                                        s += c[j];
-                                    }
                                     if (c[j] == '>') {
-                                        if (!getText) {
-                                            s += '>';
-                                        }
                                         error = false;
                                         stack.add(s);
                                         break;
                                     }
+                                    if (c[j] == ' ') {
+                                        stop = true;
+                                    }
+                                    if (stop) continue;
+
+                                    s += c[j];
                                 }
+
                                 if (error) {
                                     successful = false;
                                     break loop;
