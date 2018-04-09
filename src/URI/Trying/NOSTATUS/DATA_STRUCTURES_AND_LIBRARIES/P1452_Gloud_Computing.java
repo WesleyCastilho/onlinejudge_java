@@ -7,7 +7,7 @@ package URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES;
  * @Problem: 1452 - Gloud Computing
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1452
  * @Timelimit: 1 sec
- * @Status: 
+ * @Status:
  * @Submission:
  * @Runtime:
  * @Solution:
