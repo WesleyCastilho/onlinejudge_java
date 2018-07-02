@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 //        new P2132_Not_One_More_Canadian_Game();
-        new P2588_Game_of_Palindromes();
+//        new P2588_Game_of_Palindromes();
     }
 
 }

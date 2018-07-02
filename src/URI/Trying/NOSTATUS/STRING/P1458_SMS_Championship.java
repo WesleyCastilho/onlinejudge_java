@@ -9,7 +9,7 @@ package URI.Trying.NOSTATUS.STRING;
  * @Submission:
  * @Runtime:
  * @Solution:
- * @Note:คำนวนการกด message ใช้เวลาน้อยที่สุด
+ * @Note: คำนวนการกด message ใช้เวลาน้อยที่สุด
  */
 
 import java.io.BufferedReader;

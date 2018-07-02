@@ -1,12 +1,18 @@
 package URI.Trying.NOSTATUS.BEGINNER;
 
 
+import URI.Accepted.BEGINNER.sourcecode.P2807_Iccanobif;
+
 import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
-        new P2698_Daunting_Device();
+    public static void main(String[] args) {
+        try {
+            new P2807_Iccanobif();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
