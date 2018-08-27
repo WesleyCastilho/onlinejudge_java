@@ -1,4 +1,4 @@
-package URI.Trying.WA;
+package URI.Trying.AcceptedOtherLanguage;
 
 /**
  * @author Teerapat Phokhonwong

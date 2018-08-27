@@ -1,18 +1,19 @@
 package URI.Trying.NOSTATUS.AD_HOC;
 /**
  * @author Teerapat Phokhonwong
- * @Onlinejudge: CODECHEF
- * @Categories:
- * @Problem:
- * @Link:
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: AD-HOC
+ * @Problem: 2151 - Rulk's Punch
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2151
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: WA 70%
  * @Memory:
  * @Submission:
  * @Runtime:
  * @Solution:
  * @Note:
  */
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -38,6 +39,9 @@ class P2151_Rulks_Punch {
                 st = br.readLine().split(" ");
                 for (int j = 1; j <= N; j++) {
                     int value = Integer.parseInt(st[j - 1]) + 10;
+                    if (value >= 100) {
+                        value = 100;
+                    }
                     if (i == X && j == Y) wall[i][j] = value;
                     else {
                         wall[i][j] = value;
