@@ -14,7 +14,10 @@ package URI.Trying.TLE;
  * @Note:
  */
 
+import URI.Trying.NOSTATUS.STRING.P1519_Abbreviations;
+
 import java.io.*;
+import java.net.URL;
 import java.util.*;
 
 public class P2720_Large_Presents {
@@ -23,7 +26,12 @@ public class P2720_Large_Presents {
     static HashMap<Integer, Integer> giftList;
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        URL path = P2720_Large_Presents.class.getResource("input/P2720_input.txt");
+        File f = new File(path.getFile());
+        BufferedReader br = new BufferedReader(new FileReader(f));
+
+
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int t = Integer.parseInt(br.readLine());
 

@@ -1,9 +1,7 @@
 package URI.Trying.NOSTATUS.STRING;
 
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.net.URL;
 import java.util.TreeSet;
 
 /**
@@ -22,7 +20,12 @@ public class P2588_Game_of_Palindromes {
     TreeSet<String> list = new TreeSet<>();
 
     public P2588_Game_of_Palindromes() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        URL path = P1519_Abbreviations.class.getResource("input/P2588_input.txt");
+        File f = new File(path.getFile());
+        BufferedReader br = new BufferedReader(new FileReader(f));
+
+
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedOutputStream bos = new BufferedOutputStream(System.out);
         String input;
         loop:
@@ -31,14 +34,15 @@ public class P2588_Game_of_Palindromes {
             permutations(input, 0, n - 1);
             int minimum = n;
             for (String permuWord : list) {
-                int now = check(permuWord, n - 1);
-//                System.out.println(now);
-                if (now == 0) {
-                    minimum = 0;
-                    break;
-                } else if (minimum > now) {
-                    minimum = now;
-                }
+                System.out.println(permuWord);
+//                int now = check(permuWord, n - 1);
+////                System.out.println(now);
+//                if (now == 0) {
+//                    minimum = 0;
+//                    break;
+//                } else if (minimum > now) {
+//                    minimum = now;
+//                }
             }
             bos.write((minimum + "\n").getBytes());
             bos.flush();
@@ -71,9 +75,9 @@ public class P2588_Game_of_Palindromes {
     }
 
     int check(String word, int n) {
-        char[] c = new char[n+1];
+        char[] c = new char[n + 1];
         int i = n;
-        for(int j = 0; j <= n; j++){
+        for (int j = 0; j <= n; j++) {
             c[i--] = word.charAt(j);
         }
 //        int total = n - 1;
@@ -88,8 +92,8 @@ public class P2588_Game_of_Palindromes {
 //            total--;
 //
 //        }
-        System.out.println("word= "+word);
-        System.out.println("parindome= "+new String(c));
+        System.out.println("word= " + word);
+        System.out.println("parindome= " + new String(c));
 //        return total;
         return 9999;
     }

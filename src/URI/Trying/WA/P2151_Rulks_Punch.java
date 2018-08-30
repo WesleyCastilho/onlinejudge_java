@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.AD_HOC;
+package URI.Trying.WA;
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
@@ -6,7 +6,7 @@ package URI.Trying.NOSTATUS.AD_HOC;
  * @Problem: 2151 - Rulk's Punch
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2151
  * @Timelimit: 1 sec
- * @Status: WA 70%
+ * @Status: WA 95%
  * @Memory:
  * @Submission:
  * @Runtime:
@@ -32,30 +32,36 @@ class P2151_Rulks_Punch {
             st = br.readLine().split(" ");
             int M = Integer.parseInt(st[0]);
             int N = Integer.parseInt(st[1]);
-            int X = Integer.parseInt(st[2]);
-            int Y = Integer.parseInt(st[3]);
+            int Y = Integer.parseInt(st[2]);
+            int X = Integer.parseInt(st[3]);
             wall = new int[M + 1][N + 1];
-            for (int i = 1; i <= M; i++) {
+            for (int y = 1; y <= M; y++) {
                 st = br.readLine().split(" ");
-                for (int j = 1; j <= N; j++) {
-                    int value = Integer.parseInt(st[j - 1]) + 10;
+                for (int x = 1; x <= N; x++) {
+                    int value = Integer.parseInt(st[x - 1]) + 10;
                     if (value >= 100) {
                         value = 100;
                     }
-                    if (i == X && j == Y) wall[i][j] = value;
-                    else {
-                        wall[i][j] = value;
-                        wall[i][j] -= max(Math.abs(i - X), Math.abs(j - Y));
-                        if (wall[i][j] <= 0) wall[i][j] = 1;
+                    if (y == Y && x == X) {
+                        wall[y][x] = value;
+                        continue;
                     }
+
+                    wall[y][x] = value;
+                    int pX = (int) Math.pow(x - X, 2);
+                    int pY = (int) Math.pow(Y - y, 2);
+                    int distance = (int) Math.sqrt(pX + pY);
+                    wall[y][x] -= distance;
+                    if (wall[y][x] <= 0) wall[y][x] = 1;
+
                 }
             }
 
             bw.append("Parede " + k + ":\n");
-            for (int i = 1; i <= M; i++) {
-                bw.append("" + wall[i][1]);
-                for (int j = 2; j <= N; j++) {
-                    bw.append(" " + wall[i][j]);
+            for (int y = 1; y <= M; y++) {
+                bw.append("" + wall[y][1]);
+                for (int x = 2; x <= N; x++) {
+                    bw.append(" " + wall[y][x]);
                 }
                 bw.newLine();
             }
@@ -63,7 +69,4 @@ class P2151_Rulks_Punch {
         bw.flush();
     }
 
-    int max(int a, int b) {
-        return a > b ? a : b;
-    }
 }
