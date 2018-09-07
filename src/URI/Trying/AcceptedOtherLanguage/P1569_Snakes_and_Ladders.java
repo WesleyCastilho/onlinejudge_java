@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.WA;
+package URI.Trying.AcceptedOtherLanguage;
 
 import java.io.*;
 import java.util.*;

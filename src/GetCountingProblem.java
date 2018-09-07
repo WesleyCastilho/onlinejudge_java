@@ -63,6 +63,24 @@ public class GetCountingProblem {
     static int devSkill_totalFile = 0;
     static int devSkill_ac = 0;
 
+    static final String CODER_BYTE = "CODERBYTE";
+    static final String LINK_CODER_BYTE = "";
+    static final String PROFILE_CODER_BYTE = "";
+    static int coderByte_totalFile = 0;
+    static int coderByte_ac = 0;
+
+    static final String HACKERRANK = "HACKERRANK";
+    static final String LINK_HACKERRANK = "";
+    static final String PROFILE_HACKERRANK = "";
+    static int hackerRank_totalFile = 0;
+    static int hackerRank_ac = 0;
+
+    static final String HACKEREARTH = "";
+    static final String LINK_HACKEREARTH = "";
+    static final String PROFILE_HACKEREARTH = "";
+    static int hackerEarth_totalFile = 0;
+    static int hackerEarth_ac = 0;
+
     static int totalJavaFile = 0;
     static int totalAcceptedFile = 0;
     static BufferedWriter bw_MapAll;
@@ -260,6 +278,27 @@ public class GetCountingProblem {
                 pair[3] = devSkill_totalFile + "";
                 pair[4] = devSkill_ac + "";
                 break;
+            case CODER_BYTE:
+                pair[0] = LINK_CODER_BYTE;
+                pair[1] = PROFILE_CODER_BYTE;
+                pair[2] = CODER_BYTE;
+                pair[3] = coderByte_totalFile + "";
+                pair[4] = coderByte_ac + "";
+                break;
+            case HACKERRANK:
+                pair[0] = LINK_HACKERRANK;
+                pair[1] = PROFILE_HACKERRANK;
+                pair[2] = HACKERRANK;
+                pair[3] = hackerRank_totalFile + "";
+                pair[4] = hackerRank_ac + "";
+                break;
+            case HACKEREARTH:
+                pair[0] = LINK_HACKEREARTH;
+                pair[1] = PROFILE_HACKEREARTH;
+                pair[2] = HACKEREARTH;
+                pair[3] = hackerEarth_totalFile + "";
+                pair[4] = hackerEarth_ac + "";
+                break;
             default:
                 pair[0] = "";
                 pair[1] = "";
@@ -302,6 +341,9 @@ public class GetCountingProblem {
             case DEV_SKILL:
                 devSkill_totalFile++;
                 if (Accepted) devSkill_ac++;
+            case HACKERRANK:
+                hackerRank_totalFile++;
+                if (Accepted) hackerRank_ac++;
                 break;
             default:
                 break;

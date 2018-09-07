@@ -1,7 +1,8 @@
-package URI.Trying.WA;
+package URI.Trying.AcceptedOtherLanguage;
 
 
 /**
+ * ************ Accept by C ****************
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
  * @Categories: String
