@@ -22,73 +22,125 @@ import java.util.*;
 
 public class P2720_Large_Presents {
 
-    static int n, k, i, h, w, l, m;
-    static HashMap<Integer, Integer> giftList;
+    static int n, k, id, heigth, width, length;
+
+    static class Gift {
+        int id;
+        int size;
+
+        public Gift(int id, int size) {
+            this.id = id;
+            this.size = size;
+        }
+    }
 
     public static void main(String[] args) throws IOException {
         URL path = P2720_Large_Presents.class.getResource("input/P2720_input.txt");
         File f = new File(path.getFile());
-        BufferedReader br = new BufferedReader(new FileReader(f));
+//        BufferedReader br = new BufferedReader(new FileReader(f));
+        Scanner sc = new Scanner(f);
 
-
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        Scanner sc = new Scanner(System.in);
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        int t = Integer.parseInt(br.readLine());
-
-        String[] st;
+        int t = sc.nextInt();
+//        String[] st;
         while (t-- > 0) {
-            st = br.readLine().split(" ");
-            n = Integer.parseInt(st[0]);
-            k = Integer.parseInt(st[1]);
-            giftList = new HashMap<>();
-            for (m = 0; m < n; m++) {
-                st = br.readLine().split(" ");
-                i = Integer.parseInt(st[0]);
-                h = Integer.parseInt(st[1]);
-                w = Integer.parseInt(st[2]);
-                l = Integer.parseInt(st[3]);
-                int size = h + w * l;
-                giftList.put(size, i);
+            n = sc.nextInt();
+            k = sc.nextInt();
+            Gift[] giftArr = new Gift[n];
+            int e = 0;
+            boolean isfull = false;
+            int max = 0, min = 0;
+            createLoop:
+            for (int i = 0; i < n; i++) {
+                id = sc.nextInt();
+                heigth = sc.nextInt();
+                width = sc.nextInt();
+                length = sc.nextInt();
+                int size = heigth + width * length;
+
+                if (e == 0) {
+                    giftArr[0] = new Gift(id, size);
+                    min = size;
+                    max = size;
+                    if (!isfull) {
+                        if (++e == k) {
+                            isfull = true;
+                        }
+                    }
+                    continue createLoop;
+                }
+
+                if (isfull && size < min) {
+                    continue createLoop;
+                }
+
+                if (size == max && id < giftArr[0].id) {
+                    for (int k = e - 1; k >= 0; k--) {
+                        giftArr[k + 1] = giftArr[k];
+                    }
+                    giftArr[0] = new Gift(id, size);
+                    continue createLoop;
+                } else if (size > max) {
+                    for (int k = e - 1; k >= 0; k--) {
+                        giftArr[k + 1] = giftArr[k];
+                    }
+                    giftArr[0] = new Gift(id, size);
+                    max = size;
+                    continue createLoop;
+                }
+
+                int j = 0;
+                for (; j < e; j++) {
+                    if (giftArr[j].size == size && giftArr[j].id > id) {
+                        for (int k = j; k < e; k++) {
+                            giftArr[k + 1] = giftArr[k];
+                        }
+                        giftArr[j] = new Gift(id, size);
+
+                        if (!isfull) {
+                            if (++e == k) {
+                                isfull = true;
+                            }
+                        }
+                        continue createLoop;
+                    } else if (giftArr[j].size < size) {
+                        for (int k = j; k < e; k++) {
+                            giftArr[k + 1] = giftArr[k];
+                        }
+                        giftArr[j] = new Gift(id, size);
+                        if (!isfull) {
+                            if (++e == k) {
+                                isfull = true;
+                            }
+                        }
+                        continue createLoop;
+                    }
+                }
+                giftArr[e] = new Gift(id, size);
+                min = size;
+                if (!isfull) {
+                    if (++e == k) {
+                        isfull = true;
+                    }
+                }
             }
 
+
             boolean printed = false;
-            int count = 0;
-            for (Map.Entry<Integer, Integer> entry : entriesSortedByValues(giftList)) {
+            for (int i = 0; i < k; i++) {
                 if (!printed) {
                     printed = true;
                 } else {
                     bw.append(" ");
                 }
-                Integer id = entry.getValue();
-                bw.append(id + "");
-                count++;
-                if (count == k) {
-                    break;
-                }
-
+                bw.append(giftArr[i].id + "");
             }
-
             bw.append("\n");
+            bw.flush();
         }
-        bw.flush();
+
     }
 
-    static <K, V extends Comparable<? super V>> SortedSet<Map.Entry<K, V>> entriesSortedByValues(Map<K, V> map) {
-        SortedSet<Map.Entry<K, V>> sortedEntries = new TreeSet<Map.Entry<K, V>>(
-                new Comparator<Map.Entry<K, V>>() {
-                    @Override
-                    public int compare(Map.Entry<K, V> e1, Map.Entry<K, V> e2) {
-                        int res = e1.getValue().compareTo(e2.getValue());
-                        if (e1.getKey().equals(e2.getKey())) {
-                            return res; // Code will now handle equality properly
-                        } else {
-                            return res != 0 ? res : 1; // While still adding all entries
-                        }
-                    }
-                }
-        );
-        sortedEntries.addAll(map.entrySet());
-        return sortedEntries;
-    }
 
 }

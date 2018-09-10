@@ -14,31 +14,28 @@ package URI.Trying.WA;
  * @Note:
  */
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Scanner;
 
 class P2151_Rulks_Punch {
 
     public P2151_Rulks_Punch() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Scanner sc = new Scanner(System.in);
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int[][] wall;
         String[] st;
-        int t = Integer.parseInt(br.readLine());
+        int t = sc.nextInt();
         for (int k = 1; k <= t; k++) {
-            st = br.readLine().split(" ");
-            int M = Integer.parseInt(st[0]);
-            int N = Integer.parseInt(st[1]);
-            int Y = Integer.parseInt(st[2]);
-            int X = Integer.parseInt(st[3]);
+            int M = sc.nextInt();
+            int N = sc.nextInt();
+            int Y = sc.nextInt();
+            int X = sc.nextInt();
             wall = new int[M + 1][N + 1];
             for (int y = 1; y <= M; y++) {
-                st = br.readLine().split(" ");
                 for (int x = 1; x <= N; x++) {
-                    int value = Integer.parseInt(st[x - 1]) + 10;
+                    int value = sc.nextInt() + 10;
                     if (value >= 100) {
                         value = 100;
                     }
@@ -64,9 +61,10 @@ class P2151_Rulks_Punch {
                     bw.append(" " + wall[y][x]);
                 }
                 bw.newLine();
+                bw.flush();
             }
         }
-        bw.flush();
+
     }
 
 }
