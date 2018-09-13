@@ -10,12 +10,12 @@ package ZOJ.Accepted;
  * @Status: Accepted
  * @Submission: 2015-10-21 19:57:36
  * @Runtime: 29 ms
- * @Solution:
+ * @Solution: dfs
  * @Note:
  */
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -30,9 +30,11 @@ public class P1002_Fire_Net {
     static int newBlockHouse = 0;
 
     public static void main(String[] args) throws IOException {
-        InputStreamReader ir = new InputStreamReader(new FileInputStream("src/input/P1002.txt"));
+//        InputStreamReader ir = new InputStreamReader(new FileInputStream("src/input/P1002.txt"));
 //        InputStreamReader ir = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(ir);
+//        BufferedReader br = new BufferedReader(ir);
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         char[][] board;
         int n;
@@ -119,16 +121,6 @@ public class P1002_Fire_Net {
             }
         }
         return true;
-    }
-
-    static void printBoard(char[][] board) {
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board.length; j++) {
-                System.out.print(board[i][j]);
-            }
-            System.out.println("");
-        }
-        System.out.println("");
     }
 
 }
