@@ -1,5 +1,19 @@
-package ZOJ.Trying;
+package ZOJ.Accepted;
 
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: ZOJ
+ * @Categories: ZOJ Problem Set Vol 1
+ * @Problem: 1068 : PMTHBGWB
+ * @Link: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=1068
+ * @Timelimit: 1 sec
+ * @Status: Accepted
+ * @Memory: 1102(KB)
+ * @Submission: 2018-09-13 21:44:25
+ * @Runtime: 76(ms)
+ * @Solution:
+ * @Note:
+ */
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -117,28 +131,25 @@ public class P1068_PMTHBGWB {
             String morseCode = "";
             for (char c : input.toCharArray()) {
                 String cur_morseCode = charToMorseCode.get(c);
-
                 morseCode += cur_morseCode;
                 lenMorseCode = cur_morseCode.length() + lenMorseCode;
             }
-            System.out.println("morseCode= " + morseCode);
-            System.out.println("lenMorseCode= " + lenMorseCode);
             String answer = "";
-            int start = 0;
-            for (int i = 0; i < lenMorseCode.length(); i++) {
-                int size = Integer.parseInt(String.valueOf(lenMorseCode.charAt(i)));
-                System.out.println("start="+start+" end="+(start+size));
-                System.out.println(size + " : " + morseCode.substring(start, size ));
 
-                char c = morseCodeTochar.get(morseCode.substring(start, start+size-1));
-                answer += c;
-                start += size+1;
+            int start = 0;
+            for (char c : lenMorseCode.toCharArray()) {
+                int size = Integer.parseInt(c + "");
+                if (size == 1) {
+                    answer += morseCodeTochar.get(morseCode.charAt(start) + "");
+                    start++;
+                    continue;
+                }
+                answer += morseCodeTochar.get(morseCode.substring(start, start + size));
+                start += size;
             }
 
-            bw.append(t + ": " + answer + "\n");
+            bw.append((t++) + ": " + answer + "\n");
         }
-
-
         bw.flush();
     }
 }
