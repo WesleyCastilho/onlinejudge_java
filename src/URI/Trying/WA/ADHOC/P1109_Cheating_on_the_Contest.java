@@ -1,4 +1,4 @@
-package URI.Trying.WA;
+package URI.Trying.WA.ADHOC;
 
 /**
  * @author Teerapat Phokhonwong
@@ -37,55 +37,14 @@ public class P1109_Cheating_on_the_Contest {
     }
 
 
-    private static Node buildNFA(String input) {
-        Node lastNode = null;
-        Node node = null;
-        int size = input.length();
-        int level = 0;
-        boolean orFlag = false;
-        boolean nextStepFlag = false;
-        for (int j = 0; j < size; j++) {
-            char c = input.charAt(j);
-            switch (c) {
-                case '(':
-                    level++;
-                    break;
-                case ')':
-                    level--;
-                    break;
-                case '.':
-                    lastNode = node;
-                    node = new Node();
-                    nextStepFlag = true;
-                    break;
-                case '|':
-                    lastNode = node;
-                    node = new Node();
-                    orFlag = true;
-                    break;
-                case '*':
-                    if (node != null) {
-                        node.star = true;
-                    }
-                    break;
-                default:
-                    node = new Node();
-                    node.data = c;
-                    if (startNode == null) {
-                        startNode = node;
-                    }
-                    if (nextStepFlag) {
-                        lastNode.next = node;
-                        nextStepFlag = false;
-//                        System.out.println("next");
-                    } else if (orFlag) {
-                        lastNode.or = node;
-                        orFlag = false;
-                    }
-                    break;
-            }
-        }
-        return node;
+    static void regexToStack(String regex) {
+
+
+        buildNFA();
+    }
+
+    private static void buildNFA() {
+
     }
 
     private static boolean execute(String text) {
@@ -133,9 +92,11 @@ public class P1109_Cheating_on_the_Contest {
         String input = "";
         while ((input = br.readLine()) != null) {
             init();
-            buildNFA(input);
+            regexToStack(input);
+            buildNFA();
+
             int n = Integer.parseInt(br.readLine());
-            for (int i = 0; i < n; i++) {
+            while (n-- > 0) {
                 if (execute(br.readLine())) {
                     bw.append("Y\n");
                 } else {

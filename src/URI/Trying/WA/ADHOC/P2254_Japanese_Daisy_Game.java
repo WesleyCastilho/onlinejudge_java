@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.WA;
+package URI.Trying.WA.ADHOC;
 
 import java.io.*;
 

@@ -1,4 +1,4 @@
-package URI.Trying.WA;
+package URI.Trying.WA.ADHOC;
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
