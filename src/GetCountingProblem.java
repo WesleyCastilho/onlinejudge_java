@@ -63,9 +63,9 @@ public class GetCountingProblem {
     static int devSkill_totalFile = 0;
     static int devSkill_ac = 0;
 
-    static final String CODER_BYTE = "CODERBYTE";
-    static final String LINK_CODER_BYTE = "";
-    static final String PROFILE_CODER_BYTE = "";
+    static final String CODERBYTE = "CODERBYTE";
+    static final String LINK_CODERBYTE = "";
+    static final String PROFILE_CODERBYTE = "";
     static int coderByte_totalFile = 0;
     static int coderByte_ac = 0;
 
@@ -75,8 +75,8 @@ public class GetCountingProblem {
     static int hackerRank_totalFile = 0;
     static int hackerRank_ac = 0;
 
-    static final String HACKEREARTH = "";
-    static final String LINK_HACKEREARTH = "";
+    static final String HACKEREARTH = "HACKEREARTH";
+    static final String LINK_HACKEREARTH = "https://www.hackerearth.com/";
     static final String PROFILE_HACKEREARTH = "";
     static int hackerEarth_totalFile = 0;
     static int hackerEarth_ac = 0;
@@ -144,13 +144,16 @@ public class GetCountingProblem {
             f.write(HeadText.getBytes());
             f.close();
         }
-        System.out.println("Counting Result");
+        System.out.println("Counting File Result");
         System.out.println(AIZU + " totalFile:" + aizu_totalFile + "  ac:" + aizu_ac);
         System.out.println(COJ + " totalFile:" + coj_totalFile + "  ac:" + coj_ac);
         System.out.println(URI + " totalFile:" + uri_totalFile + "  ac:" + uri_ac);
         System.out.println(UVA + " totalFile:" + uva_totalFile + "  ac:" + uva_ac);
         System.out.println(ZOJ + " totalFile:" + zoj_totalFile + "  ac:" + zoj_ac);
         System.out.println(SPOJ + " totalFile:" + spoj_totalFile + "  ac:" + spoj_ac);
+        System.out.println(HACKEREARTH + " totalFile:" + hackerEarth_totalFile + " ac:" + hackerEarth_ac);
+        System.out.println(HACKERRANK + " totalFile:" + hackerRank_totalFile + " ac:" + hackerRank_ac);
+        System.out.println(TOPCODER + " totalFile:" + topcoder_totalFile + " ac:" + topcoder_ac);
     }
 
 
@@ -243,6 +246,13 @@ public class GetCountingProblem {
                 pair[3] = spoj_totalFile + "";
                 pair[4] = spoj_ac + "";
                 break;
+            case TOPCODER:
+                pair[0] = LINK_TOPCODER;
+                pair[1] = PROFILE_TOPCODER;
+                pair[2] = TOPCODER;
+                pair[3] = topcoder_totalFile + "";
+                pair[4] = topcoder_ac + "";
+                break;
             case CODECHEF:
                 pair[0] = LINK_CODECHEF;
                 pair[1] = PROFILE_CODECHEF;
@@ -278,10 +288,10 @@ public class GetCountingProblem {
                 pair[3] = devSkill_totalFile + "";
                 pair[4] = devSkill_ac + "";
                 break;
-            case CODER_BYTE:
-                pair[0] = LINK_CODER_BYTE;
-                pair[1] = PROFILE_CODER_BYTE;
-                pair[2] = CODER_BYTE;
+            case CODERBYTE:
+                pair[0] = LINK_CODERBYTE;
+                pair[1] = PROFILE_CODERBYTE;
+                pair[2] = CODERBYTE;
                 pair[3] = coderByte_totalFile + "";
                 pair[4] = coderByte_ac + "";
                 break;
@@ -313,30 +323,37 @@ public class GetCountingProblem {
             case AIZU:
                 aizu_totalFile++;
                 if (Accepted) aizu_ac++;
-
                 break;
             case COJ:
                 coj_totalFile++;
                 if (Accepted) coj_ac++;
                 break;
+            case CODECHEF:
+                codechef_totalFile++;
+                if (Accepted) codechef_ac++;
+                break;
+            case CODERBYTE:
+                coderByte_totalFile++;
+                if (Accepted) coderByte_ac++;
             case SPOJ:
                 spoj_totalFile++;
                 if (Accepted) spoj_ac++;
                 break;
+            case TOPCODER:
+                topcoder_totalFile++;
+                if (Accepted) topcoder_ac++;
+                break;
             case URI:
                 uri_totalFile++;
                 if (Accepted) uri_ac++;
-
                 break;
             case UVA:
                 uva_totalFile++;
                 if (Accepted) uva_ac++;
-
                 break;
             case ZOJ:
                 zoj_totalFile++;
                 if (Accepted) zoj_ac++;
-
                 break;
             case DEV_SKILL:
                 devSkill_totalFile++;
@@ -345,6 +362,9 @@ public class GetCountingProblem {
                 hackerRank_totalFile++;
                 if (Accepted) hackerRank_ac++;
                 break;
+            case HACKEREARTH:
+                hackerEarth_totalFile++;
+                if (Accepted) hackerEarth_ac++;
             default:
                 break;
         }
