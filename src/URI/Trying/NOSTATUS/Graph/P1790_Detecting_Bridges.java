@@ -1,14 +1,26 @@
 package URI.Trying.NOSTATUS.GRAPH;
 
+
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: GRAPH
+ * @Problem: 1610 : Dudu Service Maker
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1790
+ * @Timelimit: 1 sec
+ * @Status:
+ * @Submission:
+ * @Runtime:
+ * @Solution:
+ * @Note:
+ */
+
 import java.io.*;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Set;
+import java.util.TreeSet;
 
-/**
- * Created by Teerapat-BSD on 2/5/2018.
- * https://www.urionlinejudge.com.br/judge/en/problems/view/1790
- * algorithm : Detecting_Bridges find non cycle node dp
- */
 public class P1790_Detecting_Bridges {
 
     static int[][] map;
@@ -29,14 +41,14 @@ public class P1790_Detecting_Bridges {
 
     static private class City {
         int id;
-        LinkedList<Integer> bridges;
+        public LinkedList<City> bridges;
 
         public City(int id) {
             bridges = new LinkedList<>();
             this.id = id;
         }
 
-        void addBrid(int desination) {
+        void addBrid(City desination) {
             if (!bridges.contains(desination)) {
                 bridges.add(desination);
             }
@@ -66,50 +78,30 @@ public class P1790_Detecting_Bridges {
                 cities[i] = new City(i);
             }
 
-            LinkedList<Bridges> Q = new LinkedList<Bridges>();
-            Bridges[] bridges = new Bridges[p];
             for (int i = 0; i < p; i++) {
                 st = br.readLine().split(" ");
                 int a = Integer.parseInt(st[0]);
                 int b = Integer.parseInt(st[1]);
-                cities[a].addBrid(b);
-                map[a - 1][b - 1] = 1;
-//                bridges[i] = new Bridges(a, b);
-                Q.add(bridges[i]);
+                cities[a].addBrid(cities[b]);
             }
 
-            //findAllCycle
+            LinkedList<City> Q = new LinkedList<>();
+            LinkedList<City> nextQ = new LinkedList<>();
+            boolean[] visited = new boolean[c + 1];
+            for (City c : cities) {
+                if (c == null) continue;
+                visited[c.id] = true;
+                for (City city : c.bridges) {
 
-            buildLoop:
-            while (true) {
-                LinkedList<Bridges> next = new LinkedList<>();
-                LinkedList<Bridges> moved = new LinkedList<>();
-
-                while (!Q.isEmpty()) {
-                    Bridges b = Q.pollFirst();
-//                    visited[b.cityA - 1][b.cityB - 1] = 1;
-//                    visited[b.cityB - 1][b.cityA - 1] = 1;
-//
-//                    if (cityVisited[b.cityB - 1] != 1) {
-//                        for (int i = 0; i < c; i++) {
-//                            if (map[b.cityB - 1][i] == 1 && visited[b.cityB - 1][i] != 1) {
-//                                next.add(new Bridges(b.cityB, i + 1));
-//                            }
-//                        }
-//                        cityVisited[b.cityB - 1] = 1;
-//                    }
-                    System.out.println(b.cityA + " " + b.cityB);
                 }
-                Q.addAll(next);
-                if (Q.isEmpty()) {
-                    break buildLoop;
-                }
-                System.out.println("next");
             }
 
-            for (int i = 0; i < c; i++) {
-                if (checkNonCycle(bridges[i])) {
-                    totalBridge++;
+
+            for (City c : cities) {
+                if (c == null) continue;
+                System.out.println("city: " + c.id);
+                for (City c2 : c.bridges) {
+                    System.out.println("->" + c2.id);
                 }
             }
 
@@ -120,13 +112,5 @@ public class P1790_Detecting_Bridges {
 
     }
 
-
-    static private boolean checkNonCycle(Bridges bridges) {
-        Bridges b = cycleBridges.get(bridges.cityA + " " + bridges.cityB);
-        if (b != null) {
-            return true;
-        }
-        return false;
-    }
 
 }
