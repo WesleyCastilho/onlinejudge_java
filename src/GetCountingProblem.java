@@ -81,6 +81,12 @@ public class GetCountingProblem {
     static int hackerEarth_totalFile = 0;
     static int hackerEarth_ac = 0;
 
+    static final String CODINGAME = "CODINGAME";
+    static final String LINK_CODEINGANE = "https://www.codingame.com";
+    static final String PROFILE_CODINGAME = "https://www.codingame.com/profile/03109d019ae7e4f9d70c1a1f068685ca6501942";
+    static int codingame_totalFile = 0;
+    static int codingame_ac = 0;
+
     static int totalJavaFile = 0;
     static int totalAcceptedFile = 0;
     static BufferedWriter bw_MapAll;
@@ -154,6 +160,7 @@ public class GetCountingProblem {
         System.out.println(HACKEREARTH + " totalFile:" + hackerEarth_totalFile + " ac:" + hackerEarth_ac);
         System.out.println(HACKERRANK + " totalFile:" + hackerRank_totalFile + " ac:" + hackerRank_ac);
         System.out.println(TOPCODER + " totalFile:" + topcoder_totalFile + " ac:" + topcoder_ac);
+        System.out.println(CODINGAME + " totalFile:" + codingame_totalFile + " ac:" + codingame_ac);
     }
 
 
@@ -309,6 +316,13 @@ public class GetCountingProblem {
                 pair[3] = hackerEarth_totalFile + "";
                 pair[4] = hackerEarth_ac + "";
                 break;
+            case CODINGAME:
+                pair[0] = LINK_CODEINGANE;
+                pair[1] = PROFILE_CODINGAME;
+                pair[2] = CODINGAME;
+                pair[3] = codingame_totalFile + "";
+                pair[4] = codingame_ac + "";
+                break;
             default:
                 pair[0] = "";
                 pair[1] = "";
@@ -365,6 +379,11 @@ public class GetCountingProblem {
             case HACKEREARTH:
                 hackerEarth_totalFile++;
                 if (Accepted) hackerEarth_ac++;
+                break;
+            case CODINGAME:
+                codingame_totalFile++;
+                if (Accepted) codingame_ac++;
+                break;
             default:
                 break;
         }

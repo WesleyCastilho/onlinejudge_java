@@ -4,6 +4,7 @@
  * @Categories: GRAPH
  * @Problem: 1610 : Dudu Service Maker
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1610
+ * @Level: 2
  * @Timelimit: 1 sec
  * @Status:
  * @Submission:
@@ -18,10 +19,27 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class P1610_Dudu_Service_Maker {
 
+    static private class Component {
+        int id;
+        boolean visited;
+        boolean moved;
+        LinkedList<Component> link;
+
+        public Component(int id) {
+            this.id = id;
+            link = new LinkedList<>();
+        }
+
+        void addLink(Component component) {
+            link.add(component);
+        }
+    }
 
     public static void main(String[] args) throws IOException {
         InputStreamReader ir = new InputStreamReader(System.in);
@@ -34,47 +52,59 @@ public class P1610_Dudu_Service_Maker {
             String[] st = br.readLine().split(" ");
             n = Integer.parseInt(st[0]);
             m = Integer.parseInt(st[1]);
-            LinkedList<Integer>[] link = new LinkedList[n];
-            int[][] connection = new int[n][n];
-            boolean[][] isLoop = new boolean[n][n];
+
+
+            HashMap<Integer, Component> component = new HashMap<>();
             int a, b;
-            boolean loop = false;
             while (m-- > 0) {
-                br.readLine().split(" ");
+                st = br.readLine().split(" ");
                 a = Integer.parseInt(st[0]);
                 b = Integer.parseInt(st[1]);
-                if (link[a - 1] == null) {
-                    link[a - 1] = new LinkedList<Integer>();
-                    link[a - 1].add(b - 1);
+                Component componentSource = component.get(a);
+                Component componentDestination = component.get(b);
+                if (componentSource == null) {
+                    componentSource = new Component(a);
                 }
-//                if (a > n || b > n) continue;
-//                if (isLoop[a][b]) {
-//                    loop = true;
-//                }
-//                connection[a][b] = 1;
-//                isLoop[a][b] = true;
-//                isLoop[b][a] = true;
+
+                if (componentDestination == null) {
+                    componentDestination = new Component(b);
+                }
+                componentSource.addLink(componentDestination);
+                component.put(a, componentSource);
             }
 
-            int i = -1;
-            for (LinkedList<Integer> e : link) {
-                ++i;
-                if (e == null) continue;
-                for (int e2 : e) {
-                    boolean[] visited = new boolean[n];
 
+            boolean looping = false;
+            LinkedList<Component> Q = new LinkedList<>();
+            loop:
+            for (Map.Entry<Integer, Component> entry : component.entrySet()) {
+                if (!entry.getValue().visited) {
+                    entry.getValue().visited = true;
+                    entry.getValue().moved = true;
+                    Q.add(entry.getValue());
+
+                    while (!Q.isEmpty()) {
+                        Component cur = Q.pollFirst();
+//                        System.out.print(cur.id + " ");
+                        cur.moved = true;
+                        for (Component children : cur.link) {
+                            if (children.moved) {
+                                looping = true;
+                                break loop;
+                            }
+                            if (!children.visited) {
+                                children.visited = true;
+                                Q.add(children);
+                            }
+                        }
+                    }
                 }
             }
 
-            bw.append((loop ? "SIM" : "NAO") + "\n");
+            bw.append((looping ? "SIM" : "NAO") + "\n");
 
         }
         bw.flush();
-    }
-
-
-    static boolean isCheckLoop(int a, int b, boolean[] v) {
-        return true;
     }
 
 }
