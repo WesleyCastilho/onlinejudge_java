@@ -1,4 +1,4 @@
-package CODINGAME.Trying;
+package CODINGAME.Accepted;
 
 /**
  * @author Teerapat Phokhonwong
@@ -11,7 +11,7 @@ package CODINGAME.Trying;
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution: Divide and conquer algorithm
+ * @Solution:find max in loop
  * @Note:
  */
 import java.io.BufferedReader;

@@ -5,6 +5,7 @@ package URI.Trying.WA.ADHOC;
  * @Onlinejudge: URI Online Judge
  * @Problem: 1109 Cheating on the Contest
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1109
+ * @Level: 9
  * @Timelimit: 1 sec
  * @Status: Wrong answer (20%)
  * @Submission: 2/10/16, 6:53:08 PM
@@ -22,11 +23,15 @@ import java.io.OutputStreamWriter;
 public class P1109_Cheating_on_the_Contest {
 
     static Node startNode;
+    static String[] regexLevel;
+    static String[] opLevel;
 
     static class Node {
 
         char data;
-        boolean star;
+        boolean hasStar;
+        boolean hasNext;
+        boolean hasOr;
         Node or;
         Node next;
     }
@@ -37,53 +42,113 @@ public class P1109_Cheating_on_the_Contest {
     }
 
 
-    static void regexToStack(String regex) {
+    static String regexToNFA(String regex, int level) {
+//        System.out.println("RegexLevel:" + level);
+//        System.out.println(regex);
+        char[] cin = regex.toCharArray();
+        String prefix = "";
+        Node prev = null;
+        Node node = null;
+        String tmp = "";
+        for (char c : cin) {
+            switch (c) {
+                case '.':
+                    if (node != null) {
+                        node.hasNext = true;
+                    }
+                    opLevel[level] += c;
+                    break;
+                case '|':
+                    if (node != null) {
+                        node.hasOr = true;
+                    }
+                    opLevel[level] += c;
+                    break;
+                case '(':
+                    level++;
+                    tmp = "";
+                    opLevel[level] = "";
+                    break;
+                case ')':
 
+//                    if (!opLevel[level].isEmpty()) {
+//                        System.out.println("opLevel(" + level + ") = " + opLevel[level]);
+//                    }
+//                    if (!regexLevel[level].isEmpty()) {
+//                        System.out.println("regexLevel(" + level + ") = " + regexLevel[level]);
+//                    }
+                    if (!tmp.isEmpty()) {
+                        node = new Node();
+                        node.data = tmp.charAt(0);
+                        if (tmp.length() > 1) {
+                            if (tmp.charAt(1) == '*') {
+                                node.hasStar = true;
+                            }
+                        }
 
-        buildNFA();
+                        if (startNode == null) {
+                            startNode = node;
+                        } else {
+                            if (prev.hasNext) {
+                                prev.next = node;
+                            } else if (prev.hasOr) {
+                                prev.or = node;
+                            }
+                        }
+                        prev = node;
+                        System.out.println(level);
+                        regexToNFA(tmp, level);
+                    }
+                    level--;
+                    break;
+                default:
+                    tmp += c;
+                    break;
+            }
+        }
+        return prefix;
     }
 
-    private static void buildNFA() {
-
-    }
 
     private static boolean execute(String text) {
         int size = text.length();
         int textCursor = 0;
-        Node returnNode = null;
-        Node cur = startNode;
-        loop:
-        while (cur != null) {
-            textCursor++;
-            if (cur.star) {
-                while (textCursor < size && cur.data == text.charAt(textCursor)) {
+        char[] tArr = text.toCharArray();
+        boolean finished = false;
+
+        Node cs = startNode;
+        while (cs != null) {
+//            System.out.println(cs.data + " star=" + cs.hasStar + " next=" + cs.hasNext + " or=" + cs.hasOr);
+            if (textCursor == size) {
+                return false;
+            }
+            if (tArr[textCursor] == cs.data) {
+                if (cs.hasStar) {
+                    loop:
+                    for (; textCursor < size; textCursor++) {
+                        if (tArr[textCursor] != cs.data) {
+                            break loop;
+                        }
+                    }
+                } else {
                     textCursor++;
                 }
-                if (textCursor == size) {
-                    break loop;
-                }
-            } else if (cur.data == text.charAt(textCursor)) {
-                textCursor++;
-                if (textCursor == size) {
-                    break loop;
-                }
-            } else if (cur.or != null) {
-                returnNode = cur;
-                cur = cur.or;
-                continue;
             }
-            if (returnNode != null) {
-                cur = returnNode;
-                returnNode = null;
-            }
-            System.out.println("data " + cur.data + " star=" + cur.star);
-            cur = cur.next;
 
+            if (cs.hasNext) {
+                cs = cs.next;
+            } else if (cs.hasOr) {
+                cs = cs.or;
+            } else {
+                break;
+            }
         }
-        if (textCursor == size && cur.next == null) {
-            return true;
+        if (cs != null) {
+            return false;
         }
-        return false;
+
+
+        return finished;
     }
 
     public static void main(String[] args) throws IOException {
@@ -92,9 +157,9 @@ public class P1109_Cheating_on_the_Contest {
         String input = "";
         while ((input = br.readLine()) != null) {
             init();
-            regexToStack(input);
-            buildNFA();
-
+            regexLevel = new String[100];
+            opLevel = new String[100];
+            regexToNFA(input, -1);
             int n = Integer.parseInt(br.readLine());
             while (n-- > 0) {
                 if (execute(br.readLine())) {

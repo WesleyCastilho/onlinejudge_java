@@ -1,6 +1,19 @@
 package URI.Trying.NOSTATUS.GRAPH;
 
-
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI Online Judge
+ * @Categories: GRAPH
+ * @Problem: 1082 : Connected Components
+ * @Link:
+ * @Level: 7
+ * @Timelimit: 2 sec
+ * @Status:
+ * @Submission:
+ * @Runtime:
+ * @Solution: Divide and conquer algorithm
+ * @Note:
+ */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;

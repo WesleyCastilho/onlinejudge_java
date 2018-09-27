@@ -1,13 +1,17 @@
-package th.in.devboom.uri.accepted;
-
+package URI.Accepted.STRINGS.sourcecode;
 
 /**
- * Created by Teerapat-BSD on 1/30/2018.
- * Problem : 2153 Sanduicheiche
- * link : https://www.urionlinejudge.com.br/judge/en/problems/view/2153
- * Answer : Accepted
- * Submission : 1/30/18, 2:45:28 PM
- * Runtime : 0.020s
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: STRING
+ * @Problem: 2153 Sanduicheiche
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2153
+ * @Timelimit: 1 sec
+ * @Status: Accepted
+ * @Submission: 1/30/18, 2:45:28 PM
+ * @Runtime: 0.020s
+ * @Solution:
+ * @Note:
  */
 
 import java.io.BufferedReader;
