@@ -7,7 +7,7 @@ package URI.Trying.NOSTATUS.BEGINNER;
  * @Problem: 2750 - Output 4
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2750
  * @Timelimit: 1 sec
- * @Status: Presentation error
+ * @Status: Accepted
  * @Memory:
  * @Submission:
  * @Runtime:
