@@ -8,8 +8,8 @@
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution:
- * @Note:
+ * @Solution: Simulation
+ * @Note: เกมส์ไผ่ หาผู้ชนะ
  */
 package URI.Trying.NOSTATUS.AD_HOC;
 

@@ -1,11 +1,21 @@
-package  URI.Accepted.MATHEMATICS.sourcecode;
+package URI.Accepted.MATHEMATICS.sourcecode;
+
 
 /**
- *
  * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: AD-HOC
+ * @Problem: 1193 Base Conversion
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1193
+ * @Timelimit: 1 sec
+ * @Status: Accepted
+ * @Memory:
+ * @Submission: 13/10/2015 - 09:22:10
+ * @Runtime: 0.364s
+ * @Solution:
+ * @Note:
  */
-//URI Online Judge | 1193 Base Conversion https://www.urionlinejudge.com.br/judge/en/problems/view/1193
-//Accepted 13/10/2015 - 09:22:10 Runtime:0.364s
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
