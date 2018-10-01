@@ -1,91 +1,108 @@
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Teerapat_
  */
 
 public class GetCountingProblem {
+
+    static final List<OJSource> sourceList = new ArrayList<>();
+    static OJSource AIZU = new OJSource();
+    static OJSource CODECHEF = new OJSource();
+    static OJSource COJ = new OJSource();
+    static OJSource TOPCODER = new OJSource();
+    static OJSource URI = new OJSource();
+    static OJSource UVA = new OJSource();
+    static OJSource ZOJ = new OJSource();
+    static OJSource SPOJ = new OJSource();
+    static OJSource DEVSKILL = new OJSource();
+    static OJSource CODERBYTE = new OJSource();
+    static OJSource HACKERRANK = new OJSource();
+    static OJSource HACKEREARTH = new OJSource();
+    static OJSource CODINGAME = new OJSource();
+    static OJSource CODEFORCES = new OJSource();
+
+    static {
+        AIZU.setName("AIZU");
+        AIZU.setLink("http://judge.u-aizu.ac.jp/onlinejudge/");
+        AIZU.setProfile("http://judge.u-aizu.ac.jp/onlinejudge/user.jsp?id=teerapat_");
+
+        CODECHEF.setName("CODECHEF");
+        CODECHEF.setLink("https://www.codechef.com/");
+        CODECHEF.setProfile("https://www.codechef.com/users/teerapat_");
+
+        COJ.setName("COJ");
+        COJ.setLink("http://coj.uci.cu/index.xhtml");
+        COJ.setProfile("");
+
+        TOPCODER.setName("TOPCODER");
+        TOPCODER.setLink("https://www.topcoder.com/");
+        TOPCODER.setProfile("");
+
+        URI.setName("URI");
+        URI.setLink("https://www.urionlinejudge.com.br/judge/en");
+        URI.setProfile("https://www.urionlinejudge.com.br/judge/en/profile/56315");
+
+        UVA.setName("UVA");
+        UVA.setLink("https://uva.onlinejudge.org/");
+        UVA.setProfile("UserName:boombarm | Online Judge ID: 752084");
+
+        ZOJ.setName("ZOJ");
+        ZOJ.setLink("http://acm.zju.edu.cn/onlinejudge/");
+        ZOJ.setProfile("");
+
+        SPOJ.setName("SPOJ");
+        SPOJ.setLink("http://acm.zju.edu.cn/onlinejudge/");
+        SPOJ.setProfile("");
+
+        DEVSKILL.setName("DEVSKILL");
+        DEVSKILL.setLink("https://www.devskill.com/Home");
+        DEVSKILL.setProfile("");
+
+        CODERBYTE.setName("CODERBYTE");
+        CODERBYTE.setLink("");
+        CODERBYTE.setProfile("");
+
+        HACKERRANK.setName("HACKERRANK");
+        HACKERRANK.setLink("");
+        HACKERRANK.setProfile("");
+
+        HACKEREARTH.setName("HACKEREARTH");
+        HACKEREARTH.setLink("https://www.hackerearth.com/");
+        HACKEREARTH.setProfile("");
+
+        CODINGAME.setName("CODINGAME");
+        CODINGAME.setLink("https://www.codingame.com");
+        CODINGAME.setProfile("https://www.codingame.com/profile/03109d019ae7e4f9d70c1a1f068685ca6501942");
+
+        //add 10-01-2018
+        CODEFORCES.setName("CODEFORCES");
+        CODEFORCES.setLink("");
+        CODEFORCES.setProfile("");
+
+        sourceList.add(AIZU);
+        sourceList.add(CODECHEF);
+        sourceList.add(COJ);
+        sourceList.add(TOPCODER);
+        sourceList.add(URI);
+        sourceList.add(UVA);
+        sourceList.add(ZOJ);
+        sourceList.add(SPOJ);
+        sourceList.add(DEVSKILL);
+        sourceList.add(CODERBYTE);
+        sourceList.add(HACKERRANK);
+        sourceList.add(HACKEREARTH);
+        sourceList.add(CODINGAME);
+        sourceList.add(CODEFORCES);
+    }
+
+
     static final String ROOT_DIRECTORY = "src";
     static final String NOTE_FILE = "NOTE.txt";
     static final String MAP_FILE = "MAP.txt";
 
-    static final String AIZU = "AIZU";
-    static final String LINK_AIZU = "http://judge.u-aizu.ac.jp/onlinejudge/";
-    static final String PROFILE_AIZU = "http://judge.u-aizu.ac.jp/onlinejudge/user.jsp?id=teerapat_";
-    static int aizu_totalFile = 0;
-    static int aizu_ac = 0;
-
-    static final String CODECHEF = "CODECHEF";
-    static final String LINK_CODECHEF = "https://www.codechef.com/";
-    static final String PROFILE_CODECHEF = "https://www.codechef.com/users/teerapat_";
-    static int codechef_totalFile = 0;
-    static int codechef_ac = 0;
-
-    static final String COJ = "COJ";
-    static final String LINK_COJ = "http://coj.uci.cu/index.xhtml";
-    static final String PROFILE_COJ = "";
-    static int coj_totalFile = 0;
-    static int coj_ac = 0;
-
-    static final String TOPCODER = "TOPCODER";
-    static final String LINK_TOPCODER = "https://www.topcoder.com/";
-    static final String PROFILE_TOPCODER = "";
-    static int topcoder_totalFile = 0;
-    static int topcoder_ac = 0;
-
-    static final String URI = "URI";
-    static final String LINK_URI = "https://www.urionlinejudge.com.br/judge/en";
-    static final String PROFILE_URI = "https://www.urionlinejudge.com.br/judge/en/profile/56315";
-    static int uri_totalFile = 0;
-    static int uri_ac = 0;
-
-    static final String UVA = "UVA";
-    static final String LINK_UVA = "https://uva.onlinejudge.org/";
-    static final String PROFILE_UVA = "UserName:boombarm | Online Judge ID: 752084";
-    static int uva_totalFile = 0;
-    static int uva_ac = 0;
-
-    static final String ZOJ = "ZOJ";
-    static final String LINK_ZOJ = "http://acm.zju.edu.cn/onlinejudge/";
-    static final String PROFILE_ZOJ = "";
-    static int zoj_totalFile = 0;
-    static int zoj_ac = 0;
-
-    static final String SPOJ = "SPOJ";
-    static final String LINK_SPOJ = "http://acm.zju.edu.cn/onlinejudge/";
-    static final String PROFILE_SPOJ = "";
-    static int spoj_totalFile = 0;
-    static int spoj_ac = 0;
-
-    static final String DEV_SKILL = "DEVSKILL";
-    static final String LINK_DEV_SKILL = "https://www.devskill.com/Home";
-    static final String PROFILE_DEV_SKILL = "";
-    static int devSkill_totalFile = 0;
-    static int devSkill_ac = 0;
-
-    static final String CODERBYTE = "CODERBYTE";
-    static final String LINK_CODERBYTE = "";
-    static final String PROFILE_CODERBYTE = "";
-    static int coderByte_totalFile = 0;
-    static int coderByte_ac = 0;
-
-    static final String HACKERRANK = "HACKERRANK";
-    static final String LINK_HACKERRANK = "";
-    static final String PROFILE_HACKERRANK = "";
-    static int hackerRank_totalFile = 0;
-    static int hackerRank_ac = 0;
-
-    static final String HACKEREARTH = "HACKEREARTH";
-    static final String LINK_HACKEREARTH = "https://www.hackerearth.com/";
-    static final String PROFILE_HACKEREARTH = "";
-    static int hackerEarth_totalFile = 0;
-    static int hackerEarth_ac = 0;
-
-    static final String CODINGAME = "CODINGAME";
-    static final String LINK_CODEINGANE = "https://www.codingame.com";
-    static final String PROFILE_CODINGAME = "https://www.codingame.com/profile/03109d019ae7e4f9d70c1a1f068685ca6501942";
-    static int codingame_totalFile = 0;
-    static int codingame_ac = 0;
 
     static int totalJavaFile = 0;
     static int totalAcceptedFile = 0;
@@ -151,16 +168,9 @@ public class GetCountingProblem {
             f.close();
         }
         System.out.println("Counting File Result");
-        System.out.println(AIZU + " totalFile:" + aizu_totalFile + "  ac:" + aizu_ac);
-        System.out.println(COJ + " totalFile:" + coj_totalFile + "  ac:" + coj_ac);
-        System.out.println(URI + " totalFile:" + uri_totalFile + "  ac:" + uri_ac);
-        System.out.println(UVA + " totalFile:" + uva_totalFile + "  ac:" + uva_ac);
-        System.out.println(ZOJ + " totalFile:" + zoj_totalFile + "  ac:" + zoj_ac);
-        System.out.println(SPOJ + " totalFile:" + spoj_totalFile + "  ac:" + spoj_ac);
-        System.out.println(HACKEREARTH + " totalFile:" + hackerEarth_totalFile + " ac:" + hackerEarth_ac);
-        System.out.println(HACKERRANK + " totalFile:" + hackerRank_totalFile + " ac:" + hackerRank_ac);
-        System.out.println(TOPCODER + " totalFile:" + topcoder_totalFile + " ac:" + topcoder_ac);
-        System.out.println(CODINGAME + " totalFile:" + codingame_totalFile + " ac:" + codingame_ac);
+        for (OJSource source : sourceList) {
+            System.out.println(source.getName() + " Total:" + source.getTotalFile() + "  Accepted:" + source.getAccepted());
+        }
     }
 
 
@@ -231,161 +241,25 @@ public class GetCountingProblem {
 
     private static String[] getWebsite(String directoryName) {
         String[] pair = new String[5];
-        switch (directoryName) {
-            case AIZU:
-                pair[0] = LINK_AIZU;
-                pair[1] = PROFILE_AIZU;
-                pair[2] = AIZU;
-                pair[3] = aizu_totalFile + "";
-                pair[4] = aizu_ac + "";
-                break;
-            case COJ:
-                pair[0] = LINK_COJ;
-                pair[1] = PROFILE_COJ;
-                pair[2] = COJ;
-                pair[3] = coj_totalFile + "";
-                pair[4] = coj_ac + "";
-                break;
-            case SPOJ:
-                pair[0] = LINK_SPOJ;
-                pair[1] = PROFILE_SPOJ;
-                pair[2] = SPOJ;
-                pair[3] = spoj_totalFile + "";
-                pair[4] = spoj_ac + "";
-                break;
-            case TOPCODER:
-                pair[0] = LINK_TOPCODER;
-                pair[1] = PROFILE_TOPCODER;
-                pair[2] = TOPCODER;
-                pair[3] = topcoder_totalFile + "";
-                pair[4] = topcoder_ac + "";
-                break;
-            case CODECHEF:
-                pair[0] = LINK_CODECHEF;
-                pair[1] = PROFILE_CODECHEF;
-                pair[2] = CODECHEF;
-                pair[3] = codechef_totalFile + "";
-                pair[4] = codechef_ac + "";
-                break;
-            case URI:
-                pair[0] = LINK_URI;
-                pair[1] = PROFILE_URI;
-                pair[2] = URI;
-                pair[3] = uri_totalFile + "";
-                pair[4] = uri_ac + "";
-                break;
-            case UVA:
-                pair[0] = LINK_UVA;
-                pair[1] = PROFILE_UVA;
-                pair[2] = UVA;
-                pair[3] = uva_totalFile + "";
-                pair[4] = uva_ac + "";
-                break;
-            case ZOJ:
-                pair[0] = LINK_ZOJ;
-                pair[1] = PROFILE_ZOJ;
-                pair[2] = ZOJ;
-                pair[3] = zoj_totalFile + "";
-                pair[4] = zoj_ac + "";
-                break;
-            case DEV_SKILL:
-                pair[0] = LINK_DEV_SKILL;
-                pair[1] = PROFILE_DEV_SKILL;
-                pair[2] = DEV_SKILL;
-                pair[3] = devSkill_totalFile + "";
-                pair[4] = devSkill_ac + "";
-                break;
-            case CODERBYTE:
-                pair[0] = LINK_CODERBYTE;
-                pair[1] = PROFILE_CODERBYTE;
-                pair[2] = CODERBYTE;
-                pair[3] = coderByte_totalFile + "";
-                pair[4] = coderByte_ac + "";
-                break;
-            case HACKERRANK:
-                pair[0] = LINK_HACKERRANK;
-                pair[1] = PROFILE_HACKERRANK;
-                pair[2] = HACKERRANK;
-                pair[3] = hackerRank_totalFile + "";
-                pair[4] = hackerRank_ac + "";
-                break;
-            case HACKEREARTH:
-                pair[0] = LINK_HACKEREARTH;
-                pair[1] = PROFILE_HACKEREARTH;
-                pair[2] = HACKEREARTH;
-                pair[3] = hackerEarth_totalFile + "";
-                pair[4] = hackerEarth_ac + "";
-                break;
-            case CODINGAME:
-                pair[0] = LINK_CODEINGANE;
-                pair[1] = PROFILE_CODINGAME;
-                pair[2] = CODINGAME;
-                pair[3] = codingame_totalFile + "";
-                pair[4] = codingame_ac + "";
-                break;
-            default:
-                pair[0] = "";
-                pair[1] = "";
-                break;
+        for (OJSource source : sourceList) {
+            if (source.getName().equals(directoryName)) {
+                pair[0] = source.getLink();
+                pair[1] = source.getProfile();
+                pair[2] = source.getName();
+                pair[3] = source.getTotalFile() + "";
+                pair[4] = source.getAccepted() + "";
+            }
         }
         return pair;
     }
 
-    static void countingSource(String source, boolean Accepted) {
-
-        switch (source) {
-            case AIZU:
-                aizu_totalFile++;
-                if (Accepted) aizu_ac++;
+    static void countingSource(String sourceCounting, boolean Accepted) {
+        for (OJSource source : sourceList) {
+            if (source.name.equals(sourceCounting)) {
+                source.addTotalFile();
+                if (Accepted) source.addAccepted();
                 break;
-            case COJ:
-                coj_totalFile++;
-                if (Accepted) coj_ac++;
-                break;
-            case CODECHEF:
-                codechef_totalFile++;
-                if (Accepted) codechef_ac++;
-                break;
-            case CODERBYTE:
-                coderByte_totalFile++;
-                if (Accepted) coderByte_ac++;
-            case SPOJ:
-                spoj_totalFile++;
-                if (Accepted) spoj_ac++;
-                break;
-            case TOPCODER:
-                topcoder_totalFile++;
-                if (Accepted) topcoder_ac++;
-                break;
-            case URI:
-                uri_totalFile++;
-                if (Accepted) uri_ac++;
-                break;
-            case UVA:
-                uva_totalFile++;
-                if (Accepted) uva_ac++;
-                break;
-            case ZOJ:
-                zoj_totalFile++;
-                if (Accepted) zoj_ac++;
-                break;
-            case DEV_SKILL:
-                devSkill_totalFile++;
-                if (Accepted) devSkill_ac++;
-            case HACKERRANK:
-                hackerRank_totalFile++;
-                if (Accepted) hackerRank_ac++;
-                break;
-            case HACKEREARTH:
-                hackerEarth_totalFile++;
-                if (Accepted) hackerEarth_ac++;
-                break;
-            case CODINGAME:
-                codingame_totalFile++;
-                if (Accepted) codingame_ac++;
-                break;
-            default:
-                break;
+            }
         }
     }
 
