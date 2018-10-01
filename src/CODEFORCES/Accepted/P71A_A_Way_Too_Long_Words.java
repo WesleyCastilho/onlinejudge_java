@@ -5,7 +5,7 @@ package CODEFORCES.Accepted;
  * @Onlinejudge: CODEFORCES
  * @Categories:
  * @Problem: 71A - Way Too Long Words
- * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2564
+ * @Link: https://codeforces.com/problemset/problem/71/A
  * @Timelimit: 1 sec
  * @Status: Accepted
  * @Submission: 2018-10-01 07:54:56
