@@ -2,10 +2,10 @@ package URI.Trying.NOSTATUS.BEGINNER;
 
 /**
  * @author Teerapat Phokhonwong
- * @Onlinejudge:
- * @Problem:
- * @Link:
- * @Timelimit: 2 Seconds
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Problem: 2847 : Paper Scissors I Love You
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2847
+ * @Timelimit: 1 Seconds
  * @Status: WA 45%
  * @Submission:
  * @Runtime:
@@ -23,7 +23,7 @@ public class P2847_Paper_Scissors_I_Love_You {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String text = br.readLine();
-        text = text.replace(" ", "");
+        text = text.replaceAll("[^a-zA-Z0-9]+", "");
         char[] tArr = text.toCharArray();
         int tSize = text.length();
         int count = 0;

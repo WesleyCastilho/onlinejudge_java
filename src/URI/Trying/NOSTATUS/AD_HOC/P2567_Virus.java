@@ -18,6 +18,7 @@ import java.io.*;
 public class P2567_Virus {
 
     static int n;
+    static int[] virus;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -25,8 +26,9 @@ public class P2567_Virus {
         String input;
         while ((input = br.readLine()) != null) {
             n = Integer.parseInt(input);
+            virus = new int[n];
             String[] st = br.readLine().split(" ");
-            int[] virus = new int[n];
+
             for (int i = 0; i < n; i++) {
                 virus[i] = Integer.parseInt(st[i]);
             }
@@ -44,6 +46,7 @@ public class P2567_Virus {
                 }
             }
             bw.append(max + "\n");
+            bw.flush();
         }
         bw.flush();
     }
