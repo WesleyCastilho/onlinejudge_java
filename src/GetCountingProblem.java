@@ -66,8 +66,8 @@ public class GetCountingProblem {
         CODERBYTE.setProfile("");
 
         HACKERRANK.setName("HACKERRANK");
-        HACKERRANK.setLink("");
-        HACKERRANK.setProfile("");
+        HACKERRANK.setLink("https://www.hackerrank.com");
+        HACKERRANK.setProfile("https://www.hackerrank.com/BOOM_BOOM");
 
         HACKEREARTH.setName("HACKEREARTH");
         HACKEREARTH.setLink("https://www.hackerearth.com/");
@@ -79,8 +79,8 @@ public class GetCountingProblem {
 
         //add 10-01-2018
         CODEFORCES.setName("CODEFORCES");
-        CODEFORCES.setLink("");
-        CODEFORCES.setProfile("");
+        CODEFORCES.setLink("http://codeforces.com/");
+        CODEFORCES.setProfile("http://codeforces.com/profile/teerapat_");
 
         sourceList.add(AIZU);
         sourceList.add(CODECHEF);
