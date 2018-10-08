@@ -167,9 +167,12 @@ public class GetCountingProblem {
             f.write(HeadText.getBytes());
             f.close();
         }
-        System.out.println("Counting File Result");
+
+
+
+        System.out.println("Total Online Judge: " + sourceList.size());
         for (OJSource source : sourceList) {
-            System.out.println(source.getName() + " Total:" + source.getTotalFile() + "  Accepted:" + source.getAccepted());
+            System.out.println(source.getResult());
         }
     }
 

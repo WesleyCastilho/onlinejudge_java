@@ -61,4 +61,8 @@ public class OJSource {
     public void addTotalFile() {
         this.totalFile++;
     }
+
+    public String getResult() {
+        return this.getName() + " => [totalFile:" + this.totalFile + ", accepted:" + this.accepted + "]";
+    }
 }
