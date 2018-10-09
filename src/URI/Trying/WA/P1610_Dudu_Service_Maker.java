@@ -12,7 +12,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.NOSTATUS.GRAPH;
+package URI.Trying.WA;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

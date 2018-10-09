@@ -3,31 +3,29 @@ package AIZU.Trying.ITP1;
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: AIZU ONLINE JUDGE
- * @Categories:
- * @Problem:
- * @Link:
+ * @Categories: ITP1
+ * @Problem: ITP1_11_A - Dice I
+ * @Link: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_11_A
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: WA ???
  * @Memory:
  * @Submission:
  * @Runtime:
- * @Solution:
+ * @Solution: การหมุนของลูกเต๋า
  * @Note:
  */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class ITP1_11_A_Dice_I {
 
     static class Dice {
-        int[] faceValue = new int[6];
+        int[] faceValue = new int[7];
         int topIndex;
 
         int current;
-        int top;
-        int left;
-        int right;
-        int bottom;
 
         public Dice(String[] face) {
             this.faceValue[1] = Integer.parseInt(face[0]);
@@ -37,60 +35,128 @@ public class ITP1_11_A_Dice_I {
             this.faceValue[5] = Integer.parseInt(face[4]);
             this.faceValue[6] = Integer.parseInt(face[5]);
             this.topIndex = 1;
-            this.current = this.faceValue[this.topIndex];
+            resetCurrent();
         }
 
 
         public void chagne(char direction) {
-            switch (direction) {
-                case 'N':
-                    switch (this.topIndex) {
-                        case 1://number 1
-                            this.topIndex = 2;
-                            this.current = this.faceValue[2];
-                            break;
-                        case 2:
-                            this.topIndex = 2;
-                            this.current = this.faceValue[2];
-                            break;
-                        case 3:
+            switch (this.topIndex) {
+                case 1://number 1
+                    switch (direction) {
+                        case 'N':
                             this.topIndex = 6;
-                            this.current = this.faceValue[6];
                             break;
-                        case 4:
+                        case 'S':
                             this.topIndex = 2;
-                            this.current = this.faceValue[2];
                             break;
-                        case 5:
-
+                        case 'W':
+                            this.topIndex = 3;
                             break;
-                        case 6:
-                            this.topIndex = 1;
-                            this.current = this.faceValue[1];
+                        case 'E':
+                            this.topIndex = 4;
                             break;
                     }
                     break;
-                case 'S':
+                case 2:
+                    switch (direction) {
+                        case 'N':
+                            this.topIndex = 6;
+                            break;
+                        case 'S':
+                            this.topIndex = 1;
+                            break;
+                        case 'W':
+                            this.topIndex = 4;
+                            break;
+                        case 'E':
+                            this.topIndex = 3;
+                            break;
+                    }
                     break;
-                case 'W':
+                case 3:
+                    switch (direction) {
+                        case 'N':
+                            this.topIndex = 6;
+                            break;
+                        case 'S':
+                            this.topIndex = 1;
+                            break;
+                        case 'W':
+                            this.topIndex = 5;
+                            break;
+                        case 'E':
+                            this.topIndex = 2;
+                            break;
+                    }
                     break;
-                case 'E':
+                case 4:
+                    switch (direction) {
+                        case 'N':
+                            this.topIndex = 6;
+                            break;
+                        case 'S':
+                            this.topIndex = 1;
+                            break;
+                        case 'W':
+                            this.topIndex = 5;
+                            break;
+                        case 'E':
+                            this.topIndex = 2;
+                            break;
+                    }
+                    break;
+                case 5:
+                    switch (direction) {
+                        case 'N':
+                            this.topIndex = 6;
+                            break;
+                        case 'S':
+                            this.topIndex = 1;
+                            break;
+                        case 'W':
+                            this.topIndex = 3;
+                            break;
+                        case 'E':
+                            this.topIndex = 4;
+                            break;
+                    }
+                    break;
+                case 6:
+                    switch (direction) {
+                        case 'N':
+                            this.topIndex = 2;
+                            break;
+                        case 'S':
+                            this.topIndex = 1;
+                            break;
+                        case 'W':
+                            this.topIndex = 4;
+                            break;
+                        case 'E':
+                            this.topIndex = 3;
+                            break;
+                    }
                     break;
             }
+            resetCurrent();
+        }
+
+        void resetCurrent() {
+            this.current = this.faceValue[this.topIndex];
         }
 
     }
 
+
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         String[] st = br.readLine().split(" ");
         Dice dice = new Dice(st);
         for (char c : br.readLine().toCharArray()) {
+            System.out.println(dice.current + " to " + c);
             dice.chagne(c);
         }
-        bw.append(dice.current + "\n");
-        bw.flush();
+        System.out.println(dice.current);
     }
 
 

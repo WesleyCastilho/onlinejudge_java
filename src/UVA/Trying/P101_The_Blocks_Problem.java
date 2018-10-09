@@ -27,12 +27,12 @@ import java.io.FileWriter;
 
 public class P101_The_Blocks_Problem {
 
-    static class StackSlot {
+    static class Stack {
         int id;
         Block firstBlock = null;
         Block lastBlock = null;
 
-        public StackSlot(int id, Block block) {
+        public Stack(int id, Block block) {
             this.id = id;
             this.firstBlock = block;
             this.lastBlock = block;
@@ -65,7 +65,7 @@ public class P101_The_Blocks_Problem {
     }
 
     static Block[] block;
-    static StackSlot[] stack;
+    static Stack[] stack;
 
     public static void main(String[] args) throws IOException {
         File inputFile = new File("src/UVA/Trying/input/P101_input.txt");
@@ -77,10 +77,10 @@ public class P101_The_Blocks_Problem {
 //        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
         block = new Block[n];
-        stack = new StackSlot[n];
+        stack = new Stack[n];
         for (int i = 0; i < n; i++) {
             block[i] = new Block(i, i);
-            stack[i] = new StackSlot(i, block[i]);
+            stack[i] = new Stack(i, block[i]);
         }
         String input;
         while ((input = br.readLine()) != null) {
