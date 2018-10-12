@@ -1,4 +1,4 @@
-package CODECHEF.Trying;
+package CODECHEF.AcceptedOtherLanguage;
 
 /**
  * @author Teerapat Phokhonwong

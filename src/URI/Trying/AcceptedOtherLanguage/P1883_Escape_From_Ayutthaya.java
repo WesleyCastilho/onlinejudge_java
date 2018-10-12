@@ -1,4 +1,4 @@
-package URI.Trying.TLE;
+package URI.Trying.AcceptedOtherLanguage;
 
 /**
  * @author Teerapat Phokhonwong
@@ -12,14 +12,10 @@ package URI.Trying.TLE;
  * @Submission:
  * @Runtime:
  * @Solution:
- * @Note:
+ * @Note: This Problem AC With C++
  */
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.LinkedList;
 
 class P1883_Escape_From_Ayutthaya {

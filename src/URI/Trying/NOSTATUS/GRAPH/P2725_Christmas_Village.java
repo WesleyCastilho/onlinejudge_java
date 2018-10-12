@@ -4,7 +4,7 @@ package URI.Trying.NOSTATUS.GRAPH;
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
  * @Categories: GRAPH
- * @Problem: 1082 : Connected Components
+ * @Problem: 2725 : Christmas Village
  * @Link:
  * @Level: 7
  * @Timelimit: 2 sec

@@ -9,7 +9,6 @@ import java.util.List;
 /**
  * Created by Teerapat_
  */
-
 public class GetCountingProblem {
 
     static final List<OJSource> sourceList = new ArrayList<>();
