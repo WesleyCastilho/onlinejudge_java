@@ -52,8 +52,9 @@ public class ITP1_7_D_Matrix_Multiplication {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
+                C[i][j] = 0;
                 for (int k = 0; k < l; k++) {
-                    C[j][k] = A[j][i] * B[i][k];
+                    C[i][j] += A[i][k] * B[k][j];
                 }
             }
         }
