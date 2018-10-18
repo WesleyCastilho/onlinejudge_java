@@ -18,51 +18,17 @@ package CODEFORCES.Trying.P_1060D_Social_Circles;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class P_1060D_Social_Circles {
 
     static int n;
     static Guest[] guest;
-    static Circle[] circle;
-    static int answer;
+    static int minimum;
 
-    static private class Circle implements Cloneable {
-        int sum;
+    static private class Circle {
         Guest start;
         Guest end;
-
-        public Circle(Guest g, int sum) {
-            this.start = g;
-            this.end = g;
-            this.sum = sum;
-        }
-
-        int getLeft() {
-            return this.start.L;
-        }
-
-        int getRight() {
-            return this.end.R;
-        }
-
-        int getSum() {
-            int sum = 0;
-            int emptyL = this.start.L;
-            int emptyR = this.end.R;
-
-            Guest cur = start.right;
-            while (cur != end) {
-                sum += cur.L;
-                cur = cur.right;
-            }
-            sum += this.end.L;
-            sum -= Math.abs(emptyL - emptyR);
-            return sum;
-        }
-
-        public Object clone() throws CloneNotSupportedException {
-            return super.clone();
-        }
     }
 
     static private class Guest {
@@ -77,7 +43,7 @@ public class P_1060D_Social_Circles {
         }
     }
 
-    public static void main(String[] args) throws IOException, CloneNotSupportedException {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
         String[] st;
@@ -91,60 +57,68 @@ public class P_1060D_Social_Circles {
         }
 
         guest = new Guest[n];
-        circle = new Circle[n];
-        answer = Integer.MAX_VALUE;
+        minimum = Integer.MAX_VALUE;
         for (int i = 0; i < n; i++) {
             st = br.readLine().split(" ");
             int l = Integer.parseInt(st[0]);
             int r = Integer.parseInt(st[1]);
             guest[i] = new Guest(l, r);
             guest[i].id = i + 1;
-            circle[i] = new Circle(guest[i], (l + r) + 1);
         }
-
 
         for (int i = 0; i < n; i++) {
+            Circle c = new Circle();
+            c.start = guest[i];
+            c.end = guest[i];
             boolean[] v = new boolean[n];
             v[i] = true;
-            find(circle[i], v, 2);
+            int sum = guest[i].L + guest[i].R + 1;
+            find(c, v, sum, 1);
         }
 
-        System.out.println(answer);
+        System.out.println(minimum);
     }
 
-    static void find(Circle c, boolean[] v, int level) throws CloneNotSupportedException {
+    static void find(Circle c, boolean[] v, int sum, int level) {
+
+        if (level == 3) {
+            Guest cur = c.start;
+            while (cur != null) {
+                System.out.print(cur.id);
+                cur = cur.right;
+                if (cur != null) System.out.print("-");
+            }
+            System.out.println("\nSum=" + sum);
+            minimum = sum;
+            return;
+        }
         for (int i = 0; i < n; i++) {
             if (!v[i]) {
                 v[i] = true;
-                //Connect Left
-                Circle tmp = (Circle) c.clone();
-                tmp.start.left = guest[i];
-                guest[i].right = tmp.start;
-                tmp.start = guest[i];
-                if (level < n) {
-                    find(tmp, v, level + 1);
-                } else if (level == n) {
-                    int sum = tmp.getSum();
-                    if (answer > sum) {
-                        answer = sum;
-                    }
-                }
+                //test connect Left
+                int sumLeft = sum + (Math.abs(c.end.R - guest[i].L) + Math.abs(c.start.L - guest[i].R)) + 1;
+                Circle tmpC1 = new Circle();
+                Guest tmpG1 = new Guest(guest[i].L, guest[i].R);
+                tmpG1.right = tmpC1.start;
+                tmpC1.start = tmpG1;
+                tmpC1.end = c.end;
+                find(tmpC1, v, sumLeft, level + 1);
 
-                //Connect Right
-                tmp = (Circle) c.clone();
-                tmp.end.right = guest[i];
-                guest[i].left = tmp.end;
-                tmp.end = guest[i];
-                if (level < n) {
-                    find(tmp, v, level + 1);
-                } else if (level == n) {
-                    int sum = tmp.getSum();
-                    if (answer > sum) {
-                        answer = sum;
-                    }
+                //test connect Right
+                int sumRight = sum + (Math.abs(c.start.L - guest[i].R) + Math.abs(c.end.R - guest[i].L)) + 1;
+                Circle tmpC2 = new Circle();
+                Guest tmpG2 = new Guest(guest[i].L, guest[i].R);
+                if (tmpC2.end != null) {
+                    tmpC2.end.right = tmpG2;
                 }
+                tmpC2.end = tmpG2;
+                tmpC2.start = c.start;
+                find(tmpC2, v, sumRight, level + 1);
+
+                v[i] = false;
             }
         }
+
     }
 
 }

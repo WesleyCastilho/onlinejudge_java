@@ -12,7 +12,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.WA;
+package URI.Trying.WA.GRAPH;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -85,7 +85,6 @@ public class P1610_Dudu_Service_Maker {
 
                     while (!Q.isEmpty()) {
                         Component cur = Q.pollFirst();
-//                        System.out.print(cur.id + " ");
                         cur.moved = true;
                         for (Component children : cur.link) {
                             if (children.moved) {
