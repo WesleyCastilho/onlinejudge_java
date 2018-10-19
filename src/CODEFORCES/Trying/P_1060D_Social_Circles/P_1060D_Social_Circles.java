@@ -15,16 +15,12 @@ package CODEFORCES.Trying.P_1060D_Social_Circles;
  * @Note:
  */
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
-import java.util.Arrays;
+import java.io.*;
 
 public class P_1060D_Social_Circles {
 
     static int n;
     static Guest[] guest;
-    static int minimum;
 
     static private class Circle {
         Guest start;
@@ -44,7 +40,8 @@ public class P_1060D_Social_Circles {
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new FileReader("in.txt"));
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
         String[] st;
 
@@ -57,69 +54,68 @@ public class P_1060D_Social_Circles {
         }
 
         guest = new Guest[n];
-        minimum = Integer.MAX_VALUE;
         for (int i = 0; i < n; i++) {
             st = br.readLine().split(" ");
             int l = Integer.parseInt(st[0]);
             int r = Integer.parseInt(st[1]);
             guest[i] = new Guest(l, r);
-            guest[i].id = i + 1;
+            guest[i].id = i;
         }
 
-        for (int i = 0; i < n; i++) {
-            Circle c = new Circle();
-            c.start = guest[i];
-            c.end = guest[i];
-            boolean[] v = new boolean[n];
-            v[i] = true;
-            int sum = guest[i].L + guest[i].R + 1;
-            find(c, v, sum, 1);
-        }
+        Circle c = new Circle();
+        c.start = guest[0];
+        c.end = guest[0];
 
-        System.out.println(minimum);
-    }
+        boolean[] used = new boolean[n];
+        used[0] = true;
+        int sum = 0;
+        for (int count = 1; count < n; count++) {
+            int minimum = Integer.MAX_VALUE;
+            Guest minimumGuest = null;
+            char direct = ' ';
+            for (int i = 1; i < n; i++) {
+                if (!used[i]) {
+                    int right = Math.abs(c.end.R - guest[i].L);
+                    int left = Math.abs(c.start.L - guest[i].R);
+                    if (left <= right && minimum > left) {
+                        minimumGuest = guest[i];
+                        direct = 'L';
+                        minimum = left;
+                    } else if (right <= left && minimum > right) {
+                        minimumGuest = guest[i];
+                        direct = 'R';
+                        minimum = right;
+                    }
+                }
+            }
 
-    static void find(Circle c, boolean[] v, int sum, int level) {
+            used[minimumGuest.id] = true;
+            System.out.println(direct);
+            switch (direct) {
+                case 'L':
+                    minimumGuest.right = c.start;
+                    c.start.left = minimumGuest;
+                    c.start = minimumGuest;
+                    break;
+                case 'R':
+                    minimumGuest.left = c.end;
+                    c.end.right = minimumGuest;
+                    c.end = minimumGuest;
+                    break;
+            }
+            sum += minimum;
 
-        if (level == 3) {
+
             Guest cur = c.start;
             while (cur != null) {
-                System.out.print(cur.id);
+                System.out.print(cur.id + " ");
                 cur = cur.right;
-                if (cur != null) System.out.print("-");
             }
-            System.out.println("\nSum=" + sum);
-            minimum = sum;
-            return;
+            System.out.println();
         }
-        for (int i = 0; i < n; i++) {
-            if (!v[i]) {
-                v[i] = true;
-                //test connect Left
-                int sumLeft = sum + (Math.abs(c.end.R - guest[i].L) + Math.abs(c.start.L - guest[i].R)) + 1;
-                Circle tmpC1 = new Circle();
-                Guest tmpG1 = new Guest(guest[i].L, guest[i].R);
-                tmpG1.right = tmpC1.start;
-                tmpC1.start = tmpG1;
-                tmpC1.end = c.end;
-                find(tmpC1, v, sumLeft, level + 1);
-
-                //test connect Right
-                int sumRight = sum + (Math.abs(c.start.L - guest[i].R) + Math.abs(c.end.R - guest[i].L)) + 1;
-                Circle tmpC2 = new Circle();
-                Guest tmpG2 = new Guest(guest[i].L, guest[i].R);
-                if (tmpC2.end != null) {
-                    tmpC2.end.right = tmpG2;
-                }
-                tmpC2.end = tmpG2;
-                tmpC2.start = c.start;
-                find(tmpC2, v, sumRight, level + 1);
-
-                v[i] = false;
-            }
-        }
-
+        System.out.println(sum + n);
     }
+
 
 }
 

@@ -23,6 +23,7 @@ import java.io.OutputStreamWriter;
 public class P1109_Cheating_on_the_Contest {
 
     static Node startNode;
+    static Node endNode;
     static String[] regexLevel;
     static String[] opLevel;
 
@@ -42,14 +43,14 @@ public class P1109_Cheating_on_the_Contest {
     }
 
 
-    static String regexToNFA(String regex, int level) {
-//        System.out.println("RegexLevel:" + level);
-//        System.out.println(regex);
+    static void buildNFA(String regex, int level) {
         char[] cin = regex.toCharArray();
         String prefix = "";
         Node prev = null;
         Node node = null;
         String tmp = "";
+
+
         for (char c : cin) {
             switch (c) {
                 case '.':
@@ -97,7 +98,7 @@ public class P1109_Cheating_on_the_Contest {
                         }
                         prev = node;
                         System.out.println(level);
-                        regexToNFA(tmp, level);
+                        buildNFA(tmp, level);
                     }
                     level--;
                     break;
@@ -106,7 +107,7 @@ public class P1109_Cheating_on_the_Contest {
                     break;
             }
         }
-        return prefix;
+
     }
 
 
@@ -151,6 +152,10 @@ public class P1109_Cheating_on_the_Contest {
         return finished;
     }
 
+    void buildWalkingStep(String regex) {
+
+    }
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -159,7 +164,7 @@ public class P1109_Cheating_on_the_Contest {
             init();
             regexLevel = new String[100];
             opLevel = new String[100];
-            regexToNFA(input, -1);
+            buildNFA(input, -1);
             int n = Integer.parseInt(br.readLine());
             while (n-- > 0) {
                 if (execute(br.readLine())) {
