@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.BEGINNER;
+package URI.Trying.WA;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

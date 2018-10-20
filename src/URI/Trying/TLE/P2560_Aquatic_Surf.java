@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES;
+package URI.Trying.TLE;
 
 
 /**
@@ -8,7 +8,7 @@ package URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES;
  * @Problem: 2560 - Aquatic Surf
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2560
  * @Timelimit: 2 sec
- * @Status:
+ * @Status: TLE
  * @Submission:
  * @Runtime:
  * @Solution:
@@ -44,39 +44,30 @@ public class P2560_Aquatic_Surf {
         end = null;
     }
 
-    static private void addNode(int newData) {
-        Node node = new Node(newData);
+    static private void addNode(int data) {
+        Node node = new Node(data);
         if (start == null) {
-            System.out.println("\n" + newData + " add first");
             start = node;
             end = node;
-        } else if (newData <= start.data) {
-            System.out.println("\n" + newData + " add start");
+        } else if (node.data <= start.data) {
             node.next = start;
             start = node;
-        } else if (newData >= end.data) {
-            System.out.println("\n" + newData + " add end");
+        } else if (node.data >= end.data) {
             end.next = node;
             end = node;
         } else {
-            System.out.println("\n" + newData + " add");
             Node cursor = start.next;
+            Node prev = start;
             while (cursor != null) {
-                if (newData >= cursor.data) {
-                    node.next = cursor.next;
-                    cursor.next = node;
+                if (node.data <= cursor.data) {
+                    prev.next = node;
+                    node.next = cursor;
                     break;
                 }
+                prev = cursor;
                 cursor = cursor.next;
             }
         }
-        System.out.println("\n=== result ====");
-        Node cursor = start;
-        while (cursor != null) {
-            System.out.print(cursor.data + " ");
-            cursor = cursor.next;
-        }
-        System.out.println("\n=============");
     }
 
 
@@ -96,29 +87,23 @@ public class P2560_Aquatic_Surf {
             }
 
             int sum = 0;
-            int r = 1;
             for (i = 0; i < N; i++) {
-                System.out.println("r=" + (r++));
                 if (i + B > N) break;
                 int count = 0;
                 for (int j = i; count < B; count++) {
-                    System.out.print(gradesSequence[j] + " ");
                     addNode(gradesSequence[j++]);
                 }
-                System.out.println();
 
-                Node cursor = start;
-                while (cursor != null) {
-                    System.out.print(cursor.data + " ");
+                Node cursor = start.next;
+                while (cursor != end) {
                     sum += cursor.data;
                     cursor = cursor.next;
                 }
-                System.out.println();
                 clear();
             }
             bw.append(sum + "\n");
-            bw.flush();
         }
         bw.flush();
     }
+
 }
