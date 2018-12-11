@@ -17,9 +17,9 @@ package URI.Trying.WA.GRAPH;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.IOException;
 
 public class P2688_Choosing_a_Place {
 
@@ -35,10 +35,18 @@ public class P2688_Choosing_a_Place {
             int A = Integer.parseInt(input);
             map = new int[14][14];
             dMin = Integer.MAX_VALUE;
+
+            //build map
             for (int i = 1; i <= 13; i++) {
                 String[] st = br.readLine().split(" +");
                 for (int j = 1; j <= 13; j++) {
                     map[i][j] = Integer.parseInt(st[j - 1]);
+                }
+            }
+
+            //solve
+            for (int i = 1; i <= 13; i++) {
+                for (int j = 1; j <= 13; j++) {
                     switch (map[i][j]) {
                         case 0:
                             double sum = 0;
@@ -65,6 +73,7 @@ public class P2688_Choosing_a_Place {
                             }
 
                             double average = sum / total;
+                            System.out.println("x="+i+" y="+j+" average="+average+ " a="+A);
                             if (average > A) {
                                 continue;
                             }
@@ -81,6 +90,8 @@ public class P2688_Choosing_a_Place {
                     }
                 }
             }
+
+
             bw.append("linha > " + column + " coluna > " + line);
         }
         bw.flush();

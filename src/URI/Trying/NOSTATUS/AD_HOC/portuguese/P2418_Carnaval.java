@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.AD_HOC;
+package URI.Trying.NOSTATUS.AD_HOC.portuguese;
 
 /**
  * @author Teerapat Phokhonwong
@@ -11,7 +11,7 @@ package URI.Trying.NOSTATUS.AD_HOC;
  * @Submission:
  * @Runtime:
  * @Solution:
- * @Note:
+ * @Note: ภาษาโปรตุเกต
  */
 
 import java.io.BufferedReader;

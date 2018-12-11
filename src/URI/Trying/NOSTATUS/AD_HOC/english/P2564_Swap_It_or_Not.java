@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.NOSTATUS.AD_HOC;
+package URI.Trying.NOSTATUS.AD_HOC.english;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

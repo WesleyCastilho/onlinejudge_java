@@ -10,7 +10,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.NOSTATUS.AD_HOC;
+package URI.Trying.NOSTATUS.AD_HOC.english;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

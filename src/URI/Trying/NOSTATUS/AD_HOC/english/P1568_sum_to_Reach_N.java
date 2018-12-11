@@ -11,7 +11,7 @@
  * @Note: 
  */
 
-package URI.Trying.NOSTATUS.AD_HOC;
+package URI.Trying.NOSTATUS.AD_HOC.english;
 
 
 public class P1568_sum_to_Reach_N {

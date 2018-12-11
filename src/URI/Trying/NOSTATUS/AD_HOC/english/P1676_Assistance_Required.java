@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.AD_HOC;
+package URI.Trying.NOSTATUS.AD_HOC.english;
 
 /**
  * @author Teerapat Phokhonwong
