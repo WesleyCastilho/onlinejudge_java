@@ -1,4 +1,4 @@
-package MYFUNCTIONTEST;
+package MYFUNCTION;
 
 /**
  * @Author Teerapat Phokhonwong
