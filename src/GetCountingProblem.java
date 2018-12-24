@@ -26,6 +26,7 @@ public class GetCountingProblem {
     static OJSource HACKEREARTH = new OJSource();
     static OJSource CODINGAME = new OJSource();
     static OJSource CODEFORCES = new OJSource();
+    static OJSource GOOGLE_CODEJAM = new OJSource();
 
     static {
         AIZU.setName("AIZU");
@@ -85,6 +86,11 @@ public class GetCountingProblem {
         CODEFORCES.setLink("http://codeforces.com/");
         CODEFORCES.setProfile("http://codeforces.com/profile/teerapat_");
 
+        //add 24-12-2018
+        GOOGLE_CODEJAM.setName("GOOGLE_CODEJAM");
+        GOOGLE_CODEJAM.setLink("https://codingcompetitions.withgoogle.com/codejam/archive");
+        GOOGLE_CODEJAM.setProfile("");
+
         sourceList.add(AIZU);
         sourceList.add(CODECHEF);
         sourceList.add(COJ);
@@ -99,6 +105,7 @@ public class GetCountingProblem {
         sourceList.add(HACKEREARTH);
         sourceList.add(CODINGAME);
         sourceList.add(CODEFORCES);
+        sourceList.add(GOOGLE_CODEJAM);
     }
 
 

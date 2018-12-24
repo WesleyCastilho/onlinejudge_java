@@ -11,12 +11,11 @@ package URI.Trying.NOSTATUS.GRAPH;
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution:
+ * @Solution: group node
  * @Note:
  */
 
 import java.io.*;
-import java.util.HashMap;
 import java.util.LinkedList;
 
 
@@ -28,19 +27,10 @@ public class P1790_Detecting_Bridges {
     static int c, p;
     static int totalBridge = 0;
 
-    static private class Bridges {
-        City cityA;
-        City cityB;
-
-        public Bridges(City cityA, City cityB) {
-            this.cityA = cityA;
-            this.cityB = cityB;
-        }
-    }
-
     static private class City {
         int id;
         public LinkedList<City> bridges;
+        int group;
 
         public City(int id) {
             bridges = new LinkedList<>();
@@ -52,9 +42,12 @@ public class P1790_Detecting_Bridges {
                 bridges.add(desination);
             }
         }
+
+        void setGroup(int group) {
+            this.group = group;
+        }
     }
 
-    static private HashMap<String, Bridges> cycleBridges;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -66,7 +59,6 @@ public class P1790_Detecting_Bridges {
             c = Integer.parseInt(st[0]);
             p = Integer.parseInt(st[1]);
 
-            cycleBridges = new HashMap<>();
             map = new int[c][p];
             visited = new int[c][p];
             cityVisited = new int[c];
@@ -75,6 +67,7 @@ public class P1790_Detecting_Bridges {
             City[] cities = new City[c + 1];
             for (int i = 1; i <= c; i++) {
                 cities[i] = new City(i);
+                cities[i].setGroup(i);
             }
 
             for (int i = 0; i < p; i++) {
@@ -85,24 +78,25 @@ public class P1790_Detecting_Bridges {
             }
 
             LinkedList<City> Q = new LinkedList<>();
-            LinkedList<City> nextQ = new LinkedList<>();
+            Q.add(cities[0]);
+
+
+            for (City c : cities) {
+                Q.add(c);
+            }
+
             boolean[] visited = new boolean[c + 1];
-            for (City c : cities) {
-                if (c == null) continue;
-                visited[c.id] = true;
-                for (City city : c.bridges) {
-
+            while (!Q.isEmpty()) {
+                City c = Q.pollFirst();
+                if (c != null) {
+                    visited[c.id] = true;
+                    System.out.println("city >> " + c.id);
+                    for (City c2 : c.bridges) {
+                        System.out.println("-> " + c2.id + " visit=" + visited[c2.id]);
+                    }
                 }
             }
 
-
-            for (City c : cities) {
-                if (c == null) continue;
-                System.out.println("city: " + c.id);
-                for (City c2 : c.bridges) {
-                    System.out.println("->" + c2.id);
-                }
-            }
 
             bw.append(totalBridge + "\n");
             bw.flush();
@@ -110,6 +104,5 @@ public class P1790_Detecting_Bridges {
         bw.flush();
 
     }
-
 
 }

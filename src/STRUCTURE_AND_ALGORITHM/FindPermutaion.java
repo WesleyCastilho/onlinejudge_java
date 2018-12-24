@@ -1,4 +1,4 @@
-package MYFUNCTION;
+package STRUCTURE_AND_ALGORITHM;
 
 /**
  * @Author Teerapat Phokhonwong
@@ -33,6 +33,9 @@ public class FindPermutaion {
         System.out.println(seconds+" sec");
 
 
+        findCombinations(st);
+
+
     }
 
     static void findByBitPermutation(int i, String s) {
@@ -47,6 +50,14 @@ public class FindPermutaion {
             index--;
         }
         permutationList.add(sup);
+    }
+
+    private static void findCombinations(String text) {
+        for (int end = text.length(); end > 0; end--) {
+            for (int start = 0; start < end; start++) {
+                System.out.println(text.substring(start, end));
+            }
+        }
     }
 
 }

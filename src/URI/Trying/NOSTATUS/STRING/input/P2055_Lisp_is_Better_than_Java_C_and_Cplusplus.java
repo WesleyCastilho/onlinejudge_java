@@ -12,7 +12,7 @@ package URI.Trying.NOSTATUS.STRING.input;
  * @Submission:
  * @Runtime:
  * @Solution: order pattern
- * @Note:
+ * @Note: subString permutation order , find pattern , sort
  */
 
 import java.io.IOException;
@@ -126,21 +126,39 @@ public class P2055_Lisp_is_Better_than_Java_C_and_Cplusplus {
 //            }
 
 
-            //find n sup String number
+            //find n sup String by number
+            LinkedList<String> answer = new LinkedList<>();
             T = Integer.parseInt(br.readLine());
             for (int i = 0; i < T; i++) {
-                String number = br.readLine();
-                int size = number.length();
-                LinkedList<String> answer = new LinkedList<>();
-                String sup =  "";
-                for (int j = 0; j < size; j++) {
-                    sup += number.substring(j);
+                String number = br.readLine().replaceAll("[ -/]+", "");
 
+
+                for (int end = 1; end < number.length(); end++) {
+                    for (int start = 0; start < end; start++) {
+//                        String n = number.substring(start, end);
+//                        TreeSet<String> set = numberToWord.get(n);
+//                        System.out.print("number >> " + number.substring(start, end) + " >>>> ");
+//                        if (set != null) {
+//                            boolean printed = false;
+//                            for (String s : set) {
+//                                System.out.print((printed ? ", " : "") + s);
+//                                printed = true;
+//                            }
+//                            System.out.println();
+//                        } else {
+//                            System.out.println("not found");
+//                        }
+
+                    }
                 }
+
             }
 
         }
         bw.flush();
     }
+
+
+
 
 }

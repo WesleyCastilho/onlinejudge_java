@@ -14,6 +14,30 @@ public class OJSource {
         this.accepted = 0;
     }
 
+    public OJSource(String name) {
+        this.name = name;
+        this.link = "";
+        this.profile = "";
+        this.totalFile = 0;
+        this.accepted = 0;
+    }
+
+    public OJSource(String name, String link) {
+        this.name = name;
+        this.link = link;
+        this.profile = "";
+        this.totalFile = 0;
+        this.accepted = 0;
+    }
+
+    public OJSource(String name, String link, String profile) {
+        this.name = name;
+        this.link = link;
+        this.profile = profile;
+        this.totalFile = 0;
+        this.accepted = 0;
+    }
+
     public String getName() {
         return name;
     }
