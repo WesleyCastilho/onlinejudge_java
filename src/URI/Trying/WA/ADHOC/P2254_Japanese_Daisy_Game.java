@@ -14,26 +14,38 @@
 package URI.Trying.WA.ADHOC;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class P2254_Japanese_Daisy_Game {
 
+    static ArrayList<Character> list = new ArrayList<>();
+    static ArrayList<Character> listTmp;
+
+    static {
+        list.add('N');
+        list.add('M');
+    }
+
     public static void main(String[] args) throws IOException {
-//        String fileName = "P2254_input.txt";
-////        String fileName = "2254_output.txt";
-//        File f = new File("D:\\Java Source Code\\Netbean Workspace\\URI Online Judge\\build\\classes\\Trying\\Input\\" + fileName);
-//        FileReader fr = new FileReader(f);
-//        BufferedReader br = new BufferedReader(fr);
+        for (int i = 0; i < 10; i++) {
+
+            listTmp = new ArrayList<>();
+
+            for (int j = list.size() - 1; j >= 0; j--) {
+                listTmp.add(list.get(j));
+//                System.out.println("ssss");
+            }
+            list.addAll(listTmp);
+            char c = list.get(list.size() - 1) == 'N' ? 'M' : 'N';
+            list.add(c);
+        }
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         String input;
+        System.out.println("sss");
         while ((input = br.readLine()) != null) {
             int n = Integer.parseInt(input);
-            System.out.println("n="+n);
-            System.out.println("n5="+n%5);
-            System.out.println("n3="+n%3);
-            int a = n % 5;
-            int b = n % 3;
-            bw.append("she loves " + ((a == 0 || b == 0) ? "not" : "me") + "\n");
+            bw.append("she loves " + (list.get(n) == 'N' ? "not" : "me") + "\n");
             bw.flush();
         }
         bw.flush();
