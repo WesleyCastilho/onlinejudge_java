@@ -1,4 +1,19 @@
-package URI.Trying.NOSTATUS.BEGINNER;
+package URI.Accepted.BEGINNER.sourcecode;
+
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: BEGINNER
+ * @Problem: 2783 - Cup Stickers
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2783
+ * @Timelimit: 1 sec
+ * @Status: Accepted
+ * @Memory:
+ * @Submission: 1/1/19, 1:28:50 AM
+ * @Runtime: 0.076s
+ * @Solution:
+ * @Note:
+ */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -17,7 +32,7 @@ public class P2783_Cup_Stickers {
         m = Integer.parseInt(st[2]);
         st = br.readLine().split(" ");
         card = new boolean[n + 1];
-        int answer = n - c;
+        int answer = c;
         for (int i = 0; i < c; i++) {
             int x = Integer.parseInt(st[i]);
             card[x] = true;
@@ -25,9 +40,9 @@ public class P2783_Cup_Stickers {
         st = br.readLine().split(" ");
         for (int i = 0; i < m; i++) {
             int x = Integer.parseInt(st[i]);
-            if (x >0 && x <= n && !card[x]) {
+            if (x <= n && card[x]) {
                 answer--;
-                card[x] = true;
+                card[x] = false;
             }
         }
         System.out.println(answer);
