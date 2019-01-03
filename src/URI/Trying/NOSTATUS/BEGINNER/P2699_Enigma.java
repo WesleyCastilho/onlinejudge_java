@@ -3,9 +3,9 @@ package URI.Trying.NOSTATUS.BEGINNER;
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
- * @Categories:
- * @Problem:
- * @Link:
+ * @Categories: BEGINNER
+ * @Problem: 2699 - Enigma
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2699
  * @Timelimit: 2 sec
  * @Status:
  * @Memory:
