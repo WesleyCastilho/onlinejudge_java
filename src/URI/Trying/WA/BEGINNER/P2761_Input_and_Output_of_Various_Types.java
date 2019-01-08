@@ -1,4 +1,4 @@
-package URI.Trying.WA;
+package URI.Trying.WA.BEGINNER;
 
 /**
  * @author Teerapat Phokhonwong

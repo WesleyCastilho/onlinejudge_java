@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by Teerapat_
  */
-public class GetCountingProblem {
+public class DB_CountingProblem {
 
     static final List<OJSource> sourceList = new ArrayList<>();
     static OJSource AIZU = new OJSource();

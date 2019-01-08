@@ -19,9 +19,7 @@ package URI.Trying.NOSTATUS.BEGINNER;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Comparator;
 import java.util.LinkedList;
-import java.util.PriorityQueue;
 
 public class P2784_Islands {
 
@@ -33,6 +31,8 @@ public class P2784_Islands {
         int id;
         LinkedList<Node> link;
         int cost;
+
+        Node next;
 
         public Node(int id) {
             this.id = id;
@@ -46,6 +46,55 @@ public class P2784_Islands {
 
         void resetValue() {
             this.cost = Integer.MAX_VALUE;
+        }
+    }
+
+    private static class PriorityQueue<T> {
+        Node firstNode;
+        Node lastNode;
+        int qSize;
+        boolean[] visited;
+
+        public PriorityQueue(int size) {
+            this.qSize = size;
+            this.visited = new boolean[qSize];
+        }
+
+        void add(Node node) {
+            if (firstNode == null) {
+                firstNode = node;
+                lastNode = node;
+            } else if (firstNode.cost >= node.cost) {
+                node.next = firstNode;
+                firstNode = node;
+            } else if (lastNode.cost <= node.cost) {
+                lastNode.next = node;
+                lastNode = node;
+            } else {
+                Node cur = firstNode;
+                Node prev = null;
+                while (cur.cost < node.cost) {
+                    prev = cur;
+                    cur = cur.next;
+                }
+                prev.next = node;
+                node.next = cur;
+            }
+            visited[node.id] = true;
+        }
+
+        boolean isEmpty() {
+            return firstNode == null;
+        }
+
+        Node poll() {
+            Node node = firstNode;
+            firstNode = firstNode.next;
+            return node;
+        }
+
+        boolean isVisited(Node node) {
+            return visited[node.id];
         }
     }
 
@@ -79,41 +128,44 @@ public class P2784_Islands {
         s = Integer.parseInt(br.readLine());
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        Comparator<Node> comparator = new NodeComparator();
+        System.out.println("s="+s);
         for (int i = 1; i <= n; i++) {
             if (i != s) {
                 int[] p = new int[n + 1];
-                PriorityQueue<Node> Q = new PriorityQueue<>(comparator);
+                PriorityQueue<Node> Q = new PriorityQueue<>(n + 1);
                 node[i].cost = 0;
                 Q.add(node[i]);
                 loop:
                 while (!Q.isEmpty()) {
                     Node cur = Q.poll();
                     for (Node cnode : cur.link) {
+                        if (Q.isVisited(cnode)) continue;
                         int cost = cur.cost + pingTable[cnode.id][cur.id];
-                        if (node[s].cost != Integer.MAX_VALUE && cost > node[s].cost) continue;
                         if (cnode.cost > cost) {
                             cnode.cost = cost;
                             p[cnode.id] = cur.id;
+                            if (cnode.id != s)
                             Q.add(cnode);
                         }
+                        System.out.println(cur.id + "->" + cnode.id);
                     }
+
                 }
                 //Reset Value
                 for (int j = 1; j <= n; j++) {
                     node[j].resetValue();
                 }
 
-//
-//                System.out.println("R=" + i + "->" + s);
-//                for (int k = 1; k <= n; k++) {
-//                    System.out.print(k + " ");
-//                }
-//                System.out.println();
-//                for (int k = 1; k <= n; k++) {
-//                    System.out.print(p[k] + " ");
-//                }
-//                System.out.println();
+
+                System.out.println("R=" + i + "->" + s);
+                for (int k = 1; k <= n; k++) {
+                    System.out.print(k + " ");
+                }
+                System.out.println();
+                for (int k = 1; k <= n; k++) {
+                    System.out.print(p[k] + " ");
+                }
+                System.out.println();
 
                 int sum = 0;
                 int e = s;
@@ -121,7 +173,7 @@ public class P2784_Islands {
                     sum += pingTable[e][p[e]];
                     e = p[e];
                 }
-//                System.out.println("Minimum sum>>" + sum + "\n");
+                System.out.println("sum = " + sum + "\n");
 
                 if (max < sum) {
                     max = sum;
@@ -136,19 +188,5 @@ public class P2784_Islands {
 
         System.out.println(max - min);
     }
-
-
-    static class NodeComparator implements Comparator<Node> {
-        @Override
-        public int compare(Node a, Node b) {
-            if (a.cost < b.cost) {
-                return -1;
-            }
-            if (a.cost > b.cost) {
-                return 1;
-            }
-            return 0;
-        }
-    }
-
 }
+

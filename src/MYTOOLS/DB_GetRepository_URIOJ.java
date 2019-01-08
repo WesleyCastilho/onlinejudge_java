@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class GetRepository_URIOJ {
+public class DB_GetRepository_URIOJ {
 
     public static void main(String[] args) throws IOException {
         int startPage = 1001,end = 2657;
