@@ -28,15 +28,18 @@ public class P1907_Colouring_Game_Scenarios {
 
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        R = sc.nextInt();
-        C = sc.nextInt();
-        paper = new char[1024][1024];
-        visited = new boolean[1024][1024];
-        for (int i = 0; i < R; i++ ) {
-            String s = sc.next();
+        String[] st = sc.nextLine().split(" ");
+        R = Integer.parseInt(st[0]);
+        C = Integer.parseInt(st[1]);
+        paper = new char[1025][1025];
+        visited = new boolean[1025][1025];
+        for (int i = 0; i < R; ) {
+            String s = sc.nextLine();
+            if (s.isEmpty()) continue;
             for (int j = 0; j < C; j++) {
                 paper[i][j] = s.charAt(j);
             }
+            i++;
         }
         int totalClick = 0;
         for (int i = 0; i < R; i++) {

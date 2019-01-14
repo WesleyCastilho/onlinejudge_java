@@ -16,6 +16,8 @@ package URI.Trying.NOSTATUS.BEGINNER;
  * @Note:
  */
 
+import MYTOOLS.DB_BufferedFileReader;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -26,18 +28,20 @@ public class P2784_Islands {
     static int n, m, s;
     static Node[] node;
     static int[][] pingTable;
+    static int[] p;//parent
 
     static private class Node {
         int id;
         LinkedList<Node> link;
-        int cost;
+        int ping;
+        boolean visited = false;
 
         Node next;
 
         public Node(int id) {
             this.id = id;
             this.link = new LinkedList<>();
-            this.cost = Integer.MAX_VALUE;
+            this.ping = Integer.MAX_VALUE;
         }
 
         void addLink(Node connection) {
@@ -45,7 +49,8 @@ public class P2784_Islands {
         }
 
         void resetValue() {
-            this.cost = Integer.MAX_VALUE;
+            this.ping = Integer.MAX_VALUE;
+            this.visited = false;
         }
     }
 
@@ -53,57 +58,67 @@ public class P2784_Islands {
         Node firstNode;
         Node lastNode;
         int qSize;
-        boolean[] visited;
 
         public PriorityQueue(int size) {
             this.qSize = size;
-            this.visited = new boolean[qSize];
         }
 
         void add(Node node) {
-            if (firstNode == null) {
-                firstNode = node;
-                lastNode = node;
-            } else if (firstNode.cost >= node.cost) {
+            System.out.println("add node ping = " + node.ping);
+            if (this.firstNode == null) {
+                this.firstNode = node;
+                this.lastNode = node;
+            } else if (firstNode.ping > node.ping) {//add front
                 node.next = firstNode;
-                firstNode = node;
-            } else if (lastNode.cost <= node.cost) {
-                lastNode.next = node;
-                lastNode = node;
+                this.firstNode = node;
+            } else if (lastNode.ping < node.ping) {//add last
+                this.lastNode.next = node;
+                this.lastNode = node;
             } else {
-                Node cur = firstNode;
+                Node cur = this.firstNode;
                 Node prev = null;
-                while (cur.cost < node.cost) {
-                    prev = cur;
-                    cur = cur.next;
+                while (cur != null) {
+                    if (cur.ping > node.ping)
+                        cur = cur.next;
+                    else break;
+//                    System.out.println("ping[cur=" + cur.ping + ", " + node.ping + "  ]");
+//                    if (cur.ping > node.ping) {
+//                        prev = cur;
+//
+//                    } else {
+//                        break;
+//                    }
                 }
-                prev.next = node;
                 node.next = cur;
+                if (prev != null) {
+                    prev.next = node;
+                }
             }
-            visited[node.id] = true;
         }
 
-        boolean isEmpty() {
-            return firstNode == null;
+        boolean isNotEmpty() {
+            return this.firstNode != null;
         }
 
         Node poll() {
-            Node node = firstNode;
-            firstNode = firstNode.next;
+            Node node = this.firstNode;
+            this.firstNode = this.firstNode.next;
             return node;
         }
 
-        boolean isVisited(Node node) {
-            return visited[node.id];
+
+        void reset() {
+            this.firstNode = null;
+            this.lastNode = null;
         }
+
     }
 
 
     public static void main(String[] args) throws IOException {
-//        File f = new File("src/URI/Trying/NOSTATUS/BEGINNER/P2784_input.txt");
-//        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(f)));
-//
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new DB_BufferedFileReader("P2784_input.txt").build(P2784_Islands.class);
+
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] st = br.readLine().split(" ");
         n = Integer.parseInt(st[0]);
         m = Integer.parseInt(st[1]);
@@ -125,37 +140,29 @@ public class P2784_Islands {
             pingTable[node1][node2] = ping;
             pingTable[node2][node1] = ping;
         }
+
+
         s = Integer.parseInt(br.readLine());
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        System.out.println("s="+s);
+        PriorityQueue<Node> Q = new PriorityQueue<>(n + 1);
+        System.out.println("s=" + s);
         for (int i = 1; i <= n; i++) {
             if (i != s) {
-                int[] p = new int[n + 1];
-                PriorityQueue<Node> Q = new PriorityQueue<>(n + 1);
-                node[i].cost = 0;
+                p = new int[n + 1];
+                node[i].ping = 0;
                 Q.add(node[i]);
                 loop:
-                while (!Q.isEmpty()) {
+                while (Q.isNotEmpty()) {
                     Node cur = Q.poll();
-                    for (Node cnode : cur.link) {
-                        if (Q.isVisited(cnode)) continue;
-                        int cost = cur.cost + pingTable[cnode.id][cur.id];
-                        if (cnode.cost > cost) {
-                            cnode.cost = cost;
-                            p[cnode.id] = cur.id;
-                            if (cnode.id != s)
-                            Q.add(cnode);
-                        }
-                        System.out.println(cur.id + "->" + cnode.id);
-                    }
+                    cur.visited = true;
 
                 }
                 //Reset Value
                 for (int j = 1; j <= n; j++) {
                     node[j].resetValue();
                 }
-
+                Q.reset();
 
                 System.out.println("R=" + i + "->" + s);
                 for (int k = 1; k <= n; k++) {
@@ -170,6 +177,7 @@ public class P2784_Islands {
                 int sum = 0;
                 int e = s;
                 while (p[e] != 0) {
+                    System.out.println("aaa");
                     sum += pingTable[e][p[e]];
                     e = p[e];
                 }
@@ -185,8 +193,9 @@ public class P2784_Islands {
             }
         }
 
-
         System.out.println(max - min);
     }
+
+
 }
 
