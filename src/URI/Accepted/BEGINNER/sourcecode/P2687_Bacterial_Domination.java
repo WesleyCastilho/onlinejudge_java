@@ -9,7 +9,7 @@ package URI.Accepted.BEGINNER.sourcecode;
  * @Status: Accepted
  * @Submission: 3/29/18, 12:19:42 PM
  * @Runtime: 0.028s
- * @Solution: BFS
+ * @Solution: Backtracking
  * @Note:
  */
 

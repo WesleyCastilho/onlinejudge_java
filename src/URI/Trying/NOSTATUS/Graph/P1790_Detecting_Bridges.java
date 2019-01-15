@@ -5,13 +5,13 @@ package URI.Trying.NOSTATUS.GRAPH;
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
  * @Categories: GRAPH
- * @Problem: 1610 : Dudu Service Maker
+ * @Problem: 1790 - Detecting Bridges
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1790
  * @Timelimit: 1 sec
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution: group node
+ * @Solution: counting bridges in graph
  * @Note:
  */
 

@@ -10,7 +10,7 @@ package URI.Accepted.GRAPH.sourcecode;
  * @Status: Accepted
  * @Submission: 9/25/18, 12:10:59 PM
  * @Runtime: 0.312s
- * @Solution: BFS
+ * @Solution: Backtracking
  * @Note:
  */
 
