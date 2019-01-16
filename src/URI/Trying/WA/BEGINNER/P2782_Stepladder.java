@@ -35,23 +35,7 @@ public class P2782_Stepladder {
             int ladder = Integer.parseInt(st[0]);
             for (int i = 1; i < n; i++) {
                 int x = Integer.parseInt(st[i]);
-                if (x == ladder) {
-                    if (direction == null || direction != 0) {
-                        step++;
-                        direction = 0;
-                    }
-                } else if (x > ladder) {
-                    if (direction == null || direction != 1) {
-                        step++;
-                        direction = 1;
-                    }
 
-                } else {
-                    if (direction == null || direction != 2) {
-                        step++;
-                        direction = 2;
-                    }
-                }
                 ladder = x;
             }
 
