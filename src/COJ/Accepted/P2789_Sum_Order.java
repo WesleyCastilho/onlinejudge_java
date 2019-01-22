@@ -1,4 +1,4 @@
-package COJ.Trying;
+package COJ.Accepted;
 
 
 /**
@@ -8,10 +8,10 @@ package COJ.Trying;
  * @Problem: 2789 - Sum Order
  * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=2789
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: Accepted
  * @Memory:
- * @Submission:
- * @Runtime:
+ * @Submission: 2019-01-22 04:05:55
+ * @Runtime: 1014
  * @Solution:
  * @Note:
  */

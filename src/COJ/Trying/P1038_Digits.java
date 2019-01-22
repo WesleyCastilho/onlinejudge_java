@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.InputStreamReader;
 import java.io.BufferedOutputStream;
+import java.math.BigDecimal;
 
 public class P1038_Digits {
 
@@ -28,19 +29,18 @@ public class P1038_Digits {
         OutputStream out = new BufferedOutputStream(System.out);
         String in;
         while (!(in = br.readLine()).equals("END")) {
-            int number = Integer.parseInt(in);
+            BigDecimal number = new BigDecimal(in);
             out.write((digitCounting(number) + "\n").getBytes());
+            out.flush();
         }
         out.flush();
     }
 
-    static int digitCounting(int n) {
+    static int digitCounting(BigDecimal n) {
         int count = 0;
-        int a;
-        while (n > 0) {
-            a = n % 2;
-            if (a == 1) count++;
-            n /= 2;
+        while (n.compareTo(BigDecimal.ZERO) > 0) {
+            n = n.divide(new BigDecimal(2));
+            System.out.println(n);
         }
         return count;
     }

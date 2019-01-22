@@ -1,4 +1,4 @@
-package COJ.Trying;
+package COJ.Accepted;
 
 
 /**
@@ -8,10 +8,10 @@ package COJ.Trying;
  * @Problem: 1028 - All in All
  * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1028
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: Accepted
  * @Memory:
- * @Submission:
- * @Runtime:
+ * @Submission: 2019-01-22 04:04:00
+ * @Runtime: 210
  * @Solution:
  * @Note:
  */

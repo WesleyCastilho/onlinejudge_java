@@ -29,6 +29,7 @@ public class DB_CountingProblem {
     static OJSource CODINGAME = new OJSource();
     static OJSource CODEFORCES = new OJSource();
     static OJSource GOOGLE_CODEJAM = new OJSource();
+    static OJSource ICPC_LIVE_ARCHIVE = new OJSource();
 
     static {
         AIZU.setName("AIZU");
@@ -93,6 +94,11 @@ public class DB_CountingProblem {
         GOOGLE_CODEJAM.setLink("https://codingcompetitions.withgoogle.com/codejam/archive");
         GOOGLE_CODEJAM.setProfile("");
 
+        //add 22-01-2019
+        ICPC_LIVE_ARCHIVE.setName("ICPC_LIVE_ARCHIVE");
+        ICPC_LIVE_ARCHIVE.setLink("https://icpcarchive.ecs.baylor.edu/index.php");
+        ICPC_LIVE_ARCHIVE.setProfile("teerapat1292");
+
         sourceList.add(AIZU);
         sourceList.add(CODECHEF);
         sourceList.add(COJ);
@@ -108,6 +114,7 @@ public class DB_CountingProblem {
         sourceList.add(CODINGAME);
         sourceList.add(CODEFORCES);
         sourceList.add(GOOGLE_CODEJAM);
+        sourceList.add(ICPC_LIVE_ARCHIVE);
     }
 
 
