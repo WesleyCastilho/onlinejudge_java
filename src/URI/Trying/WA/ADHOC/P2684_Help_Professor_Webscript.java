@@ -20,9 +20,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.LinkedList;
 
-class P2684_Help_Professor_Webscript {
+public class P2684_Help_Professor_Webscript {
 
-    public P2684_Help_Professor_Webscript() throws IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         LinkedList<String> stack = new LinkedList<String>();
@@ -41,8 +41,6 @@ class P2684_Help_Professor_Webscript {
                     loop:
                     for (int i = 0; i < size; i++) {
                         switch (c[i]) {
-                            case '/':
-                                break loop;
                             case '<':
                                 count++;
                                 break;
@@ -51,7 +49,7 @@ class P2684_Help_Professor_Webscript {
                                 break;
                         }
                     }
-                    bw.append(count == 0 ? "Successful!!\n" : "error\n");
+                    bw.append(count == 0 ? "Successful !!\n" : "error\n");
                     break;
                 case 0:
                     boolean successful = true;
@@ -64,17 +62,22 @@ class P2684_Help_Professor_Webscript {
                         if (c[i] == '<') {
                             if (c[i + 1] == '/') {
                                 i += 2;
-                                String s = "";
+                                String s = "<";
                                 boolean error = true;
                                 int j = i;
                                 for (; j < size; j++) {
+                                    if (c[j] == ' ') continue;
                                     if (c[j] == '>') {
+                                        s+= ">";
                                         error = false;
                                         break;
                                     }
                                     s += c[j];
                                 }
-
+//                                System.out.println("error="+error);
+//                                System.out.println("stack.isEmpty()="+stack.isEmpty());
+//                                System.out.println("s="+s);
+//                                System.out.println(">>> "+stack.peekLast());
                                 if (!error && !stack.isEmpty() && s.equals(stack.pollLast())) {
                                     successful = true;
                                 } else {
@@ -83,21 +86,21 @@ class P2684_Help_Professor_Webscript {
                                 }
                                 i = j;
                             } else {
-                                String s = "";
+                                String s = "<";
                                 boolean error = true;
-                                boolean stop = false;
                                 int j = i + 1;
                                 for (; j < size; j++) {
                                     if (c[j] == '>') {
+                                        s += c[j];
                                         error = false;
-                                        stack.add(s);
+                                        if (!s.equals("<meta>")) {
+                                            stack.add(s);
+                                        }
                                         break;
                                     }
                                     if (c[j] == ' ') {
-                                        stop = true;
+                                        continue;
                                     }
-                                    if (stop) continue;
-
                                     s += c[j];
                                 }
 
@@ -109,7 +112,7 @@ class P2684_Help_Professor_Webscript {
                             }
                         }
                     }
-                    bw.append(successful && stack.size() == 0 ? "Successful!!\n" : "error\n");
+                    bw.append(successful && stack.size() == 0 ? "Successful !!\n" : "error\n");
                     break;
             }
             if (--n == 0) {

@@ -29,6 +29,8 @@ public class P1152_Dark_Roads {
     static private class City {
         int id;
         LinkedList<City> link;
+        City next;
+        int cost;
 
         public City(int id) {
             this.id = id;
@@ -39,7 +41,81 @@ public class P1152_Dark_Roads {
             this.link.add(c);
         }
 
+        void setCost(int cost) {
+            this.cost = cost;
+        }
     }
+
+    private class PriorityNode extends City {
+
+        public PriorityNode(int id) {
+            super(id);
+        }
+
+        PriorityNode next;
+    }
+
+    private static class PriorityQueue {
+        PriorityNode firstCity;
+        String mode;
+
+        public PriorityQueue(String mode) {
+            this.mode = mode;
+        }
+
+        void add(City city) {
+            if (firstCity == null) {
+                firstCity = (PriorityNode) city;
+                return;
+            }
+
+            PriorityNode cur = firstCity;
+            if (mode.equals("MAX")) {
+                PriorityNode prev = null;
+                while (cur != null) {
+                    if (cur.cost < city.cost) {
+                        break;
+                    }
+                    cur = cur.next;
+                }
+                if (prev == null) {
+                    city.next = firstCity;
+                    firstCity = (PriorityNode) city;
+                    return;
+                }
+
+                prev.next = (PriorityNode) city;
+                ((PriorityNode) city).next = cur;
+            } else if (mode.equals("MIN")) {
+                PriorityNode prev = null;
+                while (cur != null) {
+                    if (cur.cost > city.cost) {
+                        break;
+                    }
+                    cur = cur.next;
+                }
+                if (prev == null) {
+                    city.next = firstCity;
+                    firstCity = (PriorityNode) city;
+                    return;
+                }
+
+                prev.next = (PriorityNode) city;
+                ((PriorityNode) city).next = cur;
+            }
+        }
+
+        City poll() {
+            City p = firstCity;
+            firstCity = firstCity.next;
+            return p;
+        }
+
+        boolean isNotEmpty() {
+            return firstCity != null;
+        }
+    }
+
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -63,8 +139,21 @@ public class P1152_Dark_Roads {
                 cost[s][d] = c;
                 cost[d][s] = c;
             }
+            //find max way
+            int max = Integer.MIN_VALUE;
+            int[] pMax = new int[N];
+            PriorityQueue maxQ = new PriorityQueue("MAX");
+            while (maxQ.isNotEmpty()) {
 
-            int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
+            }
+
+
+            int min = Integer.MAX_VALUE;
+            int[] pMin = new int[N];
+            PriorityQueue minQ = new PriorityQueue("MIN");
+            while (minQ.isNotEmpty()) {
+
+            }
 
 
             System.out.println(max - min);

@@ -7,12 +7,12 @@ package COJ.Trying;
  * @Problem: 1038 - Digits
  * @Link: http://coj.uci.cu/24h/problem.xhtml?pid=1038
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: TLE
  * @Memory:
  * @Submission:
  * @Runtime:
  * @Solution:
- * @Note:
+ * @Note: นับจำนวน digit 1 ในเลขฐาน 2 ที่แปลงจากจำนวนเต็มหลายๆหลัก
  */
 
 import java.io.BufferedReader;
@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.InputStreamReader;
 import java.io.BufferedOutputStream;
-import java.math.BigDecimal;
+import java.math.BigInteger;
 
 public class P1038_Digits {
 
@@ -29,20 +29,18 @@ public class P1038_Digits {
         OutputStream out = new BufferedOutputStream(System.out);
         String in;
         while (!(in = br.readLine()).equals("END")) {
-            BigDecimal number = new BigDecimal(in);
-            out.write((digitCounting(number) + "\n").getBytes());
-            out.flush();
+            String binary = new BigInteger(in).toString(2);
+            System.out.println(binary);
+            int size = binary.length();
+            int count = 0;
+            for (int i = 0; i < size; i++) {
+                if (binary.charAt(i) == '1') {
+                    count++;
+                }
+            }
+            out.write((count + "\n").getBytes());
         }
         out.flush();
-    }
-
-    static int digitCounting(BigDecimal n) {
-        int count = 0;
-        while (n.compareTo(BigDecimal.ZERO) > 0) {
-            n = n.divide(new BigDecimal(2));
-            System.out.println(n);
-        }
-        return count;
     }
 
 }
