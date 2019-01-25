@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
 public class P2065_Supermarket_Line {
 
     static int N, M;
-    static int[] v, c;
+    static int[] v, clientItem;
     static int totalTime;
 
     private static class Cashiers {
@@ -72,6 +72,7 @@ public class P2065_Supermarket_Line {
                     cur.nextProcess = process;
                 }
             }
+            curSize++;
 
         }
 
@@ -79,16 +80,26 @@ public class P2065_Supermarket_Line {
             return firstProcess != null;
         }
 
-        void process() {
-            Process cur = firstProcess;
-            while (cur != null) {
-                cur = cur.nextProcess;
+        int pull() {
+            Process p = firstProcess;
+            curSize--;
+            while (p.nextProcess != null && p.endTime == p.nextProcess.endTime) {
+                p = p.nextProcess;
+                curSize--;
             }
-            firstProcess = cur;
+            firstProcess = p.nextProcess;
+            return p.endTime;
         }
 
-        int pull() {
-            return firstProcess.endTime;
+
+        void print() {
+            Process cur = firstProcess;
+            System.out.print("End Time Q>> [");
+            while (cur != null) {
+                System.out.print(cur.endTime + " ");
+                cur = cur.nextProcess;
+            }
+            System.out.println("]");
         }
 
     }
@@ -99,7 +110,7 @@ public class P2065_Supermarket_Line {
         N = Integer.parseInt(st[0]);
         M = Integer.parseInt(st[1]);
         v = new int[N];
-        c = new int[M];
+        clientItem = new int[M];
         st = br.readLine().split(" ");
         Cashiers[] cashiers = new Cashiers[N];
         for (int i = 0; i < N; i++) {
@@ -116,21 +127,43 @@ public class P2065_Supermarket_Line {
 
         st = br.readLine().split(" ");
         for (int j = 0; j < M; j++) {
-            c[j] = Integer.parseInt(st[j]);
+            clientItem[j] = Integer.parseInt(st[j]);
         }
 
-        int clientQ = 0;
-        while (true) {
-            for (; clientQ < M; clientQ++) {
-                if (!priorityQ.isFull()) {
-                    int endTime = totalTime + (v[cashiers[clientQ++].id] * c[clientQ]);
+        //init move Client to Cashier
+        int j = 0, k = 0;
+        while (!priorityQ.isFull() && j < M) {
+            int endTime = totalTime + (v[cashiers[k++].id] * clientItem[j++]);
+            Process process = new Process(endTime);
+            priorityQ.addProcess(process);
+        }
+
+
+        priorityQ.print();
+        while (priorityQ.isNotEmpty()) {
+            totalTime = priorityQ.pull();
+            for (Cashiers c : cashiers) {
+                if (!c.isBusy) {
+                    int endTime = totalTime + (v[c.id] * clientItem[j++]);
                     Process process = new Process(endTime);
                     priorityQ.addProcess(process);
                 }
             }
-            if (!priorityQ.isNotEmpty()) break;
-            totalTime = priorityQ.pull();
         }
+        priorityQ.print();
+//
+//        int clientQ = 0;
+//        while (true) {
+//            for (; clientQ < M; clientQ++) {
+//                if (!priorityQ.isFull()) {
+//                    int endTime = totalTime + (v[cashiers[clientQ++].id] * c[clientQ]);
+//                    Process process = new Process(endTime);
+//                    priorityQ.addProcess(process);
+//                }
+//            }
+//            if (!priorityQ.isNotEmpty()) break;
+//            totalTime = priorityQ.pull();
+//        }
 
         System.out.println(totalTime);
     }
