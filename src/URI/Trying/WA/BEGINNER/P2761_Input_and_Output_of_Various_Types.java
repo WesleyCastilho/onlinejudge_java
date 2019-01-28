@@ -13,8 +13,11 @@ package URI.Trying.WA.BEGINNER;
  * @Solution:
  * @Note:
  */
-import java.io.BufferedWriter;
-import java.io.OutputStreamWriter;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class P2761_Input_and_Output_of_Various_Types {
@@ -24,16 +27,21 @@ public class P2761_Input_and_Output_of_Various_Types {
     static char c;
     static String d;
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        File file = new File("src/URI/Trying/WA/BEGINNER/P2761_input.txt");
+        Scanner sc = new Scanner(new FileReader(file));
+        DecimalFormat df = new DecimalFormat("0.000000");
         a = sc.nextInt();
         b = sc.nextFloat();
         c = sc.next().charAt(0);
-        d = sc.nextLine().trim();
-
-        System.out.printf("%d%.6f%c%s", a, b, c, d);
-        System.out.printf("%d\t%.6f\t%c\t%s", a, b, c, d);
-        System.out.printf("%10d%10.6f%10s%10s\n", a, b, c, d);
+        d = "";
+        int i = 0;
+        while (sc.hasNext()) {
+            d += ((i++ > 0 ? " " : "") + sc.next());
+        }
+        System.out.println(a + "" + df.format(b) + "" + c + "" + d);
+        System.out.printf("%-8d%-8.6f%-8s%-8s\n", a, b, c, d);
+        System.out.printf("%10d%10f%10s%10s\n", a, b, c, d);
     }
 
 
