@@ -11,7 +11,7 @@ package URI.Trying.NOSTATUS.GRAPH;
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution:
+ * @Solution: BFS
  * @Note:
  */
 
@@ -25,19 +25,7 @@ import java.util.LinkedList;
 public class P1148_Countries_at_War {
     static private int n, e, k;
 
-    static private Pair[][] map;
-
-    static private class Pair {
-        Country country1;
-        Country country2;
-        int H;
-
-        public Pair(Country country1, Country country2, int h) {
-            this.country1 = country1;
-            this.country2 = country2;
-            H = h;
-        }
-    }
+    static private int[][] map;
 
     static private class Country {
         int id;
@@ -46,6 +34,11 @@ public class P1148_Countries_at_War {
         public Country(int id) {
             link = new LinkedList<>();
             this.id = id;
+        }
+
+        void addLink(Country country) {
+            if (!link.contains(country))
+                link.add(country);
         }
     }
 
@@ -57,45 +50,51 @@ public class P1148_Countries_at_War {
             String[] st = input.split(" ");
             n = Integer.parseInt(st[0]);
             e = Integer.parseInt(st[1]);
-            map = new Pair[n + 1][n + 1];
-            Country[] countries = new Country[n + 1];
+            map = new int[n + 1][n + 1];
+            Country[] country = new Country[n + 1];
             for (int i = 1; i <= n; i++) {
-                countries[i] = new Country(i);
+                country[i] = new Country(i);
             }
             for (int i = 1; i <= e; i++) {
                 st = br.readLine().split(" ");
                 int c1 = Integer.parseInt(st[0]);
                 int c2 = Integer.parseInt(st[1]);
                 int h = Integer.parseInt(st[2]);
-                map[c1][c2] = new Pair(countries[c1], countries[c2], h);
+                map[c1][c2] = h;
+                country[c1].addLink(country[c2]);
             }
-            printMap();
 
+            boolean isFine = false;
+            int answer = 0;
             k = Integer.parseInt(br.readLine());
+            boolean[] v = new boolean[n + 1];
             for (int i = 0; i < k; i++) {
                 st = br.readLine().split(" ");
-                int o = Integer.parseInt(st[0]);
-                int d = Integer.parseInt(st[1]);
-
+                int start = Integer.parseInt(st[0]);
+                int end = Integer.parseInt(st[1]);
+                int[] p = new int[n + 1];
+                LinkedList<Country> Q = new LinkedList<>();
+                Q.add(country[start]);
+                while (!Q.isEmpty()) {
+                    Country cur = Q.pollFirst();
+                    if (cur.id == end) {
+                        isFine = true;
+                        break;
+                    }
+                    for (Country c : cur.link) {
+                        if (!v[c.id]) {
+                            p[c.id] = cur.id;
+                            Q.add(c);
+                        }
+                    }
+                }
             }
 
-
+            bw.append((isFine ? answer : "Nao e possivel entregar a carta") + "\n");
+            bw.newLine();
         }
         bw.flush();
     }
 
-    static void printMap() {
-        System.out.print(" ");
-        for (int i = 1; i <= n; i++)
-            System.out.print(" " + i);
-        System.out.println();
-        for (int i = 1; i <= n; i++) {
-            System.out.print(i);
-            for (int j = 1; j <= n; j++) {
-                System.out.print(map[i][j] != null ? " " + map[i][j].H : " 0");
-            }
-            System.out.println();
-        }
-    }
 
 }

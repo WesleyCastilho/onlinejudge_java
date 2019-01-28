@@ -11,22 +11,23 @@ package URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES;
  * @Submission:
  * @Runtime:
  * @Solution: find totalTime process by Priority Queue for Cashier and Client
- * @Note:
+ * @Note: แถวคอยตาม Cashier
  */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import MYTOOLS.DB_BufferedFileReader;
+
+import java.io.*;
+import java.util.LinkedList;
 
 public class P2065_Supermarket_Line {
 
     static int N, M;
-    static int[] v, clientItem;
+    static Integer[] v;
+    static boolean[] isBusy;
     static int totalTime;
 
     private static class Cashiers {
         int id;
-        boolean isBusy;
 
         public Cashiers(int id) {
             this.id = id;
@@ -37,9 +38,11 @@ public class P2065_Supermarket_Line {
     private static class Process {
         int endTime;
         Process nextProcess;
+        int cashierId;
 
-        public Process(int endTime) {
+        public Process(int endTime, int cashierId) {
             this.endTime = endTime;
+            this.cashierId = cashierId;
         }
     }
 
@@ -62,14 +65,16 @@ public class P2065_Supermarket_Line {
                 firstProcess = process;
             } else {
                 Process cur = firstProcess;
-                while (cur.endTime < process.endTime) {
+                Process prev = null;
+                while (cur != null && cur.endTime > process.endTime) {
+                    prev = cur;
                     cur = cur.nextProcess;
                 }
                 if (cur == firstProcess) {
                     process.nextProcess = cur;
                     firstProcess = process;
                 } else {
-                    cur.nextProcess = process;
+                    prev.nextProcess = process;
                 }
             }
             curSize++;
@@ -81,10 +86,14 @@ public class P2065_Supermarket_Line {
         }
 
         int pull() {
+            if (firstProcess == null) return totalTime;
+
             Process p = firstProcess;
+            isBusy[p.cashierId] = false;
             curSize--;
             while (p.nextProcess != null && p.endTime == p.nextProcess.endTime) {
                 p = p.nextProcess;
+                isBusy[p.cashierId] = false;
                 curSize--;
             }
             firstProcess = p.nextProcess;
@@ -105,65 +114,45 @@ public class P2065_Supermarket_Line {
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new DB_BufferedFileReader("input/P2065_input.txt").build(P2065_Supermarket_Line.class);
+
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] st = br.readLine().split(" ");
         N = Integer.parseInt(st[0]);
         M = Integer.parseInt(st[1]);
-        v = new int[N];
-        clientItem = new int[M];
+        v = new Integer[N];
         st = br.readLine().split(" ");
         Cashiers[] cashiers = new Cashiers[N];
+        isBusy = new boolean[N];
         for (int i = 0; i < N; i++) {
             cashiers[i] = new Cashiers(i);
             v[i] = Integer.parseInt(st[i]);
         }
 
-
         //solve
         //Priority cashier for client
         totalTime = 0;
 
-        PriorityQ priorityQ = new PriorityQ(N);
-
+        PriorityQ cashierQ = new PriorityQ(N);
+        LinkedList<Integer> clientQ = new LinkedList<>();
         st = br.readLine().split(" ");
         for (int j = 0; j < M; j++) {
-            clientItem[j] = Integer.parseInt(st[j]);
+            clientQ.add(Integer.parseInt(st[j]));
         }
 
-        //init move Client to Cashier
-        int j = 0, k = 0;
-        while (!priorityQ.isFull() && j < M) {
-            int endTime = totalTime + (v[cashiers[k++].id] * clientItem[j++]);
-            Process process = new Process(endTime);
-            priorityQ.addProcess(process);
-        }
-
-
-        priorityQ.print();
-        while (priorityQ.isNotEmpty()) {
-            totalTime = priorityQ.pull();
+        while (!clientQ.isEmpty()) {
             for (Cashiers c : cashiers) {
-                if (!c.isBusy) {
-                    int endTime = totalTime + (v[c.id] * clientItem[j++]);
-                    Process process = new Process(endTime);
-                    priorityQ.addProcess(process);
+                if (clientQ.isEmpty() || cashierQ.isFull()) break;
+                if (!isBusy[c.id]) {
+                    isBusy[c.id] = true;
+                    int endTime = totalTime + (v[c.id] * clientQ.pollFirst());
+                    Process process = new Process(endTime, c.id);
+                    cashierQ.addProcess(process);
                 }
             }
+
+            totalTime = cashierQ.pull();
         }
-        priorityQ.print();
-//
-//        int clientQ = 0;
-//        while (true) {
-//            for (; clientQ < M; clientQ++) {
-//                if (!priorityQ.isFull()) {
-//                    int endTime = totalTime + (v[cashiers[clientQ++].id] * c[clientQ]);
-//                    Process process = new Process(endTime);
-//                    priorityQ.addProcess(process);
-//                }
-//            }
-//            if (!priorityQ.isNotEmpty()) break;
-//            totalTime = priorityQ.pull();
-//        }
 
         System.out.println(totalTime);
     }
