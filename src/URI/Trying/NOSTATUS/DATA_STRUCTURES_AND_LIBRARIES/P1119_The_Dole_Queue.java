@@ -8,7 +8,7 @@
  * @Submission:
  * @Runtime:
  * @Solution: Doubly linked list
- * @Note:
+ * @Note: ยังไม่เสร็จ ผลลัพธ์ยังไม่ถูก
  */
 package URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES;
 

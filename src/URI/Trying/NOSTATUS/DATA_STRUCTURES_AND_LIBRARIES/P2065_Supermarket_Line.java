@@ -11,7 +11,7 @@ package URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES;
  * @Submission:
  * @Runtime:
  * @Solution: find totalTime process by Priority Queue for Cashier and Client
- * @Note: แถวคอยตาม Cashier
+ * @Note: แถวคอยตาม Cashier   *** ยังไม่เสร็จ ผลลัพธ์ยังไม่ถูก
  */
 
 import MYTOOLS.DB_BufferedFileReader;

@@ -1,9 +1,17 @@
 package URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES;
 
+
 /**
- * Created by Teerapat-BSD on 1/10/2018.
- * https://www.urionlinejudge.com.br/judge/en/problems/view/2671
- * binary tree
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI Online Judge
+ * @Problem: 2671 - Decoding the Text
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2671
+ * @Timelimit: 1 sec
+ * @Status:
+ * @Submission:
+ * @Runtime:
+ * @Solution: binary tree
+ * @Note:
  */
 import java.io.*;
 

@@ -1,9 +1,9 @@
 /**
  * @author Teerapat Phokhonwong
- * @Onlinejudge:
- * @Categories:
- * @Problem:
- * @Link:
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: STRUCTURES_AND_LIBRARIES
+ * @Problem: 1425 - Gift
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1425
  * @Timelimit: 1 sec
  * @Status:
  * @Submission:
