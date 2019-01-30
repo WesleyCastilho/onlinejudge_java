@@ -24,8 +24,6 @@ public class P1109_Cheating_on_the_Contest {
 
     static Node startNode;
     static Node endNode;
-    static String[] regexLevel;
-    static String[] opLevel;
 
     static class Node {
 
@@ -37,19 +35,16 @@ public class P1109_Cheating_on_the_Contest {
         Node next;
     }
 
+    static Node buildSubNFA(String regex) {
+        Node node = new Node();
 
-    static void init() {
-        startNode = null;
+        return node;
     }
-
 
     static void buildNFA(String regex, int level) {
         char[] cin = regex.toCharArray();
-        String prefix = "";
-        Node prev = null;
         Node node = null;
         String tmp = "";
-
 
         for (char c : cin) {
             switch (c) {
@@ -57,48 +52,20 @@ public class P1109_Cheating_on_the_Contest {
                     if (node != null) {
                         node.hasNext = true;
                     }
-                    opLevel[level] += c;
                     break;
                 case '|':
                     if (node != null) {
                         node.hasOr = true;
                     }
-                    opLevel[level] += c;
                     break;
                 case '(':
                     level++;
                     tmp = "";
-                    opLevel[level] = "";
                     break;
-                case ')':
-
-//                    if (!opLevel[level].isEmpty()) {
-//                        System.out.println("opLevel(" + level + ") = " + opLevel[level]);
-//                    }
-//                    if (!regexLevel[level].isEmpty()) {
-//                        System.out.println("regexLevel(" + level + ") = " + regexLevel[level]);
-//                    }
-                    if (!tmp.isEmpty()) {
-                        node = new Node();
-                        node.data = tmp.charAt(0);
-                        if (tmp.length() > 1) {
-                            if (tmp.charAt(1) == '*') {
-                                node.hasStar = true;
-                            }
-                        }
-
-                        if (startNode == null) {
-                            startNode = node;
-                        } else {
-                            if (prev.hasNext) {
-                                prev.next = node;
-                            } else if (prev.hasOr) {
-                                prev.or = node;
-                            }
-                        }
-                        prev = node;
-                        System.out.println(level);
-                        buildNFA(tmp, level);
+                case ')'://
+                    if (level > 1) {
+                        node.hasNext = true;
+                        node.next = buildSubNFA(tmp);
                     }
                     level--;
                     break;
@@ -119,7 +86,6 @@ public class P1109_Cheating_on_the_Contest {
 
         Node cs = startNode;
         while (cs != null) {
-//            System.out.println(cs.data + " star=" + cs.hasStar + " next=" + cs.hasNext + " or=" + cs.hasOr);
             if (textCursor == size) {
                 return false;
             }
@@ -152,18 +118,11 @@ public class P1109_Cheating_on_the_Contest {
         return finished;
     }
 
-    void buildWalkingStep(String regex) {
-
-    }
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         String input = "";
         while ((input = br.readLine()) != null) {
-            init();
-            regexLevel = new String[100];
-            opLevel = new String[100];
             buildNFA(input, -1);
             int n = Integer.parseInt(br.readLine());
             while (n-- > 0) {
