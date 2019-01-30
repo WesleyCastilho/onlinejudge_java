@@ -8,7 +8,7 @@ package URI.Trying.NOSTATUS.PARADIGMS;
  * @Problem: 1034 - Ice Statues Festival
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1034
  * @Timelimit: 3 sec
- * @Status: 
+ * @Status:
  * @Submission:
  * @Runtime:
  * @Solution:

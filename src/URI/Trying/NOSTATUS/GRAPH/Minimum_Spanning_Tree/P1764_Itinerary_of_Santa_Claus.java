@@ -1,7 +1,5 @@
 package URI.Trying.NOSTATUS.GRAPH.Minimum_Spanning_Tree;
 
-import java.io.*;
-import java.util.LinkedList;
 
 /**
  * @author Teerapat Phokhonwong
@@ -11,87 +9,106 @@ import java.util.LinkedList;
  * @Subject: Minimum Spanning Tree
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1764
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: RTE
  * @Submission:
  * @Runtime:
- * @Solution: kruskal algorithm , MST
- * @Note: sum ยังไม่ถูก
+ * @Solution: kruskal algorithm , MST แยกต้นไม้ และรวมจนเหลือต้นเดียว
+ * @Note:
  */
+
+import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
 
 public class P1764_Itinerary_of_Santa_Claus {
 
     static int M, N;
-    static int[][] cost;
+    static int[] p;
+    static Edge firstEdge;
+    static int[][] weightArr;
 
-    private static class Node {
-        int id;
-        int min;
+    static private class Edge {
+        int weight;
+        int source;
+        int destination;
+        Edge next;
 
-        LinkedList<Node> link;
-
-        public Node(int id) {
-            this.id = id;
-            this.link = new LinkedList<>();
-            this.min = Integer.MAX_VALUE;
+        public Edge(int weight, int source, int destination) {
+            this.weight = weight;
+            this.source = source;
+            this.destination = destination;
         }
+    }
 
-        public void setMin(int min) {
-            this.min = min;
-        }
-
-        void addLink(Node node) {
-            this.link.add(node);
+    static void addEdge(int source, int destination, int weight) {
+        Edge edge = new Edge(weight, source, destination);
+        if (firstEdge == null) {
+            firstEdge = edge;
+        } else if (firstEdge.weight >= edge.weight) {
+            edge.next = firstEdge;
+            firstEdge = edge;
+        } else {
+            Edge cursor = firstEdge;
+            Edge previous = null;
+            while (cursor != null && edge.weight > cursor.weight) {
+                previous = cursor;
+                cursor = cursor.next;
+            }
+            if (previous != null) previous.next = edge;
+            edge.next = cursor;
         }
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Scanner sc = new Scanner(System.in);
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        String in;
-        while (!(in = br.readLine()).equals("0 0")) {
-            String[] st = in.split(" ");
-            M = Integer.parseInt(st[0]);
-            N = Integer.parseInt(st[1]);
-            cost = new int[M][M];
-            Node[] node = new Node[M];
-            for (int i = 0; i < M; i++) {
-                node[i] = new Node(i);
-            }
+        while (true) {
+            M = sc.nextInt();
+            N = sc.nextInt();
+            if (M == 0 && N == 0) break;
+            weightArr = new int[M][M];
             for (int i = 0; i < N; i++) {
-                st = br.readLine().split(" ");
-                int X = Integer.parseInt(st[0]);
-                int Y = Integer.parseInt(st[1]);
-                int Z = Integer.parseInt(st[2]);
-                node[X].addLink(node[Y]);
-                cost[X][Y] = Z;
-            }
-            //build MST
-            int[] p = new int[M];
-            LinkedList<Node> Q = new LinkedList<>();
-            node[0].min = 0;
-            Q.add(node[0]);
-            int[] v = new int[M];
-            while (!Q.isEmpty()) {
-                Node cur = Q.pollFirst();
-                for (Node c : cur.link) {
-                    if (cost[cur.id][c.id] < c.min) {
-                        p[c.id] = cur.id;
-                        c.min = cost[cur.id][c.id];
-                        Q.add(c);
-                    }
-                }
+                int source = sc.nextInt();
+                int destination = sc.nextInt();
+                int weight = sc.nextInt();
+                addEdge(source, destination, weight);
             }
 
-
-            //solve
+            //build kruskal MST
+            p = new int[M];
+            for (int i = 0; i < M; i++) {
+                p[i] = i;
+            }
+            Edge cursor = firstEdge;
             int sum = 0;//sum of all distances
-            for (int i = 1; i < M; i++) {
-                sum += node[i].min;
+            while (cursor != null) {
+                int source = cursor.source;
+                int destination = cursor.destination;
+                int rD = findSet(destination);
+                int rS = findSet(source);
+                if (rD != rS) {
+                    unionSet(rD, rS);
+                    sum += cursor.weight;
+                }
+                cursor = cursor.next;
             }
-
             bw.append(sum + "\n");
         }
         bw.flush();
+    }
+
+
+    static int findSet(int e) {
+        if (p[e] == e) {
+            return e;
+        } else {
+            return findSet(p[e]);
+        }
+    }
+
+    static void unionSet(int s, int t) {
+        p[t] = s;
     }
 
 }
