@@ -1,19 +1,19 @@
-package URI.Trying.RTE;
+package URI.Trying.AcceptedOtherLanguage;
 
 
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
  * @Categories: GRAPH
- * @Problem: 1774 - Routers
- * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1774
- * @Level: 2
+ * @Problem: 1907 - Colouring Game Scenarios
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1907
+ * @Level:
  * @Timelimit: 1 sec
  * @Status: RTE
  * @Submission:
  * @Runtime:
  * @Solution:
- * @Note:
+ * @Note: this algorithm accepted by C++
  */
 
 import java.io.IOException;
@@ -28,9 +28,8 @@ public class P1907_Colouring_Game_Scenarios {
 
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        String[] st = sc.nextLine().split(" ");
-        R = Integer.parseInt(st[0]);
-        C = Integer.parseInt(st[1]);
+        R = sc.nextInt();
+        C = sc.nextInt();
         paper = new char[1025][1025];
         visited = new boolean[1025][1025];
         for (int i = 0; i < R; ) {
