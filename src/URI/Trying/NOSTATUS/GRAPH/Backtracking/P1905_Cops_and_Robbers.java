@@ -5,6 +5,7 @@ package URI.Trying.NOSTATUS.GRAPH.Backtracking;
  * @Onlinejudge: URI ONLINE JUDGE
  * @Categories: GRAPH
  * @Problem: 1905 - Cops and Robbers
+ * @Subject: Backtracking
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1905
  * @Timelimit: 1 sec
  * @Status:
