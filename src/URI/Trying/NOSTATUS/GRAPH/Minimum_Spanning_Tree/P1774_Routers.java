@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.GRAPH;
+package URI.Trying.NOSTATUS.GRAPH.Minimum_Spanning_Tree;
 
 /**
  * @author Teerapat Phokhonwong

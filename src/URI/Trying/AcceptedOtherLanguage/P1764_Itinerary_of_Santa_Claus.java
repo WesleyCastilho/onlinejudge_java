@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.GRAPH.Minimum_Spanning_Tree;
+package URI.Trying.AcceptedOtherLanguage;
 
 
 /**
@@ -13,7 +13,7 @@ package URI.Trying.NOSTATUS.GRAPH.Minimum_Spanning_Tree;
  * @Submission:
  * @Runtime:
  * @Solution: kruskal algorithm , MST แยกต้นไม้ และรวมจนเหลือต้นเดียว
- * @Note:
+ * @Note: this algorithm accepted by c++
  */
 
 import java.io.IOException;
@@ -29,19 +29,19 @@ public class P1764_Itinerary_of_Santa_Claus {
     static int[][] weightArr;
 
     static private class Edge {
-        int weight;
+        long weight;
         int source;
         int destination;
         Edge next;
 
-        public Edge(int weight, int source, int destination) {
+        public Edge(long weight, int source, int destination) {
             this.weight = weight;
             this.source = source;
             this.destination = destination;
         }
     }
 
-    static void addEdge(int source, int destination, int weight) {
+    static void addEdge(int source, int destination, long weight) {
         Edge edge = new Edge(weight, source, destination);
         if (firstEdge == null) {
             firstEdge = edge;
@@ -71,7 +71,7 @@ public class P1764_Itinerary_of_Santa_Claus {
             for (int i = 0; i < N; i++) {
                 int source = sc.nextInt();
                 int destination = sc.nextInt();
-                int weight = sc.nextInt();
+                long weight = sc.nextLong();
                 addEdge(source, destination, weight);
             }
 
@@ -81,7 +81,7 @@ public class P1764_Itinerary_of_Santa_Claus {
                 p[i] = i;
             }
             Edge cursor = firstEdge;
-            int sum = 0;//sum of all distances
+            long sum = 0;//sum of all distances
             while (cursor != null) {
                 int source = cursor.source;
                 int destination = cursor.destination;
