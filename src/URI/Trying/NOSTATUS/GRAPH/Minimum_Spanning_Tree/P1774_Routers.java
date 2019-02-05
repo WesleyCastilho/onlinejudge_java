@@ -11,7 +11,7 @@ package URI.Trying.NOSTATUS.GRAPH.Minimum_Spanning_Tree;
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution:
+ * @Solution: MST
  * @Note:
  */
 
@@ -71,41 +71,11 @@ public class P1774_Routers {
             components[s].addLink(components[d], cost);
         }
 
-        System.out.println(MST());
+
 
     }
 
-    private static int MST() {
-        int cost = 0;
-        for (Component c : components) {
-            if (c != null && c.color == 'W') {
-                c.color = 'G';
-                cost += MST(c);
-                c.color = 'B';
-            }
-        }
-        return cost;
-    }
 
-    static int MST(Component c) {
-        int cost = 0;
-        int min = Integer.MAX_VALUE;
-        Connection picked = null;
-        for (Connection link : c.link) {
-            if (link.component.color == 'W') {
-                if (min > link.cost) {
-                    picked = link;
-                    min = link.cost;
-                }
-                link.component.color = 'B';
-            }
-        }
-        if (picked != null) {
-            cost += picked.cost;
-            cost += MST(picked.component);
-        }
-        return cost;
-    }
 
 
 }

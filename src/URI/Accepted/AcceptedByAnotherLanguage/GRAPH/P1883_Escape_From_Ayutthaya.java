@@ -1,9 +1,9 @@
-package URI.Trying.AcceptedOtherLanguage;
+package URI.Accepted.AcceptedByAnotherLanguage.GRAPH;
 
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
- * @Categories: AD-HOC
+ * @Categories: GRAPH
  * @Problem: 1883 - Escape From Ayutthaya
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1883
  * @Timelimit: 1 sec

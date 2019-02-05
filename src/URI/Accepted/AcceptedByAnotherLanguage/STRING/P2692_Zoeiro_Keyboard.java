@@ -1,4 +1,4 @@
-package URI.Trying.AcceptedOtherLanguage;
+package URI.Accepted.AcceptedByAnotherLanguage.STRING;
 
 
 /**

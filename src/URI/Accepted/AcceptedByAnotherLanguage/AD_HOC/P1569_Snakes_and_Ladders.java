@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.AcceptedOtherLanguage;
+package URI.Accepted.AcceptedByAnotherLanguage.AD_HOC;
 
 import java.io.*;
 import java.util.*;
