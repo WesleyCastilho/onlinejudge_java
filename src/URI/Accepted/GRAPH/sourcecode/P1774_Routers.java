@@ -11,7 +11,7 @@ package URI.Accepted.GRAPH.sourcecode;
  * @Status: Accepted
  * @Submission: 2/7/19, 11:48:12 PM
  * @Runtime: 0.048s
- * @Solution: MST Kruskal
+ * @Solution: MST Kruskal + sort by quick sort
  * @Note:
  */
 
