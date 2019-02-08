@@ -1,0 +1,123 @@
+Graph Algorithms
+    |-> Graph Traversal
+    |    |-> Breadth-First Search
+    |    |-> Depth First Search
+    |
+    |-> Shortest Path
+    |    |-> Dijkstra's Algorithm
+    |    |-> Bellman-Ford
+    |    |-> Floyd-Warshall
+    |    |-> Johnson's Algorithm
+    |
+    |-> Minimum Spanning Tree
+    |    |-> Kruskal's Algorithm
+    |    |-> Prim's Algorithm
+    |
+    |-> Network Flow
+    |    |-> Karger's Algorithm
+    |    |-> Push-Relabel
+    |    |-> Edmonds-Karp
+    |    |-> Ford-Fulkerson
+    |
+    |-> Tarjan's Algorithm
+    |-> Topological Sort
+    |-> Strongly Connected Components
+
+
+Dynamic Programming
+    |-> 0-1 Knapsack
+    |-> Edit (Levenshtein) Distance
+    |-> Longest Increasing Subsequence
+    |-> Longest Common Subsequence
+    |-> Maximum Subset Sum
+
+
+Sorting
+    |-> Timsort
+    |-> Radix Sort
+    |-> Counting Sort
+    |-> Quicksort
+    |-> Heapsort
+    |-> Mergesort
+    |-> Insertion Sort
+    |-> Bubble Sort
+    |-> Selection Sort
+    |-> Bogosort
+
+
+Searching
+    |-> Linear
+    |-> Binary
+    |-> ith Order Statistic
+            |-> Sort Select
+            |-> Randomized Select
+            |-> Heapselect
+            |-> Quickselect
+
+
+Strings
+    |-> String Searching
+            |-> Aho-Corasick
+            |-> Z Algorithm
+            |-> Knuth-Morris-Pratt
+            |-> Boyer-Moore
+            |-> Rabin-Karp
+            |-> Brute Force
+
+
+Math/Number Theory
+    |-> Fibonacci
+    |        |-> Binet's Formula
+    |        |-> Iterative
+    |        |-> Recursive (DP)
+    |        |-> Matrix Exponentiation
+    |        |-> Fast Doubling
+    |
+    |-> Euclid's Algorithm
+    |-> Fast Fourier Transform
+    |-> Primality Testing
+    |        |-> Naive
+    |        |-> Sieve of Erastothenes
+    |        |-> Miller-Rabin
+    |
+    |-> Karatsuba's Algorithm
+    |-> Fast Exponentiation
+    |-> Strassen's Algorithm
+
+
+Computational Geometry
+    |-> Convex Hull
+    |-> Graham Scan
+    |-> Jarvis March
+
+
+Optimization
+    |-> Naive Optimization
+    |-> Simplex (LP)
+    |-> Simulated Annealing
+    |-> Genetic Algorithms
+    |-> Combinatoric Algorithms
+
+
+Miscellaneous
+    |-> Fisher-Yates Shuffle
+    |-> Kadane's Algorithm
+    |-> Subarray Inversions
+
+
+Data Structures
+    |-> Graph
+    |-> Tree
+    |-> Binary Tree
+    |-> Fenwick Tree (Binary Indexed Tree)
+    |-> Red-Black Tree
+    |-> AVL Tree
+    |-> B-Tree
+    |-> Suffix Tree
+    |-> Trie
+    |-> Hash Table
+    |-> Hash Map
+    |-> Stack
+    |-> Queue
+    |-> List
+    |-> LinkedList

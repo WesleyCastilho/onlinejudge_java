@@ -52,28 +52,47 @@ public class P2688_Choosing_a_Place {
                             double sum = 0;
                             double total = 0;
                             //top
-                            if (i > 1 && map[i - 1][j] != 99) {
+                            if (i > 1) {
                                 sum += map[i - 1][j];
                                 total++;
                             }
+                            //top left
+                            if (i > 1 && j > 1) {
+                                sum += map[i - 1][j - 1];
+                                total++;
+                            }
+                            //top right
+                            if (i > 1 && j > 1) {
+                                sum += map[i - 1][j + 1];
+                                total++;
+                            }
                             //right
-                            if (j < 13 && map[i][j + 1] != 99) {
+                            if (j < 13) {
                                 sum += map[i][j + 1];
                                 total++;
                             }
                             //bottom
-                            if (i < 13 && map[i + 1][j] != 99) {
+                            if (i < 13) {
                                 sum += map[i + 1][j];
                                 total++;
                             }
                             //left
-                            if (j > 1 && map[i][j - 1] != 99) {
+                            if (j > 1) {
                                 sum += map[i][j - 1];
+                                total++;
+                            }
+                            //bottom left
+                            if (i < 13 && j > 1) {
+                                sum += map[i + 1][j - 1];
+                                total++;
+                            }
+                            //bottom right
+                            if (i < 13 && j < 13) {
+                                sum += map[i + 1][j + 1];
                                 total++;
                             }
 
                             double average = sum / total;
-                            System.out.println("x="+i+" y="+j+" average="+average+ " a="+A);
                             if (average > A) {
                                 continue;
                             }
@@ -90,9 +109,7 @@ public class P2688_Choosing_a_Place {
                     }
                 }
             }
-
-
-            bw.append("linha > " + column + " coluna > " + line);
+            bw.append("linha > " + column + " coluna > " + line + "\n");
         }
         bw.flush();
     }
