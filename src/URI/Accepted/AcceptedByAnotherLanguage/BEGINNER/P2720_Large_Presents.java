@@ -1,4 +1,4 @@
-package URI.Trying.WA.BEGINNER;
+package URI.Accepted.AcceptedByAnotherLanguage.BEGINNER;
 
 /**
  * @author Teerapat Phokhonwong
@@ -11,7 +11,7 @@ package URI.Trying.WA.BEGINNER;
  * @Submission:
  * @Runtime:
  * @Solution:
- * @Note:
+ * @Note: this algorithm accepted by c++
  */
 
 
