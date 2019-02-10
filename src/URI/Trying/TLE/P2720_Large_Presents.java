@@ -14,8 +14,6 @@ package URI.Trying.TLE;
  * @Note:
  */
 
-import URI.Trying.NOSTATUS.STRING.P1519_Abbreviations;
-
 import java.io.*;
 import java.net.URL;
 import java.util.*;
@@ -24,28 +22,13 @@ public class P2720_Large_Presents {
 
     static int n, k, id, heigth, width, length;
 
-    static class Gift implements Comparable {
+    static class Gift {
         int id;
         int size;
 
         public Gift(int id, int size) {
             this.id = id;
             this.size = size;
-        }
-
-
-        @Override
-        public int compareTo(Object o) {
-            Gift gift2 = (Gift) o;
-            int comp1 = this.size == gift2.size ? 0 : this.size < gift2.size ? -1 : 1;
-            if (comp1 == 0) {
-                if (this.id < gift2.id) {
-                    return 1;
-                } else if (this.id > gift2.id) {
-                    return -1;
-                }
-            }
-            return comp1;
         }
     }
 
@@ -69,8 +52,6 @@ public class P2720_Large_Presents {
                 int size = heigth + width * length;
                 giftArr[i] = new Gift(id, size);
             }
-
-            Arrays.sort(giftArr);
 
             boolean printed = false;
             for (int i = 0; i < k; i++) {
