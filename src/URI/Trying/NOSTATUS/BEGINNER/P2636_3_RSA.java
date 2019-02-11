@@ -1,16 +1,24 @@
 package URI.Trying.NOSTATUS.BEGINNER;
 
+
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI Online Judge
+ * @Problem: 2698 - Daunting Device
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2698
+ * @Timelimit: 1 sec
+ * @Status:
+ * @Submission:
+ * @Runtime:
+ * @Solution: find last of 3 factor
+ * @Note: Created by Teerapat-BSD on 2/9/2018.   https://www.calculatorsoup.com/calculators/math/factors.php
+ */
+
 import java.io.*;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.HashMap;
 
-/**
- * Created by Teerapat-BSD on 2/9/2018.
- * https://www.urionlinejudge.com.br/judge/en/problems/view/2636
- * GCF greatest (highest) common factor (divisor) GCF
- * GCD
- */
 public class P2636_3_RSA {
 
     static HashMap<Long, RSAPrime> memory = new HashMap<Long, RSAPrime>();
@@ -58,25 +66,45 @@ public class P2636_3_RSA {
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        String in;
-        while (!(in = br.readLine()).equals("0")) {
-            long n = Long.parseLong(in);
-
-            NumberFormat formatter = new DecimalFormat("#0.00000");
-            long start = System.currentTimeMillis();
-            RSAPrime rsa = memory.get(n);
-//            System.out.println(rsa == null);
-            if (rsa == null) {
-                rsa = findRSAPrime(n);
+        long factor = 1;
+        long number = 105;
+        long a;
+        long tmp = 1;
+        long last = 0;
+        while (true) {
+            a = number / tmp;
+//            System.out.println(a);
+            if (a == last) break;
+            if (number % a == 0) {
+                System.out.println(tmp + " " + a);
+                factor = a;
+                last = a;
             }
-            long end = System.currentTimeMillis();
-            double totalTime = (end - start) / 1000d;
-            bw.append(in + " = " + rsa.getP() + " x " + rsa.getQ() + " x " + rsa.getR() + "  runtime:" + formatter.format(totalTime) + "\n");
-            bw.flush();
+            tmp++;
         }
-        bw.flush();
+        System.out.println(factor);
+
+        //105 sqr = 10
+
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//        String in;
+//        while (!(in = br.readLine()).equals("0")) {
+//            long n = Long.parseLong(in);
+//
+//            NumberFormat formatter = new DecimalFormat("#0.00000");
+//            long start = System.currentTimeMillis();
+//            RSAPrime rsa = memory.get(n);
+////            System.out.println(rsa == null);
+//            if (rsa == null) {
+//                rsa = findRSAPrime(n);
+//            }
+//            long end = System.currentTimeMillis();
+//            double totalTime = (end - start) / 1000d;
+//            bw.append(in + " = " + rsa.getP() + " x " + rsa.getQ() + " x " + rsa.getR() + "  runtime:" + formatter.format(totalTime) + "\n");
+//            bw.flush();
+//        }
+//        bw.flush();
     }
 
     static RSAPrime findRSAPrime(long result) {
