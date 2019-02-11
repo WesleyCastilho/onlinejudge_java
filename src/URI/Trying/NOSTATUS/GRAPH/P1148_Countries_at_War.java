@@ -11,7 +11,7 @@ package URI.Trying.NOSTATUS.GRAPH;
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution: BFS
+ * @Solution: Dijkstra
  * @Note:
  */
 
@@ -20,20 +20,25 @@ import java.io.InputStreamReader;
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 public class P1148_Countries_at_War {
     static private int n, e, k;
 
-    static private int[][] map;
+    static private int[][] cost;
+    static int[] p;
 
     static private class Country {
         int id;
+        int d;
         LinkedList<Country> link;
 
         public Country(int id) {
             link = new LinkedList<>();
             this.id = id;
+            this.d = Integer.MAX_VALUE;
         }
 
         void addLink(Country country) {
@@ -50,7 +55,8 @@ public class P1148_Countries_at_War {
             String[] st = input.split(" ");
             n = Integer.parseInt(st[0]);
             e = Integer.parseInt(st[1]);
-            map = new int[n + 1][n + 1];
+            cost = new int[n + 1][n + 1];
+            p = new int[n + 1];
             Country[] country = new Country[n + 1];
             for (int i = 1; i <= n; i++) {
                 country[i] = new Country(i);
@@ -60,37 +66,38 @@ public class P1148_Countries_at_War {
                 int c1 = Integer.parseInt(st[0]);
                 int c2 = Integer.parseInt(st[1]);
                 int h = Integer.parseInt(st[2]);
-                map[c1][c2] = h;
+                cost[c1][c2] = h;
                 country[c1].addLink(country[c2]);
             }
 
-            boolean isFine = false;
-            int answer = 0;
-            k = Integer.parseInt(br.readLine());
-            boolean[] v = new boolean[n + 1];
-            for (int i = 0; i < k; i++) {
-                st = br.readLine().split(" ");
-                int start = Integer.parseInt(st[0]);
-                int end = Integer.parseInt(st[1]);
-                int[] p = new int[n + 1];
-                LinkedList<Country> Q = new LinkedList<>();
-                Q.add(country[start]);
-                while (!Q.isEmpty()) {
-                    Country cur = Q.pollFirst();
-                    if (cur.id == end) {
-                        isFine = true;
-                        break;
-                    }
-                    for (Country c : cur.link) {
-                        if (!v[c.id]) {
-                            p[c.id] = cur.id;
-                            Q.add(c);
-                        }
+            Comparator<Country> comparator = new Comparator<Country>() {
+
+                @Override
+                public int compare(Country country1, Country country2) {
+                    if (country1.d < country2.d) return -1;
+                    else if (country1.d > country2.d) return 1;
+                    return 0;
+                }
+            };
+            PriorityQueue<Country> minHeap = new PriorityQueue<>(n + 1, comparator);
+            country[1].d = 0;
+            minHeap.add(country[1]);
+            while (!minHeap.isEmpty()) {
+                Country c = minHeap.poll();
+                for (Country cur : c.link) {
+                    if (cost[c.id][cur.id] < cur.d) {
+                        cur.d = cost[c.id][cur.id];
+                        p[cur.id] = c.id;
+                        minHeap.add(cur);
                     }
                 }
             }
+           for(Country c : country){
+               if( c == null) continue;
+               System.out.println(c.d);
+           }
 
-            bw.append((isFine ? answer : "Nao e possivel entregar a carta") + "\n");
+
             bw.newLine();
         }
         bw.flush();
