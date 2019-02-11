@@ -11,7 +11,7 @@ package URI.Trying.WA.GRAPH;
  * @Memory:
  * @Submission:
  * @Runtime:
- * @Solution: find shorted path in graph
+ * @Solution: find shorted path in graph by DFS
  * @Note:
  */
 
@@ -24,15 +24,15 @@ import java.util.Scanner;
 public class P2731_Trip_Programming {
 
 
-    static int c, e;
+    static int c, e, city;
     static int[][] timeTable;
     static int[] p, t;
     static int M, L;
+    static int minimumTime, travelCount;
 
     static class Node {
         int id;
         LinkedList<Node> link;
-        Node next;
 
         public Node(int id) {
             this.id = id;
@@ -46,86 +46,20 @@ public class P2731_Trip_Programming {
     }
 
 
-    private static class PriorityQueue<T> {
-        Node firstNode;
-        Node lastNode;
-        int qSize;
-        boolean[] inQ;
-
-        public PriorityQueue(int size) {
-            this.qSize = size;
-            this.inQ = new boolean[qSize];
-        }
-
-        void add(Node node) {
-            if (firstNode == null) {
-                firstNode = node;
-                lastNode = node;
-            } else if (t[firstNode.id] >= t[node.id]) {
-                node.next = firstNode;
-                firstNode = node;
-            } else if (t[lastNode.id] <= t[node.id]) {
-                lastNode.next = node;
-                lastNode = node;
-            } else {
-                Node cur = firstNode;
-                Node prev = null;
-                while (t[cur.id] < t[node.id]) {
-                    prev = cur;
-                    cur = cur.next;
-                }
-                prev.next = node;
-                node.next = cur;
-            }
-            inQ[node.id] = true;
-
-//            System.out.print("add->" + node.id + "=" + t[node.id] + " >>> ");
-//            print();
-        }
-
-        boolean isEmpty() {
-            return firstNode == null;
-        }
-
-        Node poll() {
-
-            Node node = firstNode;
-            firstNode = firstNode.next;
-//            System.out.print("poll->" + node.id + "=" + t[node.id] + " >>> ");
-//            print();
-            return node;
-        }
-
-        boolean isInQ(Node node) {
-            return inQ[node.id];
-        }
-
-//        void print() {
-//            int i = 0;
-//            System.out.print("[");
-//            Node cur = firstNode;
-//            while (cur != null) {
-//                System.out.print(i++ == 0 ? "" + cur.id + "=" + t[cur.id] : (" ," + cur.id + "=" + t[cur.id]));
-//                cur = cur.next;
-//            }
-//            System.out.println("]");
-//        }
-    }
-
-
     public static void main(String[] args) throws IOException {
-        Scanner sc = new MYTOOLS.DB_ScannerFileReader("input/P2731_input.txt").build(P2731_Trip_Programming.class);
-//        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         while (sc.hasNext()) {
             c = sc.nextInt();
             e = sc.nextInt();
             if (c == 0 && e == 0) break;
-            Node[] node = new Node[c + 1];
-            timeTable = new int[c + 1][c + 1];
-            p = new int[c + 1];//parent
-            t = new int[c + 1];//minimum time visited
-            for (int i = 1; i <= c; i++) {
+            Node[] node = new Node[16];
+            timeTable = new int[16][16];
+            minimumTime = Integer.MAX_VALUE;
+            travelCount = Integer.MAX_VALUE;
+            p = new int[16];//parent
+            t = new int[16];//minimum time visited
+            for (int i = 1; i < 16; i++) {
                 t[i] = Integer.MAX_VALUE;
             }
 
@@ -148,59 +82,71 @@ public class P2731_Trip_Programming {
                 timeTable[c2][c1] = T;
             }
 
-
-            int city = sc.nextInt();
-            PriorityQueue<Node> Q = new PriorityQueue<>(c + 1);
-            t[1] = 0;
-            Q.add(node[1]);
-            while (!Q.isEmpty()) {
-                Node c = Q.poll();
-                for (Node n : c.link) {
-                    if (Q.isInQ(n)) continue;
-                    int nowTime = t[c.id] + timeTable[c.id][n.id];
-                    if (nowTime <= t[n.id]) {
-                        t[n.id] = nowTime;
-                        p[n.id] = c.id;
-                        if (n.id != city) Q.add(n);
-                    }
-                }
-            }
-
-//            for (int i = 1; i <= c; i++) System.out.print(i + " ");
-//            System.out.println();
-//            for (int i = 1; i <= c; i++) {
-//                System.out.print(p[i] + " ");
-//            }
-//            System.out.println();
-
+            city = sc.nextInt();
+            int[] v = new int[16];
+            v[city] = 1;
+            findBestWay(v, node[city], new int[16]);
 
             M = 120;
-            Object[] result = getBestWay(p, city);
-            int minimumTime = (int) result[0];
-            String bestWay = (String) result[1];
-
+            String bestWay = buildResult(p, 1);
             if (minimumTime >= 120) {
                 L = minimumTime - M;
                 bw.append("It will be " + (L) + " minutes late. Travel time - " + minimumTime + " - best way -");
             } else {
                 bw.append("Will not be late. Travel time - " + minimumTime + " - best way -");
             }
-            bw.append(bestWay+"\n");
+            bw.append(bestWay + "\n");
         }
         bw.flush();
     }
 
-    static Object[] getBestWay(int[] p, int e) {
-        int minimumTime = 0;
-        String bestWay = "";
+    static String buildResult(int[] p, int e) {
+        String bestWay = "" + e;
         while (true) {
-            minimumTime += timeTable[e][p[e]];
-            bestWay += " " + e;
             e = p[e];
             if (e == 0) break;
+            bestWay = e + " " + bestWay;
         }
-        return new Object[]{minimumTime, bestWay};
+        bestWay = " " + bestWay;
+        return bestWay;
     }
 
+    static void findBestWay(int[] v, Node now, int[] way) {
+        if (now.id == 1) {
+            int[] cal = calculateTime(way);
+            int time = cal[0];
+            int count = cal[1];
+            if (time < minimumTime) {
+                travelCount = count;
+                minimumTime = time;
+                p = way;
+            } else if (time == minimumTime && count < travelCount) {
+                travelCount = count;
+                minimumTime = time;
+                p = way;
+            }
+        }
+        for (Node c : now.link) {
+            if (v[c.id] == 0) {
+                v[c.id] = 1;
+                way[c.id] = now.id;
+                findBestWay(v, c, way);
+            }
+        }
+    }
+
+
+    static int[] calculateTime(int[] p) {
+        int e = 1;
+        int time = timeTable[e][p[e]];
+        int count = 1;
+        while (true) {
+            e = p[e];
+            if (e == 0) break;
+            time += timeTable[e][p[e]];
+            count++;
+        }
+        return new int[]{time, count};
+    }
 
 }

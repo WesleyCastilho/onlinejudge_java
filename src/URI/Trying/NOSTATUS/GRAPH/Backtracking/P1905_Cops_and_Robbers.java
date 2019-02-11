@@ -102,6 +102,10 @@ public class P1905_Cops_and_Robbers {
 
             if (isFound) {
                 bw.append("COPS\n");
+            } else if (map[startPoint.x][startPoint.y] == 1 && map[endPoint.x][endPoint.y] == 1) {
+                bw.append("ROBBERS\n");
+            } else if (map[startPoint.x][startPoint.y] == 0 && map[endPoint.x][endPoint.y] == 1) {
+                bw.append("COPS\n");
             } else {
                 bw.append("ROBBERS\n");
             }
