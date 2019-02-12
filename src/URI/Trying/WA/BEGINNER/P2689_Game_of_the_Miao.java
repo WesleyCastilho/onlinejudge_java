@@ -23,16 +23,16 @@ import java.util.TreeSet;
 
 public class P2689_Game_of_the_Miao {
 
-    final int DEL = -1;
+    final static int DEL = -1;
 
-    public P2689_Game_of_the_Miao() throws IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int Q = Integer.parseInt(br.readLine());
         int[][] data = new int[3][3];
         int[][] tmp = new int[3][3];
         int[][] diff = new int[3][3];
-        while (Q > 0) {
+        while (Q-- > 0) {
             Set<Integer> removeData = new TreeSet<>();
             Set<Integer> allData = new TreeSet<>();
             for (int i = 0; i < 3; i++) {
@@ -105,15 +105,11 @@ public class P2689_Game_of_the_Miao {
                 }
             }
             bw.append(";\n");
-            if (--Q == 0) {
-                break;
-            }
-
         }
         bw.flush();
     }
 
-    int abs(int a, int b) {
+    private static int abs(int a, int b) {
         return Math.abs(a - b);
     }
 

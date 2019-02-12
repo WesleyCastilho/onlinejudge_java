@@ -79,7 +79,6 @@ public class P1931_Even_Obsession {
                     answer += cost[last][p[last]];
                     last = p[last];
                 }
-
                 isOK = true;
                 break;
             }
