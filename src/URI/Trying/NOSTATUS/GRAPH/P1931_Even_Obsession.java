@@ -5,7 +5,9 @@ import MYTOOLS.DB_BufferedFileReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 /**
  * @author Teerapat Phokhonwong
@@ -28,15 +30,16 @@ public class P1931_Even_Obsession {
     private static class City {
         int id;
         LinkedList<City> link;
+        int d;
 
         public City(int id) {
             this.id = id;
             link = new LinkedList<>();
+            this.d = Integer.MAX_VALUE;
         }
 
         void addLink(City c) {
-            if (!link.contains(c))
-                link.add(c);
+            link.add(c);
         }
     }
 
@@ -59,40 +62,65 @@ public class P1931_Even_Obsession {
             int d = Integer.parseInt(st[1]);
             int h = Integer.parseInt(st[2]);
             cost[s][d] = h;
+            cost[d][s] = h;
             cityArr[s].addLink(cityArr[d]);
+            cityArr[d].addLink(cityArr[s]);
         }
+
+        Comparator<City> comparator = new Comparator<City>() {
+
+            @Override
+            public int compare(City country1, City country2) {
+                if (country1.d < country2.d) return -1;
+                else if (country1.d > country2.d) return 1;
+                return 0;
+            }
+        };
+        int[] p = new int[c + 1];
+        PriorityQueue<City> minHeap = new PriorityQueue<>(c + 1, comparator);
+        cityArr[c].d = 0;
+//        System.out.println(cityArr[c].id);
+        minHeap.add(cityArr[c]);
+
+        while (!minHeap.isEmpty()) {
+            City city = minHeap.poll();
+//            System.out.println(city.link.size());
+            for (City cur : city.link) {
+                if (cost[city.id][cur.id] < cur.d) {
+                    p[cur.id] = city.id;
+                    cur.d = cost[city.id][cur.id];
+                    minHeap.add(cur);
+                }
+            }
+//            System.out.println("size=" + minHeap.size());
+        }
+        for (int i = 1; i <= c; i++) {
+            System.out.print(" " + cityArr[i].id + "=" + cityArr[i].d);
+        }
+        System.out.println();
+
+
+        for (int i = 1; i <= c; i++)
+            System.out.print(" " + i);
+        System.out.println();
+        for (int i = 1; i <= c; i++) {
+            System.out.print(" " + p[i]);
+        }
+        System.out.println();
+
+
         int answer = 0;
         int count = 0;
-        boolean[] visited = new boolean[v + 1];
-        int[] p = new int[c + 1];
-        LinkedList<City> Q = new LinkedList<>();
-        Q.add(cityArr[1]);//start at 1
-        visited[1] = true;
-        boolean isOK = false;
-        while (!Q.isEmpty()) {
-            City curCity = Q.pollFirst();
-            if (curCity.id == c && count % 2 == 0) {
-
-                //find answer
-                int last = c;
-                while (p[last] != 0) {
-                    answer += cost[last][p[last]];
-                    last = p[last];
-                }
-                isOK = true;
-                break;
-            }
-
-            for (int i = 1; i <= c; i++) {
-                if (!visited[cityArr[i].id]) {
-                    p[cityArr[i].id] = curCity.id;
-                    visited[cityArr[i].id] = true;
-                    Q.add(cityArr[i]);
-                }
-            }
-
+        int e = 1;
+        while (p[e] != 0) {
+            answer += cost[e][p[e]];
+            count++;
+            e = p[e];
         }
-        System.out.println(isOK ? answer : "-1");
+        System.out.println(count);
+        System.out.println(answer);
+
+        System.out.println((count % 2 == 0 ? answer : "-1") + "\n");
     }
 
 }
