@@ -12,44 +12,50 @@ package URI.Trying.NOSTATUS.BEGINNER;
  * @Note:
  */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class P2698_Daunting_Device {
-    int L, C, N;
-    int P, X, A, B, S;
+    static int L, C, N;
+    static int P, X, A, B, S;
 
-    public P2698_Daunting_Device() throws IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] st = br.readLine().split(" ");
         L = Integer.parseInt(st[0]);
         C = Integer.parseInt(st[1]);
         N = Integer.parseInt(st[2]);
-        int[] color = new int[L];
-        int[] S = new int[L];
-        int[] M1 = new int[L];
-        int[] M2 = new int[L];
-        int[] minM = new int[L];
-        int[] maxM = new int[L];
-        //N step
+        int[] cell = new int[L];
         for (int i = 0; i < N; i++) {
             st = br.readLine().split(" ");
             P = Integer.parseInt(st[0]);
-            S[i] = 1;
             X = Integer.parseInt(st[1]);
-            if (X == P) S[i]++;
             A = Integer.parseInt(st[2]);
-            if (A == P) S[i]++;
             B = Integer.parseInt(st[3]);
-            if (B == P) S[i]++;
-            M1[i] = (A + (int) Math.pow(S[i], 2)) % L;
-            M2[i] = (A + (int) Math.pow(S[i] + B, 2)) % L;
-            minM[i] = Math.min(M1[i], M2[i]);
-            maxM[i] = Math.max(M1[1], M2[i]);
-            color[minM[i]] = X;
-            color[maxM[i]] = X;
+            int S = 0;
+            for (int j = 0; j < L && j < P; j++) {
+                S += cell[j] + P;
+            }
+            int M1 = (int) ((A + Math.pow(S, 2)) % L);// (A + S2) mod L
+            int M2 = (int) ((A + Math.pow(S + B, 2)) % L);// (A +  (S + B)2) mod L
+
+            for (int j = 0; j < L; j++) {
+                cell[j] = Math.abs(M1 - M2);
+            }
+        }
+
+        for (int i = 0; i < L; i++) {
+            System.out.println(cell[i]);
         }
 
 
+        int answer = 0;
+        for (int i = 0; i < N; i++) {
+
+        }
+
+        System.out.println(answer);
     }
 
 }

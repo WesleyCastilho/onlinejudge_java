@@ -31,6 +31,7 @@ public class P1931_Even_Obsession {
         int id;
         LinkedList<City> link;
         int d;
+        City prev;
 
         public City(int id) {
             this.id = id;
@@ -67,58 +68,41 @@ public class P1931_Even_Obsession {
             cityArr[d].addLink(cityArr[s]);
         }
 
-        Comparator<City> comparator = new Comparator<City>() {
 
-            @Override
-            public int compare(City country1, City country2) {
-                if (country1.d < country2.d) return -1;
-                else if (country1.d > country2.d) return 1;
-                return 0;
-            }
-        };
+        boolean itOK = false;
         int[] p = new int[c + 1];
-        PriorityQueue<City> minHeap = new PriorityQueue<>(c + 1, comparator);
-        cityArr[c].d = 0;
-//        System.out.println(cityArr[c].id);
-        minHeap.add(cityArr[c]);
-
-        while (!minHeap.isEmpty()) {
-            City city = minHeap.poll();
-//            System.out.println(city.link.size());
+        LinkedList<City> Q = new LinkedList<>();
+        Q.add(cityArr[c]);
+        loop:
+        while (!Q.isEmpty()) {
+            City city = Q.poll();
             for (City cur : city.link) {
-                if (cost[city.id][cur.id] < cur.d) {
-                    p[cur.id] = city.id;
-                    cur.d = cost[city.id][cur.id];
-                    minHeap.add(cur);
+                cur.prev = city;
+                cur.d = cost[city.id][cur.id];
+                if (cur.id == 1) {
+                    break loop;
                 }
+                Q.add(cur);
             }
-//            System.out.println("size=" + minHeap.size());
-        }
-        for (int i = 1; i <= c; i++) {
-            System.out.print(" " + cityArr[i].id + "=" + cityArr[i].d);
-        }
-        System.out.println();
 
-
-        for (int i = 1; i <= c; i++)
-            System.out.print(" " + i);
-        System.out.println();
-        for (int i = 1; i <= c; i++) {
-            System.out.print(" " + p[i]);
         }
-        System.out.println();
-
 
         int answer = 0;
         int count = 0;
-        int e = 1;
-        while (p[e] != 0) {
-            answer += cost[e][p[e]];
+        City cur = cityArr[c];
+        while (true) {
+            if (cur.prev == null) break;
+            answer += cost[cur.id][cur.prev.id];
+            cur = cur.prev;
             count++;
-            e = p[e];
         }
-        System.out.println(count);
-        System.out.println(answer);
+//        int e = c;
+//        while (p[e] != 0) {
+//            answer += cost[e][p[e]];
+//            count++;
+//            e = p[e];
+//            System.out.println("ss");
+//        }
 
         System.out.println((count % 2 == 0 ? answer : "-1") + "\n");
     }

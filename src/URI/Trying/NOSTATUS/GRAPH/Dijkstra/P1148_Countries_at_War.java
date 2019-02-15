@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.GRAPH;
+package URI.Trying.NOSTATUS.GRAPH.Dijkstra;
 
 /**
  * @author Teerapat Phokhonwong
@@ -25,6 +25,7 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 public class P1148_Countries_at_War {
+
     static private int n, e, k;
 
     static private int[][] cost;
