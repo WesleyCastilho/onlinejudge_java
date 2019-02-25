@@ -1,5 +1,18 @@
-package URI.Trying.NOSTATUS.DATA_STRUCTURES_AND_LIBRARIES;
+package URI.Accepted.AcceptedByAnotherLanguage.BEGINNER;
 
+/**
+ * @author Teerapat Phokhonwong
+ * @Onlinejudge: URI Online Judge
+ * @Categories: BEGINNER
+ * @Problem: 2916 - The Note
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2916
+ * @Timelimit: 1 sec
+ * @Status:
+ * @Submission:
+ * @Runtime:
+ * @Solution:
+ * @Note: this problem Accepted by c++
+ */
 import java.io.BufferedOutputStream;
 import java.io.OutputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package URI.Trying.NOSTATUS.GRAPH;
+package URI.Trying.NOSTATUS.GRAPH.Travel;
 
 /**
  * @author Teerapat Phokhonwong
@@ -11,7 +11,7 @@ package URI.Trying.NOSTATUS.GRAPH;
  * @Memory:
  * @Submission:
  * @Runtime:
- * @Solution:
+ * @Solution: Topological sorting using depth first search
  * @Note:
  */
 
@@ -24,6 +24,7 @@ import java.util.LinkedList;
 
 public class P1653_Expressions {
 
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -33,21 +34,14 @@ public class P1653_Expressions {
             int size = input.length() - 1;
             int sIndex = -1;
             char[] stack = new char[10001];
-            LinkedList<Character> Q = new LinkedList<>();
-            String answer1 = "", answer2 = "";
+            char operator1 = 0;
+            char operator2 = 0;
             for (int j = size; j >= 0; j--) {
                 char c = input.charAt(j);
-                if (Character.isUpperCase(c)) {
-                    stack[++sIndex] = c;
-                } else {
-                    Q.add(c);
-                }
+
             }
-            int count = 0;
-            while (!Q.isEmpty()) {
-                answer2 += stack[sIndex--];
-            }
-            bw.append(answer1 + "" + answer2 + "\n");
+
+
         }
         bw.flush();
     }
