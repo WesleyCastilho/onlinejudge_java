@@ -1,32 +1,34 @@
-package URI.Trying.NOSTATUS.GRAPH.Minimum_Spanning_Tree;
+package URI.Accepted.GRAPH.sourcecode.MST;
 
 
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
  * @Categories: GRAPH
- * @Problem: 1552 - Rescue in Free Fall
+ * @Problem: 2522 - FNDI's Network
  * @Subject: Minimum Spanning Tree
- * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1552
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2522
  * @Timelimit: 1 sec
- * @Status:
- * @Submission:
- * @Runtime:
- * @Solution: MST
- * @Note: หาระยะห่างของจุดแต่ละจุด และหา minimum length of web
+ * @Status: Accepted
+ * @Submission: 2/26/19, 5:05:10 PM
+ * @Runtime: 0.548s
+ * @Solution: find  minimum total length of cable  MST by point x,y   (Kruskal's Algorithm)
+ * @Note:
  */
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 
-public class P1552_Rescue_in_Free_Fall {
+public class P2522_FNDI_s_Network {
 
     static int n;
     static Computer[] computer;
-    static Connection[] connection = new Connection[1000];
     static int[][] v;
     static int[] p;
 
@@ -56,9 +58,10 @@ public class P1552_Rescue_in_Free_Fall {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        int t = Integer.parseInt(br.readLine());
-        while (t-- > 0) {
-            n = Integer.parseInt(br.readLine());
+        DecimalFormat df = new DecimalFormat("0.00");
+        String in;
+        while ((in = br.readLine()) != null) {
+            n = Integer.parseInt(in);
             computer = new Computer[n];
             p = new int[n];
             v = new int[n][n];
@@ -73,65 +76,46 @@ public class P1552_Rescue_in_Free_Fall {
                 p[i] = i;
             }
 
-            int connectionSize = 0;
+
+            Comparator<Connection> comparator = new Comparator<Connection>() {
+                @Override
+                public int compare(Connection conn1, Connection conn2) {
+                    if (conn1.cost < conn2.cost) {
+                        return -1;
+                    } else if (conn1.cost > conn2.cost) {
+                        return 1;
+                    }
+                    return 0;
+                }
+            };
+            PriorityQueue<Connection> minHeap = new PriorityQueue<>(comparator);
             //find all wire
             for (int i = 0; i < n; i++) {
                 Computer comA = computer[i];
                 for (int j = 0; j < n; j++) {
                     if (i != j && v[i][j] == 0) {
                         Computer comB = computer[j];
-                        double cost = Math.abs(Math.pow(comA.positionX - comB.positionX, 2) + Math.pow(comA.positionY - comB.positionY, 2));//wire distance 2 computer
-                        connection[connectionSize++] = new Connection(comA, comB, cost);
+                        double cost = Math.sqrt(Math.pow(comA.positionX - comB.positionX, 2) + Math.pow(comA.positionY - comB.positionY, 2));//wire distance 2 computer
+                        Connection conn = new Connection(comA, comB, cost);
+                        minHeap.add(conn);
                         v[i][j] = 1;
                         v[j][i] = 1;
                     }
                 }
             }
-            sort(connection, 0, connectionSize - 1);
             double sum = 0.00;
-            for (int i = 0; i < connectionSize; i++) {
-                int setA = findSet(connection[i].source.id);
-                int setB = findSet(connection[i].destination.id);
+            while (!minHeap.isEmpty()) {
+                Connection conn = minHeap.poll();
+                int setA = findSet(conn.source.id);
+                int setB = findSet(conn.destination.id);
                 if (setA != setB) {
                     unionset(setA, setB);
-                    sum += connection[i].cost;
+                    sum += conn.cost;
                 }
             }
-            bw.append(sum + "\n");
-            bw.flush();
+            bw.append(df.format(sum) + "\n");
         }
         bw.flush();
-    }
-
-    static void sort(Connection[] conn, int start, int end) {
-        quickSort(conn, start, end);
-    }
-
-    private static int partition(Connection[] conn, int low, int high) {
-        double pivot = conn[high].cost;
-        int i = (low - 1);
-        for (int j = low; j < high; j++) {
-            if (conn[j].cost <= pivot) {
-                i++;
-
-                Connection temp = conn[i];
-                conn[i] = conn[j];
-                conn[j] = temp;
-            }
-        }
-        Connection temp = conn[i + 1];
-        conn[i + 1] = conn[high];
-        conn[high] = temp;
-        return i + 1;
-    }
-
-
-    private static void quickSort(Connection[] conn, int low, int high) {
-        if (low < high) {
-            int pi = partition(conn, low, high);
-            quickSort(conn, low, pi - 1);
-            quickSort(conn, pi + 1, high);
-        }
     }
 
     private static int findSet(int e) {

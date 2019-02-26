@@ -1,4 +1,4 @@
-package URI.Accepted.GRAPH.sourcecode;
+package URI.Accepted.GRAPH.sourcecode.MST;
 
 /**
  * @author Teerapat Phokhonwong

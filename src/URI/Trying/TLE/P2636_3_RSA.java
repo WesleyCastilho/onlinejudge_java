@@ -4,8 +4,8 @@ package URI.Trying.TLE;
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI Online Judge
- * @Problem: 2698 - Daunting Device
- * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2698
+ * @Problem: 2636 - Daunting Device
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2636
  * @Timelimit: 1 sec
  * @Status: TLE
  * @Submission:
@@ -14,25 +14,27 @@ package URI.Trying.TLE;
  * @Note: https://www.calculatorsoup.com/calculators/math/factors.php
  */
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.BufferedWriter;
-import java.io.OutputStreamWriter;
-import java.io.IOException;
+import java.io.*;
+import java.util.HashMap;
 
 public class P2636_3_RSA {
 
+    static HashMap<Long, int[]> memory = new HashMap<>();
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        OutputStream ow = new BufferedOutputStream(System.out);
         String in;
         while (!(in = br.readLine()).equals("0")) {
             long n = Long.parseLong(in);
-            int[] result = find3FactorRSAPrime(n);
-            bw.append(in + " = " + result[0] + " x " + result[1] + " x " + result[2] + "\n");
-            bw.flush();
+            int[] result = memory.get(n);
+            if (result == null) {
+                result = find3FactorRSAPrime(n);
+                memory.put(n, result);
+            }
+            ow.write((in + " = " + result[0] + " x " + result[1] + " x " + result[2] + "\n").getBytes());
         }
-        bw.flush();
+        ow.flush();
     }
 
     static int[] find3FactorRSAPrime(long n) {

@@ -16,16 +16,17 @@ package URI.Trying.TLE.PARADIGMS;
  */
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.Comparator;
-import java.util.PriorityQueue;
-import java.util.TreeSet;
+import java.util.HashSet;
+import java.util.LinkedList;
 
 public class P1034_Ice_Statues_Festival {
 
+    private static HashSet<Integer> memory;
+
+    static int N, M, Minimum;
+    static int[] block;
 
     private static class BlockSet {
         int sum;
@@ -37,61 +38,48 @@ public class P1034_Ice_Statues_Festival {
         }
     }
 
-    static int N, M;
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int t = Integer.parseInt(br.readLine());
         for (int i = 0; i < t; i++) {
             String[] st = br.readLine().split(" ");
             N = Integer.parseInt(st[0]);
             M = Integer.parseInt(st[1]);
             st = br.readLine().split(" ");
-            int[] block = new int[N];
+            block = new int[N];
             for (int j = 0; j < N; j++) {
                 block[j] = Integer.parseInt(st[j]);
             }
-
-            int minimum = Integer.MAX_VALUE;
-            TreeSet<Integer> memory = new TreeSet<Integer>();
-
-            Comparator<BlockSet> comparator = new Comparator<BlockSet>() {
-
-                @Override
-                public int compare(BlockSet B1, BlockSet B2) {
-                    if (B1.r > B2.r + 2) return 1;
-                    if (B1.sum > B2.sum) return -1;
-                    else if (B1.sum < B2.sum) return 1;
-                    return 0;
-                }
-            };
-            PriorityQueue<BlockSet> Q = new PriorityQueue<BlockSet>(comparator);
-            for (int j = 0; j < N; j++) {
+            memory = new HashSet<Integer>();
+            Minimum = Integer.MAX_VALUE;
+            for (int j = N - 1; j >= 0; j--) {
+                LinkedList<BlockSet> stack = new LinkedList<BlockSet>();
+                stack.add(new BlockSet(block[j], 1));
                 memory.add(block[j]);
-                Q.add(new BlockSet(block[j], 1));
-            }
-            loop:
-            while (!Q.isEmpty()) {
-                BlockSet now = Q.poll();
-                for (int j = 0; j < N; j++) {
-                    int x = now.sum + block[j];
-                    if (x > M) continue;
 
-                    int r = now.r + 1;
-                    if (x == M && minimum > r) {
-                        minimum = r;
-                        continue;
+                while (!stack.isEmpty()) {
+                    BlockSet blockSum = stack.poll();
+                    if (blockSum.r >= Minimum) break;
+                    if (blockSum.sum == M && blockSum.r < Minimum) {
+                        Minimum = blockSum.r;
+                        break;
                     }
 
-                    if (!memory.contains(x)) {
-                        memory.add(x);
-                        Q.add(new BlockSet(x, r));
+                    for (int k = N - 1; k >= 0; k--) {
+                        int x = blockSum.sum + block[k];
+                        if (x > M) break;
+                        if (!memory.contains(x)) {
+                            memory.add(x);
+                            stack.add(new BlockSet(x, blockSum.r + 1));
+                        }
                     }
                 }
             }
-            System.out.println(minimum);
+            System.out.println(Minimum);
         }
+
     }
 
 }
+
+

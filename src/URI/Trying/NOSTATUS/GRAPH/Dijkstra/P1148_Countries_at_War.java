@@ -80,28 +80,44 @@ public class P1148_Countries_at_War {
                     return 0;
                 }
             };
-            PriorityQueue<Country> minHeap = new PriorityQueue<>(n + 1, comparator);
-            country[1].d = 0;
-            minHeap.add(country[1]);
-            while (!minHeap.isEmpty()) {
-                Country c = minHeap.poll();
-                for (Country cur : c.link) {
-                    if (cost[c.id][cur.id] < cur.d) {
-                        cur.d = cost[c.id][cur.id];
-                        p[cur.id] = c.id;
-                        minHeap.add(cur);
+            int k = Integer.parseInt(br.readLine());
+            for (int i = 0; i < k; i++) {
+                st = br.readLine().split(" ");
+                int start = Integer.parseInt(st[0]);
+                int end = Integer.parseInt(st[1]);
+                PriorityQueue<Country> minHeap = new PriorityQueue<>(n + 1, comparator);
+                resetCountry(country);
+                country[start].d = 0;
+                minHeap.add(country[1]);
+
+
+                while (!minHeap.isEmpty()) {
+                    Country c = minHeap.poll();
+                    for (Country cur : c.link) {
+                        if (cost[c.id][cur.id] < cur.d) {
+                            cur.d = cost[c.id][cur.id];
+                            p[cur.id] = c.id;
+                            minHeap.add(cur);
+                        }
+                        if (cur.id == end) break;
                     }
                 }
             }
-           for(Country c : country){
-               if( c == null) continue;
-               System.out.println(c.d);
-           }
+            for (Country c : country) {
+                if (c == null) continue;
+                System.out.println(c.d);
+            }
 
 
             bw.newLine();
         }
         bw.flush();
+    }
+
+    static void resetCountry(Country[] country) {
+        for (Country c : country) {
+            c.d = Integer.MAX_VALUE;
+        }
     }
 
 
