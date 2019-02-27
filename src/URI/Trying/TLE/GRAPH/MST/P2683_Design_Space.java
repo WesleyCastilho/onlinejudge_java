@@ -47,33 +47,29 @@ public class P2683_Design_Space {
             connection[i] = new Connection(source, destination, cost);
         }
 
-        int maxCost = 0;
+        int maxCost = 0, minCost = 0;
         int[] p1 = new int[n + 1];
-        setParent(p1, n);
-        maxSort(connection, 0, n - 1);
-
-        for (Connection conn : connection) {
-            int setA = findSet(p1, conn.source);
-            int setB = findSet(p1, conn.destination);
-            if (setA != setB) {
-                maxCost += conn.cost;
-                unionset(p1, setA, setB);
-            }
-        }
-
-        int minCost = 0;
         int[] p2 = new int[n + 1];
+        setParent(p1, n);
         setParent(p2, n);
-        minSort(connection, 0, n - 1);
-        for (Connection conn : connection) {
-            int setA = findSet(p2, conn.source);
-            int setB = findSet(p2, conn.destination);
-            if (setA != setB) {
-                minCost += conn.cost;
-                unionset(p2, setA, setB);
+        sort(connection, 0, n - 1);
+        for (int i = 0, j = n - 1; i < n; i++, j--) {
+            Connection conMax = connection[i];
+            int setMax_A = findSet(p1, conMax.source);
+            int setMax_B = findSet(p1, conMax.destination);
+            if (setMax_A != setMax_B) {
+                maxCost += conMax.cost;
+                unionset(p1, setMax_A, setMax_B);
+            }
+
+            Connection conMin = connection[j];
+            int setMin_A = findSet(p2, conMin.source);
+            int setMin_B = findSet(p2, conMin.destination);
+            if (setMin_A != setMin_B) {
+                minCost += conMin.cost;
+                unionset(p2, setMin_A, setMin_B);
             }
         }
-
 
         System.out.println(maxCost);
         System.out.println(minCost);
@@ -88,15 +84,12 @@ public class P2683_Design_Space {
         p[t] = s;
     }
 
-    static void minSort(Connection[] conn, int start, int end) {
-        minQuickSort(conn, start, end);
+    static void sort(Connection[] conn, int start, int end) {
+        quickSort(conn, start, end);
     }
 
-    static void maxSort(Connection[] conn, int start, int end) {
-        maxQuickSort(conn, start, end);
-    }
 
-    private static int partitionMax(Connection[] conn, int low, int high) {
+    private static int partition(Connection[] conn, int low, int high) {
         double pivot = conn[high].cost;
         int i = (low - 1);
         for (int j = low; j < high; j++) {
@@ -114,40 +107,15 @@ public class P2683_Design_Space {
         return i + 1;
     }
 
-    private static int partitionMin(Connection[] conn, int low, int high) {
-        double pivot = conn[high].cost;
-        int i = (low - 1);
-        for (int j = low; j < high; j++) {
-            if (conn[j].cost < pivot) {
-                i++;
 
-                Connection temp = conn[i];
-                conn[i] = conn[j];
-                conn[j] = temp;
-            }
-        }
-        Connection temp = conn[i + 1];
-        conn[i + 1] = conn[high];
-        conn[high] = temp;
-        return i + 1;
-    }
-
-
-    private static void maxQuickSort(Connection[] conn, int low, int high) {
+    private static void quickSort(Connection[] conn, int low, int high) {
         if (low < high) {
-            int pi = partitionMax(conn, low, high);
-            maxQuickSort(conn, low, pi - 1);
-            maxQuickSort(conn, pi + 1, high);
+            int pi = partition(conn, low, high);
+            quickSort(conn, low, pi - 1);
+            quickSort(conn, pi + 1, high);
         }
     }
 
-    private static void minQuickSort(Connection[] conn, int low, int high) {
-        if (low < high) {
-            int pi = partitionMin(conn, low, high);
-            minQuickSort(conn, low, pi - 1);
-            minQuickSort(conn, pi + 1, high);
-        }
-    }
 
     private static void setParent(int[] p, int n) {
         for (int i = 1; i <= n; i++) {
