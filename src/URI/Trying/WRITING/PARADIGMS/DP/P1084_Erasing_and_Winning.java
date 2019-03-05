@@ -77,21 +77,21 @@ public class P1084_Erasing_and_Winning {
                 maxHeap.add(new Subset(i, num[i] + ""));
             }
 
+
             while (!maxHeap.isEmpty()) {
                 Subset s = maxHeap.poll();
-                int setSize = s.set.length();
+
+                BigInteger newValue = new BigInteger(s.set);
+                int setSize = newValue.toString().length();
+                if (maxValue == null) {
+                    maxValue = newValue;
+                } else if (newValue.compareTo(maxValue) > 0) {
+                    maxValue = newValue;
+                }
                 if (setSize == N - D) {
-                    BigInteger newValue = new BigInteger(s.set);
-                    if (maxValue == null) {
-                        maxValue = newValue;
-                    } else if (newValue.compareTo(maxValue) > 0) {
-                        maxValue = newValue;
-                    }
-                    continue;
-                } else if (maxValue != null && compare(s.set, maxValue.toString().substring(0, setSize)) <= 0) {
-//                    System.out.println("xxxx");
                     continue;
                 }
+
 
                 int lastIndex = s.lastIndex;
                 for (int i = lastIndex + 1; i < N; i++) {
@@ -104,11 +104,13 @@ public class P1084_Erasing_and_Winning {
             }
 
             bw.append(maxValue + "\n");
+
         }
         bw.flush();
     }
 
     static int compare(String a, String b) {
+        System.out.println("a=" + a + "   b=" + b);
         BigInteger bigA = new BigInteger(a);
         BigInteger bigB = new BigInteger(b);
         return bigA.compareTo(bigB);
