@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.NOSTATUS.PARADIGMS.Knapsack;
+package URI.Trying.WRITING.PARADIGMS.Knapsack;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
