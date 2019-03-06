@@ -1,17 +1,17 @@
+package URI.Trying.WRITING.PARADIGMS.Finite_automata;
+
 /**
  * @author Teerapat Phokhonwong
- * @Onlinejudge:
- * @Problem: 
- * @Link: 
+ * @Onlinejudge: URI Online Judge
+ * @Problem: 1231 - Words
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1231
  * @Timelimit: 1 sec
- * @Status: 
- * @Submission: 
- * @Runtime: 
- * @Solution: 
- * @Note: 
+ * @Status:
+ * @Submission:
+ * @Runtime:
+ * @Solution: Finite Automata
+ * @Note:
  */
-
-package URI.Trying.WRITING.MATHEMATICS;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -19,17 +19,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-
-public class P1643_Convert_Kilometers_to_Miles {
+public class P1231_Words {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        int t = Integer.parseInt(br.readLine());
-        while (--t > 0) {            
-            
-        }
-        bw.flush();
+
     }
 
 }
