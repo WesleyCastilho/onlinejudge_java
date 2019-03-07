@@ -13,6 +13,24 @@ import java.util.List;
  */
 public class DB_CountingProblem {
 
+    enum OJNAME {
+        AIZU,
+        CODECHEF,
+        COJ,
+        TOPCODER,
+        URI, ZOJ,
+        SPOJ,
+        DEVSKILL,
+        CODERBYTE,
+        HACKERRANK,
+        HACKEREARTH,
+        CODINGAME,
+        CODEFORCES,
+        GOOGLE_CODEJAM,
+        ICPC_LIVE_ARCHIVE
+    }
+
+
     static final List<OJSource> sourceList = new ArrayList<>();
     static OJSource AIZU = new OJSource();
     static OJSource CODECHEF = new OJSource();
@@ -269,6 +287,7 @@ public class DB_CountingProblem {
                 pair[2] = source.getName();
                 pair[3] = source.getTotalFile() + "";
                 pair[4] = source.getAccepted() + "";
+                break;
             }
         }
         return pair;

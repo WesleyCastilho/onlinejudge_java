@@ -10,7 +10,7 @@
  * @Submission:
  * @Runtime:
  * @Solution: Greedy
- * @Note:
+ * @Note: หาวิธีวาดรูปให้ได้ตามผลลัพธ์ จำนวนน้อยที่สุด
  */
 
 package URI.Trying.WRITING.PARADIGMS.Greedy;
