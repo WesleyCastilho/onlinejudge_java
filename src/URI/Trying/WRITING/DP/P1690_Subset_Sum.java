@@ -13,7 +13,7 @@
  * @Note:
  */
 
-package URI.Trying.WRITING.PARADIGMS.DP;
+package URI.Trying.WRITING.DP;
 
 import java.io.IOException;
 import java.io.BufferedReader;

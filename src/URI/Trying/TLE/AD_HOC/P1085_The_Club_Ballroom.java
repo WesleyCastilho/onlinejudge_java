@@ -10,7 +10,7 @@
  * @Solution: QuickSort + Greedy algorithm
  * @Note:
  */
-package URI.Trying.TLE;
+package URI.Trying.TLE.AD_HOC;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

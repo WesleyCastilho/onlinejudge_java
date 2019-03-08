@@ -1,4 +1,4 @@
-package URI.Trying.WRITING.PARADIGMS.DP;
+package URI.Trying.WRITING.DP;
 
 /**
  * @author Teerapat Phokhonwong
