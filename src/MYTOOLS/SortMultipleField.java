@@ -68,25 +68,28 @@ public class SortMultipleField {
             System.out.println(data[i][0] + "   " + data[i][1] + "   " + data[i][2] + "   " + data[i][3] + "   " + data[i][4]);
         }
 
-
+        for (int i = 0; i < 5; i++) {
+            mergeSort(data, 0, dataSize - 1, i);
+        }
+//  quicksort
 //        sort(data, 0, dataSize - 1);
 
         //bubble sort
 
-        while (true) {
-            boolean found = false;
-            for (int i = 0; i < dataSize - 1; i++) {
-                if (compare(data, i, i + 1)) {
-                    int[] tmp = data[i];
-                    data[i] = data[i + 1];
-                    data[i + 1] = tmp;
-                    found = true;
-                }
-            }
-
-
-            if (!found) break;
-        }
+//        while (true) {
+//            boolean found = false;
+//            for (int i = 0; i < dataSize - 1; i++) {
+//                if (compare(data, i, i + 1)) {
+//                    int[] tmp = data[i];
+//                    data[i] = data[i + 1];
+//                    data[i + 1] = tmp;
+//                    found = true;
+//                }
+//            }
+//
+//
+//            if (!found) break;
+//        }
 
         System.out.println("\n\n\nAfter sort");
         for (int i = 0; i < dataSize; i++) {
@@ -110,17 +113,13 @@ public class SortMultipleField {
         for (int now = 0; now < 5; now++) {
             if (data[i][now] == data[j][now]) continue;
             if (columnSortType[now] == ASC) {
-                if (data[i][now] > data[j][now]) {
-                    a++;
-                }
+
             } else {
-                if (data[i][now] < data[j][now]) {
-                    b++;
-                }
+
             }
         }
-        System.out.println(a + "    " + b);
-        return a != b;
+
+        return false;
     }
 
 
@@ -280,6 +279,72 @@ public class SortMultipleField {
 
     int compString(String str1, String str2) {
         return str1.compareTo(str2);
+    }
+
+
+    static void mergeSort(int[][] data, int left, int right, int colum) {
+        if (left >= right) return;
+        int mid = (left + right) / 2;
+        mergeSort(data, left, mid, colum);
+        mergeSort(data, mid + 1, right, colum);
+        merge(data, left, mid, right, colum);
+    }
+
+    static void merge(int[][] data, int left, int mid, int right, int colum) {
+        int i, j, k;
+        int n1 = mid - left + 1;
+        int n2 = right - mid;
+
+        /* create temp arrays */
+        int[][] L = new int[n1][], R = new int[n2][];
+
+        /* Copy data to temp arrays L[] and R[] */
+        for (i = 0; i < n1; i++)
+            L[i] = data[left + i];
+        for (j = 0; j < n2; j++)
+            R[j] = data[mid + 1 + j];
+
+        /* Merge the temp arrays back into arr[l..r]*/
+        i = 0; // Initial index of first subarray
+        j = 0; // Initial index of second subarray
+        k = left; // Initial index of merged subarray
+        while (i < n1 && j < n2) {
+            //compare
+            if (columnSortType[colum] == ASC) {
+                if (L[i][colum] <= R[j][colum]) {
+                    data[k] = L[i];
+                    i++;
+                } else {
+                    data[k] = R[j];
+                    j++;
+                }
+            } else {//DESC
+                if (L[i][colum] >= R[j][colum]) {
+                    data[k] = L[i];
+                    i++;
+                } else {
+                    data[k] = R[j];
+                    j++;
+                }
+            }
+            k++;
+        }
+
+        /* ก๊อบส่วนที่เหลือของ L[] ลง data[] */
+        while (i < n1) {
+            data[k] = L[i];
+            i++;
+            k++;
+        }
+
+        /* ก๊อบส่วนที่เหลือลง R [] ลง data[]  */
+        while (j < n2) {
+            data[k] = R[j];
+            j++;
+            k++;
+        }
+
+
     }
 
 }
