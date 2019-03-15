@@ -304,12 +304,35 @@ public class SortMultipleField {
         for (j = 0; j < n2; j++)
             R[j] = data[mid + 1 + j];
 
+
+        /*
+        DESC, DESC, DESC, DESC, ASC
+
+A = 56, 42, 17, 22, 57
+
+B = 86, 7, 4, 85, 79
+
+86 > 56 = B
+
+42 > 7 = A
+
+17 > 4  = B
+
+85 > 22 = B
+
+57 < 79 = A
+
+B > A
+         */
+
+
         /* Merge the temp arrays back into arr[l..r]*/
         i = 0; // Initial index of first subarray
         j = 0; // Initial index of second subarray
         k = left; // Initial index of merged subarray
         while (i < n1 && j < n2) {
             //compare
+            int a = 0, b = 0;
             if (columnSortType[colum] == ASC) {
                 if (L[i][colum] <= R[j][colum]) {
                     data[k] = L[i];
@@ -327,6 +350,16 @@ public class SortMultipleField {
                     j++;
                 }
             }
+
+
+//            if (L[i][colum] <= R[j][colum]) {
+//                data[k] = L[i];
+//                i++;
+//            } else {
+//                data[k] = R[j];
+//                j++;
+//            }
+
             k++;
         }
 
