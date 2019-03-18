@@ -1,14 +1,12 @@
 package MYTOOLS;
 
 
-import java.util.Random;
-
 public class SortMultipleField {
 
     static int[][] data;
     //    static int[] dataChanged;
     static int[][] dataChanged;
-    static int dataSize = 10;
+    static int dataSize = 11;
     private static final int ASC = 0;
     private static final int DESC = 1;
     //ASC = น้อย ไป มาก , DESC = มาก ไป น้อย
@@ -18,6 +16,7 @@ public class SortMultipleField {
         data = new int[][]{
                 {56, 42, 17, 22, 57},
                 {86, 7, 4, 85, 79},
+                {86, 7, 4, 85, 78},
                 {31, 70, 17, 62, 17},
                 {2, 75, 61, 59, 60},
                 {2, 68, 29, 23, 51},
@@ -57,7 +56,7 @@ public class SortMultipleField {
 
 
     public static void main(String[] args) {
-        Random rd = new Random();
+//        Random rd = new Random();
 //        data = new int[dataSize][5];
         for (int i = 0; i < dataSize; i++) {
 //            data[i][0] = rd.nextInt(100) + 1;
@@ -68,14 +67,13 @@ public class SortMultipleField {
             System.out.println(data[i][0] + "   " + data[i][1] + "   " + data[i][2] + "   " + data[i][3] + "   " + data[i][4]);
         }
 
-        for (int i = 0; i < 5; i++) {
-            mergeSort(data, 0, dataSize - 1, i);
-        }
+
+        mergeSort(data, 0, dataSize - 1);
+
 //  quicksort
 //        sort(data, 0, dataSize - 1);
 
         //bubble sort
-
 //        while (true) {
 //            boolean found = false;
 //            for (int i = 0; i < dataSize - 1; i++) {
@@ -103,24 +101,6 @@ public class SortMultipleField {
 //        }
     }
 
-//    static stableSort() {
-//
-//    }
-
-    static boolean compare(int[][] data, int i, int j) {
-        int a = 0;
-        int b = 0;
-        for (int now = 0; now < 5; now++) {
-            if (data[i][now] == data[j][now]) continue;
-            if (columnSortType[now] == ASC) {
-
-            } else {
-
-            }
-        }
-
-        return false;
-    }
 
 
     private static void sort(int[][] data, int start, int end) {
@@ -145,66 +125,8 @@ public class SortMultipleField {
         data[start] = data[end];
         data[end] = temp;
         return start;
-
-        //sort by data
-//        int pivot = data[end][column];
-//        for (int i = start; i < end; i++) {
-//            if (data[i][column] < pivot) {
-//                int temp = data[start][column];
-//                data[start][column] = data[i][column];
-//                data[i][column] = temp;
-//
-//                start++;
-//            }
-//        }
-//        int temp = data[start][column];
-//        data[start][column] = data[end][column];
-//        data[end][column] = temp;
-//
-//        return start;
-
-
     }
 
-//    private static int partitionASC(int[][] data, int i, int j, int column) {
-//        int pivot = data[j][column];
-//        for (int index = i; index < j; index++) {
-//            if (data[i][column] > pivot) {
-//                int temp = data[i][column];
-//                data[i][column] = data[index][column];
-//                data[index][column] = temp;
-//                i++;
-//            }
-//        }
-//        int temp = data[i][column];
-//        data[i][column] = pivot;
-//        data[j][column] = temp;
-//        return i;
-//
-//
-////        while (true) {
-////
-////            while (data[i][column] < pivot) {
-////                i++;
-////            }
-////
-////            while (data[j][column] > pivot) {
-////                j--;
-////            }
-////
-////            if (i < j) {
-////                int[] temp = data[i];
-////                data[i] = data[j];
-////                data[j] = temp;
-////                dataChanged[i]++;
-////                dataChanged[j]--;
-////                i++;
-////                j--;
-////            } else {
-////                return j;
-////            }
-////        }
-//    }
 
 
     private static int partitionDESC(int[][] data, int start, int end, int column) {
@@ -223,48 +145,6 @@ public class SortMultipleField {
         data[end] = temp;
         return start;
 
-//        //sort by data
-//        int pivot = data[end][column];
-//        for (int i = start; i < end; i++) {
-//            if (data[i][column] > pivot) {
-//                int temp = data[start][column];
-//                data[start][column] = data[i][column];
-//                data[i][column] = temp;
-//
-//
-//                start++;
-//            }
-//        }
-//        int temp = data[start][column];
-//        data[start][column] = data[end][column];
-//        data[end][column] = temp;
-//
-//        return start;
-
-//        while (true) {
-//            //ignore all the numbers greater than pivot to left
-//            while (data[i][column] > pivot) {
-//                i++;
-//            }
-//            //ignore all numbers lesser than pivot to right
-//            while (data[j][column] < pivot) {
-//                j--;
-//            }
-//
-//            //swap a number lesser than X on left with a number greater than X on right
-//            if (i < j) {
-//                int[] temp = data[i];
-//                data[i] = data[j];
-//                data[j] = temp;
-//                dataChanged[i]--;
-//                dataChanged[j]++;
-//                i++;
-//                j--;
-//            } else {
-//                //Now the array is so sorted, that all numbers lesser than X are on right of it and greater than X are to left of it. Hence return position of X
-//                return j;
-//            }
-//        }
     }
 
 
@@ -282,15 +162,15 @@ public class SortMultipleField {
     }
 
 
-    static void mergeSort(int[][] data, int left, int right, int colum) {
+    static void mergeSort(int[][] data, int left, int right) {
         if (left >= right) return;
         int mid = (left + right) / 2;
-        mergeSort(data, left, mid, colum);
-        mergeSort(data, mid + 1, right, colum);
-        merge(data, left, mid, right, colum);
+        mergeSort(data, left, mid);
+        mergeSort(data, mid + 1, right);
+        merge(data, left, mid, right);
     }
 
-    static void merge(int[][] data, int left, int mid, int right, int colum) {
+    static void merge(int[][] data, int left, int mid, int right) {
         int i, j, k;
         int n1 = mid - left + 1;
         int n2 = right - mid;
@@ -304,62 +184,34 @@ public class SortMultipleField {
         for (j = 0; j < n2; j++)
             R[j] = data[mid + 1 + j];
 
-
-        /*
-        DESC, DESC, DESC, DESC, ASC
-
-A = 56, 42, 17, 22, 57
-
-B = 86, 7, 4, 85, 79
-
-86 > 56 = B
-
-42 > 7 = A
-
-17 > 4  = B
-
-85 > 22 = B
-
-57 < 79 = A
-
-B > A
-         */
-
-
         /* Merge the temp arrays back into arr[l..r]*/
         i = 0; // Initial index of first subarray
         j = 0; // Initial index of second subarray
         k = left; // Initial index of merged subarray
         while (i < n1 && j < n2) {
             //compare
-            int a = 0, b = 0;
-            if (columnSortType[colum] == ASC) {
-                if (L[i][colum] <= R[j][colum]) {
-                    data[k] = L[i];
-                    i++;
-                } else {
-                    data[k] = R[j];
-                    j++;
-                }
-            } else {//DESC
-                if (L[i][colum] >= R[j][colum]) {
-                    data[k] = L[i];
-                    i++;
-                } else {
-                    data[k] = R[j];
-                    j++;
+            for (int t = 0; t < 5; t++) {
+                if (L[i][t] == R[j][t]) continue;
+                if (columnSortType[t] == ASC) {
+                    if (L[i][t] <= R[j][t]) {
+                        data[k] = L[i];
+                        i++;
+                    } else {
+                        data[k] = R[j];
+                        j++;
+                    }
+                    break;
+                } else if (columnSortType[t] == DESC) {
+                    if (L[i][t] >= R[j][t]) {
+                        data[k] = L[i];
+                        i++;
+                    } else {
+                        data[k] = R[j];
+                        j++;
+                    }
+                    break;
                 }
             }
-
-
-//            if (L[i][colum] <= R[j][colum]) {
-//                data[k] = L[i];
-//                i++;
-//            } else {
-//                data[k] = R[j];
-//                j++;
-//            }
-
             k++;
         }
 
@@ -376,8 +228,7 @@ B > A
             j++;
             k++;
         }
-
-
     }
+
 
 }
