@@ -39,7 +39,7 @@ public class P2784_Islands {
 
         public Node(int id) {
             this.id = id;
-            this.link = new LinkedList<>();
+            this.link = new LinkedList<Node>();
             this.ping = Integer.MAX_VALUE;
         }
 
@@ -144,7 +144,7 @@ public class P2784_Islands {
         s = Integer.parseInt(br.readLine());
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        PriorityQueue<Node> Q = new PriorityQueue<>(n + 1);
+        PriorityQueue<Node> Q = new PriorityQueue<Node>(n + 1);
         System.out.println("s=" + s);
         for (int i = 1; i <= n; i++) {
             if (i != s) {

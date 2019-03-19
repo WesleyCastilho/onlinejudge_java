@@ -28,11 +28,13 @@ public class P1843_The_Half_Blood_Prince {
     private static class Graph {
         int round;
         int totalColor;
+        int[][] memory;
         int[][] grid;
 
         public Graph(int round, int[][] grid) {
             this.round = round;
             this.grid = grid;
+            this.memory = new int[N][N];
             this.getTotalColor();
         }
 
@@ -78,14 +80,14 @@ public class P1843_The_Half_Blood_Prince {
                 return 0;
             }
         };
-        PriorityQueue<Graph> minHeap = new PriorityQueue<>(comparator);
+        PriorityQueue<Graph> minHeap = new PriorityQueue<Graph>(comparator);
         //build Node connection
         for (int y = 0; y < N; y++) {
             for (int x = 0; x < M; x++) {
                 int[][] tmpGrid = grid;
                 int[][] m = new int[N][M];
                 m[y][x] = 1;
-                changeColor(tmpGrid, m, 0, 0, grid[0][0], grid[y][y]);
+                changeColor(tmpGrid, m, 0, 0, grid[0][0], grid[y][x]);
                 Graph g = new Graph(1, tmpGrid);
                 minHeap.add(g);
             }
@@ -95,10 +97,13 @@ public class P1843_The_Half_Blood_Prince {
         int minimum = Integer.MAX_VALUE;
         while (!minHeap.isEmpty()) {
             Graph g = minHeap.poll();
+            int[][] tmpGrid = g.grid;
             int[][] m = new int[N][M];//memory
             for (int y = 0; y < N; y++) {
                 for (int x = 0; x < M; x++) {
-
+                    changeColor(tmpGrid, m, 0, 0, grid[0][0], grid[y][x]);
+                    Graph newGraph = new Graph(1, tmpGrid);
+                    minHeap.add(newGraph);
                 }
             }
 

@@ -6,7 +6,7 @@
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1084
  * @Level: 6
  * @Timelimit: 1 sec
- * @Status:
+ * @Status: TLE
  * @Submission:
  * @Runtime:
  * @Solution:
@@ -15,23 +15,26 @@
 
 package URI.Trying.WRITING.DP;
 
-import java.util.Scanner;
-
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.IOException;
 
 public class P1084_Erasing_and_Winning {
 
-
     static int N, D;
 
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        while (sc.hasNext()) {
-            N = sc.nextInt();
-            D = sc.nextInt();
-            if (N == 0 && D == 0) break;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        String in;
+        while (!(in = br.readLine()).equals("0 0")) {
+            String[] st = in.split(" ");
+            N = Integer.parseInt(st[0]);
+            D = Integer.parseInt(st[1]);
             int[] number = new int[N + 1];
-            String sNum = sc.next();
+            String sNum = br.readLine();
             for (int i = 0; i < N; i++) number[i] = sNum.charAt(i) - '0';
 
             String answer = "";
@@ -51,11 +54,9 @@ public class P1084_Erasing_and_Winning {
                 answer = answer.substring(0, answer.length() - 1);
             }
 
-
-            System.out.println(answer);
-
+            bw.append(answer + "\n");
         }
-
+        bw.flush();
     }
 
 

@@ -66,7 +66,6 @@ public class P1931_Even_Obsession {
         }
 
 
-        boolean itOK = false;
         int[] p = new int[c + 1];
         LinkedList<City> Q = new LinkedList<>();
         Q.add(cityArr[c]);

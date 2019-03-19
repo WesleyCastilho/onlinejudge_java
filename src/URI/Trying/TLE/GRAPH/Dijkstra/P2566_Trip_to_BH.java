@@ -40,8 +40,8 @@ public class P2566_Trip_to_BH {
         public Node(int id) {
             this.id = id;
             this.d = Integer.MAX_VALUE;
-            this.buslink = new LinkedList<>();
-            this.planeLink = new LinkedList<>();
+            this.buslink = new LinkedList<Node>();
+            this.planeLink = new LinkedList<Node>();
         }
 
         void addBusLink(Node node) {
@@ -97,7 +97,7 @@ public class P2566_Trip_to_BH {
             };
 
             node[1].d = 0;
-            PriorityQueue<Node> minHeap1 = new PriorityQueue<>(comparator);
+            PriorityQueue<Node> minHeap1 = new PriorityQueue<Node>(comparator);
             minHeap1.add(node[1]);
             int[] p1 = new int[n + 1];
             while (!minHeap1.isEmpty()) {
@@ -120,7 +120,7 @@ public class P2566_Trip_to_BH {
 
             node[1].d = 0;
             for (int i = 2; i <= n; i++) node[i].d = Integer.MAX_VALUE; // reset d
-            PriorityQueue<Node> minHeap2 = new PriorityQueue<>(comparator);
+            PriorityQueue<Node> minHeap2 = new PriorityQueue<Node>(comparator);
             minHeap2.add(node[1]);
             int[] p2 = new int[n + 1];
             while (!minHeap2.isEmpty()) {

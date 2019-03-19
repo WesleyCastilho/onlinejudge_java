@@ -47,7 +47,7 @@ public class ALDS1_3_B_Queue {
         String[] st = br.readLine().split(" ");
         n = Integer.parseInt(st[0]);
         q = Integer.parseInt(st[1]);
-        LinkedList<Process> Queue = new LinkedList<>();
+        LinkedList<Process> Queue = new LinkedList<Process>();
         for (int i = 0; i < n; i++) {
             st = br.readLine().split(" ");
             String pid = st[0];

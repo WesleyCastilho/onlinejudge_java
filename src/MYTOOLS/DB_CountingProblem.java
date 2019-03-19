@@ -31,7 +31,7 @@ public class DB_CountingProblem {
     }
 
 
-    static final List<OJSource> sourceList = new ArrayList<>();
+    static final List<OJSource> sourceList = new ArrayList<OJSource>();
     static OJSource AIZU = new OJSource();
     static OJSource CODECHEF = new OJSource();
     static OJSource COJ = new OJSource();

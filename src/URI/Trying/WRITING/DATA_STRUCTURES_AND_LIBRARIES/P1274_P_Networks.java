@@ -34,7 +34,7 @@ public class P1274_P_Networks {
                 stoke[i] = Integer.parseInt(st[i]);
             }
 
-            LinkedList<Integer> answer = new LinkedList<>();
+            LinkedList<Integer> answer = new LinkedList<Integer>();
             //find
 
 

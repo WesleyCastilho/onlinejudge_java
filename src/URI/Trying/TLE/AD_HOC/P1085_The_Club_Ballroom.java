@@ -54,7 +54,7 @@ class P1085_The_Club_Ballroom {
             used = new boolean[n];
             int picked = 0;
             int line = 0;
-            Set<Integer> failedHistory = new TreeSet<>();
+            Set<Integer> failedHistory = new TreeSet<Integer>();
             for (int i = 0; i < n; i++) {
                 if (!failedHistory.contains(plank[i])) {
                     boolean ok = false;

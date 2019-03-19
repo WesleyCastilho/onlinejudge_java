@@ -14,7 +14,7 @@ public class FindPermutaion {
 
     static TreeSet<String> permutationList ;
     public static void main(String[] args) throws IOException {
-        permutationList = new TreeSet<>();
+        permutationList = new TreeSet<String>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String st = br.readLine();
 
@@ -29,7 +29,7 @@ public class FindPermutaion {
             System.out.println(s);
         }
         long end = System.nanoTime();
-        double seconds = (double)(end-start) / 1_000_000_000.0;
+        double seconds = (double)(end-start) / 1000000000.0;
         System.out.println(seconds+" sec");
 
 

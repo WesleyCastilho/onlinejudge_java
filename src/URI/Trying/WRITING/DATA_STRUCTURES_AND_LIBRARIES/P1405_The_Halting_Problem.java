@@ -24,6 +24,7 @@ public class P1405_The_Halting_Problem {
 
     static int L, N;
     static HashMap<String, Object> R;
+    private static HashMap<String, Condition> function;
 
     static private class Condition {
         String command;
@@ -45,7 +46,6 @@ public class P1405_The_Halting_Problem {
         }
     }
 
-    private static HashMap<String, Condition> function;
 
     public static void main(String[] args) throws IOException {
         InputStreamReader ir = new InputStreamReader(System.in);
@@ -57,8 +57,8 @@ public class P1405_The_Halting_Problem {
             String[] st = input.split(" ");
             L = Integer.parseInt(st[0]);
             N = Integer.parseInt(st[1]);
-            R = new HashMap<>();
-            function = new HashMap<>();
+            R = new HashMap<String, Object>();
+            function = new HashMap<String, Condition>();
             Integer result = null;
             boolean createFunction = false;
             boolean endProgram = false;
@@ -94,12 +94,12 @@ public class P1405_The_Halting_Problem {
                     continue;
                 }
 
-                int a = (int) R.get(st[1]);
-                int b = (int) R.get(st[2]);
+                int a = (Integer) R.get(st[1]);
+                int b = (Integer) R.get(st[2]);
                 switch (st[0]) {
                     case "MOV":
-                        int tmp1 = (int) R.get(st[1]);
-                        int tmp2 = (int) R.get(st[2]);
+                        int tmp1 = (Integer) R.get(st[1]);
+                        int tmp2 = (Integer) R.get(st[2]);
                         R.put(st[1], tmp2);
                         R.put(st[2], tmp1);
                         break;
@@ -123,44 +123,44 @@ public class P1405_The_Halting_Problem {
                         if (condition != null) {
                             Object obj1 = R.get(condition.ope1);
                             Object obj2 = R.get(condition.ope2);
-                            a = (obj1 != null ? (int) obj1 : Integer.parseInt(condition.ope1));
-                            b = (obj2 != null ? (int) obj2 : Integer.parseInt(condition.ope2));
+                            a = (obj1 != null ? (Integer) obj1 : Integer.parseInt(condition.ope1));
+                            b = (obj2 != null ? (Integer) obj2 : Integer.parseInt(condition.ope2));
 
                             switch (condition.command) {
                                 case "IFEQ":
                                     if (IFEQ(a, b)) {
                                         Object objResult = R.get(condition.result);
-                                        result = (objResult != null ? (int) objResult : Integer.parseInt(condition.result));
+                                        result = (objResult != null ? (Integer) objResult : Integer.parseInt(condition.result));
                                     }
                                     break;
                                 case "IFNEQ":
                                     if (IFNEQ(a, b)) {
                                         Object objResult = R.get(condition.result);
-                                        result = (objResult != null ? (int) objResult : Integer.parseInt(condition.result));
+                                        result = (objResult != null ? (Integer) objResult : Integer.parseInt(condition.result));
                                     }
                                     break;
                                 case "IFG":
                                     if (IFG(a, b)) {
                                         Object objResult = R.get(condition.result);
-                                        result = (objResult != null ? (int) objResult : Integer.parseInt(condition.result));
+                                        result = (objResult != null ? (Integer) objResult : Integer.parseInt(condition.result));
                                     }
                                     break;
                                 case "IFL":
                                     if (IFL(a, b)) {
                                         Object objResult = R.get(condition.result);
-                                        result = (objResult != null ? (int) objResult : Integer.parseInt(condition.result));
+                                        result = (objResult != null ? (Integer) objResult : Integer.parseInt(condition.result));
                                     }
                                     break;
                                 case "IFGE":
                                     if (IFGE(a, b)) {
                                         Object objResult = R.get(condition.result);
-                                        result = (objResult != null ? (int) objResult : Integer.parseInt(condition.result));
+                                        result = (objResult != null ? (Integer) objResult : Integer.parseInt(condition.result));
                                     }
                                     break;
                                 case "IFLE":
                                     if (IFLE(a, b)) {
                                         Object objResult = R.get(condition.result);
-                                        result = (objResult != null ? (int) objResult : Integer.parseInt(condition.result));
+                                        result = (objResult != null ? (Integer) objResult : Integer.parseInt(condition.result));
                                     }
                                     break;
                             }

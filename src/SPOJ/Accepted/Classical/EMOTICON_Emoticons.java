@@ -34,7 +34,7 @@ public class EMOTICON_Emoticons {
             String[] st = input.split(" ");
             int n = Integer.parseInt(st[0]);
             int m = Integer.parseInt(st[1]);
-            interval = new Vector<>();
+            interval = new Vector<pair>();
             failure = new Vector[n];
             emoticon = new String[n];
             for (int i = 0; i < n; i++) {

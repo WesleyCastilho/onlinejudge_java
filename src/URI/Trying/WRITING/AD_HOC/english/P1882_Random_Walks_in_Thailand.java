@@ -35,7 +35,7 @@ public class P1882_Random_Walks_in_Thailand {
 
         public Island(int id) {
             this.id = id;
-            this.link = new LinkedList<>();
+            this.link = new LinkedList<Island>();
         }
 
         void addLink(Island island) {

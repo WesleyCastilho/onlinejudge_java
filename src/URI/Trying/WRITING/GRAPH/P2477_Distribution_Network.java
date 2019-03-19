@@ -1,22 +1,27 @@
-package URI.Trying.WRITING.AD_HOC.english;
-
-import java.io.*;
-
 /**
  * @author Teerapat Phokhonwong
- * @Onlinejudge: URI ONLINE JUDGE
- * @Categories: AD-HOC
- * @Problem: 2771 - Average
- * @Link: https://www.urionlinejudge.com.br/repository/UOJ_2771_en.html
+ * @Onlinejudge:
+ * @Categories:
+ * @Problem:
+ * @Link:
  * @Level:
- * @Timelimit: 1 sec
+ * @Timelimit:
  * @Status:
  * @Submission:
  * @Runtime:
  * @Solution:
  * @Note:
  */
-public class P2771_Average {
+
+package URI.Trying.WRITING.GRAPH;
+
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class P2477_Distribution_Network {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

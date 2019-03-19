@@ -31,7 +31,7 @@ public class P1082_Connected_Components {
 
         public Component(char componentId) {
             this.id = componentId;
-            link = new LinkedList<>();
+            link = new LinkedList<Component>();
             this.visited = false;
         }
 
@@ -64,12 +64,12 @@ public class P1082_Connected_Components {
             }
 
             LinkedList<TreeSet> linkedSet = new LinkedList<TreeSet>();
-            LinkedList<Component> Q = new LinkedList<>();
+            LinkedList<Component> Q = new LinkedList<Component>();
             for (Component cRoot : component) {
                 if (!cRoot.visited) {
                     cRoot.visited = true;
                     Q.add(cRoot);
-                    TreeSet<Character> componentSet = new TreeSet<>();
+                    TreeSet<Character> componentSet = new TreeSet<Character>();
                     componentSet.add(cRoot.id);
                     while (!Q.isEmpty()) {
                         Component cur = Q.pollFirst();

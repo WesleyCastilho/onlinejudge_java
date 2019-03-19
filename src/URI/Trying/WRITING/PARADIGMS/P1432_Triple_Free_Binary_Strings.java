@@ -32,7 +32,7 @@ public class P1432_Triple_Free_Binary_Strings {
         public BinaryPattern(int mode, String binary) {
             this.mode = mode;
             if (mode == 1) {
-                binaryList = new LinkedList<>();
+                binaryList = new LinkedList<String>();
                 int n = binary.length();
                 buildBinaryString(n);
             } else if (mode == 2) {
@@ -67,7 +67,7 @@ public class P1432_Triple_Free_Binary_Strings {
             String[] st = in.split(" ");
             int n = Integer.parseInt(st[0]);
             String s = st[1];
-            LinkedList<BinaryPattern> binaryList = new LinkedList<>();
+            LinkedList<BinaryPattern> binaryList = new LinkedList<BinaryPattern>();
             String tmp = "";
             int mode = 0;
 

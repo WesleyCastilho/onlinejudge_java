@@ -19,7 +19,7 @@ import java.util.HashMap;
 
 public class P2636_3_RSA {
 
-    static HashMap<Long, int[]> memory = new HashMap<>();
+    static HashMap<Long, int[]> memory = new HashMap<Long, int[]>();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
