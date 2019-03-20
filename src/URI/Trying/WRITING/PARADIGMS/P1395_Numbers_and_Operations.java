@@ -1,9 +1,9 @@
 /**
  * @author Teerapat Phokhonwong
- * @Onlinejudge:
- * @Categories:
- * @Problem:
- * @Link:
+ * @Onlinejudge: URI ONLINE JUDGE
+ * @Categories: PARADIGMS
+ * @Problem: 1395 -
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1395
  * @Level:
  * @Timelimit:
  * @Status:
@@ -33,7 +33,13 @@ public class P1395_Numbers_and_Operations {
         }
     }
 
-    private static class
+    private static class Solution {
+        List<Pair> history;
+
+        Solution() {
+            history = new List<Pair>();
+        }
+    }
 
     static HashMap<Pair, Long> additionMemory;
     static HashMap<Pair, Long> multiplicationMemory;
@@ -57,6 +63,11 @@ public class P1395_Numbers_and_Operations {
                 number[i] = Integer.parseInt(st[i + 2]);
             }
 
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+
+                }
+            }
 
         }
         bw.flush();
