@@ -1,9 +1,9 @@
 /**
  * @author Teerapat Phokhonwong
- * @Onlinejudge: URI ONLINE JUDGE
- * @Categories: PARADIGMS
- * @Problem: 1288 - Destruction Cannon
- * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1288
+ * @Onlinejudge:
+ * @Categories:
+ * @Problem:
+ * @Link:
  * @Timelimit:
  * @Status:
  * @Submission:
@@ -11,7 +11,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.WRITING.PARADIGMS.Knapsack;
+package URI.Trying.WRITING.AD_HOC.english;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -19,7 +19,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.IOException;
 
-public class P1288_Destruction_Cannon {
+public class P1092_Longest_Increasing_Sub_sequence {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

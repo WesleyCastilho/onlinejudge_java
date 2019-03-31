@@ -1,4 +1,4 @@
-package URI.Accepted.PARADIGMS.sourcecode;
+package URI.Accepted.PARADIGMS.sourcecode.Knapsack;
 
 /**
  * @author Teerapat Phokhonwong
