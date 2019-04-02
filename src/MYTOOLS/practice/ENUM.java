@@ -1,4 +1,4 @@
-package MYTOOLS;
+package MYTOOLS.practice;
 
 
 public class ENUM {
