@@ -10,7 +10,7 @@
  * @Submission:
  * @Runtime:
  * @Solution: Greedy
- * @Note: หาวิธีวาดรูปให้ได้ตามผลลัพธ์ จำนวนน้อยที่สุด
+ * @Note: หาวิธีวาดรูปให้ได้ตามผลลัพธ์ จำนวนน้อยที่สุด *** ยังตีโจทย์ข้อนี้ในกรณีผลลัพธ์เป็น -1 ไม่ได้
  */
 
 package URI.Trying.WRITING.PARADIGMS.Greedy;
@@ -25,6 +25,7 @@ public class P1649_Annoying_Painting_Tool {
 
     private static int N, M, R, C;
     private static int[][] pic;
+    private static int[][] m;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
