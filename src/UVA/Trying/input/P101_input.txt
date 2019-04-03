@@ -1,4 +1,0 @@
-7
-move 5 onto 6
-move 4 onto 6
-quit
