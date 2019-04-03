@@ -7,7 +7,7 @@
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution:
+ * @Solution: DP find value of all variable
  * @Note:
  */
 package URI.Trying.WRITING.AD_HOC;
@@ -23,6 +23,17 @@ import java.util.TreeMap;
 public class P1934_Puzzle {
 
     private static TreeMap<String, Integer> map = new TreeMap<String, Integer>();
+    private static int[] R, C;
+
+    private static class Pair {
+        int value;
+        String key;
+
+        public Pair(String key) {
+            this.value = 0;
+            this.key = key;
+        }
+    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -30,30 +41,34 @@ public class P1934_Puzzle {
         String[] st = br.readLine().split(" ");
         int n = Integer.parseInt(st[0]);
         int m = Integer.parseInt(st[1]);
-        int[] sumRow = new int[n];
-        int[] sumColum = new int[m];
+        R = new int[n];
+        C = new int[m];
 
-        String[][] table = new String[n][m];
+        Pair[][] pair = new Pair[n][m];
         for (int i = 0; i < n; i++) {
             st = br.readLine().split(" ");
             for (int j = 0; j < m; j++) {
                 String key = st[j];
-                table[i][j] = key;
+                pair[i][j] = new Pair(key);
                 map.put(key, 0);
             }
-            sumRow[i] = Integer.parseInt(st[m]);
+            R[i] = Integer.parseInt(st[m]);
         }
         st = br.readLine().split(" ");
         for (int i = 0; i < m; i++) {
-            sumColum[i] = Integer.parseInt(st[i]);
+            C[i] = Integer.parseInt(st[i]);
         }
-        
-        
+
+        solv(pair);
 
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
             bw.append(entry.getKey() + " " + entry.getValue() + "\n");
         }
         bw.flush();
+    }
+
+    static void solv(Pair[][] pairs) {
+
     }
 
 }
