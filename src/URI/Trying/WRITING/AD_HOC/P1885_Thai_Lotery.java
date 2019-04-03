@@ -10,7 +10,7 @@
  * @Solution:
  * @Note:
  */
-package URI.Trying.WRITING.AD_HOC.english;
+package URI.Trying.WRITING.AD_HOC;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

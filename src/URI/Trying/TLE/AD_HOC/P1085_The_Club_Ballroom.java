@@ -12,13 +12,7 @@
  */
 package URI.Trying.TLE.AD_HOC;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.Set;
-import java.util.TreeSet;
+import java.io.*;
 
 class P1085_The_Club_Ballroom {
 
@@ -49,94 +43,7 @@ class P1085_The_Club_Ballroom {
             }
             quickSort(plank, 0, n - 1);
 
-            //Find By Height
-            int size = (width * 100) / plankWidth;
-            used = new boolean[n];
-            int picked = 0;
-            int line = 0;
-            Set<Integer> failedHistory = new TreeSet<Integer>();
-            for (int i = 0; i < n; i++) {
-                if (!failedHistory.contains(plank[i])) {
-                    boolean ok = false;
-                    sum = 0;
-                    int k = 0;
-                    int[] pick = new int[n];
-                    for (int j = i; j < n; j++) {
-                        if (!used[j]) {
-                            int tmp = (plank[j] + sum);
-                            if (tmp == high) {
-                                pick[k] = j;
-                                k++;
-                                ok = true;
-                                break;
-                            }
-                            if (tmp < high) {
-                                sum += plank[j];
-                                pick[k] = j;
-                                k++;
-                            }
-                        }
-                    }
-                    if (ok) {
-                        ++line;
-                        picked += k;
-                        if (line == size) {
-                            bw.append(picked + "\n");
-                            continue loop;
-                        }
-                        for (int p = 0; p < k; p++) {
-                            used[pick[p]] = true;
-                        }
-                    } else {
-                        failedHistory.add(plank[i]);
-                    }
-                }
-            }
 
-
-            //Find By Width
-            failedHistory.clear();
-            used = new boolean[n];
-            picked = 0;
-            line = 0;
-            size = (high * 100) / plankWidth;
-            for (int i = 0; i < n; i++) {
-                if (!failedHistory.contains(plank[i])) {
-                    boolean ok = false;
-                    sum = 0;
-                    int k = 0;
-                    int[] pick = new int[n];
-                    for (int j = i; j < n; j++) {
-                        if (!used[j]) {
-                            int tmp = (plank[j] + sum);
-                            if (tmp == width) {
-                                pick[k] = j;
-                                k++;
-                                ok = true;
-                                break;
-                            }
-                            if (tmp < width) {
-                                sum += plank[j];
-                                pick[k] = j;
-                                k++;
-                            }
-                        }
-                    }
-                    if (ok) {
-                        ++line;
-                        picked += k;
-                        if (line == size) {
-                            bw.append(picked + "\n");
-                            continue loop;
-                        }
-                        for (int p = 0; p < k; p++) {
-                            used[pick[p]] = true;
-                        }
-                    } else {
-                        failedHistory.add(plank[i]);
-                    }
-                }
-            }
 
             bw.append("impossivel" + "\n");
         }

@@ -1,26 +1,33 @@
-package URI.Trying.WRITING.AD_HOC.english;
-
-import java.io.*;
-
 /**
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
  * @Categories: AD-HOC
- * @Problem: 2771 - Average
- * @Link: https://www.urionlinejudge.com.br/repository/UOJ_2771_en.html
+ * @Problem: 2931 - Suspicious Gifts
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2931
  * @Level:
- * @Timelimit: 1 sec
+ * @Timelimit:
  * @Status:
  * @Submission:
  * @Runtime:
  * @Solution:
- * @Note:
+ * @Note: สับสน input
  */
-public class P2771_Average {
+
+package URI.Trying.WRITING.AD_HOC;
+
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class P2931_Suspicious_Gifts {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+
     }
 
 }

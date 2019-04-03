@@ -13,7 +13,7 @@
  * @Note: Brute Force เพื่อ หาคู่ของการด์ในสนาม ที่สามารถรวม เป็นการดในมือได้  *** คำตอบยังไม่ถูก
  */
 
-package URI.Trying.WRITING.AD_HOC.english;
+package URI.Trying.WRITING.AD_HOC;
 
 import java.io.IOException;
 import java.io.BufferedReader;

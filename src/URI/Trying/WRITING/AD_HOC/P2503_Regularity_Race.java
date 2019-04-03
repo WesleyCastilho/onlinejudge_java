@@ -1,4 +1,4 @@
-package URI.Trying.WRITING.AD_HOC.english;
+package URI.Trying.WRITING.AD_HOC;
 
 /**
  * @author Teerapat Phokhonwong

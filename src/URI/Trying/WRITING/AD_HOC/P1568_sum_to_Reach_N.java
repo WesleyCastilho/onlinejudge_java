@@ -11,7 +11,7 @@
  * @Note: 
  */
 
-package URI.Trying.WRITING.AD_HOC.english;
+package URI.Trying.WRITING.AD_HOC;
 
 
 public class P1568_sum_to_Reach_N {

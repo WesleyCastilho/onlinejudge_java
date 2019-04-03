@@ -11,13 +11,13 @@ package URI.Trying.WRITING.GRAPH;
  * @Status:
  * @Submission:
  * @Runtime:
- * @Solution:
- * @Note:
+ * @Solution: find the largest total amount of points you can accumulate
+ * @Note: ยังหาค่าแน่นอนไม่ได้
  */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
 
 public class P1928_Memory_Game {
 
@@ -26,37 +26,48 @@ public class P1928_Memory_Game {
     private static class Card {
         int id;
         int value;
-        LinkedList<Card> link;
 
         public Card(int id, int value) {
             this.id = id;
             this.value = value;
-            link = new LinkedList<>();
         }
 
-        void addLink(Card card) {
-            link.add(card);
-        }
+    }
 
+    private static class Drawn {
+        int number;
+        Card card1;
+        Card card2;
+
+        public Drawn(int number, Card card1, Card card2) {
+            this.number = number;
+            this.card1 = card1;
+            this.card2 = card2;
+        }
     }
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
-        Card[] cards = new Card[N];
+        Card[] card = new Card[N + 1];
         String[] st = br.readLine().split(" ");
-        for (int i = 0; i < N; i++) {
-            int value = Integer.parseInt(st[i]);
-            cards[i] = new Card(i, value);
+        for (int i = 1; i <= N; i++) {
+            int value = Integer.parseInt(st[i - 1]);
+            card[i] = new Card(i, value);
         }
-
-        for (int i = 0; i < N - 1; i++) {
+        Drawn[] drawn = new Drawn[N];
+        int largest = 0;
+        for (int i = 1; i <= N; i++) {
             st = br.readLine().split(" ");
-            int s = Integer.parseInt(st[0]);
-            int d = Integer.parseInt(st[1]);
-            cards[s].addLink(cards[d]);
+            int c1 = Integer.parseInt(st[0]);
+            int c2 = Integer.parseInt(st[1]);
+            drawn[i] = new Drawn(i, card[c1], card[c2]);
+//            if (card[c1].value == card[c2].value) {
+//                totalScore += card[c1].value;
+//            }
         }
 
+        System.out.println(largest);
 
     }
 
