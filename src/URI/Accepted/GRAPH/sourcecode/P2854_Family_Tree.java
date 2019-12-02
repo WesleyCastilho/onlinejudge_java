@@ -5,15 +5,15 @@ package URI.Accepted.GRAPH.sourcecode;
  * @author Teerapat Phokhonwong
  * @Onlinejudge: URI ONLINE JUDGE
  * @Categories: GRAPH
- * @Problem: 2688 - Choosing a Place
- * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2688
+ * @Problem: 2854 - Family Tree
+ * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/2854
  * @Timelimit: 1 sec
  * @Status: Accepted
  * @Memory:
  * @Submission: 2/25/19, 5:37:32 PM
  * @Runtime: 0.100s
- * @Solution: BSF
- * @Note: นับจำนวน set ของ graph
+ * @Solution: unionSet
+ * @Note:
  */
 
 import java.io.BufferedReader;
