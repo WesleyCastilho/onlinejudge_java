@@ -12,7 +12,9 @@ package ZOJ.Accepted;
  * @Solution:
  * @Note:
  */
+
 import java.util.Scanner;
+
 public class P1295_Reverse_Text {
 
     public static void main(String[] args) {
@@ -22,11 +24,12 @@ public class P1295_Reverse_Text {
             String word = sc.nextLine();
             String s = word;
             String answer = "";
-            for (int j = word.length()-1; j >= 0 ; j--) {
-                answer+= s.charAt(j);
+            for (int j = word.length() - 1; j >= 0; j--) {
+                answer += s.charAt(j);
             }
-            if (i < Integer.parseInt(n)-1)System.out.println(answer);
+            if (i < Integer.parseInt(n) - 1) System.out.println(answer);
             else System.out.print(answer);
         }
     }
+
 }

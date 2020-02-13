@@ -13,7 +13,9 @@ package ZOJ.Accepted;
  * @Note:
  */
 import java.util.Scanner;
+
 public class P2970_Faster_Higher_Stronger {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int round = sc.nextInt();
@@ -39,4 +41,5 @@ public class P2970_Faster_Higher_Stronger {
             }
         }
     }
+
 }

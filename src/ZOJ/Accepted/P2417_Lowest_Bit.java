@@ -14,6 +14,8 @@ package ZOJ.Accepted;
  */
 import java.util.Scanner;
 public class P2417_Lowest_Bit {
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 		
@@ -27,4 +29,6 @@ public class P2417_Lowest_Bit {
             System.out.println(answer);
         }
     }
+
+
 }

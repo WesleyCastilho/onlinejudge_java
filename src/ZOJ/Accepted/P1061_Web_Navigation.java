@@ -14,6 +14,8 @@ package ZOJ.Accepted;
  */
 import java.util.ArrayList;
 import java.util.Scanner;
+
+
 public class P1061_Web_Navigation {
     
     static ArrayList<String> backwardHistory = new ArrayList<String>();

@@ -13,6 +13,8 @@ package ZOJ.Accepted;
  * @Note:
  */
 import java.util.Scanner;
+
+
 public class P2736_Daffodil_number {
     
     public static void main(String[] args) {
@@ -25,5 +27,6 @@ public class P2736_Daffodil_number {
             }
             System.out.println(s.equals(""+sum) ? "Yes":"No");				
         }
-    }   
+    }
+
 }

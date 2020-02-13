@@ -12,27 +12,33 @@ package ZOJ.Accepted;
  * @Solution:
  * @Note:
  */
+
 import java.util.Scanner;
+
 public class P1115_Digital_Roots {
-    static String SumDigit(String a){
+
+    static String SumDigit(String a) {
         int SumDigit = 0;
-	for (int i = 0; i < a.length(); i++) {
-            SumDigit += (a.charAt(i)-'0'); 
-	} 	
-        return SumDigit+"";		
+        for (int i = 0; i < a.length(); i++) {
+            SumDigit += (a.charAt(i) - '0');
+        }
+        return SumDigit + "";
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        while(sc.hasNext()){
-            String a ="";
+        while (sc.hasNext()) {
+            String a = "";
             a = sc.next();
             if (a.equals("0")) {
                 break;
             }
-            while(a.length()>1){
-                a = SumDigit(a); 
+            while (a.length() > 1) {
+                a = SumDigit(a);
             }
-            System.out.println(a);		
+            System.out.println(a);
         }
     }
+
+
 }

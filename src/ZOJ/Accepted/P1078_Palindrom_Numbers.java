@@ -13,6 +13,8 @@ package ZOJ.Accepted;
  * @Note:
  */
 import java.util.Scanner;
+
+
 public class P1078_Palindrom_Numbers {
 
     public static void main(String[] agrs) {  
@@ -40,8 +42,11 @@ public class P1078_Palindrom_Numbers {
         StringBuffer sbuff = new StringBuffer(regex);  
         sbuff = sbuff.reverse();  
         return regex.equals(sbuff.toString());  
-    }  
+    }
+
     static String changeBase(int base10, int newBase) {  
         return Integer.toString(base10, newBase); 
-    }  
+    }
+
+
 }

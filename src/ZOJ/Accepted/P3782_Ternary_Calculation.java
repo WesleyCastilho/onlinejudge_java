@@ -13,6 +13,7 @@ package ZOJ.Accepted;
  * @Note:
  */
 import java.util.Scanner;
+
 public class P3782_Ternary_Calculation {
     
     public static void main(String[] args) {
@@ -80,4 +81,6 @@ public class P3782_Ternary_Calculation {
             System.out.println(answer);           
         }
     }
+
+
 }
