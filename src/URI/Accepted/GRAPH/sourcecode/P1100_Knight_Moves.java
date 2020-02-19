@@ -52,6 +52,7 @@ public class P1100_Knight_Moves {
                 nextQueue.clear();
                 moved.clear();
             }
+//            bw.flush();
         }
         bw.flush();
     }

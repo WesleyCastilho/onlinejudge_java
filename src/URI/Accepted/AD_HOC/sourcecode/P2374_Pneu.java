@@ -1,4 +1,4 @@
-package th.in.devboom.uri.accepted;
+package URI.Accepted.AD_HOC.sourcecode;
 
 /**
  * Created by Teerapat-BSD on 1/29/2018.
