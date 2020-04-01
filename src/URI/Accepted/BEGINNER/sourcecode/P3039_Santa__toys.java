@@ -1,4 +1,4 @@
-package URI.Accepted.BEGINNER;
+package URI.Accepted.BEGINNER.sourcecode;
 
 
 import java.io.IOException;
