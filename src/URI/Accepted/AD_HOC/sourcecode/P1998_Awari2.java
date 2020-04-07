@@ -5,7 +5,7 @@
  * @Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1998
  * @Timelimit: 1 sec
  * @Status: Accepted 28/11/2015 - 07:34:49 Runtime:0.136s
- * @Solution: Bean game Simulation
+ * @Solution: Simulation
  */
 package  URI.Accepted.AD_HOC.sourcecode;
 
